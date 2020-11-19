@@ -42,10 +42,14 @@ save the `./database/` folder.
 RHS Issue Tracker doesn't support IE 6 & 7. It requires JavaScript to work
 properly.
 
+### Testing
+Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
+
+
 ## About Booby Bumpy
 
 Booby Bumpy was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC under name RHS Issue Tracker. Please
-report bugs at [RHS Issue Tracker](https://github.com/dineshkummarc/Bumpy-Booby/issues)
+report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/Bumpy-Booby/issues)
 
 RHS Issue Tracker is distributed under the MIT License. See `./COPYING` for more
 information.
