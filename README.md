@@ -1,9 +1,9 @@
-# RHS Issue Tracker 0.4
+# phpmyBugs 0.4
 
-RHS Issue Tracker is a simple, responsive and highly customizable PHP bug tracking
+phpmyBugs is a simple, responsive and highly customizable PHP bug tracking
 system.
 
-![RHS Issue Tracker logo](http://uploads.derivoile.fr/bumpy-booby.png)
+![phpmyBugs logo](http://uploads.derivoile.fr/bumpy-booby.png)
 
 Features:
 
@@ -28,7 +28,7 @@ To get more information or to see it in action:
 
 ### Installation
 
-Copy all files, run `./` or `./index.php`, configure RHS Issue Tracker and enjoy !
+Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 
 ~Note : you can delete the `./public/css/app/` folder, it is useless.~
 
@@ -39,7 +39,7 @@ save the `./database/` folder.
 
 ### Requirements
 
-RHS Issue Tracker doesn't support IE 6 & 7. It requires JavaScript to work
+phpmyBugs doesn't support IE 6 & 7. It requires JavaScript to work
 properly.
 
 ### Testing
@@ -48,8 +48,8 @@ Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.
 
 ## About Booby Bumpy
 
-Booby Bumpy was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC under name RHS Issue Tracker. Please
+Booby Bumpy was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC under name phpmyBugs. Please
 report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/Bumpy-Booby/issues)
 
-RHS Issue Tracker is distributed under the MIT License. See `./COPYING` for more
+phpmyBugs is distributed under the MIT License. See `./COPYING` for more
 information.
