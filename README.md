@@ -30,6 +30,12 @@ To get more information or to see it in action: <http://bumpy-booby.derivoile.fr
 Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 ~Note : you can delete the `./public/css/app/` folder, it is useless.~
 
+Installation:-
+![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/installation.png)
+
+Successful Installation:-
+![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/installation-completed.png)
+
 ### Backup
 Before any update, it's highly recommended to make a backup. You only need to save the `./database/` folder.
 
