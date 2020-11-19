@@ -20,6 +20,10 @@ Features:
 
 To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
+
+### Screenshots
+
+
 ## Running
 
 ### Installation
