@@ -600,7 +600,7 @@ class Settings {
 
 	public static function get_default_config($language = 'en') {
 		return array(
-			'title' => 'RHS Issue Tracker',
+			'title' => 'phpmyBugs',
 			'url' => Settings::get_path(),
 			'url_rewriting' => false,
 			'intro' => '',
