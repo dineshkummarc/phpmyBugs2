@@ -1,9 +1,9 @@
-# Bumpy Booby 0.4
+# RHS Issue Tracker 0.4
 
-Bumpy Booby is a simple, responsive and highly customizable PHP bug tracking
+RHS Issue Tracker is a simple, responsive and highly customizable PHP bug tracking
 system.
 
-![Bumpy Booby logo](http://uploads.derivoile.fr/bumpy-booby.png)
+![RHS Issue Tracker logo](http://uploads.derivoile.fr/bumpy-booby.png)
 
 Features:
 
@@ -28,7 +28,7 @@ To get more information or to see it in action:
 
 ### Installation
 
-Copy all files, run `./` or `./index.php`, configure Bumpy Booby and enjoy !
+Copy all files, run `./` or `./index.php`, configure RHS Issue Tracker and enjoy !
 
 ```Note : you can delete the `./public/css/app/` folder, it is useless.```
 
@@ -39,13 +39,13 @@ save the `./database/` folder.
 
 ### Requirements
 
-Bumpy Booby doesn't support IE 6 & 7. It requires JavaScript to work
+RHS Issue Tracker doesn't support IE 6 & 7. It requires JavaScript to work
 properly.
 
 ## About Booby Bumpy
 
-Bumpy Booby was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC. Please
+RHS Issue Tracker was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC. Please
 report bugs at <http://bumpy-booby.derivoile.fr>.
 
-Bumpy Booby is distributed under the MIT License. See `./COPYING` for more
+RHS Issue Tracker is distributed under the MIT License. See `./COPYING` for more
 information.
