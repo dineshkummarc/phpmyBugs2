@@ -1,6 +1,6 @@
 <?php
 
-# RHS Issue Tracker
+# phpmyBugs
 # Copyright (c) 2013-2015 Pierre Monchalin
 # <http://bumpy-booby.derivoile.fr>
 # 
@@ -30,7 +30,7 @@ spl_autoload_register('loadClass');
 ### Catch errors
 set_error_handler(array('Text', 'capture_error'));
 
-define('NAME', 'RHS Issue Tracker');
+define('NAME', 'phpmyBugs');
 define('VERSION', '0.4');
 define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
