@@ -48,8 +48,7 @@ Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.
 
 ## About Booby Bumpy
 
-Booby Bumpy was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC under name phpmyBugs. Please
+Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please
 report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/Bumpy-Booby/issues)
 
-phpmyBugs is distributed under the MIT License. See `./COPYING` for more
-information.
+phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.
