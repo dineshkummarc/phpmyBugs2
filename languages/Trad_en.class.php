@@ -51,7 +51,7 @@ class Trad {
 	const W_EXTRACT = '“%text%”';
 
 	const W_USER = 'User';
-	const W_DEVELOPPER = 'Developper';
+	const W_DEVELOPPER = 'Developer';
 	const W_SUPERUSER = 'Superuser';
 	const W_S_NEW = 'New';
 	const W_S_CONFIRMED = 'Confirmed';
@@ -157,8 +157,8 @@ class Trad {
 	const A_CONFIRM_DELETE_UPLOAD = 'Are you sure you want to delete this file?';
 	const A_CONFIRM_DELETE_PROJECT = 'Are you sure you want to delete this project? All the corresponding issues will be lost.';
 
-	const A_LOGGED = 'You are now logged.';
-	const A_LOGGED_OUT = 'You are now logged out.';
+	const A_LOGGED = 'You are now logged into the System.';
+	const A_LOGGED_OUT = 'You are now logged out from the System.';
 	const A_ERROR_CONNEXION = '<strong>Error:</strong> Wrong username or password.';
 	const A_ERROR_CONNEXION_WAIT = '<strong>Error:</strong> Wrong username or password. Please wait %duration% %period% before trying again.';
 	const A_ERROR_LOGIN_WAIT = 'Please wait %duration% %period% before trying again. This a protection against malicious attacks.';
