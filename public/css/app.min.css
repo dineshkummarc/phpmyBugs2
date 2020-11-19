@@ -225,13 +225,13 @@ footer {
   font-size: 1.2em;
 }
 .div-last-edits p {
-  margin-top: 12px;
+  margin-top: 4px;
 }
 .div-last-edit {
-  margin: 24px 4px 0 4px;
+  margin: 4px 4px 0 4px;
 }
 .div-last-edit .a-summary {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.4em;
   line-height: 1em;
   color: #444444;
