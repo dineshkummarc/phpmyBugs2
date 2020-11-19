@@ -115,7 +115,7 @@ class Trad {
 	const S_RSS_ISSUE_UPDATED = '%adj% by %user%.';
 	const S_RSS_ISSUE_STATUS_UPDATED = 'Status updated to “%status%” by %user%.';
 
-	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run Bumpy Booby! Please configure it:';
+	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run RHS Issue Tracker! Please configure it:';
 	const S_FIRST_ISSUE_TITLE = 'How are you doing, pumpkin?';
 	const S_FIRST_ISSUE = 'I am your first issue! After logging, you will be able to delete me.';
 
@@ -140,8 +140,8 @@ class Trad {
 	const A_ERROR_FATAL = 'Sorry, something went wrong. Please contact an administrator if this problem persists.';
 	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />File “<strong>%file%</strong>” on line <strong>%line%</strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong>Done:</strong> Bumpy Booby is now completely configured.';
-	const A_ERROR_INSTALL = '<strong>Error:</strong> Bumpy Booby is already configured. Please remove the config file if you want to reset the configuration.';
+	const A_SUCCESS_INSTALL = '<strong>Done:</strong> RHS Issue Tracker is now completely configured.';
+	const A_ERROR_INSTALL = '<strong>Error:</strong> RHS Issue Tracker is already configured. Please remove the config file if you want to reset the configuration.';
 	const A_MODIF_SAVED = 'Modifications were saved.';
 
 	const A_ERROR_FORM = 'An error occured. Please send again the form.';
@@ -285,7 +285,7 @@ This is an automated email, please do not reply.
 	const F_USERS = 'Manage users:';
 
 	const F_TIP_NAME = 'It will be displayed on the header of each page.';
-	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to Bumpy Booby folder (started and ended with a "/"), relative to the domain name.';
+	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to RHS Issue Tracker folder (started and ended with a "/"), relative to the domain name.';
 	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
 	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
 	const F_TIP_PASSWORD = 'Leave it empty if you don\'t want to change the password.';
