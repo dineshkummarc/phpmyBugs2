@@ -1,4 +1,4 @@
-# Bumpy Booby 0.3
+# Bumpy Booby 0.4
 
 Bumpy Booby is a simple, responsive and highly customizable PHP bug tracking
 system.
@@ -44,7 +44,7 @@ properly.
 
 ## About Booby Bumpy
 
-Bumpy Booby was created and is actually maintained by Pierre Monchalin. Please
+Bumpy Booby was created and is ```actually``` maintained by Pierre Monchalin. Please
 report bugs at <http://bumpy-booby.derivoile.fr>.
 
 Bumpy Booby is distributed under the MIT License. See `./COPYING` for more
