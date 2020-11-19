@@ -44,8 +44,8 @@ properly.
 
 ## About Booby Bumpy
 
-RHS Issue Tracker was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC. Please
-report bugs at <http://bumpy-booby.derivoile.fr>.
+Booby Bumpy was created by Pierre Monchalin and is ```actually``` maintained by DINESHKUMMARC under name RHS Issue Tracker. Please
+report bugs at [RHS Issue Tracker](https://github.com/dineshkummarc/Bumpy-Booby/issues)
 
 RHS Issue Tracker is distributed under the MIT License. See `./COPYING` for more
 information.
