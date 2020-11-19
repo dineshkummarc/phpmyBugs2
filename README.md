@@ -30,7 +30,7 @@ To get more information or to see it in action:
 
 Copy all files, run `./` or `./index.php`, configure RHS Issue Tracker and enjoy !
 
-```Note : you can delete the `./public/css/app/` folder, it is useless.```
+~Note : you can delete the `./public/css/app/` folder, it is useless.~
 
 ### Backup
 
