@@ -600,7 +600,7 @@ class Settings {
 
 	public static function get_default_config($language = 'en') {
 		return array(
-			'title' => 'Bumpy Booby',
+			'title' => 'RHS Issue Tracker',
 			'url' => Settings::get_path(),
 			'url_rewriting' => false,
 			'intro' => '',
