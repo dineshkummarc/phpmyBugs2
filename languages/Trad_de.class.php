@@ -106,7 +106,7 @@ class Trad {
 	const S_FORBIDDEN = 'Sie dürfen nicht auf diese Seite zugreifen. Bitte melden Sie sich an / ab, um fortzufahren. ';
 
 	const S_VIEW_PARTICIPATION = 'Seine Teilnahme anzeigen.';
-	const S_VIEW_STATUS = 'Probleme anzeigen "%status%".';
+	const S_VIEW_STATUS = 'Probleme anzeigen « %status% ».';
 
 	const S_ISSUE_CREATED = 'von %user% %time%';
 	const S_ISSUE_UPDATED = '%adj% von %user% %time%.';
@@ -134,11 +134,11 @@ class Trad {
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis "%name%" kann nicht erstellt werden.';
-	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei "% name%" kann nicht gelesen werden.';
-	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei "% name%" kann nicht geschrieben werden.';
+	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis « %name% » kann nicht erstellt werden.';
+	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei « %name% » kann nicht gelesen werden.';
+	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei « %name% » kann nicht geschrieben werden.';
 	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schief gelaufen. Bitte wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht. ';
-	const A_ERROR = '<strong>% title%: </strong> <br/> <br/>%message% <br/> <br/> Datei "<strong>%file% </strong>" in Zeile <stark>%line% </strong>.';
+	const A_ERROR = '<strong>%title%: </strong> <br/> <br/>%message% <br/> <br/> Datei « <strong>%file%</strong> » in Zeile <stark>%line% </strong>.';
 
 	const A_SUCCESS_INSTALL = '<strong> Fertig: </strong> phpmyBugs ist jetzt vollständig konfiguriert.';
 	const A_ERROR_INSTALL = '<strong> Fehler: </strong> phpmyBugs ist bereits konfiguriert. Bitte entfernen Sie die Konfigurationsdatei, wenn Sie die Konfiguration zurücksetzen möchten. ';
@@ -160,11 +160,11 @@ class Trad {
 	const A_LOGGED = 'Sie sind jetzt im System angemeldet.';
 	const A_LOGGED_OUT = 'Sie sind jetzt vom System abgemeldet.';
 	const A_ERROR_CONNEXION = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %duration% %Zeitraum%, bevor Sie es erneut versuchen. ';
-	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %duration% %Zeitraum%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
+	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %duration% %period%, bevor Sie es erneut versuchen. ';
+	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %duration% %period%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
 
 	const A_ERROR_UPLOAD = 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.';
-	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% max).';
+	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% maximum).';
 	const A_ERROR_UPLOAD_FULL = 'Sie haben nicht genügend Speicherplatz zum Hochladen dieser Datei: %nb% verbleibend.';
 
 	const A_PLEASE_LOGIN_ISSUES = 'Bitte melden Sie sich an, um die Probleme zu sehen.';
@@ -177,7 +177,7 @@ class Trad {
 		# Mails
 
 	const M_NEW_COMMENT_O = '[%title% - %project% - Problem #%id%] Neuer Kommentar';
-	const M_NEW_COMMENT = 'Hallo, %Benutzername%!
+	const M_NEW_COMMENT = 'Hallo, %username% !
 
 	Das Problem #%id% - "%summary%" wurde gerade von %by% kommentiert. Den neuen Kommentar können Sie hier lesen:
 	%url%.
@@ -189,7 +189,7 @@ class Trad {
 	';
 
 	const M_NEW_ISSUE_O = '[%title% - %project%] Neue Ausgabe';
-	const M_NEW_ISSUE = 'Hallo, %Benutzername%!
+	const M_NEW_ISSUE = 'Hallo, %username% !
 
 	Das Problem #%id% - "%summary%" wurde gerade von %by% übermittelt. Sie können es hier lesen:
 	%url%.
@@ -234,7 +234,7 @@ class Trad {
 	const F_ALLOCATED_SPACE = 'Zugewiesener Speicherplatz pro Benutzer:';
 	const F_GROUP = 'Gruppe:';
 	const F_NOTIFICATIONS = 'Benachrichtigt werden:';
-	const F_PROJECT_X = 'Projekt "%name%":';
+	const F_PROJECT_X = 'Projekt « %name% »:';
 	const F_LANGUAGE = 'Sprache:';
 	const F_LOGS = 'Logs:';
 
@@ -285,7 +285,7 @@ class Trad {
 
 	const F_TIP_NAME = 'Es wird in der Kopfzeile jeder Seite angezeigt.';
 	const F_TIP_URL_REWRITING = 'Lassen Sie dieses Feld leer, um das Umschreiben von URLs zu deaktivieren. Andernfalls sollte es den Pfad zum Ordner phpmyBugs (gestartet und beendet mit einem "/") relativ zum Domänennamen enthalten. ';
-	const F_TIP_INTRO = 'Es wird auf der Homepage angezeigt. Es wird mit der Markdown-Syntax analysiert. Hinweis: Wenn nur ein Projekt mit dem Namen "%name%" vorhanden ist, wird die Startseite automatisch zum Projekt-Dashboard umgeleitet, und dieser Text wird nicht angezeigt. ';
+	const F_TIP_INTRO = 'Es wird auf der Homepage angezeigt. Es wird mit der Markdown-Syntax analysiert. Hinweis: Wenn nur ein Projekt mit dem Namen « %name% » vorhanden ist, wird die Startseite automatisch zum Projekt-Dashboard umgeleitet, und dieser Text wird nicht angezeigt. ';
 	const F_TIP_EMAIL = 'Lassen Sie dieses Feld leer, um E-Mail-Benachrichtigungen zu deaktivieren. Andernfalls wird diese Adresse beim Senden einer E-Mail-Benachrichtigung als Absender verwendet. ';
 	const F_TIP_PASSWORD = 'Lass es leer, wenn du das Passwort nicht ändern willst.';
 	const F_TIP_USER_EMAIL = 'Nur erforderlich, wenn Sie Benachrichtigungen erhalten möchten.';
@@ -304,124 +304,124 @@ class Trad {
 	<h2> Markdown-Syntax: </h2>
 
 	<p> Absätze: </p>
-	<pre> <code class = "Leerzeichen ohne Hervorhebung"> Absätze werden durch eine oder mehrere Leerzeilen getrennt.
+	<pre> <code class="blank No-Highlight"> Absätze werden durch eine oder mehrere Leerzeilen getrennt.
 	Aus diesem Grund wird dieser Text unabhängig vom Zeilenumbruch in derselben Zeile wie der vorherige Satz angezeigt.
 
 	So beginnen Sie eine neue Zeile, ohne einen neuen Absatz zu erstellen:
 	Fügen Sie wie hier 2 Leerzeichen vor dem Zeilenumbruch ein. </code> </pre>
 	<p> Schwerpunkt: </p>
-	<pre> <code class = "leeres No-Highlight"> * Kursiver Text *
+	<pre> <code class="blank No-Highlight"> * Kursiver Text *
 	_Itatischer Text wieder_
 
 	** Fettgedruckter Text **
 	__ Nochmals fetter Text__ </code> </pre>
 
 	<p> Links: </p>
-	<pre> <code class = "blank no-Highlight"> Dies ist [ein Beispiel] (http://example.com) eines Inline-Links.
+	<pre> <code class="blank no-Highlight"> Dies ist [ein Beispiel] (http://example.com) eines Inline-Links.
 	Dies ist eine andere: &lt; http://example.com&gt;. </Code> </pre>
 
 	<p> Bilder: </p>
-	<pre> <code class = "leer, kein Highlight">! [Ich bin ein Bild.] (http://example.com/image.png) </code> </pre>
+	<pre> <code class="blank, no-Highlight">! [Ich bin ein Bild.] (http://example.com/image.png) </code> </pre>
 
 	<p> Überschriften: </p>
-	<pre> <code class = "leer, kein Highlight"> # Titel der obersten Ebene
+	<pre> <code class="blank, no-Highlight"> # Titel der obersten Ebene
 	## Titel der zweiten Ebene
 	### Titel der dritten Ebene
 	#### Titel der vierten Ebene </code> </pre>
 
 	<p> Listen: </p>
-	<pre> <code class = "leer, kein Highlight"> - ein Element
+	<pre> <code class="blank, no-Highlight"> - ein Element
 	* noch einer
 
 	1. erster Punkt
 	2. zweites Element </code> </pre>
 
 	<p> Blockzitate: </p>
-	<pre> <code class = "leeres No-Highlight" >> Ich bin ein Blockzitat mit zwei Absätzen.
+	<pre> <code class="blank No-Highlight" >> Ich bin ein Blockzitat mit zwei Absätzen.
 	>
 	> Ich bin der zweite Absatz. </Code> </pre>
 
 	<p> Codeblöcke: </p>
-	<pre> <code class = "blank no-Highlight"> Dies ist ein Inline-Codeblock. </code> </pre>
-	<pre> <code class = "leer, kein Highlight"> &lt;? php echo "Ich bin ein Codeblock, weil ich eingerückt bin
+	<pre> <code class="blank no-Highlight"> Dies ist ein Inline-Codeblock. </code> </pre>
+	<pre> <code class="blank, no-Highlight"> &lt;?php echo "Ich bin ein Codeblock, weil ich eingerückt bin
 		mit 4 Leerzeichen ";?&gt; </code> </pre>
-	<pre> <code class = "leeres No-Highlight"> `` `
-	&lt;?php echo "Ich bin ein Codeblock."; &gt;
-	`` `
+	<pre> <code class="blank No-Highlight"> ```
+	&lt;?php echo "Ich bin ein Codeblock."; ?&gt;
+	```
 
-	`` `php
-	&lt;?php echo "Unterstützte Sprachen sind: Bash, CS, Ruby, Diff, Javascript, CSS, XML, http, Java, PHP, Python, SQL, INI, Perl, JSON, CPP, Markdown, No-Highlight"; &gt;
-	`` `</code> </pre>
+	```php
+	&lt;?php echo "Unterstützte Sprachen sind: Bash, CS, Ruby, Diff, Javascript, CSS, XML, http, Java, PHP, Python, SQL, INI, Perl, JSON, CPP, Markdown, No-Highlight"; ?&gt;
+	```</code> </pre>
 	';
 
 	private static $permissions = array(
-		'home' => array (
+		'home' => array(
 	'title' => 'Home:',
 	'description' => 'Kann auf die Homepage zugreifen.'
 	),
-	'Dashboard' => Array (
+	'Dashboard' => Array(
 	'title' => 'Dashboards:',
 	'description' => 'Kann auf die Projekt-Dashboards zugreifen.'
 	),
-	'Issues' => Array (
+	'Issues' => Array(
 	'title' => 'Probleme anzeigen:',
 	'description' => 'Kann öffentliche Themen anzeigen.'
 	),
-	'private_issues' => array (
+	'private_issues' => array(
 	'title' => 'Private Ausgaben anzeigen:',
 	'description' => 'Kann als privat gekennzeichnete Probleme anzeigen.'
 	),
-	'search' => array (
+	'search' => array(
 	'title' => 'Search:',
 	'description' => 'Kann Probleme oder Benutzer suchen.'
 	),
-	'new_issue' => array (
+	'new_issue' => array(
 	'title' => 'Neue Ausgabe:',
 	'description' => 'Kann eine neue Ausgabe einreichen.'
 	),
-	'edit_issue' => array (
+	'edit_issue' => array(
 	'title' => 'Probleme bearbeiten:',
 	'description' => 'Kann den Text aller Probleme bearbeiten und löschen.'
 	),
-	'update_issue' => array (
+	'update_issue' => array(
 	'title' => 'Update-Probleme:',
 	'description' => 'Kann Probleme aktualisieren: Status ändern, Beschriftungen hinzufügen, schließen und wieder öffnen, ...'
 	),
-	'post_comment' => array (
+	'post_comment' => array(
 	'title' => 'Kommentar schreiben:',
 	'description' => 'Kann einen Kommentar posten.'
 	),
-	'edit_comment' => array (
+	'edit_comment' => array(
 	'title' => 'Kommentare bearbeiten:',
 	'description' => 'Kann alle Kommentare bearbeiten (Benutzer können trotzdem ihre eigenen Kommentare bearbeiten).'
 	),
-	'view_user' => array (
+	'view_user' => array(
 	'title' => 'Benutzerprofile:',
 	'description' => 'Kann alle Benutzerprofile anzeigen.'
 	),
-	'upload' => array (
+	'upload' => array(
 	'title' => 'Poste eine Datei:',
 	'description' => 'Kann Dateien an einen Kommentar oder ein neues Problem anhängen.'
 	),
-	'view_upload' => array (
+	'view_upload' => array(
 	'title' => 'Uploads anzeigen:',
 	'description' => 'Kann auf alle hochgeladenen Dateien zugreifen.'
 	),
-	'settings' => array (
+	'settings' => array(
 	'title' => 'Einstellungen ändern:',
 	'description' => 'Kann auf diese Seite zugreifen und alle globalen Einstellungen ändern.'
 	),
-	'signup' => array (
+	'signup' => array(
 	'title' => 'Anmelden:',
 	'description' => 'Kann sich anmelden.'
 	),
-	'view_errors' => array (
+	'view_errors' => array(
 	'title' => 'Schwerwiegende Fehler anzeigen:',
 	'description' => 'Kann die Beschreibung schwerwiegender Fehler anzeigen.'
 	)
 	);
 
-	public static function permissions($id, $type = 'Beschreibung') {
+	public static function permissions($id, $type = 'description') {
 		return self::$permissions[$id][$type];
 	}
 
@@ -451,7 +451,7 @@ class Trad {
 	'default' => 'Fehler'
 	);
 	public static function errors($no) {
-		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['Standard'];
+		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
 	}
 }
 
