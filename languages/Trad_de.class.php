@@ -48,7 +48,7 @@ class Trad {
 	const W_NOT_LOGGED = 'Nicht protokolliert';
 
 	const W_SUSPENSION = '…';
-	const W_EXTRACT = '« %text% »';
+	const W_EXTRACT = '“%text%”';
 
 	const W_USER = 'Benutzer';
 	const W_DEVELOPPER = 'Entwickler';
@@ -127,7 +127,7 @@ class Trad {
 	const S_SIZE_REMAINING = '%remain% auf %total% erlaubt.';
 	const S_NO_PROJECT = 'Kein Projekt.';
 
-	const S_SEARCH = '# 12, @user, words…';
+	const S_SEARCH = '#12, @user, words…';
 	const S_COPYRIGHT = 'Powered by %name%.';
 
 	const S_LAST_UPDATES = 'Letzte Aktualisierungen…';
@@ -138,7 +138,7 @@ class Trad {
 	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei “%name%” kann nicht gelesen werden.';
 	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei “%name%” kann nicht geschrieben werden.';
 	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schief gelaufen. Bitte wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht. ';
-	const A_ERROR = '<strong>%title%: </strong> <br/> <br/>%message% <br/> <br/> Datei « <strong>%file%</strong> » in Zeile <stark>%line% </strong>.';
+	const A_ERROR = '<strong>%title%: </strong> <br /> <br />%message% <br /> <br /> Datei “<strong>%file%</strong>” in Zeile <strong>%line% </strong>.';
 
 	const A_SUCCESS_INSTALL = '<strong> Fertig: </strong> phpmyBugs ist jetzt vollständig konfiguriert.';
 	const A_ERROR_INSTALL = '<strong> Fehler: </strong> phpmyBugs ist bereits konfiguriert. Bitte entfernen Sie die Konfigurationsdatei, wenn Sie die Konfiguration zurücksetzen möchten. ';
@@ -359,11 +359,11 @@ __Bold text again__  </code></pre>
 	'title' => 'Home:',
 	'description' => 'Kann auf die Homepage zugreifen.'
 	),
-	'Dashboard' => Array(
+	'dashboard' => Array(
 	'title' => 'Dashboards:',
 	'description' => 'Kann auf die Projekt-Dashboards zugreifen.'
 	),
-	'Issues' => Array(
+	'issues' => Array(
 	'title' => 'Probleme anzeigen:',
 	'description' => 'Kann öffentliche Themen anzeigen.'
 	),
