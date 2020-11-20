@@ -134,21 +134,21 @@ class Trad {
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> Fehler: </ strong> Verzeichnis "%name%" kann nicht erstellt werden.';
-	const A_ERROR_FILE = '<strong> Fehler: </ strong> Datei "% name%" kann nicht gelesen werden.';
-	const A_ERROR_FILE_WRITE = '<strong> Fehler: </ strong> Datei "% name%" kann nicht geschrieben werden.';
+	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis "%name%" kann nicht erstellt werden.';
+	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei "% name%" kann nicht gelesen werden.';
+	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei "% name%" kann nicht geschrieben werden.';
 	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schief gelaufen. Bitte wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht. ';
-	const A_ERROR = '<strong>% title%: </ strong> <br /> <br />%message% <br /> <br /> Datei "<strong>%file% </ strong>" in Zeile < stark>%line% </ strong>. ';
+	const A_ERROR = '<strong>% title%: </strong> <br/> <br/>%message% <br/> <br/> Datei "<strong>%file% </strong>" in Zeile <stark>%line% </strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong> Fertig: </ strong> phpmyBugs ist jetzt vollständig konfiguriert.';
-	const A_ERROR_INSTALL = '<strong> Fehler: </ strong> phpmyBugs ist bereits konfiguriert. Bitte entfernen Sie die Konfigurationsdatei, wenn Sie die Konfiguration zurücksetzen möchten. ';
+	const A_SUCCESS_INSTALL = '<strong> Fertig: </strong> phpmyBugs ist jetzt vollständig konfiguriert.';
+	const A_ERROR_INSTALL = '<strong> Fehler: </strong> phpmyBugs ist bereits konfiguriert. Bitte entfernen Sie die Konfigurationsdatei, wenn Sie die Konfiguration zurücksetzen möchten. ';
 	const A_MODIF_SAVED = 'Änderungen wurden gespeichert.';
 
 	const A_ERROR_FORM = 'Ein Fehler ist aufgetreten. Bitte senden Sie das Formular erneut. ';
 	const A_ERROR_TOKEN = 'Falsches Token. Bitte senden Sie das Formular erneut. ';
 	const A_ERROR_EMPTY = 'Sie müssen einen Benutzernamen und ein Passwort angeben.';
 	const A_ERROR_SAME_USERNAME = 'Dieser Benutzername ist nicht verfügbar.';
-	const A_SUCCESS_SIGNUP = '<strong> Fertig: </ strong> Sie können sich jetzt anmelden.';
+	const A_SUCCESS_SIGNUP = '<strong> Fertig: </strong> Sie können sich jetzt anmelden.';
 
 	const A_CONFIRM_DELETE_COMMENT = 'Möchten Sie diesen Kommentar wirklich löschen?';
 	const A_SUCCESS_DELETE_COMMENT = 'Der Kommentar wurde gelöscht.';
@@ -159,8 +159,8 @@ class Trad {
 
 	const A_LOGGED = 'Sie sind jetzt im System angemeldet.';
 	const A_LOGGED_OUT = 'Sie sind jetzt vom System abgemeldet.';
-	const A_ERROR_CONNEXION = '<strong> Fehler: </ strong> Falscher Benutzername oder falsches Passwort.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </ strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %Dauer% %Zeitraum%, bevor Sie es erneut versuchen. ';
+	const A_ERROR_CONNEXION = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort.';
+	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %Dauer% %Zeitraum%, bevor Sie es erneut versuchen. ';
 	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %Dauer% %Zeitraum%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
 
 	const A_ERROR_UPLOAD = 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.';
@@ -296,20 +296,20 @@ class Trad {
 	const F_TIP_MAX_UPLOAD = 'Jede hochgeladene Datei darf diese Größe nicht überschreiten.';
 	const F_TIP_ALLOCATED_SPACE = 'Ein Benutzer kann keine anderen Dateien hochladen, sobald er dieses Limit erreicht hat. <br /> <em> Achtung: </ em> wenn keine angemeldeten Benutzer Dateien hochladen dürfen (dies ist nicht die Standardeinstellung), Diese Grenze gilt nicht für sie. ';
 
-	const F_TIP_ID_STATUS = '<b> Tipp: </ b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Problem seine alte Status-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird der Standardstatus verwendet). ';
-	const F_TIP_ID_LABEL = '<b> Tipp: </ b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Etikett eines Problems seine alte ID behält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird das Etikett aus dem entfernt Problem).';
-	const F_TIP_ID_GROUP = '<b> Tipp: </ b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jeder Benutzer seine alte Gruppen-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird die Standardgruppe verwendet). ';
+	const F_TIP_ID_STATUS = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Problem seine alte Status-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird der Standardstatus verwendet). ';
+	const F_TIP_ID_LABEL = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Etikett eines Problems seine alte ID behält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird das Etikett aus dem entfernt Problem).';
+	const F_TIP_ID_GROUP = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jeder Benutzer seine alte Gruppen-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird die Standardgruppe verwendet). ';
 
 	const HELP_MARKDOWN = '
-	<h2> Markdown-Syntax: </ h2>
+	<h2> Markdown-Syntax: </h2>
 
-	<p> Absätze: </ p>
+	<p> Absätze: </p>
 	<pre> <code class = "Leerzeichen ohne Hervorhebung"> Absätze werden durch eine oder mehrere Leerzeilen getrennt.
 	Aus diesem Grund wird dieser Text unabhängig vom Zeilenumbruch in derselben Zeile wie der vorherige Satz angezeigt.
 
 	So beginnen Sie eine neue Zeile, ohne einen neuen Absatz zu erstellen:
-	Fügen Sie wie hier 2 Leerzeichen vor dem Zeilenumbruch ein. </ code> </ pre>
-	<p> Schwerpunkt: </ p>
+	Fügen Sie wie hier 2 Leerzeichen vor dem Zeilenumbruch ein. </code> </pre>
+	<p> Schwerpunkt: </p>
 	<pre> <code class = "leeres No-Highlight"> * Kursiver Text *
 	_Itatischer Text wieder_
 
@@ -327,7 +327,7 @@ class Trad {
 	<pre> <code class = "leer, kein Highlight"> # Titel der obersten Ebene
 	## Titel der zweiten Ebene
 	### Titel der dritten Ebene
-	#### Titel der vierten Ebene </ code> </pre>
+	#### Titel der vierten Ebene </code> </pre>
 
 	<p> Listen: </p>
 	<pre> <code class = "leer, kein Highlight"> - ein Element
@@ -336,13 +336,13 @@ class Trad {
 	1. erster Punkt
 	2. zweites Element </code> </pre>
 
-	<p> Blockzitate: </ p>
+	<p> Blockzitate: </p>
 	<pre> <code class = "leeres No-Highlight" >> Ich bin ein Blockzitat mit zwei Absätzen.
 	>
 	> Ich bin der zweite Absatz. </Code> </pre>
 
 	<p> Codeblöcke: </p>
-	<pre> <code class = "blank no-Highlight"> Dies ist ein Inline-Codeblock. </ code> </pre>
+	<pre> <code class = "blank no-Highlight"> Dies ist ein Inline-Codeblock. </code> </pre>
 	<pre> <code class = "leer, kein Highlight"> &lt;? php echo "Ich bin ein Codeblock, weil ich eingerückt bin
 		mit 4 Leerzeichen ";?&gt; </code> </pre>
 	<pre> <code class = "leeres No-Highlight"> `` `
