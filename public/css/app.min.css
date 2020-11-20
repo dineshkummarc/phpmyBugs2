@@ -213,12 +213,12 @@ footer {
   padding-right: 12px;
 }
 .div-last-edits {
-  background: #ffcb83;
+  background: #618DB1;
   padding: 8px;
   width: 360px;
 }
 .div-last-edits h2 {
-  background: #fff1df;
+  background: #BAE2FF;
   margin: 0;
   padding: 4px;
   text-align: center;
@@ -262,7 +262,7 @@ footer {
 .pager .previous,
 .pager .next {
   padding: 8px;
-  background: #ffcb83;
+  background: #618DB1;
   color: #444444;
   white-space: nowrap;
 }
@@ -375,7 +375,7 @@ footer {
 }
 .box .top {
   padding: 6px 6px;
-  background: #ffcb83;
+  background: #618DB1;
 }
 .box .top a {
   font-weight: bold;
@@ -405,11 +405,11 @@ footer {
   width: 220px;
 }
 .box .inner {
-  border-left: 6px solid #ffcb83;
+  border-left: 6px solid #618DB1;
   padding: 12px;
 }
 .box .inner-form {
-  background: #ffcb83;
+  background: #618DB1;
   padding: 12px;
 }
 .box .div-status {
@@ -455,7 +455,7 @@ footer {
 }
 .box-identicon {
   float: left;
-  border: solid #ffcb83;
+  border: solid #618DB1;
   border-width: 6px 0 6px 6px;
   -webkit-border-radius: 6px 0 0 6px;
   -moz-border-radius: 6px 0 0 6px;
@@ -479,7 +479,7 @@ footer {
 }
 .box-uploads:before {
   content: "";
-  border: 4px solid #ffcb83;
+  border: 4px solid #618DB1;
   margin-left: 50%;
 }
 .box-settings .top {
@@ -510,7 +510,7 @@ footer {
 .div-uploads {
   margin: 12px -12px -12px -12px;
   padding: 6px;
-  background: #ffcb83;
+  background: #618DB1;
 }
 .div-uploads .upload-tiny {
   display: block;
@@ -523,7 +523,7 @@ footer {
   margin: 2px;
   padding: 2px 4px;
   vertical-align: middle;
-  border: 6px solid #ffcb83;
+  border: 6px solid #618DB1;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -534,7 +534,7 @@ footer {
   opacity: 0.8;
 }
 .div-uploads a:hover {
-  border-color: #fff1df;
+  border-color: #BAE2FF;
   color: #000000;
 }
 .div-uploads a:hover i {
@@ -606,7 +606,7 @@ footer {
   margin: 12px;
   padding: 18px;
   word-wrap: break-word;
-  background: #ffcb83;
+  background: #618DB1;
   color: #444444;
 }
 .div-preview-project a span {
@@ -641,8 +641,8 @@ footer {
   margin-bottom: 6px;
 }
 .identicon {
-  background: #fff1df;
-  border: 6px solid #fff1df;
+  background: #BAE2FF;
+  border: 6px solid #BAE2FF;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -721,7 +721,7 @@ textarea {
   background: #444;
 }
 .form {
-  background: #ffcb83;
+  background: #618DB1;
   padding: 12px;
 }
 .box .inner-form input,
@@ -738,7 +738,7 @@ textarea {
   margin: 0 0 6px 0;
   padding: 8px;
   border: none;
-  background: #fff1df;
+  background: #BAE2FF;
   -webkit-transition: background 0.4s ease-in-out;
   -moz-transition: background 0.4s ease-in-out;
   -o-transition: background 0.4s ease-in-out;
@@ -770,7 +770,7 @@ textarea {
 }
 .box .inner-form input[readonly]:focus,
 .form input[readonly]:focus {
-  background-color: #fff1df;
+  background-color: #BAE2FF;
 }
 .box .inner-form label,
 .form label {
@@ -788,7 +788,7 @@ textarea {
   margin: -6px 0 0 24px;
   padding: 4px;
   font-style: italic;
-  border-left: 6px solid #fff1df;
+  border-left: 6px solid #BAE2FF;
 }
 .box .inner-form .p-tip,
 .form .p-tip {
@@ -806,7 +806,7 @@ textarea {
 .box .inner-form .btn,
 .form .btn {
   color: #444444;
-  background: #fff1df;
+  background: #BAE2FF;
 }
 .box .inner-form .btn:hover,
 .form .btn:hover {
@@ -894,7 +894,7 @@ textarea {
   font-style: italic;
 }
 .box-uploads .progress {
-  border-top: 4px solid #fff1df;
+  border-top: 4px solid #BAE2FF;
 }
 .progress .bar {
   position: absolute;
