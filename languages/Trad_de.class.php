@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 class Trad {
 
@@ -48,7 +48,7 @@ class Trad {
 	const W_NOT_LOGGED = 'Nicht protokolliert';
 
 	const W_SUSPENSION = '…';
-	const W_EXTRACT = '"%text%"';
+	const W_EXTRACT = '« %text% »';
 
 	const W_USER = 'Benutzer';
 	const W_DEVELOPPER = 'Entwickler';
@@ -71,7 +71,7 @@ class Trad {
 	const V_UPDATE = 'Update';
 	const V_UPDATE_DETAILS = 'Details aktualisieren';
 	const V_UPDATE_CONTENT = 'Inhalt aktualisieren';
-	const V_UPDATE_AND = 'Update & %Adjektiv%';
+	const V_UPDATE_AND = 'Update & %adjective%';
 	const V_CANCEL = 'Abbrechen';
 	const V_PREVIEW = 'Vorschau';
 	const V_COMMENT = 'Kommentar';
@@ -93,7 +93,7 @@ class Trad {
 	const S_NOLABEL = '-';
 	const S_NODEPENDENCY = '-';
 	const S_COMMENT_LEAVE = 'Hinterlasse einen Kommentar:';
-	const S_AGO = '%Dauer% %pediod% vor';
+	const S_AGO = '%duration% %pediod% vor';
 	const S_ISSUE_ABOUT = 'Zu diesem Problem:';
 	const S_UPLOAD_ADD = 'Datei anhängen:';
 	const S_WELCOME = 'Willkommen, %user%';
@@ -160,8 +160,8 @@ class Trad {
 	const A_LOGGED = 'Sie sind jetzt im System angemeldet.';
 	const A_LOGGED_OUT = 'Sie sind jetzt vom System abgemeldet.';
 	const A_ERROR_CONNEXION = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %Dauer% %Zeitraum%, bevor Sie es erneut versuchen. ';
-	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %Dauer% %Zeitraum%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
+	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %duration% %Zeitraum%, bevor Sie es erneut versuchen. ';
+	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %duration% %Zeitraum%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
 
 	const A_ERROR_UPLOAD = 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.';
 	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% max).';
