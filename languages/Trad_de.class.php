@@ -106,7 +106,7 @@ class Trad {
 	const S_FORBIDDEN = 'Sie dürfen nicht auf diese Seite zugreifen. Bitte melden Sie sich an / ab, um fortzufahren. ';
 
 	const S_VIEW_PARTICIPATION = 'Seine Teilnahme anzeigen.';
-	const S_VIEW_STATUS = 'Probleme anzeigen « %status% ».';
+	const S_VIEW_STATUS = 'Probleme anzeigen “%status%”.';
 
 	const S_ISSUE_CREATED = 'von %user% %time%';
 	const S_ISSUE_UPDATED = '%adj% von %user% %time%.';
@@ -124,7 +124,7 @@ class Trad {
 	const S_MATCHING_ISSUES = '%nb% Übereinstimmungsprobleme';
 	const S_NO_ACTIVITY = 'Keine aktuelle Aktivität.';
 	const S_NO_UPLOAD = 'Kein Upload.';
-	const S_SIZE_REMAINING = '%bleibt% auf %total% erlaubt.';
+	const S_SIZE_REMAINING = '%remain% auf %total% erlaubt.';
 	const S_NO_PROJECT = 'Kein Projekt.';
 
 	const S_SEARCH = '# 12, @user, words…';
@@ -134,9 +134,9 @@ class Trad {
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis « %name% » kann nicht erstellt werden.';
-	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei « %name% » kann nicht gelesen werden.';
-	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei « %name% » kann nicht geschrieben werden.';
+	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis “%name%” kann nicht erstellt werden.';
+	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei “%name%” kann nicht gelesen werden.';
+	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei “%name%” kann nicht geschrieben werden.';
 	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schief gelaufen. Bitte wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht. ';
 	const A_ERROR = '<strong>%title%: </strong> <br/> <br/>%message% <br/> <br/> Datei « <strong>%file%</strong> » in Zeile <stark>%line% </strong>.';
 
@@ -164,7 +164,7 @@ class Trad {
 	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %duration% %period%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
 
 	const A_ERROR_UPLOAD = 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.';
-	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% maximum).';
+	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% max).';
 	const A_ERROR_UPLOAD_FULL = 'Sie haben nicht genügend Speicherplatz zum Hochladen dieser Datei: %nb% verbleibend.';
 
 	const A_PLEASE_LOGIN_ISSUES = 'Bitte melden Sie sich an, um die Probleme zu sehen.';
@@ -285,7 +285,7 @@ class Trad {
 
 	const F_TIP_NAME = 'Es wird in der Kopfzeile jeder Seite angezeigt.';
 	const F_TIP_URL_REWRITING = 'Lassen Sie dieses Feld leer, um das Umschreiben von URLs zu deaktivieren. Andernfalls sollte es den Pfad zum Ordner phpmyBugs (gestartet und beendet mit einem "/") relativ zum Domänennamen enthalten. ';
-	const F_TIP_INTRO = 'Es wird auf der Homepage angezeigt. Es wird mit der Markdown-Syntax analysiert. Hinweis: Wenn nur ein Projekt mit dem Namen « %name% » vorhanden ist, wird die Startseite automatisch zum Projekt-Dashboard umgeleitet, und dieser Text wird nicht angezeigt. ';
+	const F_TIP_INTRO = 'Es wird auf der Homepage angezeigt. Es wird mit der Markdown-Syntax analysiert. Hinweis: Wenn nur ein Projekt mit dem Namen “%name%” vorhanden ist, wird die Startseite automatisch zum Projekt-Dashboard umgeleitet, und dieser Text wird nicht angezeigt. ';
 	const F_TIP_EMAIL = 'Lassen Sie dieses Feld leer, um E-Mail-Benachrichtigungen zu deaktivieren. Andernfalls wird diese Adresse beim Senden einer E-Mail-Benachrichtigung als Absender verwendet. ';
 	const F_TIP_PASSWORD = 'Lass es leer, wenn du das Passwort nicht ändern willst.';
 	const F_TIP_USER_EMAIL = 'Nur erforderlich, wenn Sie Benachrichtigungen erhalten möchten.';
@@ -310,11 +310,11 @@ class Trad {
 	So beginnen Sie eine neue Zeile, ohne einen neuen Absatz zu erstellen:
 	Fügen Sie wie hier 2 Leerzeichen vor dem Zeilenumbruch ein. </code> </pre>
 	<p> Schwerpunkt: </p>
-	<pre> <code class="blank No-Highlight"> * Kursiver Text *
-	_Itatischer Text wieder_
+	<pre><code class="blank no-highlight">*Italic text*  
+_Itatic text again_  
 
-	** Fettgedruckter Text **
-	__ Nochmals fetter Text__ </code> </pre>
+**Bold text**
+__Bold text again__  </code></pre>
 
 	<p> Links: </p>
 	<pre> <code class="blank no-Highlight"> Dies ist [ein Beispiel] (http://example.com) eines Inline-Links.
@@ -344,7 +344,7 @@ class Trad {
 	<p> Codeblöcke: </p>
 	<pre> <code class="blank no-Highlight"> Dies ist ein Inline-Codeblock. </code> </pre>
 	<pre> <code class="blank, no-Highlight"> &lt;?php echo "Ich bin ein Codeblock, weil ich eingerückt bin
-		mit 4 Leerzeichen ";?&gt; </code> </pre>
+		mit 4 Leerzeichen "; ?&gt; </code> </pre>
 	<pre> <code class="blank No-Highlight"> ```
 	&lt;?php echo "Ich bin ein Codeblock."; ?&gt;
 	```
