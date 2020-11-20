@@ -36,7 +36,7 @@ define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
 
 ### Languages
-define('LANGUAGES', 'en,fr'); # Separated by a comma
+define('LANGUAGES', 'en,fr,de'); # Separated by a comma
 define('DEFAULT_LANGUAGE', 'en'); # Used only during installation
 
 ### Directories and files
