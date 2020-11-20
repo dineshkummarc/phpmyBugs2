@@ -43,19 +43,19 @@ class Trad {
 
 	const W_PREVIOUS = 'पिछला';
 	const W_NEXT = 'अगला';
-	const W_CURRENT = 'पृष्ठ% nb1%% nb2%';
+	const W_CURRENT = 'पृष्ठ %nb1% %nb2%';
 
 	const W_NOT_LOGGED = 'लॉग इन नहीं';
 
 	const W_SUSPENSION = '...';
-	const W_EXTRACT = ''% पाठ% '';
+	const W_EXTRACT = '“%text%”';
 
 	const W_USER = 'उपयोगकर्ता';
 	const W_DEVELOPPER = 'डेवलपर';
 	const W_SUPERUSER = 'सुपरयुसर';
 	const W_S_NEW = 'नया';
 	const W_S_CONFIRMED = 'पुष्टि';
-	const W_S_ASSIGNED = '% उपयोगकर्ता% को सौंपा';
+	const W_S_ASSIGNED = '%user% को सौंपा';
 	const W_S_RESOLVED = 'हल';
 	const W_S_REJECTED = 'अस्वीकृत';
 	const W_L_URGENT = 'तत्काल';
@@ -69,9 +69,9 @@ class Trad {
 		# Verbes
 
 	const V_UPDATE = 'अपडेट';
-	const V_UPDATE_DETAILS = 'विवरण अपडेट करें';
+	const V_UPDATE_DETAILS = 'अपडेट करें';
 	const V_UPDATE_CONTENT = 'सामग्री अपडेट करें';
-	const V_UPDATE_AND = 'अपडेट और% विशेषण%';
+	const V_UPDATE_AND = 'अपडेट और %adjective%';
 	const V_CANCEL = 'रद्द करें';
 	const V_PREVIEW = 'पूर्वावलोकन';
 	const V_COMMENT = 'टिप्पणी';
@@ -93,27 +93,27 @@ class Trad {
 	const S_NOLABEL = '-';
 	const S_NODEPENDENCY = '-';
 	const S_COMMENT_LEAVE = 'एक टिप्पणी छोड़ें:';
-	const S_AGO = '% अवधि%% पेडिओड%%';
+	const S_AGO = '%duration% %pediod%';
 	const S_ISSUE_ABOUT = 'इस मुद्दे के बारे में:';
 	const S_UPLOAD_ADD = 'एक फ़ाइल संलग्न करें:';
-	const S_WELCOME = 'आपका स्वागत है,% उपयोगकर्ता%';
+	const S_WELCOME = 'आपका स्वागत है, %user%';
 	const S_NEVER = 'नेवर';
 	const S_ME = 'जिन मुद्दों पर मैंने योगदान दिया है उन पर अपडेट';
 	const S_ALWAYS = 'प्रत्येक अद्यतन का';
 	const S_START_NOTIF = 'नए अपडेट से अवगत रहें';
 	const S_STOP_NOTIF = 'अब अपडेट की सूचना नहीं दी जानी चाहिए';
 	const S_NOTFOUND = 'आप जिस पृष्ठ की तलाश कर रहे हैं वह अब मौजूद नहीं है ...';
-	const S_FORBIDDEN = 'आपको इस पृष्ठ पर पहुंचने की अनुमति नहीं है। कृपया जारी रखने के लिए / बाहर लॉग इन करें। ';
+	const S_FORBIDDEN = 'आपको इस पृष्ठ पर पहुंचने की अनुमति नहीं है। कृपया जारी रखने के लिए / बाहर लॉग इन करें।';
 
 	const S_VIEW_PARTICIPATION = 'उसकी भागीदारी देखें।';
-	const S_VIEW_STATUS = 'मुद्दों को "% स्थिति%" देखें।';
+	const S_VIEW_STATUS = 'मुद्दों को "%status%" देखें।';
 
-	const S_ISSUE_CREATED = '% उपयोगकर्ता%% समय%';
-	const S_ISSUE_UPDATED = '% adj% by% उपयोगकर्ता%% time%;';
-	const S_ISSUE_STATUS_UPDATED = '%%%%% से% स्टेटस% में अपडेट की गई स्थिति';
+	const S_ISSUE_CREATED = '%user% %time%';
+	const S_ISSUE_UPDATED = '%adj% by %user% %time%';
+	const S_ISSUE_STATUS_UPDATED = '%user% %time% से %status% में अपडेट की गई स्थिति';
 
-	const S_RSS_ISSUE_UPDATED = '% adj%%%%%;';
-	const S_RSS_ISSUE_STATUS_UPDATED = '%%% द्वारा स्थिति "% स्थिति% में अपडेट की गई।';
+	const S_RSS_ISSUE_UPDATED = '%adj% %user%';
+	const S_RSS_ISSUE_STATUS_UPDATED = '%user% द्वारा स्थिति "%status%" में अपडेट की गई।';
 
 	const S_INTRO_INSTALL = 'ऐसा लग रहा है कि आप पहली बार phpmyBugs चलाते हैं! कृपया इसे कॉन्फ़िगर करें: ';
 	const S_FIRST_ISSUE_TITLE = 'आप कैसे कर रहे हैं, कद्दू?';
@@ -121,34 +121,34 @@ class Trad {
 
 	const S_NO_USER = 'कोई भी उपयोगकर्ता आपके अनुरोध से मेल नहीं खाता है।';
 	const S_NO_ISSUE = 'कोई समस्या आपके अनुरोध से मेल नहीं खाती है।';
-	const S_MATCHING_ISSUES = '% nb% मिलान समस्याएँ';
+	const S_MATCHING_ISSUES = '%nb% मिलान समस्याएँ';
 	const S_NO_ACTIVITY = 'हाल की कोई गतिविधि नहीं।';
 	const S_NO_UPLOAD = 'कोई अपलोड नहीं।';
-	const S_SIZE_REMAINING = '% कुल अनुमत%% पर% शेष रहे।';
+	const S_SIZE_REMAINING = '%total% पर %remain% रहे।';
 	const S_NO_PROJECT = 'कोई परियोजना नहीं।';
 
 	const S_SEARCH = '# 12, @user, शब्द ...';
-	const S_COPYRIGHT = '% नाम% द्वारा संचालित';
+	const S_COPYRIGHT = '%name% द्वारा संचालित';
 
 	const S_LAST_UPDATES = 'अंतिम अपडेट ...';
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> त्रुटि: </ strong> निर्देशिका "नाम%" बनाने में असमर्थ।';
-	const A_ERROR_FILE = '<strong> त्रुटि: </ strong> फ़ाइल "% नाम%" पढ़ने में असमर्थ';
-	const A_ERROR_FILE_WRITE = '<strong> त्रुटि: </ strong> फ़ाइल "नाम%%" लिखने में असमर्थ';
+	const A_ERROR_DIRECTORY = '<strong> त्रुटि: </strong> निर्देशिका "%name%" बनाने में असमर्थ।';
+	const A_ERROR_FILE = '<strong> त्रुटि: </strong> फ़ाइल "%name%" पढ़ने में असमर्थ';
+	const A_ERROR_FILE_WRITE = '<strong> त्रुटि: </strong> फ़ाइल "%name%" लिखने में असमर्थ';
 	const A_ERROR_FATAL = 'क्षमा करें, कुछ गलत हुआ। अगर यह समस्या बनी रहती तो एक व्यवस्थापक से संपर्क करें।';
-	const A_ERROR = '<strong>% शीर्षक%: </ strong> <br />% संदेश% <br /> <br /> फ़ाइल "<strong>% फ़ाइल% </ strong>" ऑन लाइन < strong>% पंक्ति% </ strong> ';
+	const A_ERROR = '<strong>%title%: </ strong> <br />%message% <br /> <br /> फ़ाइल "<strong>%file% </ strong>" लाइन पर <strong>%line% </ strong>';
 
-	const A_SUCCESS_INSTALL = '<strong> संपन्न: </ strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
-	const A_ERROR_INSTALL = '<strong> त्रुटि: </ strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें। ';
+	const A_SUCCESS_INSTALL = '<strong> संपन्न:</strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
+	const A_ERROR_INSTALL = '<strong> त्रुटि: </strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें। ';
 	const A_MODIF_SAVED = 'संशोधन सहेजे गए थे';
 
 	const A_ERROR_FORM = 'एक त्रुटि हुई। कृपया दोबारा फॉर्म भेजें। ';
 	const A_ERROR_TOKEN = 'गलत टोकन। कृपया दोबारा फॉर्म भेजें। ';
 	const A_ERROR_EMPTY = 'आपको एक उपयोगकर्ता नाम और एक पासवर्ड निर्दिष्ट करना होगा।';
 	const A_ERROR_SAME_USERNAME = 'यह उपयोगकर्ता नाम उपलब्ध नहीं है।';
-	const A_SUCCESS_SIGNUP = '<strong> संपन्न: </ strong> अब आप लॉग इन कर सकते हैं;';
+	const A_SUCCESS_SIGNUP = '<strong> संपन्न: </strong> अब आप लॉग इन कर सकते हैं;';
 
 	const A_CONFIRM_DELETE_COMMENT = 'क्या आप वाकई इस टिप्पणी को हटाना चाहते हैं?';
 	const A_SUCCESS_DELETE_COMMENT = 'टिप्पणी हटा दी गई थी';
@@ -160,12 +160,12 @@ class Trad {
 	const A_LOGGED = 'अब आप सिस्टम में लॉग इन हैं।';
 	const A_LOGGED_OUT = 'अब आप सिस्टम से लॉग आउट हो गए हैं।';
 	const A_ERROR_CONNEXION = '<strong> त्रुटि: </strong> गलत उपयोगकर्ता नाम या पासवर्ड';
-	const A_ERROR_CONNEXION_WAIT = '<strong> त्रुटि: </ strong> गलत उपयोगकर्ता नाम या पासवर्ड। कृपया पुनः प्रयास करने से पहले% अवधि%%% प्रतीक्षा करें; ';
-	const A_ERROR_LOGIN_WAIT = 'कृपया पुनः प्रयास करने से पहले% अवधि%%% प्रतीक्षा करें। यह दुर्भावनापूर्ण हमलों के खिलाफ एक सुरक्षा है।';
+	const A_ERROR_CONNEXION_WAIT = '<strong> त्रुटि: </strong> गलत उपयोगकर्ता नाम या पासवर्ड। कृपया पुनः प्रयास करने से पहले %duration% %period% प्रतीक्षा करें';
+	const A_ERROR_LOGIN_WAIT = 'कृपया पुनः प्रयास करने से पहले%duration% %period% प्रतीक्षा करें। यह दुर्भावनापूर्ण हमलों के खिलाफ एक सुरक्षा है।';
 
 	const A_ERROR_UPLOAD = 'एक त्रुटि हुई। कृपया पुन: प्रयास करें।';
-	const A_ERROR_UPLOAD_SIZE = 'फ़ाइल अधिकतम अनुमत आकार (% nb% अधिकतम) से अधिक है।';
-	const A_ERROR_UPLOAD_FULL = 'इस फ़ाइल को अपलोड करने के लिए आपके पास पर्याप्त डिस्क स्थान नहीं है:% nb% शेष;';
+	const A_ERROR_UPLOAD_SIZE = 'फ़ाइल अधिकतम अनुमत आकार (%nb% अधिकतम) से अधिक है।';
+	const A_ERROR_UPLOAD_FULL = 'इस फ़ाइल को अपलोड करने के लिए आपके पास पर्याप्त डिस्क स्थान नहीं है: %nb% शेष;';
 
 	const A_PLEASE_LOGIN_ISSUES = 'कृपया मुद्दों को देखने के लिए लॉग इन करें।';
 	const A_PLEASE_LOGIN_COMMENT = 'कृपया टिप्पणी पोस्ट करने के लिए लॉग इन करें। अभी तक कोई खाता नहीं है? एक बनाएँ: यह मुफ़्त है और वास्तव में तेज़ है! ';
@@ -176,11 +176,11 @@ class Trad {
 
 		# Mails
 
-	const M_NEW_COMMENT_O = '[% शीर्षक% -% परियोजना% - अंक #% आईडी%] नई टिप्पणी';
-	const M_NEW_COMMENT = 'हाय,% उपयोगकर्ता नाम%!
+	const M_NEW_COMMENT_O = '[%title% - %project% - अंक #%id%] नई टिप्पणी';
+	const M_NEW_COMMENT = 'हाय, %username%!
 
-	% #% Id - "% सारांश%" मुद्दे पर%% द्वारा टिप्पणी की गई है। आप नई टिप्पणी यहां पढ़ सकते हैं:
-	% यूआरएल%।
+	#%Id% - "%summary%" मुद्दे पर %by% द्वारा टिप्पणी की गई है। आप नई टिप्पणी यहां पढ़ सकते हैं:
+	%url%.
 
 	यदि आप इस मुद्दे पर और सूचनाएं प्राप्त नहीं करना चाहते हैं, तो ऊपर दिए गए लिंक के माध्यम से एक विकल्प उपलब्ध है (लॉग इन करने के बाद)।
 
@@ -188,11 +188,11 @@ class Trad {
 	यह एक स्वचालित ईमेल है, कृपया उत्तर न दें।
 	';
 
-	const M_NEW_ISSUE_O = '[% शीर्षक% -% परियोजना%] नया मुद्दा';
-	const M_NEW_ISSUE = 'हाय,% उपयोगकर्ता नाम%!
+	const M_NEW_ISSUE_O = '[%title% - %project%] नया मुद्दा';
+	const M_NEW_ISSUE = 'हाय, %username%!
 
-	% #% Id - "% सारांश%" अंक% द्वारा% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
-	% यूआरएल%।
+	% #%Id% - "%सारांश%" अंक %by% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
+	%url%.
 
 	यदि आप इस मुद्दे पर और सूचनाएं प्राप्त नहीं करना चाहते हैं, तो ऊपर दिए गए लिंक के माध्यम से एक विकल्प उपलब्ध है (लॉग इन करने के बाद)।
 
@@ -227,13 +227,13 @@ class Trad {
 	const F_URL = 'Url:';
 	const F_URL_REWRITING = 'यूआरएल पुनर्लेखन:';
 	const F_INTRO = 'परिचय:';
-	const F_DESCRIPTION = 'विवरण:';
+	const F_DESCRIPTION = 'description:';
 	const F_EMAIL = 'ईमेल:';
 	const F_MAX_UPLOAD = 'अधिकतम आकार प्रति अपलोड:';
 	const F_ALLOCATED_SPACE = 'प्रति उपयोगकर्ता आवंटित स्थान:';
 	const F_GROUP = 'समूह:';
 	const F_NOTIFICATIONS = 'अधिसूचित किया जाए:';
-	const F_PROJECT_X = 'प्रोजेक्ट "% नाम%":';
+	const F_PROJECT_X = 'प्रोजेक्ट "%name%":';
 	const F_LANGUAGE = 'भाषा:';
 	const F_LOGS = 'लॉग्स:';
 
@@ -284,7 +284,7 @@ class Trad {
 
 	const F_TIP_NAME = 'यह प्रत्येक पृष्ठ के शीर्षलेख पर प्रदर्शित होगा।'
 	const F_TIP_URL_REWRITING = 'url पुनर्लेखन को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इसमें phpmyBugs फ़ोल्डर के लिए पथ होना चाहिए (शुरू और एक "/" के साथ समाप्त), डोमेन नाम के सापेक्ष; ';
-	const F_TIP_INTRO = 'यह होम पेज पर प्रदर्शित होगा। इसे मार्कडाउन सिंटैक्स के साथ पार्स किया जाएगा। नोट: यदि "% नाम%" नाम की केवल एक परियोजना है, तो मुखपृष्ठ स्वचालित रूप से प्रोजेक्ट डैशबोर्ड पर पुनर्निर्देशित हो जाता है, और यह पाठ प्रदर्शित नहीं होगा। ';
+	const F_TIP_INTRO = 'यह होम पेज पर प्रदर्शित होगा। इसे मार्कडाउन सिंटैक्स के साथ पार्स किया जाएगा। नोट: यदि “%name%” नाम की केवल एक परियोजना है, तो मुखपृष्ठ स्वचालित रूप से प्रोजेक्ट डैशबोर्ड पर पुनर्निर्देशित हो जाता है, और यह पाठ प्रदर्शित नहीं होगा। ';
 	const F_TIP_EMAIL = 'ईमेल सूचनाओं को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इस पते का उपयोग ईमेल अधिसूचना भेजते समय प्रेषक के रूप में किया जाएगा। ';
 	const F_TIP_PASSWORD = 'यदि आप पासवर्ड बदलना नहीं चाहते हैं तो इसे खाली छोड़ दें;';
 	const F_TIP_USER_EMAIL = 'केवल तभी यदि आप सूचनाएं प्राप्त करना चाहते हैं।';
@@ -309,24 +309,24 @@ class Trad {
 	एक नया पैराग्राफ बनाए बिना एक नई लाइन शुरू करने के लिए:
 	लाइन ब्रेक से पहले 2 रिक्त स्थान डालें, जैसे यहाँ। </ code> </ pre>
 	<P> जोर: </ p>
-	<pre> <code class = "blank no-highlight"> * इटैलिक टेक्स्ट *
+	<pre> <code class="blank no-highlight"> * इटैलिक टेक्स्ट *
 	_ पाठ फिर से_
 
 	**बोल्ड अक्षर**
 	__बॉल्ड टेक्स्ट फिर से </ code> </ pre>
 
 	<P> लिंक: </ p>
-	<pre> <code class = "blank no-highlight"> यह इनलाइन लिंक है [एक उदाहरण] (http://example.com)।
+	<pre> <code class="blank no-highlight"> यह इनलाइन लिंक है [एक उदाहरण] (http://example.com)।
 	यह एक और है: & lt; http: //example.com&gt;; </ code> </ pre>
 
 	<P> चित्र: </ p>
 	<pre> <code class = "blank no-highlight">! [मैं एक छवि हूं।] (http://example.com/image.png) </ code> </ pre>
 
 	<P> हेडर: </ p>
-	<pre> <code class = "blank no-highlight"> # शीर्ष स्तर का शीर्षक
+	<pre> <code class = "blank no-highlight"> # शीर्ष स्तर का title
 	## दूसरे स्तर का खिताब
 	### तीसरे स्तर का खिताब
-	#### चौथे स्तर का शीर्षक </ code> </ pre>
+	#### चौथे स्तर का title </ code> </ pre>
 
 	<P> सूची: </ p>
 	<pre> <code class = "blank no-highlight"> - एक आइटम
@@ -342,81 +342,81 @@ class Trad {
 
 	<p> कोड ब्लॉक: </ p>
 	<pre> <code class = "blank no-highlight"> यह एक `इनलाइन कोड ब्लॉक` है। </ code> </ b>
-	<pre> <code class = "blank no-highlight"> & lt; php echo "मैं एक कोड ब्लॉक हूं, क्योंकि मैं इंडेंटेड हूं
-		4 स्थानों के साथ "; & gt; </ code> </ pre>
+	<pre> <code class="blank no-highlight"> &lt;?php echo "मैं एक कोड ब्लॉक हूं, क्योंकि मैं इंडेंटेड हूं
+		4 स्थानों के साथ "; ?&gt; </ code> </ pre>
 	<pre> <code class = "blank no-highlight"> `` `
-	& lt;; php गूंज "मैं एक कोड ब्लॉक हूं।" ? & Gt;
-	`` `
+	&lt;?php गूंज "मैं एक कोड ब्लॉक हूं।" ?&gt;
+	```
 
-	`` `Php
-	& lt; php echo "समर्थित भाषाएं हैं: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ? & Gt;
-	`` `</ Code> </ pre>
+	```Php
+	&lt;?php echo "समर्थित भाषाएं हैं: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
+	```</ Code> </ pre>
 	';
 
 	private static $permissions = array(
-		'घर' => सरणी (
-		'शीर्षक' => 'घर:',
-		'विवरण' => 'होम पेज पर पहुँच सकते हैं।'
+		'home' => array (
+		'title' => 'घर:',
+		'description' => 'होम पेज पर पहुँच सकते हैं।'
 		),
-		'डैशबोर्ड' => सरणी (
-		'शीर्षक' => 'डैशबोर्ड:',
-		'विवरण' => 'प्रोजेक्ट डैशबोर्ड तक पहुंच सकता है।'
+		'dashboard' => array (
+		'title' => 'डैशबोर्ड:',
+		'description' => 'प्रोजेक्ट डैशबोर्ड तक पहुंच सकता है।'
 		),
-		'मुद्दों' => सरणी (
-		'शीर्षक' => 'मुद्दे देखें:',
-		'विवरण' => 'सार्वजनिक मुद्दों को देख सकते हैं।'
+		'issues' => array (
+		'title' => 'मुद्दे देखें:',
+		'description' => 'सार्वजनिक मुद्दों को देख सकते हैं।'
 		),
-		'Private_issues' => सरणी (
-		'शीर्षक' => 'निजी मुद्दे देखें:',
-		'विवरण' => 'निजी के रूप में टैग किए गए मुद्दों को देख सकते हैं।'
+		'Private_issues' => array (
+		'title' => 'निजी मुद्दे देखें:',
+		'description' => 'निजी के रूप में टैग किए गए मुद्दों को देख सकते हैं।'
 		),
-		'खोज' => सरणी (
-		'शीर्षक' => 'खोज:',
-		'विवरण' => 'मुद्दों या उपयोगकर्ताओं को खोज सकते हैं।'
+		'search' => array (
+		'title' => 'खोज:',
+		'description' => 'मुद्दों या उपयोगकर्ताओं को खोज सकते हैं।'
 		),
-		'new_issue' => सरणी (
-		'शीर्षक' => 'नया अंक:',
-		'विवरण' => 'एक नया मुद्दा प्रस्तुत कर सकते हैं।'
+		'new_issue' => array (
+		'title' => 'नया अंक:',
+		'description' => 'एक नया मुद्दा प्रस्तुत कर सकते हैं।'
 		),
-		'edit_issue' => सरणी (
-		'शीर्षक' => 'मुद्दों को संपादित करें:',
-		'विवरण' => 'सभी मुद्दों के पाठ को संपादित कर सकते हैं और उन्हें हटा सकते हैं।'
+		'edit_issue' => array (
+		'title' => 'मुद्दों को संपादित करें:',
+		'description' => 'सभी मुद्दों के पाठ को संपादित कर सकते हैं और उन्हें हटा सकते हैं।'
 		),
-		'update_issue' => सरणी (
-		'शीर्षक' => 'अद्यतन समस्याएँ:',
-		'विवरण' => 'मुद्दों को अद्यतन कर सकते हैं: स्थिति बदलें, लेबल जोड़ें, बंद करें और फिर से खोलें, ...'
+		'update_issue' => array (
+		'title' => 'अद्यतन समस्याएँ:',
+		'description' => 'मुद्दों को अद्यतन कर सकते हैं: स्थिति बदलें, लेबल जोड़ें, बंद करें और फिर से खोलें, ...'
 		),
 		'post_comment' => array (
-		'शीर्षक' => 'एक टिप्पणी पोस्ट करें:',
-		'विवरण' => 'टिप्पणी पोस्ट कर सकते हैं।'
+		'title' => 'एक टिप्पणी पोस्ट करें:',
+		'description' => 'टिप्पणी पोस्ट कर सकते हैं।'
 		),
 		'edit_comment' => array (
-		'शीर्षक' => 'टिप्पणी संपादित करें:',
-		'विवरण' => 'सभी टिप्पणियों को संपादित कर सकते हैं (उपयोगकर्ता वैसे भी अपनी टिप्पणियों को संपादित कर सकते हैं)।'
+		'title' => 'टिप्पणी संपादित करें:',
+		'description' => 'सभी टिप्पणियों को संपादित कर सकते हैं (उपयोगकर्ता वैसे भी अपनी टिप्पणियों को संपादित कर सकते हैं)।'
 		),
-		'view_user' => सरणी (
-		'शीर्षक' => 'उपयोगकर्ता प्रोफ़ाइल:',
-		'विवरण' => 'सभी उपयोगकर्ता प्रोफ़ाइल देख सकते हैं।'
+		'view_user' => array (
+		'title' => 'उपयोगकर्ता प्रोफ़ाइल:',
+		'description' => 'सभी उपयोगकर्ता प्रोफ़ाइल देख सकते हैं।'
 		),
-		'अपलोड' => सरणी (
-		'शीर्षक' => 'एक फ़ाइल पोस्ट करें:',
-		'विवरण' => 'किसी टिप्पणी या किसी नए मुद्दे पर फ़ाइलें संलग्न कर सकते हैं।'
+		'upload' => array (
+		'title' => 'एक फ़ाइल पोस्ट करें:',
+		'description' => 'किसी टिप्पणी या किसी नए मुद्दे पर फ़ाइलें संलग्न कर सकते हैं।'
 		),
-		'view_upload' => सरणी (
-		'शीर्षक' => 'अपलोड देखें:',
-		'विवरण' => 'सभी अपलोड की गई फ़ाइलों तक पहुँच प्राप्त कर सकते हैं।'
+		'view_upload' => array (
+		'title' => 'अपलोड देखें:',
+		'description' => 'सभी अपलोड की गई फ़ाइलों तक पहुँच प्राप्त कर सकते हैं।'
 		),
-		'सेटिंग' => सरणी (
-		'शीर्षक' => 'सेटिंग बदलें:',
-		'विवरण' => 'इस पृष्ठ पर पहुँच सकते हैं और सभी वैश्विक सेटिंग्स को संशोधित कर सकते हैं।'
+		'settings' => array (
+		'title' => 'सेटिंग बदलें:',
+		'description' => 'इस पृष्ठ पर पहुँच सकते हैं और सभी वैश्विक सेटिंग्स को संशोधित कर सकते हैं।'
 		),
-		'साइनअप' => सरणी (
-		'शीर्षक' => 'साइन अप:',
-		'विवरण' => 'साइन अप कर सकते हैं।'
+		'signup' => array (
+		'title' => 'साइन अप:',
+		'description' => 'साइन अप कर सकते हैं।'
 		),
 		'view_errors' => array (
-		'शीर्षक' => 'घातक त्रुटियां देखें:',
-		'विवरण' => 'घातक त्रुटियों का वर्णन देख सकते हैं।'
+		'title' => 'घातक त्रुटियां देखें:',
+		'description' => 'घातक त्रुटियों का वर्णन देख सकते हैं।'
 		)
 	);
 
@@ -438,7 +438,7 @@ class Trad {
 
 	public static function settings($id) {
 		return self::$settings[$id];
-	};
+	}
 
 	private static $errors = array(
 		E_ERROR => 'घातक त्रुटि',
@@ -447,7 +447,7 @@ class Trad {
 		E_NOTICE => 'सूचना',
 		E_STRICT => 'सलाह',
 		E_DEPRECated => 'पदावनत',
-		'डिफ़ॉल्ट' => 'त्रुटि'
+		'default' => 'त्रुटि'
 	);
 	
 	public static function errors($no) {
