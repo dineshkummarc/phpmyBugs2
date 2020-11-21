@@ -51,6 +51,7 @@ define('FILE_CONFIG', 'config.php');
 define('FILE_USERS', 'users.php');
 define('FILE_UPLOADS', 'uploads.php');
 define('FILE_ISSUES', 'issues.php');
+define('DIR_THEMES', 'dirname(__FILE__).'/public/themes/');
 
 ### Standart settings
 define('DEFAULT_COLOR', '#333333');
