@@ -62,13 +62,13 @@ phpmyBugs doesn't support IE 6 & 7. It requires JavaScript to work properly.
 Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
 
 ###Versions
--[x] v0.3 -> initial by Pierre Monchalin
--[x] v0.4 -> New Colors for the Design
--[x] v0.5 -> New Language de_DE
--[x] v0.6 -> New LAnguage hi_IN
--[ ] v0.7 -> New Language ru_RU
--[ ] v0.8 -> New Themes selecction
--[ ] v0.9 -> Language Switch and selecction
+- [x] v0.3 -> initial by Pierre Monchalin
+- [x] v0.4 -> New Colors for the Design
+- [x] v0.5 -> New Language de_DE
+- [x] v0.6 -> New LAnguage hi_IN
+- [ ] v0.7 -> New Language ru_RU
+- [ ] v0.8 -> New Themes selecction
+- [ ] v0.9 -> Language Switch and selecction
 
 ## About Booby Bumpy
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
