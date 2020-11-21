@@ -37,7 +37,7 @@ define('URL', 'http://bumpy-booby.derivoile.fr');
 
 ### Languages
 define('LANGUAGES', 'english,french,dutch,hindi,russian'); # Separated by a comma
-define('DEFAULT_LANGUAGE', 'en'); # Used only during installation
+define('DEFAULT_LANGUAGE', 'english'); # Used only during installation
 
 ### Directories and files
 define('DIR_CURRENT', dirname(__FILE__).'/');
