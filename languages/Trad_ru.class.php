@@ -40,6 +40,12 @@ class Trad {
 	const W_MONTH_P = 'месяцев';
 	const W_YEAR_P = 'лет';
 	const W_DECADE_P = 'декады';
+	
+	const W_PREVIOUS = 'Предыдущий';
+	const W_NEXT = 'следующий';
+	const W_CURRENT = 'Страница %nb1% из %nb2%';
+
+	const W_NOT_LOGGED = 'Не зарегистрирован';
 
 	const W_SUSPENSION = '…';
 	const W_EXTRACT = '“%text%”';
