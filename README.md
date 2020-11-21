@@ -34,10 +34,16 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [ ] New Language supported (_ru_)
 
 ### v0.8
-- [ ] New Themes selection on dashboard
+- [ ] New Language supported (_pt_)
 
 ### v0.9
-- [ ] Language Switch and selecction
+- [ ] New Language supported (_es_)
+
+### v1.0
+- [ ] New Themes selection on dashboard
+
+### v1.1
+- [ ] Language Switch and selection
 
 To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
