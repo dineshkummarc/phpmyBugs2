@@ -21,22 +21,22 @@ Features:
 
 To get more information on v0.3 or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
-### v0.4 -> by DINESHKUMMARC
+### v0.4
 - [x] New Colors for the Design
 
-### v0.5 -> by DINESHKUMMARC
+### v0.5
 - [x] New Language de_DE
 
-### v0.6 -> by DINESHKUMMARC
+### v0.6
 - [x] New Language hi_IN
 
-### v0.7 -> by DINESHKUMMARC
+### v0.7
 - [ ] New Language ru_RU
 
-### v0.8 -> by DINESHKUMMARC
+### v0.8
 - [ ] New Themes selection on dashboard
 
-### v0.9 -> by DINESHKUMMARC
+### v0.9
 - [ ] Language Switch and selecction
 
 To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
