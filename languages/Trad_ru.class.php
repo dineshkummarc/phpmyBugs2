@@ -4,422 +4,415 @@ class Trad {
 
 		# Words
 
-	const W_ISSUE = 'Issue';
-	const W_OPEN = 'Open';
-	const W_OPENED = 'Opened';
-	const W_CLOSED = 'Closed';
-	const W_REOPENED = 'Reopened';
-	const W_COMMENTED = 'Commented';
-	const W_NOBODY = 'nobody';
-	const W_SOMEONE = 'someone';
-	const W_ENABLED = 'Enabled';
-	const W_DISABLED = 'Disabled';
-	const W_NOTFOUND = 'Not found';
-	const W_FORBIDDEN = 'Forbidden';
-	const W_MENU = 'Menu';
+	const W_ISSUE = 'Проблема';
+	const W_OPEN = 'Открыть';
+	const W_OPENED = 'Открыто';
+	const W_CLOSED = 'Закрыто';
+	const W_REOPENED = 'Открыто повторно';
+	const W_COMMENTED = 'Прокомментировал';
+	const W_NOBODY = 'никто';
+	const W_SOMEONE = 'кто-то';
+	const W_ENABLED = 'Включено';
+	const W_DISABLED = 'Отключено';
+	const W_NOTFOUND = 'Не найдено';
+	const W_FORBIDDEN = 'Запрещено';
+	const W_MENU = 'Меню';
 
-	const W_EXAMPLE = 'Example';
-	const W_HEX = 'Hex';
-	const W_RENDERING = 'Rendering';
+	const W_EXAMPLE = 'Пример';
+	const W_HEX = 'Шестнадцатеричный';
+	const W_RENDERING = 'Рендеринг';
 	const W_ID = 'ID';
-	const W_DISPLAY_NAME = 'Display name';
+	const W_DISPLAY_NAME = 'Отображаемое имя';
 	
-	const W_SECONDE = 'second';
-	const W_MINUTE = 'minute';
-	const W_HOUR = 'hour';
-	const W_DAY = 'day';
-	const W_WEEK = 'week';
-	const W_MONTH = 'month';
-	const W_YEAR = 'year';
-	const W_DECADE = 'decad';
-	const W_SECONDE_P = 'seconds';
-	const W_MINUTE_P = 'minutes';
-	const W_HOUR_P = 'hours';
-	const W_DAY_P = 'days';
-	const W_WEEK_P = 'weeks';
-	const W_MONTH_P = 'months';
-	const W_YEAR_P = 'years';
-	const W_DECADE_P = 'decads';
-
-	const W_PREVIOUS = 'Previous';
-	const W_NEXT = 'Next';
-	const W_CURRENT = 'Page %nb1% of %nb2%';
-
-	const W_NOT_LOGGED = 'Not logged';
+	const W_SECONDE = 'второй';
+	const W_MINUTE = 'минута';
+	const W_HOUR = 'час';
+	const W_DAY = 'день';
+	const W_WEEK = 'неделя';
+	const W_MONTH = 'месяц';
+	const W_YEAR = 'год';
+	const W_DECADE = 'декада';
+	const W_SECONDE_P = 'секунды';
+	const W_MINUTE_P = 'минут';
+	const W_HOUR_P = 'часы';
+	const W_DAY_P = 'дни';
+	const W_WEEK_P = 'недели';
+	const W_MONTH_P = 'месяцев';
+	const W_YEAR_P = 'лет';
+	const W_DECADE_P = 'декады';
 
 	const W_SUSPENSION = '…';
 	const W_EXTRACT = '“%text%”';
 
-	const W_USER = 'User';
-	const W_DEVELOPPER = 'Developer';
-	const W_SUPERUSER = 'Superuser';
-	const W_S_NEW = 'New';
-	const W_S_CONFIRMED = 'Confirmed';
-	const W_S_ASSIGNED = 'Assigned to %user%';
-	const W_S_RESOLVED = 'Resolved';
-	const W_S_REJECTED = 'Rejected';
-	const W_L_URGENT = 'Urgent';
-	const W_L_IMPROVEMENT = 'Improvement';
-	const W_L_PRIVATE = 'Private';
+	const W_USER = 'Пользователь';
+	const W_DEVELOPPER = 'Разработчик';
+	const W_SUPERUSER = 'Суперпользователь';
+	const W_S_NEW = 'Новый';
+	const W_S_CONFIRMED = 'Подтверждено';
+	const W_S_ASSIGNED = 'Назначено %user%';
+	const W_S_RESOLVED = 'Решено';
+	const W_S_REJECTED = 'Отклонено';
+	const W_L_URGENT = 'Срочно';
+	const W_L_IMPROVEMENT = 'Улучшение';
+	const W_L_PRIVATE = 'Частный';
 
-	const W_PROFILEPIC = 'profile picture';
+	const W_PROFILEPIC = 'изображение профиля';
 
-	const W_RSS = 'RSS feed';
+    const W_RSS = 'RSS-канал';
 
 		# Verbes
 
-	const V_UPDATE = 'Update';
-	const V_UPDATE_DETAILS = 'Update details';
-	const V_UPDATE_CONTENT = 'Update content';
-	const V_UPDATE_AND = 'Update & %adjective%';
-	const V_CANCEL = 'Cancel';
-	const V_PREVIEW = 'Preview';
-	const V_COMMENT = 'Comment';
-	const V_SUBMIT = 'Submit';
-	const V_SELECT_FILE = 'Select a file…';
-	const V_UPLOADING = 'Uploading…';
-	const V_SAVE_CONFIG = 'Save settings';
-	const V_APPLY = 'Apply';
-	const V_EDIT = 'Edit';
-	const V_SIGNUP = 'Sign up';
-	const V_CONTINUE = 'Continue';
-	const V_REMOVE_ISSUE = 'Delete issue';
-	const V_CLOSE = 'close';
-	const V_REOPEN = 'reopen';
-	const V_EXPORT = 'Export raw data';
+	const V_UPDATE = 'Обновить';
+	const V_UPDATE_DETAILS = 'Обновить детали';
+	const V_UPDATE_CONTENT = 'Обновить содержимое';
+	const V_UPDATE_AND = 'Обновить & %adjective%';
+	const V_CANCEL = 'Отменить';
+	const V_PREVIEW = 'Предварительный просмотр';
+	const V_COMMENT = 'Комментарий';
+	const V_SUBMIT = 'Отправить';
+	const V_SELECT_FILE = 'Выбрать файл…';
+	const V_UPLOADING = 'Загрузка…';
+	const V_SAVE_CONFIG = 'Сохранить настройки';
+	const V_APPLY = 'Применить';
+	const V_EDIT = 'Редактировать';
+	const V_SIGNUP = 'Зарегистрироваться';
+	const V_CONTINUE = 'Продолжить';
+	const V_REMOVE_ISSUE = 'Удалить проблему';
+	const V_CLOSE = 'закрыть';
+	const V_REOPEN = 'открыть заново';
+	const V_EXPORT = 'Экспорт сырых данных';
 
 		# Sentencies
 
 	const S_NOLABEL = '–';
 	const S_NODEPENDENCY = '–';
-	const S_COMMENT_LEAVE = 'Leave a comment:';
+	const S_COMMENT_LEAVE = 'Оставить комментарий:';
 	const S_AGO = '%duration% %pediod% ago';
-	const S_ISSUE_ABOUT = 'About this issue:';
-	const S_UPLOAD_ADD = 'Attach a file:';
-	const S_WELCOME = 'Welcome, %user%';
-	const S_NEVER = 'Never';
-	const S_ME = 'Of updates on issues I have contributed in';
-	const S_ALWAYS = 'Of each updates';
-	const S_START_NOTIF = 'Be notified of new updates';
-	const S_STOP_NOTIF = 'No longer be notified of updates';
-	const S_NOTFOUND = 'The page you\'re looking for does not exist anymore...';
-	const S_FORBIDDEN = 'You are not allowed to access this page. Please log in/out to continue.';
+	const S_ISSUE_ABOUT = 'Об этой проблеме:';
+	const S_UPLOAD_ADD = 'Прикрепить файл:';
+	const S_WELCOME = 'Добро пожаловать,%user%';
+	const S_NEVER = 'Никогда';
+	const S_ME = 'Из обновлений по вопросам, в которых я участвовал';
+	const S_ALWAYS = 'Каждого обновления';
+	const S_START_NOTIF = 'Получать уведомления о новых обновлениях';
+	const S_STOP_NOTIF = 'Больше не получать уведомления об обновлениях';
+	const S_NOTFOUND = 'Страница, которую вы ищете, больше не существует ...';
+	const S_FORBIDDEN = 'У вас нет доступа к этой странице. Пожалуйста, войдите / выйдите, чтобы продолжить.';
 
-	const S_VIEW_PARTICIPATION = 'View his participation.';
-	const S_VIEW_STATUS = 'View issues “%status%”.';
+	const S_VIEW_PARTICIPATION = 'Посмотреть его участие.';
+    const S_VIEW_STATUS = 'Просмотреть проблемы “%status%”.';
 
-	const S_ISSUE_CREATED = 'by %user% %time%';
+	const S_ISSUE_CREATED = 'поль %user% %time%';
 	const S_ISSUE_UPDATED = '%adj% by %user% %time%.';
-	const S_ISSUE_STATUS_UPDATED = 'Status updated to %status% by %user% %time%.';
+	const S_ISSUE_STATUS_UPDATED = 'Статус обновлен до %status% %user% %time%.';
 
-	const S_RSS_ISSUE_UPDATED = '%adj% by %user%.';
-	const S_RSS_ISSUE_STATUS_UPDATED = 'Status updated to “%status%” by %user%.';
+	const S_RSS_ISSUE_UPDATED = '%adj% от %user%.';
+	const S_RSS_ISSUE_STATUS_UPDATED = 'Статус обновлен до %status% %user%.';
 
-	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run phpmyBugs! Please configure it:';
-	const S_FIRST_ISSUE_TITLE = 'How are you doing, pumpkin?';
-	const S_FIRST_ISSUE = 'I am your first issue! After logging, you will be able to delete me.';
+	const S_INTRO_INSTALL = 'Похоже, вы впервые запускаете phpmyBugs! Пожалуйста, настройте его:';
+	const S_FIRST_ISSUE_TITLE = 'Как дела, тыква?';
+	const S_FIRST_ISSUE = 'Я твоя первая проблема! После входа вы сможете удалить меня.';
 
-	const S_NO_USER = 'No user matches your request.';
-	const S_NO_ISSUE = 'No issue matches your request.';
-	const S_MATCHING_ISSUES = '%nb% matching issues';
-	const S_NO_ACTIVITY = 'No recent activity.';
-	const S_NO_UPLOAD = 'No upload.';
-	const S_SIZE_REMAINING = '%remain% remaining on the %total% allowed.';
-	const S_NO_PROJECT = 'No project.';
+	const S_NO_USER = 'Ни один пользователь не соответствует вашему запросу.';
+	const S_NO_ISSUE = 'Нет проблем, соответствующих вашему запросу.';
+	const S_MATCHING_ISSUES = '%nb% проблем сопоставления';
+	const S_NO_ACTIVITY = 'Нет недавних действий.';
+	const S_NO_UPLOAD = 'Нет загрузки.';
+	const S_SIZE_REMAINING = '%remain% от разрешенного %total%.';
+	const S_NO_PROJECT = 'Нет проекта.';
 
-	const S_SEARCH = '#12, @user, words…';
-	const S_COPYRIGHT = 'Powered by %name%.';
+	const S_SEARCH = '# 12, @user, words…';
+	const S_COPYRIGHT = 'На основе %name%.';
 
-	const S_LAST_UPDATES = 'Last updates…';
+	const S_LAST_UPDATES = 'Последние обновления…';
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong>Error:</strong> unable to create directory “%name%”.';
-	const A_ERROR_FILE = '<strong>Error:</strong> unable to read file “%name%”.';
-	const A_ERROR_FILE_WRITE = '<strong>Error:</strong> unable to write file “%name%”.';
-	const A_ERROR_FATAL = 'Sorry, something went wrong. Please contact an administrator if this problem persists.';
-	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />File “<strong>%file%</strong>” on line <strong>%line%</strong>.';
+	const A_ERROR_DIRECTORY = '<strong> Ошибка: </strong> не удалось создать каталог “%name%”.';
+	const A_ERROR_FILE = '<strong> Ошибка: </strong> невозможно прочитать файл “%name%”.';
+	const A_ERROR_FILE_WRITE = '<strong> Ошибка: </strong> не удалось записать файл “%name%”.';
+	const A_ERROR_FATAL = 'К сожалению, что-то пошло не так. Если проблема не исчезнет, обратитесь к администратору. ';
+	const A_ERROR = '<strong>%title%: </strong> <br /> <br />%message% <br /> <br /> Файл «<strong>%file% </strong>» в строке < strong>%line% </strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong>Done:</strong> phpmyBugs is now completely configured.';
-	const A_ERROR_INSTALL = '<strong>Error:</strong> phpmyBugs is already configured. Please remove the config file if you want to reset the configuration.';
-	const A_MODIF_SAVED = 'Modifications were saved.';
+	const A_SUCCESS_INSTALL = '<strong> Готово: </strong> phpmyBugs полностью настроен.';
+	const A_ERROR_INSTALL = '<strong> Ошибка: </strong> phpmyBugs уже настроен. Пожалуйста, удалите файл конфигурации, если вы хотите сбросить конфигурацию. ';
+	const A_MODIF_SAVED = 'Изменения сохранены.';
 
-	const A_ERROR_FORM = 'An error occured. Please send again the form.';
-	const A_ERROR_TOKEN = 'Wrong token. Please send again the form.';
-	const A_ERROR_EMPTY = 'You have to specify a username and a password.';
-	const A_ERROR_SAME_USERNAME = 'This username is not available.';
-	const A_SUCCESS_SIGNUP = '<strong>Done:</strong> You can now log in.';
+	const A_ERROR_FORM = 'Произошла ошибка. Отправьте форму еще раз. ';
+	const A_ERROR_TOKEN = 'Неверный токен. Отправьте форму еще раз. ';
+	const A_ERROR_EMPTY = 'Вы должны указать имя пользователя и пароль.';
+	const A_ERROR_SAME_USERNAME = 'Это имя пользователя недоступно.';
+	const A_SUCCESS_SIGNUP = '<strong> Готово: </strong> теперь вы можете войти в систему.';
 
-	const A_CONFIRM_DELETE_COMMENT = 'Are you sure you want to delete this comment?';
-	const A_SUCCESS_DELETE_COMMENT = 'The comment was deleted.';
-	const A_CONFIRM_DELETE_ISSUE = 'Are you sure you want to delete this issue?';
-	const A_SUCCESS_DELETE_ISSUE = 'The issue was deleted.';
-	const A_CONFIRM_DELETE_UPLOAD = 'Are you sure you want to delete this file?';
-	const A_CONFIRM_DELETE_PROJECT = 'Are you sure you want to delete this project? All the corresponding issues will be lost.';
+	const A_CONFIRM_DELETE_COMMENT = 'Вы уверены, что хотите удалить этот комментарий?';
+	const A_SUCCESS_DELETE_COMMENT = 'Комментарий удален.';
+	const A_CONFIRM_DELETE_ISSUE = 'Вы уверены, что хотите удалить эту проблему?';
+	const A_SUCCESS_DELETE_ISSUE = 'Проблема удалена.';
+	const A_CONFIRM_DELETE_UPLOAD = 'Вы уверены, что хотите удалить этот файл?';
+	const A_CONFIRM_DELETE_PROJECT = 'Вы уверены, что хотите удалить этот проект? Все соответствующие выпуски будут потеряны.';
 
-	const A_LOGGED = 'You are now logged into the System.';
-	const A_LOGGED_OUT = 'You are now logged out from the System.';
-	const A_ERROR_CONNEXION = '<strong>Error:</strong> Wrong username or password.';
-	const A_ERROR_CONNEXION_WAIT = '<strong>Error:</strong> Wrong username or password. Please wait %duration% %period% before trying again.';
-	const A_ERROR_LOGIN_WAIT = 'Please wait %duration% %period% before trying again. This a protection against malicious attacks.';
+	const A_LOGGED = 'Вы вошли в Систему.';
+	const A_LOGGED_OUT = 'Вы вышли из системы.';
+	const A_ERROR_CONNEXION = '<strong> Ошибка: </strong> неправильное имя пользователя или пароль.';
+	const A_ERROR_CONNEXION_WAIT = '<strong> Ошибка: </strong> неправильное имя пользователя или пароль. Пожалуйста, подождите %duration% %period% перед повторной попыткой.';
+	const A_ERROR_LOGIN_WAIT = 'Пожалуйста, подождите %duration% %period% перед повторной попыткой. Это защита от злонамеренных атак.';
 
-	const A_ERROR_UPLOAD = 'An error occured. Please try again.';
-	const A_ERROR_UPLOAD_SIZE = 'File exceeds the maximum allowed size (%nb% max).';
-	const A_ERROR_UPLOAD_FULL = 'You don\'t have enought disk space to upload this file : %nb% remaining.';
+	const A_ERROR_UPLOAD = 'Произошла ошибка. Пожалуйста, попробуйте еще раз.';
+	const A_ERROR_UPLOAD_SIZE = 'Файл превышает максимально допустимый размер (%nb% max).';
+	const A_ERROR_UPLOAD_FULL = 'У вас недостаточно места на диске для загрузки этого файла: осталось %nb%.';
 
-	const A_PLEASE_LOGIN_ISSUES = 'Please log in to see the issues.';
-	const A_PLEASE_LOGIN_COMMENT = 'Please log in to post a comment. No account yet? Create one: it\'s free and really fast !';
-	const A_PLEASE_LOGIN_ISSUE = 'Please log in to submit an issue. No account yet? Create one: it\'s free and really fast !';
-	const A_SHOULD_LOGIN = 'If you have an account, please log in. If not, consider creating one: it\'s free and really fast !';
+	const A_PLEASE_LOGIN_ISSUES = 'Пожалуйста, войдите в систему, чтобы увидеть проблемы.';
+	const A_PLEASE_LOGIN_COMMENT = 'Пожалуйста, авторизуйтесь, чтобы оставить комментарий. Еще нет аккаунта? Создайте один: это бесплатно и очень быстро!';
+	const A_PLEASE_LOGIN_ISSUE = 'Пожалуйста, войдите в систему, чтобы сообщить о проблеме. Еще нет аккаунта? Создайте один: это бесплатно и очень быстро!';
+	const A_SHOULD_LOGIN = 'Если у вас есть учетная запись, пожалуйста, войдите в систему. Если нет, подумайте о ее создании: это бесплатно и очень быстро!';
 
-	const A_IE = 'Your browser is obsolete: <a href="http://www.browserchoice.eu">upgrade or change it</a>.';
+	const A_IE = 'Ваш браузер устарел: <a href="http://www.browserchoice.eu"> обновите или измените его </a>.';
 
 		# Mails
 
-	const M_NEW_COMMENT_O = '[%title% — %project% — Issue #%id%] New comment';
-	const M_NEW_COMMENT = 'Hi, %username%!
+	const M_NEW_COMMENT_O = '[%title% - %project% - Issue #%id%] Новый комментарий';
+	const M_NEW_COMMENT = 'Привет, %username%!
 
-The issue #%id% — “%summary%” has just been commented by %by%. You can read the new comment here:
+	Вопрос № %id% - “%summary%” только что прокомментировал %by%. Вы можете прочитать новый комментарий здесь:
 	%url%.
 
-If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
+	Если вы не хотите получать дальнейшие уведомления по этой проблеме, вариант доступен (после входа) по ссылке выше.
 
------
-This is an automated email, please do not reply.
+	-----
+	Это автоматическое письмо, не отвечайте.
 	';
 
-	const M_NEW_ISSUE_O = '[%title% — %project%] New issue';
-	const M_NEW_ISSUE = 'Hi, %username%!
+	const M_NEW_ISSUE_O = '[%title% - %project%] Новый выпуск';
+	const M_NEW_ISSUE = 'Привет, %username%!
 
-The issue #%id% — “%summary%” has just been submited by %by%. You can read it here:
+	Вопрос №%id% - “%summary%” только что был отправлен %by%. Вы можете прочитать это здесь:
 	%url%.
 
-If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
+	Если вы не хотите получать дальнейшие уведомления по этой проблеме, вариант доступен (после входа) по ссылке выше.
 
------
-This is an automated email, please do not reply.
+	-----
+	Это автоматическое письмо, не отвечайте.
 	';
 
 		# Titles
 
-	const T_INSTALLATION = 'Installation';
-	const T_SETTINGS = 'Settings';
-	const T_GLOBAL_SETTINGS = 'Global settings';
-	const T_APPEARANCE = 'Appearance';
-	const T_ISSUES = 'Issues';
-	const T_GROUPS = 'Groups';
-	const T_USERS = 'Users';
-	const T_BROWSE_ISSUES = 'Browse issues';
-	const T_NEW_ISSUE = 'New issue';
-	const T_PROJECTS = 'Projects';
-	const T_DASHBOARD = 'Dashboard';
-	const T_LAST_UPDATES = 'Last updates';
-	const T_LAST_ACTIVITY = 'Last activity';
-	const T_UPLOADS = 'Uploads';
-	const T_SEARCH = 'Search';
-
+	const T_INSTALLATION = 'Установка';
+	const T_SETTINGS = 'Настройки';
+	const T_GLOBAL_SETTINGS = 'Глобальные настройки';
+	const T_APPEARANCE = 'Внешний вид';
+	const T_ISSUES = 'Проблемы';
+	const T_GROUPS = 'Группы';
+	const T_USERS = 'Пользователи';
+	const T_BROWSE_ISSUES = 'Просмотреть проблемы';
+	const T_NEW_ISSUE = 'Новая проблема';
+	const T_PROJECTS = 'Проекты';
+	const T_DASHBOARD = 'Панель управления';
+	const T_LAST_UPDATES = 'Последние обновления';
+	const T_LAST_ACTIVITY = 'Последнее действие';
+	const T_UPLOADS = 'Загрузки';
+	const T_SEARCH = 'Поиск';
 
 		# FORMS
 
-	const F_USERNAME = 'Username:';
-	const F_PASSWORD = 'Password:';
-	const F_USERNAME2 = 'Username';
-	const F_PASSWORD2 = 'Password';
-	const F_NAME = 'Name:';
-	const F_URL = 'Url:';
-	const F_URL_REWRITING = 'Url rewriting:';
-	const F_INTRO = 'Introduction:';
-	const F_DESCRIPTION = 'Description:';
-	const F_EMAIL = 'Email:';
-	const F_MAX_UPLOAD = 'Maximum size per upload:';
-	const F_ALLOCATED_SPACE = 'Allocated space per user:';
-	const F_GROUP = 'Group:';
-	const F_NOTIFICATIONS = 'Be notified:';
-	const F_PROJECT_X = 'Project “%name%”:';
-	const F_LANGUAGE = 'Language:';
-	const F_LOGS = 'Logs:';
+	const F_USERNAME = 'Имя пользователя:';
+	const F_PASSWORD = 'Пароль:';
+	const F_USERNAME2 = 'Имя пользователя';
+	const F_PASSWORD2 = 'Пароль';
+	const F_NAME = 'Имя:';
+	const F_URL = 'URL:';
+	const F_URL_REWRITING = 'Перезапись URL:';
+	const F_INTRO = 'Введение:';
+	const F_DESCRIPTION = 'Описание:';
+	const F_EMAIL = 'Электронная почта:';
+	const F_MAX_UPLOAD = 'Максимальный размер одной загрузки:';
+	const F_ALLOCATED_SPACE = 'Выделенное пространство на пользователя:';
+	const F_GROUP = 'Группа:';
+	const F_NOTIFICATIONS = 'Получать уведомление:';
+	const F_PROJECT_X = 'Проект “%name%”:';
+	const F_LANGUAGE = 'Язык:';
+	const F_LOGS = 'Журналы:';
 
-	const F_ISSUES_PAGE = 'Issues per page:';
-	const F_ISSUES_PAGE_SEARCH = 'Issues per page (search):';
-	const F_PREVIEW_ISSUE = 'Previews length (issues):';
-	const F_PREVIEW_SEARCH = 'Previews length (search):';
-	const F_PREVIEW_PROJECT = 'Previews length (projects):';
-	const F_LAST_EDITS = 'Number of issues displayed on dashboards:';
-	const F_LAST_ACTIVITY = 'Number of issues displayed on user pages:';
+	const F_ISSUES_PAGE = 'Вопросов на странице:';
+	const F_ISSUES_PAGE_SEARCH = 'Количество ошибок на странице (поиск):';
+	const F_PREVIEW_ISSUE = 'Длина превью (выпусков):';
+	const F_PREVIEW_SEARCH = 'Длина превью (поиск):';
+	const F_PREVIEW_PROJECT = 'Длина превью (проектов):';
+	const F_LAST_EDITS = 'Количество проблем, отображаемых на информационных панелях:';
+	const F_LAST_ACTIVITY = 'Количество проблем, отображаемых на страницах пользователей:';
 
-	const F_ADD_PROJECT = 'New project';
-	const F_ADD_COLOR = 'New color';
-	const F_ADD_STATUS = 'New status';
-	const F_ADD_LABEL = 'New label';
-	const F_ADD_GROUP = 'New group';
-	const F_ADD_USER = 'New user';
+	const F_ADD_PROJECT = 'Новый проект';
+	const F_ADD_COLOR = 'Новый цвет';
+	const F_ADD_STATUS = 'Новый статус';
+	const F_ADD_LABEL = 'Новая метка';
+	const F_ADD_GROUP = 'Новая группа';
+	const F_ADD_USER = 'Новый пользователь';
 
-	const F_SORT_BY = 'Sort by:';
+	const F_SORT_BY = 'Сортировать по:';
 	const F_SORT_ID = 'ID';
-	const F_SORT_MOD = 'last update';
-	const F_SORT_DESC = 'descending';
-	const F_SORT_ASC = 'ascending';
-	const F_FILTER_STATUSES = 'Filter statuses:';
-	const F_FILTER_STATES = 'Filter states:';
-	const F_FILTER_LABELS = 'Filter labels:';
-	const F_FILTER_USERS = 'Filter users:';
+	const F_SORT_MOD = 'последнее обновление';
+	const F_SORT_DESC = 'по убыванию';
+	const F_SORT_ASC = 'по возрастанию';
+	const F_FILTER_STATUSES = 'Статусы фильтров:';
+	const F_FILTER_STATES = 'Состояние фильтра:';
+	const F_FILTER_LABELS = 'Метки фильтра:';
+	const F_FILTER_USERS = 'Фильтровать пользователей:';
 
-	const F_WRITE = 'Write:';
-	const F_SUMMARY = 'Summary';
-	const F_CONTENT = 'Content';
+	const F_WRITE = 'Запись:';
+	const F_SUMMARY = 'Сводка';
+	const F_CONTENT = 'Контент';
 
-	const F_STATUS = 'Status:';
-	const F_RELATED = 'Related:';
-	const F_LABELS2 = 'Labels:';
+	const F_STATUS = 'Статус:';
+	const F_RELATED = 'Связано:';
+	const F_LABELS2 = 'Ярлыки:';
 
-	const F_GENERAL_SETTINGS = 'General settings:';
-	const F_PROJECTS = 'Projects:';
-	const F_DATABASE = 'Database:';
-	const F_UPLOADS = 'Uploads:';
-	const F_COLORS = 'Manage colors:';
-	const F_DISPLAY = 'Manage display :';
-	const F_STATUSES = 'Manage statuses:';
-	const F_LABELS = 'Manage labels:';
-	const F_GROUPS = 'Manage groups:';
-	const F_PERMISSIONS = 'Manage permissions:';
-	const F_USERS = 'Manage users:';
+	const F_GENERAL_SETTINGS = 'Общие настройки:';
+	const F_PROJECTS = 'Проекты:';
+	const F_DATABASE = 'База данных:';
+	const F_UPLOADS = 'Загрузки:';
+	const F_COLORS = 'Управление цветами:';
+	const F_DISPLAY = 'Управление отображением:';
+	const F_STATUSES = 'Управление статусами:';
+	const F_LABELS = 'Управление ярлыками:';
+	const F_GROUPS = 'Управление группами:';
+	const F_PERMISSIONS = 'Управление разрешениями:';
+	const F_USERS = 'Управление пользователями:';
 
-	const F_TIP_NAME = 'It will be displayed on the header of each page.';
-	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
-	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
-	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
-	const F_TIP_PASSWORD = 'Leave it empty if you don\'t want to change the password.';
-	const F_TIP_USER_EMAIL = 'Required only if you want to receive notifications.';
-	const F_TIP_NOTIFICATIONS = 'This a default setting: you will be able to change it for each issue.';
-	const F_TIP_NOTIFICATIONS_DISABLED = 'Note: notifications are currently disabled by the administrator.';
-	const F_TIP_DESCRIPTION = 'It will be displayed on the project dashboard. It will be parsed with the markdown syntax.';
+	const F_TIP_NAME = 'Он будет отображаться в заголовке каждой страницы.';
+	const F_TIP_URL_REWRITING = 'Оставьте это поле пустым, чтобы отключить перезапись URL. В противном случае он должен содержать путь к папке phpmyBugs (начинающейся и оканчивающейся знаком "/") относительно имени домена.';
+	const F_TIP_INTRO = 'Он будет отображаться на домашней странице. Он будет проанализирован с использованием синтаксиса Markdown. Примечание: если есть только один проект с именем “%name%”, домашняя страница автоматически перенаправляется на панель управления проекта, и этот текст не будет отображаться.';
+	const F_TIP_EMAIL = 'Оставьте это поле пустым, чтобы отключить уведомления по электронной почте. В противном случае этот адрес будет использоваться в качестве отправителя при отправке уведомления по электронной почте.';
+	const F_TIP_PASSWORD = 'Оставьте поле пустым, если вы не хотите менять пароль.';
+	const F_TIP_USER_EMAIL = 'Требуется, только если вы хотите получать уведомления.';
+	const F_TIP_NOTIFICATIONS = 'Это настройка по умолчанию: вы можете изменить ее для каждой проблемы.';
+	const F_TIP_NOTIFICATIONS_DISABLED = 'Примечание: уведомления в настоящее время отключены администратором.';
+	const F_TIP_DESCRIPTION = 'Он будет отображаться на панели инструментов проекта. Он будет проанализирован с использованием синтаксиса уценки.';
 
-	const F_TIP_MAX_UPLOAD = 'Each uploaded file can\'t exceed this size.';
-	const F_TIP_ALLOCATED_SPACE = 'A user can\'t upload other files once he reached this limit.<br /><em>Attention:</em> if none logged users are allowed to upload files (this is not the default setting), this limit does not apply to them.';
+	const F_TIP_MAX_UPLOAD = 'Каждый загружаемый файл не может превышать этот размер.';
+	const F_TIP_ALLOCATED_SPACE = 'Пользователь не может загружать другие файлы, когда он достиг этого предела. <br /> <em> Внимание: </em> если ни одному зарегистрированному пользователю не разрешено загружать файлы (это не настройка по умолчанию), это ограничение на них не распространяется.';
 
-	const F_TIP_ID_STATUS = '<b>Tip:</b> be careful when changing the IDs, because each issue keeps its old status ID (except if this ID does not exist anymore: in this case, the default status will be used).';
-	const F_TIP_ID_LABEL = '<b>Tip:</b> be careful when changing the IDs, because each label of one issue keeps its old ID (except if this ID does not exist anymore: in this case, the label is removed from the issue).';
-	const F_TIP_ID_GROUP = '<b>Tip:</b> be careful when changing the IDs, because each user keeps its old group ID (except if this ID does not exist anymore: in this case, the default group will be used).';
+	const F_TIP_ID_STATUS = '<b> Совет: </b> будьте осторожны при изменении идентификаторов, потому что каждая проблема сохраняет свой старый идентификатор статуса (кроме случаев, когда этот идентификатор больше не существует: в этом случае будет использоваться статус по умолчанию).';
+	const F_TIP_ID_LABEL = '<b> Совет: </b> будьте осторожны при изменении идентификаторов, потому что каждая метка одной проблемы сохраняет свой старый идентификатор (кроме случаев, когда этот идентификатор больше не существует: в этом случае метка удаляется из выпуск).';
+	const F_TIP_ID_GROUP = '<b> Совет: </b> будьте осторожны при изменении идентификаторов, потому что каждый пользователь сохраняет свой старый идентификатор группы (кроме случаев, когда этот идентификатор больше не существует: в этом случае будет использоваться группа по умолчанию).';
 
 	const HELP_MARKDOWN = '
-		<h2>Markdown syntax:</h2>
+<h2> Синтаксис Markdown: </h2>
 
-		<p>Paragraphs:</p>
-<pre><code class="blank no-highlight">Paragraphs are separated by one or more blank lines.
-That\'s why this text will be displayed in the same line that the previous phrase, no matter the line break.
+<p> Абзацы: </p>
+<pre> <code class="blank no-highlight"> Абзацы разделяются одной или несколькими пустыми строками.
+Вот почему этот текст будет отображаться в той же строке, что и предыдущая фраза, независимо от разрыва строки.
 
-To start a new line without creating a new paragraph:  
-insert 2 spaces before the line break, just like here.</code></pre>
-		<p>Emphasis:</p>
-<pre><code class="blank no-highlight">*Italic text*  
-_Itatic text again_  
+Чтобы начать новую строку без создания нового абзаца:
+вставьте два пробела перед разрывом строки, как здесь. </code> </pre>
+<p> Акцент: </p>
+<pre> <code class="blank no-highlight"> * Курсив *
+_Итатический текст снова_
 
-**Bold text**  
-__Bold text again__  </code></pre>
+**Жирный текст**
+__Жирный текст снова __ </code> </pre>
 
-		<p>Links:</p>
-<pre><code class="blank no-highlight">This is [an example](http://example.com) of inline link.  
-This is another one : &lt;http://example.com&gt;.</code></pre>
+<p> Ссылки: </p>
+<pre> <code class="blank no-highlight"> Это [пример] (http://example.com) встроенной ссылки.
+Это еще один: &lt;http://example.com&gt; </code> </pre>
 
-		<p>Images:</p>
-<pre><code class="blank no-highlight">![I am an image.](http://example.com/image.png)</code></pre>
+<p> Изображения: </p>
+<pre> <code class="blank no-highlight">! [Я изображение.] (http://example.com/image.png) </code> </pre>
 
-		<p>Headers:</p>
-<pre><code class="blank no-highlight"># Top Level title
-## Second level title
-### Third level title
-#### Fourth level title</code></pre>
+<p> Заголовки: </p>
+<pre> <code class="blank no-highlight"> # заголовок верхнего уровня
+## Название второго уровня
+### Заголовок третьего уровня
+#### Заголовок четвертого уровня </code> </pre>
 
-		<p>Lists:</p>
-<pre><code class="blank no-highlight">- one item
-* another one
+<p> Списки: </p>
+<pre> <code class="blank no-highlight"> - один элемент
+* Еще один
 
-1. first item
-2. second item</code></pre>
+1. первый пункт
+2. второй элемент </code> </pre>
 
-		<p>Blockquotes:</p>
-<pre><code class="blank no-highlight">> I am a blockquote with two paragraphs.
+<p> Цитаты: </p>
+<pre> <code class="blank no-highlight" >> Я - цитата из двух абзацев.
 >
-> I am the second paragraph.</code></pre>
+> Я второй абзац. </code> </pre>
 
-		<p>Code blocks:</p>
-<pre><code class="blank no-highlight">This is an `inline code block`.</code></pre>
-<pre><code class="blank no-highlight">    &lt;?php echo "I am a code block, because I am indented
-    with 4 spaces"; ?&gt;</code></pre>
-<pre><code class="blank no-highlight">```
-&lt;?php echo "I am a code block."; ?&gt;
+<p> Блоки кода: </p>
+<pre> <code class="blank no-highlight"> Это `встроенный блок кода`. </code> </pre>
+<pre> <code class="blank no-highlight"> &lt;?php echo "Я являюсь блоком кода, потому что у меня отступ
+    с 4 пробелами ";?&gt; </code> </pre>
+<pre> <code class = "blank no-highlight"> ```
+&lt;?php echo "Я - блок кода.";?&gt;
 ```
 
 ```php
-&lt;?php echo "Supported languages are : bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
-```</code></pre>
-	';
+&lt;?php echo "Поддерживаемые языки: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
+``` </code> </pre>
+';
 
 
 	private static $permissions = array(
-		'home' => array(
-			'title' => 'Home:',
-			'description' => 'Can access to the home page.'
+		'home' => array (
+		'title' => 'Главная:',
+		'description' => 'Может получить доступ к домашней странице.'
 		),
-		'dashboard' => array(
-			'title' => 'Dashboards:',
-			'description' => 'Can access to the projects dashboards.'
+		'dashboard' => array (
+		'title' => 'Панели мониторинга:',
+		'description' => 'Имеет доступ к панелям управления проектами.'
 		),
-		'issues' =>  array(
-			'title' => 'View issues:',
-			'description' => 'Can view public issues.'
+		'issues' => array (
+		'title' => 'Просмотреть проблемы:',
+		'description' => 'Может просматривать общедоступные вопросы.'
 		),
-		'private_issues' => array(
-			'title' => 'View private issues:',
-			'description' => 'Can view issues tagged as private.'
+		'private_issues' => array (
+		'title' => 'Просмотреть личные вопросы:',
+		'description' => 'Может просматривать проблемы, помеченные как личные.'
 		),
-		'search' => array(
-			'title' => 'Search:',
-			'description' => 'Can search issues or users.'
+		'search' => array (
+		'title' => 'Поиск:',
+		'description' => 'Может искать проблемы или пользователей.'
 		),
-		'new_issue' => array(
-			'title' => 'New issue:',
-			'description' => 'Can submit a new issue.'
+		'new_issue' => array (
+		'title' => 'Новый выпуск:',
+		'description' => 'Можно отправить новую проблему.'
 		),
-		'edit_issue' => array(
-			'title' => 'Edit issues:',
-			'description' => 'Can edit the text of all the issues and delete them.'
+		'edit_issue' => array (
+		'title' => 'Редактировать проблемы:',
+		'description' => 'Можно редактировать текст всех вопросов и удалять их.'
 		),
-		'update_issue' => array(
-			'title' => 'Update issues:',
-			'description' => 'Can update issues : change status, add labels, close and reopen, ...'
+		'update_issue' => array (
+		'title' => 'Проблемы с обновлением:',
+		'description' => 'Может обновлять проблемы: изменять статус, добавлять ярлыки, закрывать и снова открывать, ...'
 		),
-		'post_comment' => array(
-			'title' => 'Post a comment:',
-			'description' => 'Can post a comment.'
+		'post_comment' => array (
+		'title' => 'Оставить комментарий:',
+		'description' => 'Может оставлять комментарии.'
 		),
-		'edit_comment' => array(
-			'title' => 'Edit comments:',
-			'description' => 'Can edit all the comments (users can edit their own comments anyway).'
+		'edit_comment' => array (
+		'title' => 'Редактировать комментарии:',
+		'description' => 'Можно редактировать все комментарии (пользователи в любом случае могут редактировать свои собственные комментарии).'
 		),
-		'view_user' => array(
-			'title' => 'User profiles:',
-			'description' => 'Can view all the user profiles.'
+		'view_user' => array (
+		'title' => 'Профили пользователей:',
+		'description' => 'Может просматривать все профили пользователей.'
 		),
-		'upload' => array(
-			'title' => 'Post a file:',
-			'description' => 'Can attach files to a comment or a new issue.'
+		'upload' => array (
+		'title' => 'Опубликовать файл:',
+		'description' => 'Можно прикреплять файлы к комментарию или новой проблеме.'
 		),
-		'view_upload' => array(
-			'title' => 'View uploads:',
-			'description' => 'Can access to all the uploaded files.'
+		'view_upload' => array (
+		'title' => 'Просмотреть загрузки:',
+		'description' => 'Имеет доступ ко всем загруженным файлам.'
 		),
-		'settings' => array(
-			'title' => 'Change settings:',
-			'description' => 'Can access this page and modify all the global settings.'
+		'settings' => array (
+		'title' => 'Изменить настройки:',
+		'description' => 'Может получить доступ к этой странице и изменить все глобальные настройки.'
 		),
-		'signup' => array(
-			'title' => 'Sign up:',
-			'description' => 'Can sign up.'
+		'signup' => array (
+		'title' => 'Зарегистрироваться:',
+		'description' => 'Можно зарегистрироваться.'
 		),
-		'view_errors' => array(
-			'title' => 'View fatal errors:',
-			'description' => 'Can view the description of fatal errors.'
+		'view_errors' => array (
+		'title' => 'Просмотреть критические ошибки:',
+		'description' => 'Может просматривать описание критических ошибок.'
 		)
 	);
 
@@ -428,15 +421,15 @@ This is another one : &lt;http://example.com&gt;.</code></pre>
 	}
 
 	private static $settings = array(
-		'validate_url' => 'The url is not valid.',
-		'validate_email' => 'The email is not valid.',
-		'private_label_removed' => 'You can\'t remove the private label or change its ID, but you can rename it.',
-		'default_status_removed' => 'You can\'t remove the default status or change its ID, but you can rename it.',
-		'default_group_removed' => 'You can\'t remove the default group or change its ID, but you can rename it.',
-		'default_group_superuser_removed' => 'You can\'t remove the superuser group or change its ID, but you can rename it.',
-		'validate_same_username' => 'Warning : two users have the same username.',
-		'validate_same_project_name' => 'Two projects can\'t have the same name. One has been automatically renamed.',
-		'language_modified' => 'Refresh this page to view it in the new language.'
+		'validate_url' => 'Недействительный URL.',
+		'validate_email' => 'Электронная почта недействительна.',
+		'private_label_removed' => 'Вы не можете удалить частную метку или изменить ее идентификатор, но вы можете переименовать ее.',
+		'default_status_removed' => 'Вы не можете удалить статус по умолчанию или изменить его идентификатор, но вы можете его переименовать.',
+		'default_group_removed' => 'Вы не можете удалить группу по умолчанию или изменить ее идентификатор, но вы можете переименовать ее.',
+		'default_group_superuser_removed' => 'Вы не можете удалить группу суперпользователя или изменить ее идентификатор, но вы можете переименовать ее.',
+		'validate_same_username' => 'Предупреждение: два пользователя имеют одинаковое имя пользователя.',
+		'validate_same_project_name' => 'Два проекта не могут иметь одно и то же имя. Один был автоматически переименован.',
+		'language_modified' => 'Обновите эту страницу, чтобы просмотреть ее на новом языке.'
 	);
 
 	public static function settings($id) {
@@ -444,14 +437,15 @@ This is another one : &lt;http://example.com&gt;.</code></pre>
 	}
 
 	private static $errors = array(
-		E_ERROR => 'Fatal error',
-		E_WARNING => 'Warning',
-		E_PARSE => 'Parse error',
-		E_NOTICE => 'Notice',
-		E_STRICT => 'Advice',
-		E_DEPRECATED => 'Deprecated',
-		'default' => 'Error'
+		E_ERROR => 'Неустранимая ошибка',
+		E_WARNING => 'Предупреждение',
+		E_PARSE => 'Ошибка разбора',
+		E_NOTICE => 'Уведомление',
+		E_STRICT => 'Совет',
+		E_DEPRECATED => 'Устарело',
+		'default' => 'Ошибка'
 	);
+	
 	public static function errors($no) {
 		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
 	}
