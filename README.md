@@ -1,7 +1,7 @@
 # phpmyBugs 0.4
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system.
 
-![phpmyBugs logo](http://uploads.derivoile.fr/bumpy-booby.png)
+![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/phpmybugs-logo.png)
 
 Features:
 
