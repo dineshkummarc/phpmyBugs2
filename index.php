@@ -36,7 +36,7 @@ define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
 
 ### Languages
-define('LANGUAGES', 'en,fr,de,hi'); # Separated by a comma
+define('LANGUAGES', 'en,fr,de,hi,ru'); # Separated by a comma
 define('DEFAULT_LANGUAGE', 'en'); # Used only during installation
 
 ### Directories and files
@@ -51,7 +51,7 @@ define('FILE_CONFIG', 'config.php');
 define('FILE_USERS', 'users.php');
 define('FILE_UPLOADS', 'uploads.php');
 define('FILE_ISSUES', 'issues.php');
-define('DIR_THEMES', 'dirname(__FILE__).'/public/themes/');
+define('DIR_THEMES', dirname(__FILE__).'/public/themes/');
 
 ### Standart settings
 define('DEFAULT_COLOR', '#333333');
