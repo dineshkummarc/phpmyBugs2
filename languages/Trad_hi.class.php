@@ -108,16 +108,16 @@ class Trad {
 	const S_VIEW_PARTICIPATION = 'उसकी भागीदारी देखें।';
 	const S_VIEW_STATUS = 'मुद्दों को "%status%" देखें।';
 
-	const S_ISSUE_CREATED = '%user% %time%';
+	const S_ISSUE_CREATED = '%user% द्वारा %time%';
 	const S_ISSUE_UPDATED = '%adj% by %user% %time%';
-	const S_ISSUE_STATUS_UPDATED = '%user% %time% से %status% में अपडेट की गई स्थिति';
+	const S_ISSUE_STATUS_UPDATED = '%user% द्वारा %time% से %status% में अपडेट की गई स्थिति';
 
 	const S_RSS_ISSUE_UPDATED = '%adj% %user%';
 	const S_RSS_ISSUE_STATUS_UPDATED = '%user% द्वारा स्थिति "%status%" में अपडेट की गई।';
 
 	const S_INTRO_INSTALL = 'ऐसा लग रहा है कि आप पहली बार phpmyBugs चलाते हैं! कृपया इसे कॉन्फ़िगर करें: ';
 	const S_FIRST_ISSUE_TITLE = 'आप कैसे कर रहे हैं, कद्दू?';
-	const S_FIRST_ISSUE = 'मैं आपका पहला अंक हूँ! लॉग इन करने के बाद, आप मुझे हटा सकेंगे;';
+	const S_FIRST_ISSUE = 'मैं आपका पहला अंक हूँ! लॉग इन करने के बाद, आप मुझे हटा सकेंगे';
 
 	const S_NO_USER = 'कोई भी उपयोगकर्ता आपके अनुरोध से मेल नहीं खाता है।';
 	const S_NO_ISSUE = 'कोई समस्या आपके अनुरोध से मेल नहीं खाती है।';
@@ -141,7 +141,7 @@ class Trad {
 	const A_ERROR = '<strong>%title%: </ strong> <br />%message% <br /> <br /> फ़ाइल "<strong>%file% </ strong>" लाइन पर <strong>%line% </ strong>';
 
 	const A_SUCCESS_INSTALL = '<strong> संपन्न:</strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
-	const A_ERROR_INSTALL = '<strong> त्रुटि: </strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें। ';
+	const A_ERROR_INSTALL = '<strong> त्रुटि: </strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें।';
 	const A_MODIF_SAVED = 'संशोधन सहेजे गए थे';
 
 	const A_ERROR_FORM = 'एक त्रुटि हुई। कृपया दोबारा फॉर्म भेजें। ';
@@ -165,7 +165,7 @@ class Trad {
 
 	const A_ERROR_UPLOAD = 'एक त्रुटि हुई। कृपया पुन: प्रयास करें।';
 	const A_ERROR_UPLOAD_SIZE = 'फ़ाइल अधिकतम अनुमत आकार (%nb% अधिकतम) से अधिक है।';
-	const A_ERROR_UPLOAD_FULL = 'इस फ़ाइल को अपलोड करने के लिए आपके पास पर्याप्त डिस्क स्थान नहीं है: %nb% शेष;';
+	const A_ERROR_UPLOAD_FULL = 'इस फ़ाइल को अपलोड करने के लिए आपके पास पर्याप्त डिस्क स्थान नहीं है: (%nb% max)';
 
 	const A_PLEASE_LOGIN_ISSUES = 'कृपया मुद्दों को देखने के लिए लॉग इन करें।';
 	const A_PLEASE_LOGIN_COMMENT = 'कृपया टिप्पणी पोस्ट करने के लिए लॉग इन करें। अभी तक कोई खाता नहीं है? एक बनाएँ: यह मुफ़्त है और वास्तव में तेज़ है! ';
@@ -191,7 +191,7 @@ class Trad {
 	const M_NEW_ISSUE_O = '[%title% - %project%] नया मुद्दा';
 	const M_NEW_ISSUE = 'हाय, %username%!
 
-	% #%Id% - "%सारांश%" अंक %by% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
+	#%Id% - "%summary%" अंक %by% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
 	%url%.
 
 	यदि आप इस मुद्दे पर और सूचनाएं प्राप्त नहीं करना चाहते हैं, तो ऊपर दिए गए लिंक के माध्यम से एक विकल्प उपलब्ध है (लॉग इन करने के बाद)।
@@ -282,7 +282,7 @@ class Trad {
 	const F_PERMISSIONS = 'अनुमतियाँ प्रबंधित करें:';
 	const F_USERS = 'उपयोगकर्ताओं को प्रबंधित करें:';
 
-	const F_TIP_NAME = 'यह प्रत्येक पृष्ठ के शीर्षलेख पर प्रदर्शित होगा।'
+	const F_TIP_NAME = 'यह प्रत्येक पृष्ठ के शीर्षलेख पर प्रदर्शित होगा।';
 	const F_TIP_URL_REWRITING = 'url पुनर्लेखन को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इसमें phpmyBugs फ़ोल्डर के लिए पथ होना चाहिए (शुरू और एक "/" के साथ समाप्त), डोमेन नाम के सापेक्ष; ';
 	const F_TIP_INTRO = 'यह होम पेज पर प्रदर्शित होगा। इसे मार्कडाउन सिंटैक्स के साथ पार्स किया जाएगा। नोट: यदि “%name%” नाम की केवल एक परियोजना है, तो मुखपृष्ठ स्वचालित रूप से प्रोजेक्ट डैशबोर्ड पर पुनर्निर्देशित हो जाता है, और यह पाठ प्रदर्शित नहीं होगा। ';
 	const F_TIP_EMAIL = 'ईमेल सूचनाओं को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इस पते का उपयोग ईमेल अधिसूचना भेजते समय प्रेषक के रूप में किया जाएगा। ';
@@ -303,54 +303,54 @@ class Trad {
 	<h2> मार्कडाउन सिंटैक्स: </ h2>
 
 	<P> पैराग्राफ: </ p>
-	<pre> <code class = "blank no-highlight"> पैराग्राफ को एक या अधिक रिक्त लाइनों द्वारा अलग किया जाता है।
+	<pre> <code class="blank no-highlight"> पैराग्राफ को एक या अधिक रिक्त लाइनों द्वारा अलग किया जाता है।
 	यही कारण है कि यह पाठ उसी पंक्ति में प्रदर्शित किया जाएगा, जो कि पिछले वाक्यांश, लाइन के टूटने से कोई फर्क नहीं पड़ता।
 
 	एक नया पैराग्राफ बनाए बिना एक नई लाइन शुरू करने के लिए:
-	लाइन ब्रेक से पहले 2 रिक्त स्थान डालें, जैसे यहाँ। </ code> </ pre>
-	<P> जोर: </ p>
+	लाइन ब्रेक से पहले 2 रिक्त स्थान डालें, जैसे यहाँ। </code> </pre>
+	<P> जोर: </p>
 	<pre> <code class="blank no-highlight"> * इटैलिक टेक्स्ट *
 	_ पाठ फिर से_
 
 	**बोल्ड अक्षर**
-	__बॉल्ड टेक्स्ट फिर से </ code> </ pre>
+	__बॉल्ड टेक्स्ट फिर से </code> </pre>
 
-	<P> लिंक: </ p>
+	<P> लिंक: </p>
 	<pre> <code class="blank no-highlight"> यह इनलाइन लिंक है [एक उदाहरण] (http://example.com)।
-	यह एक और है: & lt; http: //example.com&gt;; </ code> </ pre>
+	यह एक और है: &lt;http://example.com&gt;. </code> </pre>
 
 	<P> चित्र: </ p>
-	<pre> <code class = "blank no-highlight">! [मैं एक छवि हूं।] (http://example.com/image.png) </ code> </ pre>
+	<pre> <code class="blank no-highlight">! [मैं एक छवि हूं।] (http://example.com/image.png) </code> </pre>
 
 	<P> हेडर: </ p>
-	<pre> <code class = "blank no-highlight"> # शीर्ष स्तर का title
+	<pre> <code class ="blank no-highlight"> # शीर्ष स्तर का title
 	## दूसरे स्तर का खिताब
 	### तीसरे स्तर का खिताब
-	#### चौथे स्तर का title </ code> </ pre>
+	#### चौथे स्तर का title </code> </pre>
 
-	<P> सूची: </ p>
-	<pre> <code class = "blank no-highlight"> - एक आइटम
+	<P> सूची: </p>
+	<pre> <code class="blank no-highlight"> - एक आइटम
 	* और एक
 
 	1. पहला आइटम
-	2. दूसरा आइटम </ code> </ pre>
+	2. दूसरा आइटम </code> </pre>
 
-	<P> Blockquotes: </ p>
-	<pre> <code class = "blank no-highlight" >> मैं दो अनुच्छेदों के साथ एक अवरोधक हूं।
+	<P> Blockquotes: </p>
+	<pre> <code class="blank no-highlight" >> मैं दो अनुच्छेदों के साथ एक अवरोधक हूं।
 	>
-	> मैं दूसरा पैराग्राफ हूं। </ code> </ pre>
+	> मैं दूसरा पैराग्राफ हूं। </code> </pre>
 
-	<p> कोड ब्लॉक: </ p>
-	<pre> <code class = "blank no-highlight"> यह एक `इनलाइन कोड ब्लॉक` है। </ code> </ b>
+	<p> कोड ब्लॉक: </p>
+	<pre> <code class="blank no-highlight"> यह एक `इनलाइन कोड ब्लॉक` है। </code> </b>
 	<pre> <code class="blank no-highlight"> &lt;?php echo "मैं एक कोड ब्लॉक हूं, क्योंकि मैं इंडेंटेड हूं
-		4 स्थानों के साथ "; ?&gt; </ code> </ pre>
-	<pre> <code class = "blank no-highlight"> `` `
+		4 स्थानों के साथ "; ?&gt; </code> </pre>
+	<pre> <code class="blank no-highlight"> ```
 	&lt;?php गूंज "मैं एक कोड ब्लॉक हूं।" ?&gt;
 	```
 
 	```Php
 	&lt;?php echo "समर्थित भाषाएं हैं: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
-	```</ Code> </ pre>
+	```</Code> </pre>
 	';
 
 	private static $permissions = array(
@@ -425,15 +425,15 @@ class Trad {
 	}
 
 	private static $settings = array(
-		'validate_url' => 'url मान्य नहीं है।';
-		'validate_email' => 'ईमेल मान्य नहीं है।';
-		'Private_label_removed' => 'आप निजी लेबल को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।';
-		'default_status_removed' => 'आप डिफ़ॉल्ट स्थिति को हटा सकते हैं या इसकी ID नहीं बदल सकते, लेकिन आप इसका नाम बदल सकते हैं।';
-		'default_group_removed' => 'आप डिफ़ॉल्ट समूह को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।';
-		'default_group_superuser_removed' => 'आप सुपरयुजर समूह को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।';
-		'validate_same_username' => 'चेतावनी: दो उपयोगकर्ताओं के पास एक ही उपयोगकर्ता नाम है';
-		'validate_same_project_name' => 'दो प्रोजेक्ट्स का एक ही नाम नहीं हो सकता। एक का स्वतः नाम बदल दिया गया है।';
-		'language_modified' => 'इस पृष्ठ को नई भाषा में देखने के लिए इसे ताज़ा करें।';
+		'validate_url' => 'url मान्य नहीं है।',
+		'validate_email' => 'ईमेल मान्य नहीं है।',
+		'Private_label_removed' => 'आप निजी लेबल को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
+		'default_status_removed' => 'आप डिफ़ॉल्ट स्थिति को हटा सकते हैं या इसकी ID नहीं बदल सकते, लेकिन आप इसका नाम बदल सकते हैं।',
+		'default_group_removed' => 'आप डिफ़ॉल्ट समूह को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
+		'default_group_superuser_removed' => 'आप सुपरयुजर समूह को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
+		'validate_same_username' => 'चेतावनी: दो उपयोगकर्ताओं के पास एक ही उपयोगकर्ता नाम है',
+		'validate_same_project_name' => 'दो प्रोजेक्ट्स का एक ही नाम नहीं हो सकता। एक का स्वतः नाम बदल दिया गया है।',
+		'language_modified' => 'इस पृष्ठ को नई भाषा में देखने के लिए इसे ताज़ा करें।',
 	);
 
 	public static function settings($id) {
