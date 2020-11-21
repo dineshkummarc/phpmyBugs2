@@ -5,18 +5,39 @@ phpmyBugs is a simple, responsive and highly customizable PHP bug tracking syste
 
 Features:
 
-- **No database required**
-- Statuses and tags highly customizable
-- File attachments
-- Syntax highlighting for code blocks
-- Permissions & groups highly customizable
-- Multiple projects management
-- Easy backup (one folder)
-- Protection against too many failed login attempts
-- URL rewriting
-- E-mail notifications
-- Various languages supported ( _fr_, _en_, _de_, _hi_, )
-- RSS feeds
+### v0.3 -> initial by Pierre Monchalin
+- [x] **No database required**
+- [x] Statuses and tags highly customizable
+- [x] File attachments
+- [x] Syntax highlighting for code blocks
+- [x] Permissions & groups highly customizable
+- [x] Multiple projects management
+- [x] Easy backup (one folder)
+- [x] Protection against too many failed login attempts
+- [x] URL rewriting
+- [x] E-mail notifications
+- [x] Various languages supported ( _fr_, _en_ for now)
+- [x] RSS feeds
+
+To get more information on v0.3 or to see it in action: <http://bumpy-booby.derivoile.fr>.
+
+### v0.4 -> by DINESHKUMMARC
+- [x] New Colors for the Design
+
+### v0.5 -> by DINESHKUMMARC
+- [x] New Language de_DE
+
+### v0.6 -> by DINESHKUMMARC
+- [x] New Language hi_IN
+
+### v0.7 -> by DINESHKUMMARC
+- [ ] New Language ru_RU
+
+### v0.8 -> by DINESHKUMMARC
+- [ ] New Themes selection on dashboard
+
+### v0.9 -> by DINESHKUMMARC
+- [ ] Language Switch and selecction
 
 To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
@@ -60,15 +81,6 @@ phpmyBugs doesn't support IE 6 & 7. It requires JavaScript to work properly.
 
 ### Testing
 Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
-
-###Versions
-- [x] v0.3 -> initial by Pierre Monchalin
-- [x] v0.4 -> New Colors for the Design
-- [x] v0.5 -> New Language de_DE
-- [x] v0.6 -> New LAnguage hi_IN
-- [ ] v0.7 -> New Language ru_RU
-- [ ] v0.8 -> New Themes selecction
-- [ ] v0.9 -> Language Switch and selecction
 
 ## About Booby Bumpy
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
