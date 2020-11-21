@@ -1,4 +1,4 @@
-# phpmyBugs 0.4
+# phpmyBugs 0.6
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system.
 
 ![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/phpmybugs-logo.png)
@@ -25,13 +25,13 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] New Colors for the Design
 
 ### v0.5
-- [x] New Language de_DE
+- [x] New Language supported (_de_)
 
 ### v0.6
-- [x] New Language hi_IN
+- [x] New Language supported (_hi_)
 
 ### v0.7
-- [ ] New Language ru_RU
+- [ ] New Language supported (_ru_)
 
 ### v0.8
 - [ ] New Themes selection on dashboard
