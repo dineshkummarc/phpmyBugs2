@@ -31,7 +31,7 @@ spl_autoload_register('loadClass');
 set_error_handler(array('Text', 'capture_error'));
 
 define('NAME', 'phpmyBugs');
-define('VERSION', '0.4');
+define('VERSION', '0.9');
 define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
 
