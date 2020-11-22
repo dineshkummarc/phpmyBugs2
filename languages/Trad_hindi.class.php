@@ -110,10 +110,10 @@ class Trad {
 
 	const S_ISSUE_CREATED = '%user% द्वारा %time% बजे';
 	const S_ISSUE_UPDATED = '%adj% %user% द्वारा %time% बजे;';
-	const S_ISSUE_STATUS_UPDATED = '%user% द्वारा %time% बजे से %status% में अपडेट की गई स्थिति;'
+	const S_ISSUE_STATUS_UPDATED = '%user% द्वारा %time% बजे से %status% में अपडेट की गई स्थिति;';
 
-	const S_RSS_ISSUE_UPDATED = '%adj% %user% द्वारा;'
-	const S_RSS_ISSUE_STATUS_UPDATED = '%%% द्वारा स्थिति "% स्थिति% में अपडेट की गई।';
+	const S_RSS_ISSUE_UPDATED = '%adj% %user% द्वारा;';
+	const S_RSS_ISSUE_STATUS_UPDATED = '%user% द्वारा स्थिति “%status%” में अपडेट की गई।';
 
 	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run phpmyBugs! Please configure it:';
 	const S_FIRST_ISSUE_TITLE = 'How are you doing, pumpkin?';
