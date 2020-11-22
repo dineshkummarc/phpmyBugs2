@@ -43,19 +43,19 @@ class Trad {
 
 	const W_PREVIOUS = 'Anterior';
 	const W_NEXT = 'Siguiente';
-	const W_CURRENT = 'Página% nb1% de% nb2%';
+	const W_CURRENT = 'Página %nb1% de %nb2%';
 
 	const W_NOT_LOGGED = 'No registrado';
 
 	const W_SUSPENSION = '…';
-	const W_EXTRACT = '“% texto%”';
+	const W_EXTRACT = '“%texto%”';
 
 	const W_USER = 'Usuario';
 	const W_DEVELOPPER = 'Desarrollador';
 	const W_SUPERUSER = 'Superusuario';
 	const W_S_NEW = 'Nuevo';
 	const W_S_CONFIRMED = 'Confirmado';
-	const W_S_ASSIGNED = 'Asignado a% usuario%';
+	const W_S_ASSIGNED = 'Asignado a %usuario%';
 	const W_S_RESOLVED = 'Resuelto';
 	const W_S_REJECTED = 'Rechazado';
 	const W_L_URGENT = 'Urgente';
@@ -71,7 +71,7 @@ class Trad {
 	const V_UPDATE = 'Actualizar';
 	const V_UPDATE_DETAILS = 'Detalles de actualización';
 	const V_UPDATE_CONTENT = 'Actualizar contenido';
-	const V_UPDATE_AND = 'Actualizar &% adjetivo%';
+	const V_UPDATE_AND = 'Actualizar & %adjetivo%';
 	const V_CANCEL = 'Cancelar';
 	const V_PREVIEW = 'Vista previa';
 	const V_COMMENT = 'Comentario';
@@ -93,10 +93,10 @@ class Trad {
 	const S_NOLABEL = '-';
 	const S_NODEPENDENCY = '-';
 	const S_COMMENT_LEAVE = 'Deja un comentario:';
-	const S_AGO = '% duration%% pediod% ago';
+	const S_AGO = '%duration% %pediod% ago';
 	const S_ISSUE_ABOUT = 'Acerca de este problema:';
 	const S_UPLOAD_ADD = 'Adjuntar un archivo:';
-	const S_WELCOME = 'Bienvenido,% usuario%';
+	const S_WELCOME = 'Bienvenido, %usuario%';
 	const S_NEVER = 'Nunca';
 	const S_ME = 'De actualizaciones sobre temas en los que he contribuido';
 	const S_ALWAYS = 'De cada actualización';
@@ -106,14 +106,14 @@ class Trad {
 	const S_FORBIDDEN = 'No tiene permiso para acceder a esta página. Inicie sesión o cierre sesión para continuar.';
 
 	const S_VIEW_PARTICIPATION = 'Ver su participación.';
-	const S_VIEW_STATUS = 'Ver problemas “% status%”.';
+	const S_VIEW_STATUS = 'Ver problemas “%status%”.';
 
-	const S_ISSUE_CREATED = 'por% usuario%% tiempo%';
-	const S_ISSUE_UPDATED = '% adj% por% usuario%% tiempo%.';
-	const S_ISSUE_STATUS_UPDATED = 'Estado actualizado a% status% por% user%% time%.';
+	const S_ISSUE_CREATED = 'por %usuario% %tiempo%';
+	const S_ISSUE_UPDATED = '%adj% por %usuario% %tiempo%.';
+	const S_ISSUE_STATUS_UPDATED = 'Estado actualizado a %status% por %user% %time%.';
 
-	const S_RSS_ISSUE_UPDATED = '% adj% por% usuario%.';
-	const S_RSS_ISSUE_STATUS_UPDATED = 'Estado actualizado a “% status%” por% user%.';
+	const S_RSS_ISSUE_UPDATED = '%adj% por %usuario%.';
+	const S_RSS_ISSUE_STATUS_UPDATED = 'Estado actualizado a “%status%” por %user%.';
 
 	const S_INTRO_INSTALL = '¡Parece que es la primera vez que ejecuta phpmyBugs! Configúrelo: ';
 	const S_FIRST_ISSUE_TITLE = '¿Cómo estás, calabaza?';
@@ -121,24 +121,24 @@ class Trad {
 
 	const S_NO_USER = 'Ningún usuario coincide con su solicitud.';
 	const S_NO_ISSUE = 'Ningún problema coincide con su solicitud.';
-	const S_MATCHING_ISSUES = '% nb% problemas de coincidencia';
+	const S_MATCHING_ISSUES = '%nb% problemas de coincidencia';
 	const S_NO_ACTIVITY = 'No hay actividad reciente.';
 	const S_NO_UPLOAD = 'Sin carga.';
-	const S_SIZE_REMAINING = '% restante% restante del% total% permitido.';
+	const S_SIZE_REMAINING = '%restante% restante del %total% permitido.';
 	const S_NO_PROJECT = 'Sin proyecto.';
 
 	const S_SEARCH = '# 12, @usuario, palabras…';
-	const S_COPYRIGHT = 'Desarrollado por% name%.';
+	const S_COPYRIGHT = 'Desarrollado por %name%.';
 
 	const S_LAST_UPDATES = 'Últimas actualizaciones ...';
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> Error: </strong> no se pudo crear el directorio “% name%”.';
-	const A_ERROR_FILE = '<strong> Error: </strong> no se puede leer el archivo “% name%”.';
-	const A_ERROR_FILE_WRITE = '<strong> Error: </strong> no se puede escribir el archivo “% name%”.';
+	const A_ERROR_DIRECTORY = '<strong> Error: </strong> no se pudo crear el directorio “%name%”.';
+	const A_ERROR_FILE = '<strong> Error: </strong> no se puede leer el archivo “%name%”.';
+	const A_ERROR_FILE_WRITE = '<strong> Error: </strong> no se puede escribir el archivo “%name%”.';
 	const A_ERROR_FATAL = 'Lo siento, algo salió mal. Si el problema persiste, por favor contacte a un administrador.';
-	const A_ERROR = '<strong>% title%: </strong> <br /> <br />% mensaje% <br /> <br /> Archivo “<strong>% archivo% </strong>” en línea < fuerte>% línea% </strong>. ';
+	const A_ERROR = '<strong>%title%: </strong> <br /> <br />%mensaje% <br /> <br /> Archivo “<strong>%archivo% </strong>” en línea < fuerte>%línea% </strong>.';
 
 	const A_SUCCESS_INSTALL = '<strong> Hecho: </strong> phpmyBugs ahora está completamente configurado.';
 	const A_ERROR_INSTALL = '<strong> Error: </strong> phpmyBugs ya está configurado. Elimine el archivo de configuración si desea restablecer la configuración. ';
@@ -160,12 +160,12 @@ class Trad {
 	const A_LOGGED = 'Ahora ha iniciado sesión en el sistema.';
 	const A_LOGGED_OUT = 'Ahora se desconectó del sistema.';
 	const A_ERROR_CONNEXION = '<strong> Error: </strong> nombre de usuario o contraseña incorrectos.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Error: </strong> Nombre de usuario o contraseña incorrectos. Espere% duration%% period% antes de volver a intentarlo. ';
-	const A_ERROR_LOGIN_WAIT = 'Espere% duration%% period% antes de volver a intentarlo. Esta es una protección contra ataques maliciosos. ';
+	const A_ERROR_CONNEXION_WAIT = '<strong> Error: </strong> Nombre de usuario o contraseña incorrectos. Espere %duration% %period% antes de volver a intentarlo. ';
+	const A_ERROR_LOGIN_WAIT = 'Espere %duration% %period% antes de volver a intentarlo. Esta es una protección contra ataques maliciosos. ';
 
 	const A_ERROR_UPLOAD = 'Ocurrió un error. Inténtalo de nuevo.';
-	const A_ERROR_UPLOAD_SIZE = 'El archivo excede el tamaño máximo permitido (% nb% max).';
-	const A_ERROR_UPLOAD_FULL = 'No tiene suficiente espacio en disco para cargar este archivo:% nb% restante.';
+	const A_ERROR_UPLOAD_SIZE = 'El archivo excede el tamaño máximo permitido (%nb% max).';
+	const A_ERROR_UPLOAD_FULL = 'No tiene suficiente espacio en disco para cargar este archivo:%nb% restante.';
 
 	const A_PLEASE_LOGIN_ISSUES = 'Inicie sesión para ver los problemas.';
 	const A_PLEASE_LOGIN_COMMENT = 'Inicie sesión para publicar un comentario. ¿No tienes cuenta aún? Crea uno: ¡es gratis y muy rápido! ';
@@ -176,11 +176,11 @@ class Trad {
 
 		# Mails
 
-	const M_NEW_COMMENT_O = '[% title% -% project% - Issue #% id%] Nuevo comentario';
+	const M_NEW_COMMENT_O = '[%title% -%project% - Issue #%id%] Nuevo comentario';
 	const M_NEW_COMMENT = '¡Hola,% username%!
 
-	El problema #% id% - "% summary%" acaba de ser comentado por% by%. Puedes leer el nuevo comentario aquí:
-	% url%.
+	El problema #%id% - "%summary%" acaba de ser comentado por %by%. Puedes leer el nuevo comentario aquí:
+	%url%.
 
 	Si no desea recibir más notificaciones sobre este problema, hay una opción disponible (después de iniciar sesión) a través del enlace anterior.
 
@@ -188,10 +188,10 @@ class Trad {
 	Este es un correo electrónico automático, no responda.
 	';
 
-	const M_NEW_ISSUE_O = '[% title% -% project%] Nuevo problema';
-	const M_NEW_ISSUE = '¡Hola,% username%!
+	const M_NEW_ISSUE_O = '[%title% - %project%] Nuevo problema';
+	const M_NEW_ISSUE = '¡Hola, %username%!
 
-	El problema #% id% - "% summary%" acaba de ser enviado por% by%. Puede leerlo aquí:
+	El problema #%id% - "%summary%" acaba de ser enviado por %by%. Puede leerlo aquí:
 	% url%.
 
 	Si no desea recibir más notificaciones sobre este problema, hay una opción disponible (después de iniciar sesión) a través del enlace anterior.
@@ -234,7 +234,7 @@ class Trad {
 	const F_ALLOCATED_SPACE = 'Espacio asignado por usuario:';
 	const F_GROUP = 'Grupo:';
 	const F_NOTIFICATIONS = 'Ser notificado:';
-	const F_PROJECT_X = 'Proyecto “% nombre%”:';
+	const F_PROJECT_X = 'Proyecto “%nombre%”:';
 	const F_LANGUAGE = 'Idioma:';
 	const F_LOGS = 'Registros:';
 
@@ -285,7 +285,7 @@ class Trad {
 
 	const F_TIP_NAME = 'Se mostrará en el encabezado de cada página.';
 	const F_TIP_URL_REWRITING = 'Deje este campo vacío para deshabilitar la reescritura de URL. De lo contrario, debería contener la ruta a la carpeta phpmyBugs (comenzada y terminada con "/"), relativa al nombre de dominio. ';
-	const F_TIP_INTRO = 'Se mostrará en la página de inicio. Se analizará con la sintaxis de Markdown. Nota: si solo hay un proyecto llamado “% name%”, la página de inicio se redirige automáticamente al panel del proyecto y este texto no se mostrará. ';
+	const F_TIP_INTRO = 'Se mostrará en la página de inicio. Se analizará con la sintaxis de Markdown. Nota: si solo hay un proyecto llamado “%name%”, la página de inicio se redirige automáticamente al panel del proyecto y este texto no se mostrará. ';
 	const F_TIP_EMAIL = 'Deje este campo vacío para deshabilitar las notificaciones por correo electrónico. De lo contrario, esta dirección se utilizará como remitente al enviar una notificación por correo electrónico. ';
 	const F_TIP_PASSWORD = 'Déjelo vacío si no desea cambiar la contraseña.';
 	const F_TIP_USER_EMAIL = 'Obligatorio solo si desea recibir notificaciones.';
@@ -304,27 +304,27 @@ class Trad {
 		<h2> Sintaxis de Markdown: </h2>
 
 	<p> Párrafos: </p>
-	<pre> <code class = "blank no-highlight"> Los párrafos están separados por una o más líneas en blanco.
+	<pre> <code class="blank no-highlight"> Los párrafos están separados por una o más líneas en blanco.
 	Es por eso que este texto se mostrará en la misma línea que la frase anterior, sin importar el salto de línea.
 
 	Para comenzar una nueva línea sin crear un nuevo párrafo:
 	inserte 2 espacios antes del salto de línea, como aquí. </code> </pre>
 	<p> Énfasis: </p>
-	<pre> <code class = "espacio en blanco sin resaltar"> * Texto en cursiva *
+	<pre> <code class="blank no-highlight"> * Texto en cursiva *
 	_Vuelve a escribir un mensaje de texto_
 
 	**Texto en negrita**
 	__ Texto en negrita otra vez__ </code> </pre>
 
 	<p> Enlaces: </p>
-	<pre> <code class = "blank no-highlight"> Este es [un ejemplo] (http://example.com) de enlace en línea.
-	Este es otro: & lt; http: //example.com&gt ;. </code> </pre>
+	<pre> <code class="blank no-highlight"> Este es [un ejemplo] (http://example.com) de enlace en línea.
+	Este es otro: &lt;http://example.com&gt;. </code> </pre>
 
 	<p> Imágenes: </p>
-	<pre> <code class = "blank no-highlight">! [Soy una imagen.] (http://example.com/image.png) </code> </pre>
+	<pre> <code class="blank no-highlight">! [Soy una imagen.] (http://example.com/image.png) </code> </pre>
 
 	<p> Encabezados: </p>
-	<pre> <code class = "blank no-highlight"> # Título de nivel superior
+	<pre> <code class="blank no-highlight"> # Título de nivel superior
 	## Título de segundo nivel
 	### Título de tercer nivel
 	#### Título de cuarto nivel </code> </pre>
@@ -337,21 +337,21 @@ class Trad {
 	2. segundo elemento </code> </pre>
 
 	<p> Blockquotes: </p>
-	<pre> <code class = "en blanco sin resaltar" >> Soy una cita en bloque con dos párrafos.
+	<pre> <code class="blank no-highlight" > Soy una cita en bloque con dos párrafos.
 	>
 	> Soy el segundo párrafo. </code> </pre>
 
 	<p> Bloques de código: </p>
-	<pre> <code class = "blank no-highlight"> Este es un `bloque de código en línea`. </code> </pre>
-	<pre> <code class = "blank no-highlight"> & lt;? php echo "Soy un bloque de código, porque tengo sangría
-		con 4 espacios ";? & gt; </code> </pre>
-	<pre> <code class = "en blanco sin resaltar"> `` `
-	& lt;? php echo "Soy un bloque de código"; ? & gt;
-	''
+	<pre> <code class="blank no-highlight"> Este es un `bloque de código en línea`. </code> </pre>
+	<pre> <code class="blank no-highlight"> &lt;?php echo "Soy un bloque de código, porque tengo sangría
+		con 4 espacios ";?&gt; </code> </pre>
+	<pre> <code class = "en blanco sin resaltar"> ```
+	&lt;?php echo "Soy un bloque de código"; ?&gt;
+	```
 
-	`` php
-	& lt;? php echo "Los idiomas admitidos son: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ? & gt;
-	`` `</code> </pre>
+	``` php
+	&lt;?php echo "Los idiomas admitidos son: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight";?&gt;
+	```</code> </pre>
 	';
 
 
