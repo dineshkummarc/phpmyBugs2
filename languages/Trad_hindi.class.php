@@ -301,58 +301,58 @@ class Trad {
 	const F_TIP_ID_GROUP = '<b> युक्ति: </b> आईडी बदलते समय सावधान रहें, क्योंकि प्रत्येक उपयोगकर्ता अपनी पुरानी समूह आईडी रखता है (सिवाय अगर यह आईडी अब मौजूद नहीं है: इस मामले में, डिफ़ॉल्ट समूह का उपयोग किया जाएगा)। ';
 
 	const HELP_MARKDOWN = '
-		<h2>Markdown syntax:</h2>
+		<h2> मार्कडाउन सिंटैक्स: </ h2>
 
-		<p>Paragraphs:</p>
-<pre><code class="blank no-highlight">Paragraphs are separated by one or more blank lines.
-That\'s why this text will be displayed in the same line that the previous phrase, no matter the line break.
+<P> पैराग्राफ: </ p>
+<pre> <code class="blank no-highlight"> पैराग्राफ को एक या अधिक रिक्त लाइनों द्वारा अलग किया जाता है।
+यही कारण है कि यह पाठ उसी पंक्ति में प्रदर्शित किया जाएगा, जो कि पिछले वाक्यांश, लाइन के टूटने से कोई फर्क नहीं पड़ता।
 
-To start a new line without creating a new paragraph:  
-insert 2 spaces before the line break, just like here.</code></pre>
-		<p>Emphasis:</p>
-<pre><code class="blank no-highlight">*Italic text*  
-_Itatic text again_  
+एक नया पैराग्राफ बनाए बिना एक नई लाइन शुरू करने के लिए:
+लाइन ब्रेक से पहले 2 रिक्त स्थान डालें, जैसे यहाँ। </code> </pre>
+<P> जोर: </p>
+<pre> <code class="blank no-highlight"> * इटैलिक टेक्स्ट *
+_ पाठ फिर से_
 
-**Bold text**  
-__Bold text again__  </code></pre>
+**बोल्ड अक्षर**
+__बॉल्ड टेक्स्ट फिर से </code> </pre>
 
-		<p>Links:</p>
-<pre><code class="blank no-highlight">This is [an example](http://example.com) of inline link.  
-This is another one : &lt;http://example.com&gt;.</code></pre>
+<P> लिंक: </p>
+<pre> <code class="blank no-highlight"> यह इनलाइन लिंक है [एक उदाहरण] (http://example.com)।
+यह एक और है: &lt; http://example.com&gt; </code> </pre>
 
-		<p>Images:</p>
-<pre><code class="blank no-highlight">![I am an image.](http://example.com/image.png)</code></pre>
+<P> चित्र: </p>
+<pre> <code class="blank no-highlight">! [मैं एक छवि हूं।] (http://example.com/image.png) </code> </pre>
 
-		<p>Headers:</p>
-<pre><code class="blank no-highlight"># Top Level title
-## Second level title
-### Third level title
-#### Fourth level title</code></pre>
+<P> हेडर: </p>
+<pre> <code class="blank no-highlight"> # शीर्ष स्तर का शीर्षक
+## दूसरे स्तर का खिताब
+### तीसरे स्तर का खिताब
+#### चौथे स्तर का शीर्षक </ code> </pre>
 
-		<p>Lists:</p>
-<pre><code class="blank no-highlight">- one item
-* another one
+<P> सूची: </ p>
+<pre> <code class="blank no-highlight"> - एक आइटम
+* और एक
 
-1. first item
-2. second item</code></pre>
+1. पहला आइटम
+2. दूसरा आइटम </code> </pre>
 
-		<p>Blockquotes:</p>
-<pre><code class="blank no-highlight">> I am a blockquote with two paragraphs.
+<P> Blockquotes: </p>
+<pre> <code class="blank no-highlight"> मैं दो अनुच्छेदों के साथ एक अवरोधक हूं।
 >
-> I am the second paragraph.</code></pre>
+> मैं दूसरा पैराग्राफ हूं। </code> </pre>
 
-		<p>Code blocks:</p>
-<pre><code class="blank no-highlight">This is an `inline code block`.</code></pre>
-<pre><code class="blank no-highlight">    &lt;?php echo "I am a code block, because I am indented
-    with 4 spaces"; ?&gt;</code></pre>
-<pre><code class="blank no-highlight">```
-&lt;?php echo "I am a code block."; ?&gt;
-```
+<p> कोड ब्लॉक: </p>
+<pre> <code class="blank no-highlight"> यह एक `इनलाइन कोड ब्लॉक` है। </code> </b>
+<pre> <code class="blank no-highlight"> &lt;?php echo "मैं एक कोड ब्लॉक हूं, क्योंकि मैं इंडेंटेड हूं
+    4 स्थानों के साथ "; &gt; </code> </pre>
+<pre> <code class="blank no-highlight"> `` `
+&lt;?php गूंज "मैं एक कोड ब्लॉक हूं।" ?&gt;
+`` `
 
-```php
-&lt;?php echo "Supported languages are : bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
-```</code></pre>
-	';
+`` `Php
+&lt;?php echo "समर्थित भाषाएं हैं: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
+`` `</Code> </pre>
+';
 
 	private static $permissions = array(
 		'home' => array (
