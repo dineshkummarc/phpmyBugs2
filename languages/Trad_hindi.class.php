@@ -115,7 +115,7 @@ class Trad {
 	const S_RSS_ISSUE_UPDATED = '%adj% %user% द्वारा;';
 	const S_RSS_ISSUE_STATUS_UPDATED = '%user% द्वारा स्थिति “%status%” में अपडेट की गई।';
 
-	const S_INTRO_INSTALL = 'ऐसा लग रहा है कि आप पहली बार phpmyBugs चलाते हैं! कृपया इसे कॉन्फ़िगर करें: ';
+	const S_INTRO_INSTALL = 'ऐसा लग रहा है कि आप पहली बार phpmyBugs चलाते हैं! कृपया इसे कॉन्फ़िगर करें:';
 	const S_FIRST_ISSUE_TITLE = 'आप कैसे कर रहे हैं, कद्दू?';
 	const S_FIRST_ISSUE = 'मैं आपका पहला अंक हूँ! लॉग इन करने के बाद, आप मुझे हटा सकेंगे;';
 
@@ -134,13 +134,13 @@ class Trad {
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> त्रुटि: </ strong> निर्देशिका "%name%" बनाने में असमर्थ।';
-	const A_ERROR_FILE = '<strong> त्रुटि: </ strong> फ़ाइल "%name%" पढ़ने में असमर्थ';
-	const A_ERROR_FILE_WRITE = '<strong> त्रुटि: </ strong> फ़ाइल "%%" लिखने में असमर्थ';
+	const A_ERROR_DIRECTORY = '<strong> त्रुटि: </strong> निर्देशिका "%name%" बनाने में असमर्थ।';
+	const A_ERROR_FILE = '<strong> त्रुटि: </strong> फ़ाइल "%name%" पढ़ने में असमर्थ';
+	const A_ERROR_FILE_WRITE = '<strong> त्रुटि: </strong> फ़ाइल "%file%" लिखने में असमर्थ';
 	const A_ERROR_FATAL = 'क्षमा करें, कुछ गलत हुआ। अगर यह समस्या बनी रहती तो एक व्यवस्थापक से संपर्क करें।';
 	const A_ERROR = '<strong>%title%: </strong> <br/>%message% <br/> <br/> फ़ाइल "<strong>%file% </strong>" लाइन पर फ़ाइल < strong>%line% </strong>';
 
-	const A_SUCCESS_INSTALL = '<strong> संपन्न: </ strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
+	const A_SUCCESS_INSTALL = '<strong> संपन्न: </strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
 	const A_ERROR_INSTALL = '<strong> त्रुटि: </strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें।';
 	const A_MODIF_SAVED = 'संशोधन सहेजे गए थे';
 
@@ -188,7 +188,7 @@ class Trad {
 	यह एक स्वचालित ईमेल है, कृपया उत्तर न दें।
 	';
 
-	const M_NEW_ISSUE_O = '[%title% -%project%] नया मुद्दा';
+	const M_NEW_ISSUE_O = '[%title% - %project%] नया मुद्दा';
 	const M_NEW_ISSUE = 'हाय, %username%!
 
 	#%Id% - "%summary%" अंक %by% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
@@ -301,9 +301,9 @@ class Trad {
 	const F_TIP_ID_GROUP = '<b> युक्ति: </b> आईडी बदलते समय सावधान रहें, क्योंकि प्रत्येक उपयोगकर्ता अपनी पुरानी समूह आईडी रखता है (सिवाय अगर यह आईडी अब मौजूद नहीं है: इस मामले में, डिफ़ॉल्ट समूह का उपयोग किया जाएगा)। ';
 
 	const HELP_MARKDOWN = '
-		<h2> मार्कडाउन सिंटैक्स: </ h2>
+		<h2> मार्कडाउन सिंटैक्स: </h2>
 
-<P> पैराग्राफ: </ p>
+<P> पैराग्राफ: </p>
 <pre> <code class="blank no-highlight"> पैराग्राफ को एक या अधिक रिक्त लाइनों द्वारा अलग किया जाता है।
 यही कारण है कि यह पाठ उसी पंक्ति में प्रदर्शित किया जाएगा, जो कि पिछले वाक्यांश, लाइन के टूटने से कोई फर्क नहीं पड़ता।
 
@@ -327,9 +327,9 @@ __बॉल्ड टेक्स्ट फिर से </code> </pre>
 <pre> <code class="blank no-highlight"> # शीर्ष स्तर का शीर्षक
 ## दूसरे स्तर का खिताब
 ### तीसरे स्तर का खिताब
-#### चौथे स्तर का शीर्षक </ code> </pre>
+#### चौथे स्तर का शीर्षक </code> </pre>
 
-<P> सूची: </ p>
+<P> सूची: </p>
 <pre> <code class="blank no-highlight"> - एक आइटम
 * और एक
 
