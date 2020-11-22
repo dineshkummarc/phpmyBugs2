@@ -21,7 +21,7 @@ class Trad {
 	const W_EXAMPLE = 'उदाहरण';
 	const W_HEX = 'हेक्स';
 	const W_RENDERING = 'प्रतिपादन';
-	const W_ID = 'ID';
+	const W_ID = 'आईडी';
 	const W_DISPLAY_NAME = 'प्रदर्शन नाम';
 	
 	const W_SECONDE = 'दूसरा';
@@ -31,7 +31,7 @@ class Trad {
 	const W_WEEK = 'सप्ताह';
 	const W_MONTH = 'महीना';
 	const W_YEAR = 'वर्ष';
-	const W_DECADE = 'डिकैड';
+	const W_DECADE = 'शताब्दी';
 	const W_SECONDE_P = 'सेकंड';
 	const W_MINUTE_P = 'मिनट';
 	const W_HOUR_P = 'घंटे';
@@ -39,7 +39,7 @@ class Trad {
 	const W_WEEK_P = 'सप्ताह';
 	const W_MONTH_P = 'महीने';
 	const W_YEAR_P = 'वर्ष';
-	const W_DECADE_P = 'डिकैड्स';
+	const W_DECADE_P = 'शताब्दी';
 
 	const W_PREVIOUS = 'पिछला';
 	const W_NEXT = 'अगला';
@@ -64,12 +64,12 @@ class Trad {
 
 	const W_PROFILEPIC = 'प्रोफ़ाइल चित्र';
 
-	const W_RSS = 'RSS फ़ीड';
+	const W_RSS = 'आरएसएस फ़ीड';
 
 		# Verbes
 
 	const V_UPDATE = 'अपडेट';
-	const V_UPDATE_DETAILS = 'अपडेट करें';
+	const V_UPDATE_DETAILS = 'विवरण अपडेट करें';
 	const V_UPDATE_CONTENT = 'सामग्री अपडेट करें';
 	const V_UPDATE_AND = 'अपडेट और %adjective%';
 	const V_CANCEL = 'रद्द करें';
@@ -90,333 +90,336 @@ class Trad {
 
 		# Sentencies
 
-	const S_NOLABEL = '-';
-	const S_NODEPENDENCY = '-';
+	const S_NOLABEL = '–';
+	const S_NODEPENDENCY = '–';
 	const S_COMMENT_LEAVE = 'एक टिप्पणी छोड़ें:';
 	const S_AGO = '%duration% %pediod%';
 	const S_ISSUE_ABOUT = 'इस मुद्दे के बारे में:';
 	const S_UPLOAD_ADD = 'एक फ़ाइल संलग्न करें:';
 	const S_WELCOME = 'आपका स्वागत है, %user%';
-	const S_NEVER = 'नेवर';
+	const S_NEVER = 'कभी नहीँ';
 	const S_ME = 'जिन मुद्दों पर मैंने योगदान दिया है उन पर अपडेट';
 	const S_ALWAYS = 'प्रत्येक अद्यतन का';
 	const S_START_NOTIF = 'नए अपडेट से अवगत रहें';
 	const S_STOP_NOTIF = 'अब अपडेट की सूचना नहीं दी जानी चाहिए';
 	const S_NOTFOUND = 'आप जिस पृष्ठ की तलाश कर रहे हैं वह अब मौजूद नहीं है ...';
-	const S_FORBIDDEN = 'आपको इस पृष्ठ पर पहुंचने की अनुमति नहीं है। कृपया जारी रखने के लिए / बाहर लॉग इन करें।';
+	const S_FORBIDDEN = 'आपको इस पृष्ठ पर पहुंचने की अनुमति नहीं है। कृपया जारी रखने के लिए / बाहर लॉग इन करें। ';
 
 	const S_VIEW_PARTICIPATION = 'उसकी भागीदारी देखें।';
-	const S_VIEW_STATUS = 'मुद्दों को "%status%" देखें।';
+	const S_VIEW_STATUS = 'मुद्दों को “%status%” देखें।';
 
-	const S_ISSUE_CREATED = '%user% द्वारा %time%';
-	const S_ISSUE_UPDATED = '%adj% by %user% %time%';
-	const S_ISSUE_STATUS_UPDATED = '%user% द्वारा %time% से %status% में अपडेट की गई स्थिति';
+	const S_ISSUE_CREATED = '%user% द्वारा %time% बजे';
+	const S_ISSUE_UPDATED = '%adj% %user% द्वारा %time% बजे;';
+	const S_ISSUE_STATUS_UPDATED = '%user% द्वारा %time% बजे से %status% में अपडेट की गई स्थिति;'
 
-	const S_RSS_ISSUE_UPDATED = '%adj% %user%';
-	const S_RSS_ISSUE_STATUS_UPDATED = '%user% द्वारा स्थिति "%status%" में अपडेट की गई।';
+	const S_RSS_ISSUE_UPDATED = '%adj% %user% द्वारा;'
+	const S_RSS_ISSUE_STATUS_UPDATED = '%%% द्वारा स्थिति "% स्थिति% में अपडेट की गई।';
 
-	const S_INTRO_INSTALL = 'ऐसा लग रहा है कि आप पहली बार phpmyBugs चलाते हैं! कृपया इसे कॉन्फ़िगर करें: ';
-	const S_FIRST_ISSUE_TITLE = 'आप कैसे कर रहे हैं, कद्दू?';
-	const S_FIRST_ISSUE = 'मैं आपका पहला अंक हूँ! लॉग इन करने के बाद, आप मुझे हटा सकेंगे';
+	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run phpmyBugs! Please configure it:';
+	const S_FIRST_ISSUE_TITLE = 'How are you doing, pumpkin?';
+	const S_FIRST_ISSUE = 'I am your first issue! After logging, you will be able to delete me.';
 
-	const S_NO_USER = 'कोई भी उपयोगकर्ता आपके अनुरोध से मेल नहीं खाता है।';
-	const S_NO_ISSUE = 'कोई समस्या आपके अनुरोध से मेल नहीं खाती है।';
-	const S_MATCHING_ISSUES = '%nb% मिलान समस्याएँ';
-	const S_NO_ACTIVITY = 'हाल की कोई गतिविधि नहीं।';
-	const S_NO_UPLOAD = 'कोई अपलोड नहीं।';
-	const S_SIZE_REMAINING = '%total% पर %remain% रहे।';
-	const S_NO_PROJECT = 'कोई परियोजना नहीं।';
+	const S_NO_USER = 'No user matches your request.';
+	const S_NO_ISSUE = 'No issue matches your request.';
+	const S_MATCHING_ISSUES = '%nb% matching issues';
+	const S_NO_ACTIVITY = 'No recent activity.';
+	const S_NO_UPLOAD = 'No upload.';
+	const S_SIZE_REMAINING = '%remain% remaining on the %total% allowed.';
+	const S_NO_PROJECT = 'No project.';
 
-	const S_SEARCH = '# 12, @user, शब्द ...';
-	const S_COPYRIGHT = '%name% द्वारा संचालित';
+	const S_SEARCH = '#12, @user, words…';
+	const S_COPYRIGHT = 'Powered by %name%.';
 
-	const S_LAST_UPDATES = 'अंतिम अपडेट ...';
+	const S_LAST_UPDATES = 'Last updates…';
 
 		# Alerts
 
-	const A_ERROR_DIRECTORY = '<strong> त्रुटि: </strong> निर्देशिका "%name%" बनाने में असमर्थ।';
-	const A_ERROR_FILE = '<strong> त्रुटि: </strong> फ़ाइल "%name%" पढ़ने में असमर्थ';
-	const A_ERROR_FILE_WRITE = '<strong> त्रुटि: </strong> फ़ाइल "%name%" लिखने में असमर्थ';
-	const A_ERROR_FATAL = 'क्षमा करें, कुछ गलत हुआ। अगर यह समस्या बनी रहती तो एक व्यवस्थापक से संपर्क करें।';
-	const A_ERROR = '<strong>%title%: </ strong> <br />%message% <br /> <br /> फ़ाइल "<strong>%file% </ strong>" लाइन पर <strong>%line% </ strong>';
+	const A_ERROR_DIRECTORY = '<strong>Error:</strong> unable to create directory “%name%”.';
+	const A_ERROR_FILE = '<strong>Error:</strong> unable to read file “%name%”.';
+	const A_ERROR_FILE_WRITE = '<strong>Error:</strong> unable to write file “%name%”.';
+	const A_ERROR_FATAL = 'Sorry, something went wrong. Please contact an administrator if this problem persists.';
+	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />File “<strong>%file%</strong>” on line <strong>%line%</strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong> संपन्न:</strong> phpmyBugs अब पूरी तरह से कॉन्फ़िगर किया गया है;';
-	const A_ERROR_INSTALL = '<strong> त्रुटि: </strong> phpmyBugs पहले से कॉन्फ़िगर है। यदि आप कॉन्फ़िगरेशन रीसेट करना चाहते हैं, तो कृपया कॉन्फ़िगरेशन फ़ाइल हटा दें।';
-	const A_MODIF_SAVED = 'संशोधन सहेजे गए थे';
+	const A_SUCCESS_INSTALL = '<strong>Done:</strong> phpmyBugs is now completely configured.';
+	const A_ERROR_INSTALL = '<strong>Error:</strong> phpmyBugs is already configured. Please remove the config file if you want to reset the configuration.';
+	const A_MODIF_SAVED = 'Modifications were saved.';
 
-	const A_ERROR_FORM = 'एक त्रुटि हुई। कृपया दोबारा फॉर्म भेजें। ';
-	const A_ERROR_TOKEN = 'गलत टोकन। कृपया दोबारा फॉर्म भेजें। ';
-	const A_ERROR_EMPTY = 'आपको एक उपयोगकर्ता नाम और एक पासवर्ड निर्दिष्ट करना होगा।';
-	const A_ERROR_SAME_USERNAME = 'यह उपयोगकर्ता नाम उपलब्ध नहीं है।';
-	const A_SUCCESS_SIGNUP = '<strong> संपन्न: </strong> अब आप लॉग इन कर सकते हैं;';
+	const A_ERROR_FORM = 'An error occured. Please send again the form.';
+	const A_ERROR_TOKEN = 'Wrong token. Please send again the form.';
+	const A_ERROR_EMPTY = 'You have to specify a username and a password.';
+	const A_ERROR_SAME_USERNAME = 'This username is not available.';
+	const A_SUCCESS_SIGNUP = '<strong>Done:</strong> You can now log in.';
 
-	const A_CONFIRM_DELETE_COMMENT = 'क्या आप वाकई इस टिप्पणी को हटाना चाहते हैं?';
-	const A_SUCCESS_DELETE_COMMENT = 'टिप्पणी हटा दी गई थी';
-	const A_CONFIRM_DELETE_ISSUE = 'क्या आप वाकई इस मुद्दे को हटाना चाहते हैं?';
-	const A_SUCCESS_DELETE_ISSUE = 'समस्या हटा दी गई थी।';
-	const A_CONFIRM_DELETE_UPLOAD = 'क्या आप वाकई इस फ़ाइल को हटाना चाहते हैं?';
-	const A_CONFIRM_DELETE_PROJECT = 'क्या आप वाकई इस प्रोजेक्ट को हटाना चाहते हैं? सभी संबंधित मुद्दे खो जाएंगे। ';
+	const A_CONFIRM_DELETE_COMMENT = 'Are you sure you want to delete this comment?';
+	const A_SUCCESS_DELETE_COMMENT = 'The comment was deleted.';
+	const A_CONFIRM_DELETE_ISSUE = 'Are you sure you want to delete this issue?';
+	const A_SUCCESS_DELETE_ISSUE = 'The issue was deleted.';
+	const A_CONFIRM_DELETE_UPLOAD = 'Are you sure you want to delete this file?';
+	const A_CONFIRM_DELETE_PROJECT = 'Are you sure you want to delete this project? All the corresponding issues will be lost.';
 
-	const A_LOGGED = 'अब आप सिस्टम में लॉग इन हैं।';
-	const A_LOGGED_OUT = 'अब आप सिस्टम से लॉग आउट हो गए हैं।';
-	const A_ERROR_CONNEXION = '<strong> त्रुटि: </strong> गलत उपयोगकर्ता नाम या पासवर्ड';
-	const A_ERROR_CONNEXION_WAIT = '<strong> त्रुटि: </strong> गलत उपयोगकर्ता नाम या पासवर्ड। कृपया पुनः प्रयास करने से पहले %duration% %period% प्रतीक्षा करें';
-	const A_ERROR_LOGIN_WAIT = 'कृपया पुनः प्रयास करने से पहले%duration% %period% प्रतीक्षा करें। यह दुर्भावनापूर्ण हमलों के खिलाफ एक सुरक्षा है।';
+	const A_LOGGED = 'You are now logged into the System.';
+	const A_LOGGED_OUT = 'You are now logged out from the System.';
+	const A_ERROR_CONNEXION = '<strong>Error:</strong> Wrong username or password.';
+	const A_ERROR_CONNEXION_WAIT = '<strong>Error:</strong> Wrong username or password. Please wait %duration% %period% before trying again.';
+	const A_ERROR_LOGIN_WAIT = 'Please wait %duration% %period% before trying again. This a protection against malicious attacks.';
 
-	const A_ERROR_UPLOAD = 'एक त्रुटि हुई। कृपया पुन: प्रयास करें।';
-	const A_ERROR_UPLOAD_SIZE = 'फ़ाइल अधिकतम अनुमत आकार (%nb% अधिकतम) से अधिक है।';
-	const A_ERROR_UPLOAD_FULL = 'इस फ़ाइल को अपलोड करने के लिए आपके पास पर्याप्त डिस्क स्थान नहीं है: (%nb% max)';
+	const A_ERROR_UPLOAD = 'An error occured. Please try again.';
+	const A_ERROR_UPLOAD_SIZE = 'File exceeds the maximum allowed size (%nb% max).';
+	const A_ERROR_UPLOAD_FULL = 'You don\'t have enought disk space to upload this file : %nb% remaining.';
 
-	const A_PLEASE_LOGIN_ISSUES = 'कृपया मुद्दों को देखने के लिए लॉग इन करें।';
-	const A_PLEASE_LOGIN_COMMENT = 'कृपया टिप्पणी पोस्ट करने के लिए लॉग इन करें। अभी तक कोई खाता नहीं है? एक बनाएँ: यह मुफ़्त है और वास्तव में तेज़ है! ';
-	const A_PLEASE_LOGIN_ISSUE = 'कृपया कोई समस्या सबमिट करने के लिए लॉग इन करें। अभी तक कोई खाता नहीं है? एक बनाएँ: यह मुफ़्त है और वास्तव में तेज़ है! ';
-	const A_SHOULD_LOGIN = 'यदि आपका खाता है, तो कृपया लॉग इन करें। यदि नहीं, तो एक बनाने पर विचार करें: यह मुफ़्त है और वास्तव में तेज़ है!';
+	const A_PLEASE_LOGIN_ISSUES = 'Please log in to see the issues.';
+	const A_PLEASE_LOGIN_COMMENT = 'Please log in to post a comment. No account yet? Create one: it\'s free and really fast !';
+	const A_PLEASE_LOGIN_ISSUE = 'Please log in to submit an issue. No account yet? Create one: it\'s free and really fast !';
+	const A_SHOULD_LOGIN = 'If you have an account, please log in. If not, consider creating one: it\'s free and really fast !';
 
-	const a_IE = 'आपका ब्राउज़र अप्रचलित है: <a href="http://www.browserchoice.eu"> इसे अपग्रेड करें या इसे बदलें </a>';
+	const A_IE = 'Your browser is obsolete: <a href="http://www.browserchoice.eu">upgrade or change it</a>.';
 
 		# Mails
 
-	const M_NEW_COMMENT_O = '[%title% - %project% - अंक #%id%] नई टिप्पणी';
-	const M_NEW_COMMENT = 'हाय, %username%!
+	const M_NEW_COMMENT_O = '[%title% — %project% — Issue #%id%] New comment';
+	const M_NEW_COMMENT = 'Hi, %username%!
 
-	#%Id% - "%summary%" मुद्दे पर %by% द्वारा टिप्पणी की गई है। आप नई टिप्पणी यहां पढ़ सकते हैं:
+The issue #%id% — “%summary%” has just been commented by %by%. You can read the new comment here:
 	%url%.
 
-	यदि आप इस मुद्दे पर और सूचनाएं प्राप्त नहीं करना चाहते हैं, तो ऊपर दिए गए लिंक के माध्यम से एक विकल्प उपलब्ध है (लॉग इन करने के बाद)।
+If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
 
-	-----
-	यह एक स्वचालित ईमेल है, कृपया उत्तर न दें।
+-----
+This is an automated email, please do not reply.
 	';
 
-	const M_NEW_ISSUE_O = '[%title% - %project%] नया मुद्दा';
-	const M_NEW_ISSUE = 'हाय, %username%!
+	const M_NEW_ISSUE_O = '[%title% — %project%] New issue';
+	const M_NEW_ISSUE = 'Hi, %username%!
 
-	#%Id% - "%summary%" अंक %by% से कम हो गया है। आप इसे यहां पढ़ सकते हैं:
+The issue #%id% — “%summary%” has just been submited by %by%. You can read it here:
 	%url%.
 
-	यदि आप इस मुद्दे पर और सूचनाएं प्राप्त नहीं करना चाहते हैं, तो ऊपर दिए गए लिंक के माध्यम से एक विकल्प उपलब्ध है (लॉग इन करने के बाद)।
+If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
 
-	-----
-	यह एक स्वचालित ईमेल है, कृपया उत्तर न दें।';
+-----
+This is an automated email, please do not reply.
+	';
 
 		# Titles
 
-	const T_INSTALLATION = 'स्थापना';
-	const T_SETTINGS = 'सेटिंग';
-	const T_GLOBAL_SETTINGS = 'वैश्विक सेटिंग';
-	const T_APPEARANCE = 'सूरत';
-	const T_ISSUES = 'मुद्दे';
-	const T_GROUPS = 'समूह';
-	const T_USERS = 'उपयोगकर्ता';
-	const T_BROWSE_ISSUES = 'समस्याएं ब्राउज़ करें';
-	const T_NEW_ISSUE = 'नया मुद्दा';
-	const T_PROJECTS = 'प्रोजेक्ट';
-	const T_DASHBOARD = 'डैशबोर्ड';
-	const T_LAST_UPDATES = 'अंतिम अपडेट';
-	const T_LAST_ACTIVITY = 'अंतिम गतिविधि';
-	const T_UPLOADS = 'अपलोड';
-	const T_SEARCH = 'खोज';
+	const T_INSTALLATION = 'Installation';
+	const T_SETTINGS = 'Settings';
+	const T_GLOBAL_SETTINGS = 'Global settings';
+	const T_APPEARANCE = 'Appearance';
+	const T_ISSUES = 'Issues';
+	const T_GROUPS = 'Groups';
+	const T_USERS = 'Users';
+	const T_BROWSE_ISSUES = 'Browse issues';
+	const T_NEW_ISSUE = 'New issue';
+	const T_PROJECTS = 'Projects';
+	const T_DASHBOARD = 'Dashboard';
+	const T_LAST_UPDATES = 'Last updates';
+	const T_LAST_ACTIVITY = 'Last activity';
+	const T_UPLOADS = 'Uploads';
+	const T_SEARCH = 'Search';
+
 
 		# FORMS
 
-	const F_USERNAME = 'उपयोगकर्ता नाम:';
-	const F_PASSWORD = 'पासवर्ड:';
-	const F_USERNAME2 = 'उपयोगकर्ता नाम';
-	const F_PASSWORD2 = 'पासवर्ड';
-	const F_NAME = 'नाम:';
+	const F_USERNAME = 'Username:';
+	const F_PASSWORD = 'Password:';
+	const F_USERNAME2 = 'Username';
+	const F_PASSWORD2 = 'Password';
+	const F_NAME = 'Name:';
 	const F_URL = 'Url:';
-	const F_URL_REWRITING = 'यूआरएल पुनर्लेखन:';
-	const F_INTRO = 'परिचय:';
-	const F_DESCRIPTION = 'description:';
-	const F_EMAIL = 'ईमेल:';
-	const F_MAX_UPLOAD = 'अधिकतम आकार प्रति अपलोड:';
-	const F_ALLOCATED_SPACE = 'प्रति उपयोगकर्ता आवंटित स्थान:';
-	const F_GROUP = 'समूह:';
-	const F_NOTIFICATIONS = 'अधिसूचित किया जाए:';
-	const F_PROJECT_X = 'प्रोजेक्ट "%name%":';
-	const F_LANGUAGE = 'भाषा:';
-	const F_LOGS = 'लॉग्स:';
+	const F_URL_REWRITING = 'Url rewriting:';
+	const F_INTRO = 'Introduction:';
+	const F_DESCRIPTION = 'Description:';
+	const F_EMAIL = 'Email:';
+	const F_MAX_UPLOAD = 'Maximum size per upload:';
+	const F_ALLOCATED_SPACE = 'Allocated space per user:';
+	const F_GROUP = 'Group:';
+	const F_NOTIFICATIONS = 'Be notified:';
+	const F_PROJECT_X = 'Project “%name%”:';
+	const F_LANGUAGE = 'Language:';
+	const F_LOGS = 'Logs:';
 
-	const F_ISSUES_PAGE = 'प्रति पृष्ठ समस्याएं:';
-	const F_ISSUES_PAGE_SEARCH = 'प्रति पृष्ठ मुद्दे (खोज):';
-	const F_PREVIEW_ISSUE = 'पूर्वावलोकन लंबाई (मुद्दे):';
-	const F_PREVIEW_SEARCH = 'पूर्वावलोकन लंबाई (खोज):';
-	const F_PREVIEW_PROJECT = 'पूर्वावलोकन लंबाई (परियोजनाएं):';
-	const F_LAST_EDITS = 'डैशबोर्ड पर प्रदर्शित मुद्दों की संख्या:';
-	const F_LAST_ACTIVITY = 'उपयोगकर्ता पृष्ठों पर प्रदर्शित मुद्दों की संख्या:';
+	const F_ISSUES_PAGE = 'Issues per page:';
+	const F_ISSUES_PAGE_SEARCH = 'Issues per page (search):';
+	const F_PREVIEW_ISSUE = 'Previews length (issues):';
+	const F_PREVIEW_SEARCH = 'Previews length (search):';
+	const F_PREVIEW_PROJECT = 'Previews length (projects):';
+	const F_LAST_EDITS = 'Number of issues displayed on dashboards:';
+	const F_LAST_ACTIVITY = 'Number of issues displayed on user pages:';
 
-	const F_ADD_PROJECT = 'नई परियोजना';
-	const F_ADD_COLOR = 'नया रंग';
-	const F_ADD_STATUS = 'नई स्थिति';
-	const F_ADD_LABEL = 'नया लेबल';
-	const F_ADD_GROUP = 'नया समूह';
-	const F_ADD_USER = 'नया उपयोगकर्ता';
+	const F_ADD_PROJECT = 'New project';
+	const F_ADD_COLOR = 'New color';
+	const F_ADD_STATUS = 'New status';
+	const F_ADD_LABEL = 'New label';
+	const F_ADD_GROUP = 'New group';
+	const F_ADD_USER = 'New user';
 
-	const F_SORT_BY = 'द्वारा क्रमबद्ध करें:';
+	const F_SORT_BY = 'Sort by:';
 	const F_SORT_ID = 'ID';
-	const F_SORT_MOD = 'अंतिम अद्यतन';
-	const F_SORT_DESC = 'अवरोही';
-	const F_SORT_ASC = 'आरोही';
-	const F_FILTER_STATUSES = 'फ़िल्टर स्थिति:';
-	const F_FILTER_STATE = 'फ़िल्टर स्थिति:';
-	const F_FILTER_LABELS = 'फ़िल्टर लेबल:';
-	const F_FILTER_USERS = 'उपयोगकर्ताओं को फ़िल्टर करें:';
+	const F_SORT_MOD = 'last update';
+	const F_SORT_DESC = 'descending';
+	const F_SORT_ASC = 'ascending';
+	const F_FILTER_STATUSES = 'Filter statuses:';
+	const F_FILTER_STATES = 'Filter states:';
+	const F_FILTER_LABELS = 'Filter labels:';
+	const F_FILTER_USERS = 'Filter users:';
 
-	const F_WRITE = 'लिखें:';
-	const F_SUMMARY = 'सारांश';
-	const F_CONTENT = 'सामग्री';
+	const F_WRITE = 'Write:';
+	const F_SUMMARY = 'Summary';
+	const F_CONTENT = 'Content';
 
-	const F_STATUS = 'स्थिति:';
-	const F_RELATED = 'संबंधित:';
-	const F_LABELS2 = 'लेबल:';
+	const F_STATUS = 'Status:';
+	const F_RELATED = 'Related:';
+	const F_LABELS2 = 'Labels:';
 
-	const F_GENERAL_SETTINGS = 'सामान्य सेटिंग:';
-	const F_PROJECTS = 'प्रोजेक्ट:';
-	const F_DATABASE = 'डेटाबेस:';
-	const F_UPLOADS = 'अपलोड:';
-	const F_COLORS = 'रंग प्रबंधित करें:';
-	const F_DISPLAY = 'प्रदर्शन प्रबंधित करें:';
-	const F_STATUSES = 'स्थिति प्रबंधित करें:';
-	const F_LABELS = 'लेबल प्रबंधित करें:';
-	const F_GROUPS = 'समूह प्रबंधित करें:';
-	const F_PERMISSIONS = 'अनुमतियाँ प्रबंधित करें:';
-	const F_USERS = 'उपयोगकर्ताओं को प्रबंधित करें:';
+	const F_GENERAL_SETTINGS = 'General settings:';
+	const F_PROJECTS = 'Projects:';
+	const F_DATABASE = 'Database:';
+	const F_UPLOADS = 'Uploads:';
+	const F_COLORS = 'Manage colors:';
+	const F_DISPLAY = 'Manage display :';
+	const F_STATUSES = 'Manage statuses:';
+	const F_LABELS = 'Manage labels:';
+	const F_GROUPS = 'Manage groups:';
+	const F_PERMISSIONS = 'Manage permissions:';
+	const F_USERS = 'Manage users:';
 
-	const F_TIP_NAME = 'यह प्रत्येक पृष्ठ के शीर्षलेख पर प्रदर्शित होगा।';
-	const F_TIP_URL_REWRITING = 'url पुनर्लेखन को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इसमें phpmyBugs फ़ोल्डर के लिए पथ होना चाहिए (शुरू और एक "/" के साथ समाप्त), डोमेन नाम के सापेक्ष; ';
-	const F_TIP_INTRO = 'यह होम पेज पर प्रदर्शित होगा। इसे मार्कडाउन सिंटैक्स के साथ पार्स किया जाएगा। नोट: यदि “%name%” नाम की केवल एक परियोजना है, तो मुखपृष्ठ स्वचालित रूप से प्रोजेक्ट डैशबोर्ड पर पुनर्निर्देशित हो जाता है, और यह पाठ प्रदर्शित नहीं होगा। ';
-	const F_TIP_EMAIL = 'ईमेल सूचनाओं को अक्षम करने के लिए इस फ़ील्ड को खाली छोड़ दें। अन्यथा, इस पते का उपयोग ईमेल अधिसूचना भेजते समय प्रेषक के रूप में किया जाएगा। ';
-	const F_TIP_PASSWORD = 'यदि आप पासवर्ड बदलना नहीं चाहते हैं तो इसे खाली छोड़ दें;';
-	const F_TIP_USER_EMAIL = 'केवल तभी यदि आप सूचनाएं प्राप्त करना चाहते हैं।';
-	const F_TIP_NOTIFICATIONS = 'यह एक डिफ़ॉल्ट सेटिंग है: आप इसे प्रत्येक मुद्दे के लिए बदल पाएंगे;';
-	const F_TIP_NOTIFICATIONS_DISABLED = 'नोट: सूचनाएं वर्तमान में व्यवस्थापक द्वारा अक्षम कर दी गई हैं।';
-	const F_TIP_DESCRIPTION = 'यह प्रोजेक्ट डैशबोर्ड पर प्रदर्शित होगा। इसे मार्कडाउन सिंटैक्स के साथ पार्स किया जाएगा। ';
+	const F_TIP_NAME = 'It will be displayed on the header of each page.';
+	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
+	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
+	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
+	const F_TIP_PASSWORD = 'Leave it empty if you don\'t want to change the password.';
+	const F_TIP_USER_EMAIL = 'Required only if you want to receive notifications.';
+	const F_TIP_NOTIFICATIONS = 'This a default setting: you will be able to change it for each issue.';
+	const F_TIP_NOTIFICATIONS_DISABLED = 'Note: notifications are currently disabled by the administrator.';
+	const F_TIP_DESCRIPTION = 'It will be displayed on the project dashboard. It will be parsed with the markdown syntax.';
 
-	const F_TIP_MAX_UPLOAD = 'प्रत्येक अपलोड की गई फ़ाइल इस आकार से अधिक नहीं हो सकती।';
-	const F_TIP_ALLOCATED_SPACE = 'एक उपयोगकर्ता इस सीमा तक पहुँचने के बाद अन्य फ़ाइलों को अपलोड नहीं कर सकता। <br /> <em> ध्यान दें: </ em> यदि कोई लॉग इन उपयोगकर्ताओं को फाइलें अपलोड करने की अनुमति नहीं है (यह डिफ़ॉल्ट सेटिंग नहीं है,) यह सीमा उन पर लागू नहीं होती है। ';
+	const F_TIP_MAX_UPLOAD = 'Each uploaded file can\'t exceed this size.';
+	const F_TIP_ALLOCATED_SPACE = 'A user can\'t upload other files once he reached this limit.<br /><em>Attention:</em> if none logged users are allowed to upload files (this is not the default setting), this limit does not apply to them.';
 
-	const F_TIP_ID_STATUS = '<b> युक्ति: </ b> आईडी बदलते समय सावधान रहें, क्योंकि प्रत्येक समस्या अपनी पुरानी स्थिति आईडी रखती है (सिवाय अगर यह आईडी अब मौजूद नहीं है: इस स्थिति में, डिफ़ॉल्ट स्थिति का उपयोग किया जाएगा)। ';
-	const F_TIP_ID_LABEL = '<b> युक्ति: </ b> आईडी बदलते समय सावधान रहें, क्योंकि एक अंक का प्रत्येक लेबल अपनी पुरानी आईडी रखता है (सिवाय अगर यह आईडी अब मौजूद नहीं है: इस मामले में, लेबल हटा दिया गया है मुद्दा)।';
-	const F_TIP_ID_GROUP = '<b> युक्ति: </ b> आईडी बदलते समय सावधान रहें, क्योंकि प्रत्येक उपयोगकर्ता अपनी पुरानी समूह आईडी रखता है (सिवाय इसके कि यह आईडी अब मौजूद नहीं है: इस मामले में, डिफ़ॉल्ट समूह का उपयोग किया जाएगा)। ';
+	const F_TIP_ID_STATUS = '<b>Tip:</b> be careful when changing the IDs, because each issue keeps its old status ID (except if this ID does not exist anymore: in this case, the default status will be used).';
+	const F_TIP_ID_LABEL = '<b>Tip:</b> be careful when changing the IDs, because each label of one issue keeps its old ID (except if this ID does not exist anymore: in this case, the label is removed from the issue).';
+	const F_TIP_ID_GROUP = '<b>Tip:</b> be careful when changing the IDs, because each user keeps its old group ID (except if this ID does not exist anymore: in this case, the default group will be used).';
 
 	const HELP_MARKDOWN = '
-	<h2> मार्कडाउन सिंटैक्स: </ h2>
+		<h2>Markdown syntax:</h2>
 
-	<P> पैराग्राफ: </ p>
-	<pre> <code class="blank no-highlight"> पैराग्राफ को एक या अधिक रिक्त लाइनों द्वारा अलग किया जाता है।
-	यही कारण है कि यह पाठ उसी पंक्ति में प्रदर्शित किया जाएगा, जो कि पिछले वाक्यांश, लाइन के टूटने से कोई फर्क नहीं पड़ता।
+		<p>Paragraphs:</p>
+<pre><code class="blank no-highlight">Paragraphs are separated by one or more blank lines.
+That\'s why this text will be displayed in the same line that the previous phrase, no matter the line break.
 
-	एक नया पैराग्राफ बनाए बिना एक नई लाइन शुरू करने के लिए:
-	लाइन ब्रेक से पहले 2 रिक्त स्थान डालें, जैसे यहाँ। </code> </pre>
-	<P> जोर: </p>
-	<pre> <code class="blank no-highlight"> * इटैलिक टेक्स्ट *
-	_ पाठ फिर से_
+To start a new line without creating a new paragraph:  
+insert 2 spaces before the line break, just like here.</code></pre>
+		<p>Emphasis:</p>
+<pre><code class="blank no-highlight">*Italic text*  
+_Itatic text again_  
 
-	**बोल्ड अक्षर**
-	__बॉल्ड टेक्स्ट फिर से </code> </pre>
+**Bold text**  
+__Bold text again__  </code></pre>
 
-	<P> लिंक: </p>
-	<pre> <code class="blank no-highlight"> यह इनलाइन लिंक है [एक उदाहरण] (http://example.com)।
-	यह एक और है: &lt;http://example.com&gt;. </code> </pre>
+		<p>Links:</p>
+<pre><code class="blank no-highlight">This is [an example](http://example.com) of inline link.  
+This is another one : &lt;http://example.com&gt;.</code></pre>
 
-	<P> चित्र: </ p>
-	<pre> <code class="blank no-highlight">! [मैं एक छवि हूं।] (http://example.com/image.png) </code> </pre>
+		<p>Images:</p>
+<pre><code class="blank no-highlight">![I am an image.](http://example.com/image.png)</code></pre>
 
-	<P> हेडर: </ p>
-	<pre> <code class ="blank no-highlight"> # शीर्ष स्तर का title
-	## दूसरे स्तर का खिताब
-	### तीसरे स्तर का खिताब
-	#### चौथे स्तर का title </code> </pre>
+		<p>Headers:</p>
+<pre><code class="blank no-highlight"># Top Level title
+## Second level title
+### Third level title
+#### Fourth level title</code></pre>
 
-	<P> सूची: </p>
-	<pre> <code class="blank no-highlight"> - एक आइटम
-	* और एक
+		<p>Lists:</p>
+<pre><code class="blank no-highlight">- one item
+* another one
 
-	1. पहला आइटम
-	2. दूसरा आइटम </code> </pre>
+1. first item
+2. second item</code></pre>
 
-	<P> Blockquotes: </p>
-	<pre> <code class="blank no-highlight" >> मैं दो अनुच्छेदों के साथ एक अवरोधक हूं।
-	>
-	> मैं दूसरा पैराग्राफ हूं। </code> </pre>
+		<p>Blockquotes:</p>
+<pre><code class="blank no-highlight">> I am a blockquote with two paragraphs.
+>
+> I am the second paragraph.</code></pre>
 
-	<p> कोड ब्लॉक: </p>
-	<pre> <code class="blank no-highlight"> यह एक `इनलाइन कोड ब्लॉक` है। </code> </b>
-	<pre> <code class="blank no-highlight"> &lt;?php echo "मैं एक कोड ब्लॉक हूं, क्योंकि मैं इंडेंटेड हूं
-		4 स्थानों के साथ "; ?&gt; </code> </pre>
-	<pre> <code class="blank no-highlight"> ```
-	&lt;?php गूंज "मैं एक कोड ब्लॉक हूं।" ?&gt;
-	```
+		<p>Code blocks:</p>
+<pre><code class="blank no-highlight">This is an `inline code block`.</code></pre>
+<pre><code class="blank no-highlight">    &lt;?php echo "I am a code block, because I am indented
+    with 4 spaces"; ?&gt;</code></pre>
+<pre><code class="blank no-highlight">```
+&lt;?php echo "I am a code block."; ?&gt;
+```
 
-	```Php
-	&lt;?php echo "समर्थित भाषाएं हैं: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
-	```</Code> </pre>
+```php
+&lt;?php echo "Supported languages are : bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
+```</code></pre>
 	';
 
+
 	private static $permissions = array(
-		'home' => array (
-		'title' => 'घर:',
-		'description' => 'होम पेज पर पहुँच सकते हैं।'
+		'home' => array(
+			'title' => 'Home:',
+			'description' => 'Can access to the home page.'
 		),
-		'dashboard' => array (
-		'title' => 'डैशबोर्ड:',
-		'description' => 'प्रोजेक्ट डैशबोर्ड तक पहुंच सकता है।'
+		'dashboard' => array(
+			'title' => 'Dashboards:',
+			'description' => 'Can access to the projects dashboards.'
 		),
-		'issues' => array (
-		'title' => 'मुद्दे देखें:',
-		'description' => 'सार्वजनिक मुद्दों को देख सकते हैं।'
+		'issues' =>  array(
+			'title' => 'View issues:',
+			'description' => 'Can view public issues.'
 		),
-		'Private_issues' => array (
-		'title' => 'निजी मुद्दे देखें:',
-		'description' => 'निजी के रूप में टैग किए गए मुद्दों को देख सकते हैं।'
+		'private_issues' => array(
+			'title' => 'View private issues:',
+			'description' => 'Can view issues tagged as private.'
 		),
-		'search' => array (
-		'title' => 'खोज:',
-		'description' => 'मुद्दों या उपयोगकर्ताओं को खोज सकते हैं।'
+		'search' => array(
+			'title' => 'Search:',
+			'description' => 'Can search issues or users.'
 		),
-		'new_issue' => array (
-		'title' => 'नया अंक:',
-		'description' => 'एक नया मुद्दा प्रस्तुत कर सकते हैं।'
+		'new_issue' => array(
+			'title' => 'New issue:',
+			'description' => 'Can submit a new issue.'
 		),
-		'edit_issue' => array (
-		'title' => 'मुद्दों को संपादित करें:',
-		'description' => 'सभी मुद्दों के पाठ को संपादित कर सकते हैं और उन्हें हटा सकते हैं।'
+		'edit_issue' => array(
+			'title' => 'Edit issues:',
+			'description' => 'Can edit the text of all the issues and delete them.'
 		),
-		'update_issue' => array (
-		'title' => 'अद्यतन समस्याएँ:',
-		'description' => 'मुद्दों को अद्यतन कर सकते हैं: स्थिति बदलें, लेबल जोड़ें, बंद करें और फिर से खोलें, ...'
+		'update_issue' => array(
+			'title' => 'Update issues:',
+			'description' => 'Can update issues : change status, add labels, close and reopen, ...'
 		),
-		'post_comment' => array (
-		'title' => 'एक टिप्पणी पोस्ट करें:',
-		'description' => 'टिप्पणी पोस्ट कर सकते हैं।'
+		'post_comment' => array(
+			'title' => 'Post a comment:',
+			'description' => 'Can post a comment.'
 		),
-		'edit_comment' => array (
-		'title' => 'टिप्पणी संपादित करें:',
-		'description' => 'सभी टिप्पणियों को संपादित कर सकते हैं (उपयोगकर्ता वैसे भी अपनी टिप्पणियों को संपादित कर सकते हैं)।'
+		'edit_comment' => array(
+			'title' => 'Edit comments:',
+			'description' => 'Can edit all the comments (users can edit their own comments anyway).'
 		),
-		'view_user' => array (
-		'title' => 'उपयोगकर्ता प्रोफ़ाइल:',
-		'description' => 'सभी उपयोगकर्ता प्रोफ़ाइल देख सकते हैं।'
+		'view_user' => array(
+			'title' => 'User profiles:',
+			'description' => 'Can view all the user profiles.'
 		),
-		'upload' => array (
-		'title' => 'एक फ़ाइल पोस्ट करें:',
-		'description' => 'किसी टिप्पणी या किसी नए मुद्दे पर फ़ाइलें संलग्न कर सकते हैं।'
+		'upload' => array(
+			'title' => 'Post a file:',
+			'description' => 'Can attach files to a comment or a new issue.'
 		),
-		'view_upload' => array (
-		'title' => 'अपलोड देखें:',
-		'description' => 'सभी अपलोड की गई फ़ाइलों तक पहुँच प्राप्त कर सकते हैं।'
+		'view_upload' => array(
+			'title' => 'View uploads:',
+			'description' => 'Can access to all the uploaded files.'
 		),
-		'settings' => array (
-		'title' => 'सेटिंग बदलें:',
-		'description' => 'इस पृष्ठ पर पहुँच सकते हैं और सभी वैश्विक सेटिंग्स को संशोधित कर सकते हैं।'
+		'settings' => array(
+			'title' => 'Change settings:',
+			'description' => 'Can access this page and modify all the global settings.'
 		),
-		'signup' => array (
-		'title' => 'साइन अप:',
-		'description' => 'साइन अप कर सकते हैं।'
+		'signup' => array(
+			'title' => 'Sign up:',
+			'description' => 'Can sign up.'
 		),
-		'view_errors' => array (
-		'title' => 'घातक त्रुटियां देखें:',
-		'description' => 'घातक त्रुटियों का वर्णन देख सकते हैं।'
+		'view_errors' => array(
+			'title' => 'View fatal errors:',
+			'description' => 'Can view the description of fatal errors.'
 		)
 	);
 
@@ -425,15 +428,15 @@ class Trad {
 	}
 
 	private static $settings = array(
-		'validate_url' => 'url मान्य नहीं है।',
-		'validate_email' => 'ईमेल मान्य नहीं है।',
-		'Private_label_removed' => 'आप निजी लेबल को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
-		'default_status_removed' => 'आप डिफ़ॉल्ट स्थिति को हटा सकते हैं या इसकी ID नहीं बदल सकते, लेकिन आप इसका नाम बदल सकते हैं।',
-		'default_group_removed' => 'आप डिफ़ॉल्ट समूह को हटा सकते हैं या उसकी ID नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
-		'default_group_superuser_removed' => 'आप सुपरयुजर समूह को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं।',
-		'validate_same_username' => 'चेतावनी: दो उपयोगकर्ताओं के पास एक ही उपयोगकर्ता नाम है',
-		'validate_same_project_name' => 'दो प्रोजेक्ट्स का एक ही नाम नहीं हो सकता। एक का स्वतः नाम बदल दिया गया है।',
-		'language_modified' => 'इस पृष्ठ को नई भाषा में देखने के लिए इसे ताज़ा करें।',
+		'validate_url' => 'The url is not valid.',
+		'validate_email' => 'The email is not valid.',
+		'private_label_removed' => 'You can\'t remove the private label or change its ID, but you can rename it.',
+		'default_status_removed' => 'You can\'t remove the default status or change its ID, but you can rename it.',
+		'default_group_removed' => 'You can\'t remove the default group or change its ID, but you can rename it.',
+		'default_group_superuser_removed' => 'You can\'t remove the superuser group or change its ID, but you can rename it.',
+		'validate_same_username' => 'Warning : two users have the same username.',
+		'validate_same_project_name' => 'Two projects can\'t have the same name. One has been automatically renamed.',
+		'language_modified' => 'Refresh this page to view it in the new language.'
 	);
 
 	public static function settings($id) {
@@ -441,15 +444,14 @@ class Trad {
 	}
 
 	private static $errors = array(
-		E_ERROR => 'घातक त्रुटि',
-		E_WARNING => 'चेतावनी',
-		E_PARSE => 'पार्स त्रुटि',
-		E_NOTICE => 'सूचना',
-		E_STRICT => 'सलाह',
-		E_DEPRECated => 'पदावनत',
-		'default' => 'त्रुटि'
+		E_ERROR => 'Fatal error',
+		E_WARNING => 'Warning',
+		E_PARSE => 'Parse error',
+		E_NOTICE => 'Notice',
+		E_STRICT => 'Advice',
+		E_DEPRECATED => 'Deprecated',
+		'default' => 'Error'
 	);
-	
 	public static function errors($no) {
 		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
 	}
