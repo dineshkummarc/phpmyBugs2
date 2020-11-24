@@ -23,21 +23,27 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v0.4
 - [x] New Colors for the Design
+![NewColors](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/new-colors.png)
 
 ### v0.5
 - [x] New Language supported (_de_)
+![Dutch](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Dutch_DE_de.png)
 
 ### v0.6
 - [x] New Language supported (_hi_)
+![Hindi](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Hindi_IN_hi.png)
 
 ### v0.7
 - [x] New Language supported (_ru_)
+![Russian](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Russian_RU_ru.png)
 
 ### v0.8
 - [x] New Language supported (_pt_)
+![Portuguese](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Portuguese_PT_pt.png)
 
 ### v0.9
 - [x] New Language supported (_es_)
+![Spanish](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Spanish_ES_es.png)
 
 ### v1.0
 - [ ] New Themes selection on dashboard
@@ -47,7 +53,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
-### Screenshots
+### Screenshots (Based on v0.3)
 
 Dashboard:-
 ![Dashboard](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/dashboard.png)
