@@ -41,8 +41,8 @@ define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
 
 ### Languages
-define('LANGUAGES', 'english,french,dutch,hindi,russian,portuguese,spanish'); # Separated by a comma
-define('DEFAULT_LANGUAGE', 'english'); # Used only during installation
+define('LANGUAGES', 'en,fr,dutch,hindi,russian,portuguese,spanish'); # Separated by a comma
+define('DEFAULT_LANGUAGE', 'en'); # Used only during installation
 
 ### Directories and files
 define('DIR_CURRENT', dirname(__FILE__).'/');
@@ -109,6 +109,7 @@ ini_set('session.use_cookies', 1);
 ini_set('session.use_only_cookies', 1);
 	# Prevent php to use sessionID in URL if cookies are disabled.
 ini_set('session.use_trans_sid', false);
+session_name('phpmybugs');
 session_start();
 
 
