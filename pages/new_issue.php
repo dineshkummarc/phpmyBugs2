@@ -1,5 +1,4 @@
 <?php
-
 $form_s = (isset($_POST['issue_summary'])) ?
 	htmlspecialchars($_POST['issue_summary']):
 	'';
@@ -23,16 +22,34 @@ $form_up = (isset($_POST['uploads'])) ?
 	array();
 $token = getToken();
 
-if (isset($_POST['new_issue'])) {
-	$issues = Issues::getInstance();
-	$ans = $issues->new_issue($_POST);
-	if ($ans === true) {
-		header('Location: '
-			.Url::parse(getProject().'/issues/'.$issues->lastissue));
-		exit;
+if( isset($_POST['new_issue']) ){
+	$captcha_check_passed = false;
+	// if user is not logged in, check Captcha
+	if( !$config['loggedin'] && $config['captcha_new_issue'] ){
+		require_once 'vendor/autoload.php';
+		$image = new Securimage();
+		if ($image->check($_POST['captcha_code']) == true) {
+			$captcha_check_passed = true;
+		}
+		else{
+			$this->addAlert(Trad::F_INVALID_CAPTCHA);
+		}
 	}
-	$this->addAlert($ans);
+	else{
+		$captcha_check_passed = true;
+	}
+
+	if($captcha_check_passed){
+		$issues = Issues::getInstance();
+		$ans = $issues->new_issue($_POST, false);
+		if ($ans === true) {
+			header('Location: '.Url::parse(getProject().'/issues/'.$issues->lastissue));
+			exit;
+		}
+		$this->addAlert($ans);
+	}
 }
+
 
 $title = Trad::T_NEW_ISSUE;
 
@@ -77,11 +94,15 @@ if (canAccess('update_issue')) {
 		.'<label for="issue_dependencies">'.Trad::F_RELATED.'</label>'
 		.'<input type="text" name="issue_dependencies" value="'.$form_d.'" '
 			.'placeholder="#1, #2, ..." />'
+		.'<label for="issue_milestone">'.Trad::F_MILESTONE.'</label>'
+		.'<input type="text" name="issue_milestone" value="'.$form_d.'" '
+			.'placeholder="v2.0.1" />'
 		.'<label>'.Trad::F_LABELS2.'</label>'
 		.'<p class="p-edit-labels">'.$labels.'</p>'
 		.'<input type="hidden" name="issue_labels" value="" />'
 	.'</div>';
 }
+
 
 $content = '<h1>'.Trad::T_NEW_ISSUE.'</h1>'
 .'<div class="box box-new-issue">'
@@ -105,8 +126,21 @@ $content = '<h1>'.Trad::T_NEW_ISSUE.'</h1>'
 				.$form_t
 			.'</textarea>'
 			.'<div class="preview text-container" style="display:none"></div>'
-			.$should_login
-			.'<div class="form-actions">'
+			.$should_login;
+
+// include securimage if user is not logged in
+if( !$config['loggedin'] && $config['captcha_new_issue'] ){
+	require_once 'vendor/autoload.php';
+	// https://www.phpcaptcha.org/Securimage_Docs/classes/Securimage.html#method_getCaptchaHtml
+	$content .=	Securimage::getCaptchaHtml( array(
+					'image_alt_text' => Trad::W_CAPTCHA_IMAGE,
+					'refresh_alt_text' => Trad::W_CAPTCHA_REFRESH,
+					'refresh_title_text' => Trad::W_CAPTCHA_REFRESH,
+					'input_text' => Trad::W_CAPTCHA_INPUT,
+				) );
+}
+
+$content .=	'<div class="form-actions">'
 				.'<button type="button" class="btn btn-preview">'
 					.Trad::V_PREVIEW
 				.'</button>'

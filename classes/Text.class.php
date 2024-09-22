@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
+
 class Text {
 
 	protected static $accents = array('À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç',
@@ -372,7 +374,7 @@ class Text {
 		return true;
 	}
 	public static function stop($text, $stop = true) {
-		if (!canAccess('view_errors')) {
+		if (!canAccess('view_errors') || $_GET['page'] == "api") {
 			if (!$stop) { return true; }
 			$text = Trad::A_ERROR_FATAL;
 		}
