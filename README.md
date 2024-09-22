@@ -45,6 +45,11 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v1.0
 - [ ] New Themes selection on dashboard
+- [ ] New Language supported (_cmn_)
+- [ ] New Language supported (_ar_)
+- [ ] New Language supported (_ben_)
+- [ ] New Language supported (_ja_)
+- [ ] New Language supported (_lah_)
 
 ### v1.1
 - [ ] Language Switch and selection
