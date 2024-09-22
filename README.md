@@ -1,5 +1,5 @@
 # phpmyBugs 0.9
-phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world.
+phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world (based on List of languages by number of native speakers).
 ![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/phpmybugs-logo.png)
 
 ### Features:
@@ -44,35 +44,38 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/Spanish_ES_es.png)
 
 ### v1.0
-- [ ] New Themes selection on dashboard
 - [ ] New Language supported (_cmn_)
+
+### v1.1    
 - [ ] New Language supported (_ar_)
+
+### v1.2
 - [ ] New Language supported (_ben_)
+
+### v1.3    
 - [ ] New Language supported (_ja_)
+
+### v1.4
 - [ ] New Language supported (_lah_)
 
-### v1.1
+### v1.5
+- [ ] New Themes selection on dashboard
+
+### v1.6
 - [ ] Language Switch and selection
 
-To get more information or to see it in action: <http://bumpy-booby.derivoile.fr>.
-
-### Screenshots (Based on v0.3)
+### Screenshots (Based on v0.9)
 
 Dashboard:-
 ![Dashboard](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/dashboard.png)
-
 New Issues:-
 ![New Issues](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/new-issue.png)
-
 Issue Details:-
 ![Issue Details](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/issue-details.png)
-
 Issues:-
 ![Issues](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/issues.png)
-
 Settings:-
 ![Settings](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/settings.png)
-
 Users:-
 ![Users](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/users.png)
 
@@ -84,7 +87,6 @@ Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 
 Installation:-
 ![Installation](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/installation.png)
-
 Successful Installation:-
 ![Successful Installation](https://github.com/dineshkummarc/phpmyBugs/blob/master/screenshots/installation-completed.png)
 
@@ -99,5 +101,4 @@ Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.
 
 ## About -Booby Bumpy- phpmybugs
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
-
 phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.
