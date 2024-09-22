@@ -1,4 +1,4 @@
-# phpmyBugs v1.1.4
+# phpmyBugs ~v1.1.4~ 2.0
 
 basically a merge collaboration of two repos https://github.com/piero-la-lune/Bumpy-Booby + https://github.com/philipp-r/bugtracker into this repo.
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world (based on List of languages by number of native speakers).
