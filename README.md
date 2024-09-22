@@ -45,25 +45,33 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] New Language supported (_es_)
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
-### v1.0
+### v2.0
+- [x] Merged github Repo https://github.com/philipp-r/bugtracker Features
+- [x] Seperated Permissions into Groups and Users Menus
+
+### v2.1
+- [x] Added new theme phpmybugs
+- [x] Added new Dependencies into en and Fr Languages
+
+### v2.2
 - [ ] New Language supported (_cmn_)
 
-### v1.1    
+### v2.3    
 - [ ] New Language supported (_ar_)
 
-### v1.2
+### v2.4
 - [ ] New Language supported (_bn_)
 
-### v1.3    
+### v2.5    
 - [ ] New Language supported (_ja_)
 
-### v1.4
+### v2.6
 - [ ] New Language supported (_lah_)
 
-### v1.5
+### v2.7
 - [ ] New Themes selection on dashboard
 
-### v1.6
+### v2.8
 - [ ] Language Switch and selection
 
 ### Screenshots (Based on v0.9)
