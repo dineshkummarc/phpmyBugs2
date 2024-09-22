@@ -683,7 +683,7 @@ class Settings {
 
 	public static function get_default_config($language = 'en') {
 		return array(
-			'title' => 'Nireus',
+			'title' => 'phpmyBugs',
 			'url' => Settings::get_path(),
 			'cdn_url' => '',
 			'url_rewriting' => false,
