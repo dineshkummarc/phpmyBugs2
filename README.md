@@ -94,10 +94,12 @@ Successful Installation:-
 Before any update, it's highly recommended to make a backup. You only need to save the `./database/` folder.
 
 ### Requirements
-phpmyBugs doesn't support IE 6 & 7. It requires JavaScript to work properly.
+- [x] ~phpmyBugs doesn't support IE 6, 7, 8, 9 either. It requires JavaScript to work properly.~
+- [x] It requires JavaScriptenabled browser to work properly.
 
 ### Testing
-Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
+- [x] Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
+- [x] Tested using WAMPServer v3.3.5 (Apache/2.4.59, MySql 8.3.0, PHP/7.4.33) on Microsoft Edge Version 129.0.2792.52 (Official build) (64-bit)
 
 ## About -Booby Bumpy- phpmybugs
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
