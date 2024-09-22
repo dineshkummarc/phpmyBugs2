@@ -236,6 +236,7 @@ Ceci est un message automatisé. Merci de ne pas y répondre.
 	const F_GROUP = 'Groupe :';
 	const F_NOTIFICATIONS = 'Être averti :';
 	const F_PROJECT_X = 'Projet « %name% » :';
+	const T_API_ENABLE_SETTINGS = 'Manage API';
 	const F_LANGUAGE = 'Langue :';
 	const F_LOGS = 'Logs :';
 
