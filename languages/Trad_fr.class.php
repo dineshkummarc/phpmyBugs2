@@ -215,12 +215,15 @@ Ceci est un message automatisé. Merci de ne pas y répondre.
 
 		# Titre
 
+    const T_GROUPS = 'Groupes';
+	const T_USERS = 'Utilisateurs';
 	const T_INSTALLATION = 'Installation';
 	const T_SETTINGS = 'Réglages';
 	const T_GLOBAL_SETTINGS = 'Réglages généraux';
 	const T_APPEARANCE = 'Apparence';
 	const T_ISSUES = 'Demandes';
 	const T_PERMISSIONS = 'Permissions';
+	const T_ENABLE_CAPTCHA = 'Gérer le Captcha';
 	const T_CAPTCHA = 'Captcha';
 	const T_BROWSE_ISSUES = 'Parcourir les demandes';
 	const T_BROWSE_ALL_ISSUES = 'Voir toutes les demandes';
@@ -237,6 +240,7 @@ Ceci est un message automatisé. Merci de ne pas y répondre.
 	const T_LINK_LEGALNOTICE = 'Mention légale';
 	const T_LINK_PRIVACYPOLICY = 'Politique de confidentialité';
 	const T_API_SETTINGS = 'API';
+	const T_API_ENABLE_SETTINGS = 'Gérer l\'API';
 	const T_API_ACCESS_SETTINGS = 'L\'accès aux API';
 	const T_INFO = 'Info';
 
