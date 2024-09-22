@@ -122,7 +122,7 @@ class Trad {
 	const S_RSS_ISSUE_UPDATED = '%adj% by %user%.';
 	const S_RSS_ISSUE_STATUS_UPDATED = 'Status updated to “%status%” by %user%.';
 
-	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run Nireus! Please configure it:';
+	const S_INTRO_INSTALL = 'It looks like it\'s the first time you run phpmyBugs! Please configure it:';
 	const S_FIRST_ISSUE_TITLE = 'How are you doing, pumpkin?';
 	const S_FIRST_ISSUE = 'I am your first issue! After logging, you will be able to delete me.';
 
@@ -153,8 +153,8 @@ class Trad {
 	const A_ERROR_FATAL = 'Sorry, something went wrong. Please contact an administrator if this problem persists.';
 	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />File “<strong>%file%</strong>” on line <strong>%line%</strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong>Done:</strong> Nireus is now completely configured.';
-	const A_ERROR_INSTALL = '<strong>Error:</strong> Nireus is already configured. Please remove the config file if you want to reset the configuration.';
+	const A_SUCCESS_INSTALL = '<strong>Done:</strong> phpmyBugs is now completely configured.';
+	const A_ERROR_INSTALL = '<strong>Error:</strong> phpmyBugs is already configured. Please remove the config file if you want to reset the configuration.';
 	const A_MODIF_SAVED = 'Modifications were saved.';
 
 	const A_ERROR_FORM = 'An error occured. Please send again the form.';
@@ -170,8 +170,8 @@ class Trad {
 	const A_CONFIRM_DELETE_UPLOAD = 'Are you sure you want to delete this file?';
 	const A_CONFIRM_DELETE_PROJECT = 'Are you sure you want to delete this project? All the corresponding issues will be lost.';
 
-	const A_LOGGED = 'You are now logged in.';
-	const A_LOGGED_OUT = 'You are now logged out.';
+	const A_LOGGED = 'You are now logged into the System.';
+	const A_LOGGED_OUT = 'You are now logged out from the System.';
 	const A_ERROR_CONNEXION = '<strong>Error:</strong> Wrong username or password.';
 	const A_ERROR_CONNEXION_WAIT = '<strong>Error:</strong> Wrong username or password. Please wait %duration% %period% before trying again.';
 	const A_ERROR_LOGIN_WAIT = 'Please wait %duration% %period% before trying again. This a protection against malicious attacks.';
@@ -194,33 +194,31 @@ class Trad {
 
 The issue #%id% — “%summary%” has just been commented by %by%. You can read the new comment here:
 	%url%.
-
 If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
-
 -----
 This is an automated email, please do not reply.
 	';
-
 	const M_NEW_ISSUE_O = '[%title% — %project%] New issue';
 	const M_NEW_ISSUE = 'Hi, %username%!
 
 The issue #%id% — “%summary%” has just been submited by %by%. You can read it here:
 	%url%.
-
 If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
-
 -----
 This is an automated email, please do not reply.
 	';
 
 		# Titles
 
-	const T_INSTALLATION = 'Installation';
+    const T_INSTALLATION = 'Installation';
 	const T_SETTINGS = 'Settings';
 	const T_GLOBAL_SETTINGS = 'Global settings';
 	const T_APPEARANCE = 'Appearance';
 	const T_ISSUES = 'Issues';
+	const T_GROUPS = 'Groups';
+	const T_USERS = 'Users';
 	const T_PERMISSIONS = 'Permissions';
+	const T_ENABLE_CAPTCHA = 'Manage Captcha';
 	const T_CAPTCHA = 'Captcha';
 	const T_BROWSE_ISSUES = 'Browse issues';
 	const T_BROWSE_ALL_ISSUES = 'Browse all issues';
@@ -237,6 +235,7 @@ This is an automated email, please do not reply.
 	const T_LINK_LEGALNOTICE = 'Legal Notice';
 	const T_LINK_PRIVACYPOLICY = 'Privacy Policy';
 	const T_API_SETTINGS = 'API';
+	const T_API_ENABLE_SETTINGS = 'Manage API';
 	const T_API_ACCESS_SETTINGS = 'API access';
 	const T_INFO = 'Info';
 
@@ -316,7 +315,7 @@ This is an automated email, please do not reply.
 	const F_INVALID_CAPTCHA = 'The CAPTCHA you entered was wrong. Please try again.';
 
 	const F_TIP_NAME = 'It will be displayed on the header of each page.';
-	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to Nireus folder (started and ended with a "/"), relative to the domain name.';
+	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
 	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
 	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
 	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
