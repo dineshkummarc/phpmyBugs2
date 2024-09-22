@@ -2,7 +2,7 @@
 
 basically a merge collaboration of two repos https://github.com/piero-la-lune/Bumpy-Booby + https://github.com/philipp-r/bugtracker into this repo.
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world (based on List of languages by number of native speakers).
-![phpmyBugs logo](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/phpmybugs-logo.png)
+![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/phpmybugs-logo.png)
 
 ### Features:
 ### v0.3 -> initial by Pierre Monchalin
@@ -23,27 +23,27 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v0.4
 - [x] New Colors for the Design
-![NewColors](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/new-colors.png)
+![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
 - [x] New Language supported (_de_)
-![Dutch](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Dutch_DE_de.png)
+![Dutch](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Dutch_DE_de.png)
 
 ### v0.6
 - [x] New Language supported (_hi_)
-![Hindi](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Hindi_IN_hi.png)
+![Hindi](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Hindi_IN_hi.png)
 
 ### v0.7
 - [x] New Language supported (_ru_)
-![Russian](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Russian_RU_ru.png)
+![Russian](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Russian_RU_ru.png)
 
 ### v0.8
 - [x] New Language supported (_pt_)
-![Portuguese](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Portuguese_PT_pt.png)
+![Portuguese](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Portuguese_PT_pt.png)
 
 ### v0.9
 - [x] New Language supported (_es_)
-![Spanish](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Spanish_ES_es.png)
+![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
 ### v1.0
 - [ ] New Language supported (_cmn_)
@@ -69,17 +69,17 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### Screenshots (Based on v0.9)
 
 Dashboard:-
-![Dashboard](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/dashboard.png)
+![Dashboard](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/dashboard.png)
 New Issues:-
-![New Issues](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/new-issue.png)
+![New Issues](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-issue.png)
 Issue Details:-
-![Issue Details](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/issue-details.png)
+![Issue Details](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/issue-details.png)
 Issues:-
-![Issues](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/issues.png)
+![Issues](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/issues.png)
 Settings:-
-![Settings](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/settings.png)
+![Settings](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/settings.png)
 Users:-
-![Users](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/users.png)
+![Users](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/users.png)
 
 ## Running
 
@@ -88,9 +88,9 @@ Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 ~Note : you can delete the `./public/css/app/` folder, it is useless.~
 
 Installation:-
-![Installation](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/installation.png)
+![Installation](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/installation.png)
 Successful Installation:-
-![Successful Installation](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/installation-completed.png)
+![Successful Installation](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/installation-completed.png)
 
 ### Backup
 Before any update, it's highly recommended to make a backup. You only need to save the `./database/` folder.
