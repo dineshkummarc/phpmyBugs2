@@ -35,9 +35,10 @@ class Settings {
 		$this->c_colors($post);
 		$this->c_statuses($post);
 		$this->c_labels($post);
+		$this->c_users($post);
 		$this->c_groups($post);
 		$this->c_permissions($post);
-		$this->c_users($post);
+		$this->c_captcha($post);
 		$this->save();
 		$this->save_users();
 		return $this->errors;
@@ -55,6 +56,18 @@ class Settings {
 			$post['url'] = preg_replace('#//$#', '/', $post['url']);
 			if (filter_var($post['url'], FILTER_VALIDATE_URL)) {
 				$this->config['url'] = $post['url'];
+			}
+			else {
+				$this->errors[] = 'validate_url';
+			}
+		}
+		if (isset($post['cdn_url'])) {
+			$post['cdn_url'] = preg_replace('#//$#', '/', $post['cdn_url']);
+			if (empty($post['cdn_url'])) {
+				$this->config['cdn_url'] = "";
+			}
+			elseif (filter_var($post['cdn_url'], FILTER_VALIDATE_URL)) {
+				$this->config['cdn_url'] = $post['cdn_url'];
 			}
 			else {
 				$this->errors[] = 'validate_url';
@@ -98,6 +111,51 @@ class Settings {
 				$this->config['logs_enabled'] = false;
 			}
 		}
+		if (isset($post['api_enabled'])) {
+			if ($post['api_enabled'] == 'true') {
+				$this->config['api_enabled'] = true;
+			}
+			else {
+				$this->config['api_enabled'] = false;
+			}
+		}
+		if (isset($post['link_contact'])) {
+			$post['link_contact'] = preg_replace('#//$#', '/', $post['link_contact']);
+			if (empty($post['link_contact'])) {
+				$this->config['link_contact'] = "";
+			}
+			elseif (filter_var($post['link_contact'], FILTER_VALIDATE_URL)) {
+				$this->config['link_contact'] = $post['link_contact'];
+			}
+			else {
+				$this->errors[] = 'validate_url';
+			}
+		}
+		if (isset($post['link_legalnotice'])) {
+			$post['link_legalnotice'] = preg_replace('#//$#', '/', $post['link_legalnotice']);
+			if (empty($post['link_legalnotice'])) {
+				$this->config['link_legalnotice'] = "";
+			}
+			elseif (filter_var($post['link_legalnotice'], FILTER_VALIDATE_URL)) {
+				$this->config['link_legalnotice'] = $post['link_legalnotice'];
+			}
+			else {
+				$this->errors[] = 'validate_url';
+			}
+		}
+		if (isset($post['link_privacypolicy'])) {
+			$post['link_privacypolicy'] = preg_replace('#//$#', '/', $post['link_privacypolicy']);
+			if (empty($post['link_privacypolicy'])) {
+				$this->config['link_privacypolicy'] = "";
+			}
+			elseif (filter_var($post['link_privacypolicy'], FILTER_VALIDATE_URL)) {
+				$this->config['link_privacypolicy'] = $post['link_privacypolicy'];
+			}
+			else {
+				$this->errors[] = 'validate_url';
+			}
+		}
+
 		return true;
 	}
 
@@ -224,6 +282,13 @@ class Settings {
 			$this->config['nb_last_activity_user'] =
 				intval($post['nb_last_activity_user']);
 		}
+		if (isset($post['theme'])) {
+			if( file_exists(DIR_CURRENT."public/css/".$post['theme']) ){
+				$this->config['theme'] = $post['theme'];
+			}else{
+				$this->config['theme'] = 'app.css';
+			}
+		}
 		return true;
 	}
 
@@ -317,55 +382,6 @@ class Settings {
 		return true;
 	}
 
-	protected function c_groups($post) {
-		if (!canAccess('settings')
-			|| !isset($post['group_id'])
-			|| !is_array($post['group_id'])
-			|| !isset($post['group_name'])
-			|| !is_array($post['group_name'])
-			|| count($post['group_id']) != count($post['group_name'])
-		) { return false; }
-		$groups = array();
-		foreach ($post['group_id'] as $k => $v) {
-			$id = Text::purge($v);
-			if (empty($id)) { continue; }
-			$groups[$id] = htmlspecialchars($post['group_name'][$k]);
-		}
-		if (!isset($groups[DEFAULT_GROUP])) {
-			$groups[DEFAULT_GROUP] = $this->config['groups'][DEFAULT_GROUP];
-			$this->errors[] = 'default_group_removed';
-		}
-		if (!isset($groups[DEFAULT_GROUP_SUPERUSER])) {
-			$groups[DEFAULT_GROUP_SUPERUSER] =
-				$this->config['groups'][DEFAULT_GROUP_SUPERUSER];
-			$this->errors[] = 'default_group_superuser_removed';
-		}
-		foreach ($this->config['users'] as $k => $u) {
-			if (!array_key_exists($u['group'], $groups)) {
-				$this->config['users'][$k]['group'] = DEFAULT_GROUP;
-			}
-		}
-		$this->config['groups'] = $groups;
-		return true;
-	}
-
-	protected function c_permissions($post) {
-		if (!canAccess('settings')) { return false; }
-		$permissions = $this->config['permissions'];
-		$groups = array_keys($this->config['groups']); $groups[] = 'none';
-		foreach ($permissions as $k => $v) {
-			$permissions[$k] = array();
-			foreach ($groups as $g) {
-				if (!isset($post['permission_'.$k.'_'.$g])) { return false; }
-				if ($post['permission_'.$k.'_'.$g] == "1") {
-					$permissions[$k][] = $g;
-				}
-			}
-		}
-		$this->config['permissions'] = $permissions;
-		return true;
-	}
-
 	protected function c_users($post) {
 		if (!canAccess('settings')
 			|| !isset($post['user_id'])
@@ -445,6 +461,73 @@ class Settings {
 		}
 		$this->config['users'] = $users;
 		return true;
+	}
+
+	protected function c_groups($post) {
+		if (!canAccess('settings')
+			|| !isset($post['group_id'])
+			|| !is_array($post['group_id'])
+			|| !isset($post['group_name'])
+			|| !is_array($post['group_name'])
+			|| count($post['group_id']) != count($post['group_name'])
+		) { return false; }
+		$groups = array();
+		foreach ($post['group_id'] as $k => $v) {
+			$id = Text::purge($v);
+			if (empty($id)) { continue; }
+			$groups[$id] = htmlspecialchars($post['group_name'][$k]);
+		}
+		if (!isset($groups[DEFAULT_GROUP])) {
+			$groups[DEFAULT_GROUP] = $this->config['groups'][DEFAULT_GROUP];
+			$this->errors[] = 'default_group_removed';
+		}
+		if (!isset($groups[DEFAULT_GROUP_SUPERUSER])) {
+			$groups[DEFAULT_GROUP_SUPERUSER] =
+				$this->config['groups'][DEFAULT_GROUP_SUPERUSER];
+			$this->errors[] = 'default_group_superuser_removed';
+		}
+		foreach ($this->config['users'] as $k => $u) {
+			if (!array_key_exists($u['group'], $groups)) {
+				$this->config['users'][$k]['group'] = DEFAULT_GROUP;
+			}
+		}
+		$this->config['groups'] = $groups;
+		return true;
+	}
+
+	protected function c_permissions($post) {
+		if (!canAccess('settings')) { return false; }
+		$permissions = $this->config['permissions'];
+		$groups = array_keys($this->config['groups']); $groups[] = 'none';
+		foreach ($permissions as $k => $v) {
+			$permissions[$k] = array();
+			foreach ($groups as $g) {
+				if (!isset($post['permission_'.$k.'_'.$g])) { return false; }
+				if ($post['permission_'.$k.'_'.$g] == "1") {
+					$permissions[$k][] = $g;
+				}
+			}
+		}
+		$this->config['permissions'] = $permissions;
+		return true;
+	}
+
+	protected function c_captcha($post) {
+		if (isset($post['captcha_new_issue']) && $post['captcha_new_issue'] == "yes") {
+			$this->config['captcha_new_issue'] = true;
+		} else {
+			$this->config['captcha_new_issue'] = false;
+		}
+		if (isset($post['captcha_post_comment']) && $post['captcha_post_comment'] == "yes") {
+			$this->config['captcha_post_comment'] = true;
+		} else {
+			$this->config['captcha_post_comment'] = false;
+		}
+		if (isset($post['captcha_signup']) && $post['captcha_signup'] == "yes") {
+			$this->config['captcha_signup'] = true;
+		} else {
+			$this->config['captcha_signup'] = false;
+		}
 	}
 
 	public function url_rewriting() {
@@ -602,8 +685,12 @@ class Settings {
 		return array(
 			'title' => 'phpmyBugs',
 			'url' => Settings::get_path(),
+			'cdn_url' => '',
 			'url_rewriting' => false,
-			'intro' => '',
+			'link_contact' => '',
+			'link_legalnotice' => '',
+			'link_privacypolicy' => '',
+			'intro' => 'Welcome to the issue tracker.',
 			'email' => false,
 			'language' => $language,
 			'max_size_upload' => '1MB',
@@ -616,36 +703,41 @@ class Settings {
 			'nb_last_activity_dashboard' => 5,
 			'nb_last_activity_user' => 5,
 			'nb_last_activity_rss' => 20,
+			'theme' => 'app.css',
 			'logs_enabled' => false,
+			'api_enabled' => false,
 			'projects' => array(
 				'default' => array(
-					'description' => '',
-					'can_access' => array('none', 'default', 'developper', 'superuser')
+					'description' => Trad::S_DEFAULT_DEFPROJ_DESC,
+					'can_access' => array('default', 'developper', 'superuser')
 				)
 			),
 			'permissions' => array(
-				'home' => array('none', 'default', 'developper', 'superuser'),
-				'dashboard' => array('none', 'default', 'developper', 'superuser'),
-				'issues' =>  array('none', 'default', 'developper', 'superuser'),
-				'private_issues' => array(),
-				'search' => array('none', 'default', 'developper', 'superuser'),
-				'new_issue' => array('default', 'developper', 'superuser'),
+				'home' => array('none', 'default', 'developer', 'superuser'),
+				'dashboard' => array('none', 'default', 'developer', 'superuser'),
+				'issues' =>  array('none', 'default', 'developer', 'superuser'),
+				'private_issues' => array('superuser'),
+				'search' => array('none', 'default', 'developer', 'superuser'),
+				'new_issue' => array('none', 'default', 'developer', 'superuser'),
 				'edit_issue' => array('superuser'),
-				'update_issue' => array('developper', 'superuser'),
-				'post_comment' => array('default', 'developper', 'superuser'),
+				'update_issue' => array('default', 'developper', 'superuser'),
+				'post_comment' => array('default', 'developer', 'superuser'),
 				'edit_comment' => array('superuser'),
-				'view_user' => array('none', 'default', 'developper', 'superuser'),
+				'view_user' => array('none', 'default', 'developer', 'superuser'),
 				'settings' => array('superuser'),
-				'upload' => array('default', 'developper', 'superuser'),
-				'view_upload' => array('none', 'default', 'developper', 'superuser'),
+				'upload' => array('superuser'),
+				'view_upload' => array('none', 'default', 'developer', 'superuser'),
 				'signup' => array('none'),
 				'view_errors' => array('superuser')
 			),
 			'groups' => array(
 				'default' => Trad::W_USER,
-				'developper' => Trad::W_DEVELOPPER,
+				'developer' => Trad::W_DEVELOPPER,
 				'superuser' => Trad::W_SUPERUSER
 			),
+			'captcha_new_issue' => true,
+			'captcha_post_comment' => true,
+			'captcha_signup' => false,
 			'statuses' => array(
 				'default' => array(
 					'name' => Trad::W_S_NEW,
@@ -691,7 +783,7 @@ class Settings {
 			'users' => array(),
 			'salt' => Text::randomKey(40),
 			'version' => VERSION,
-			'last_update' => false
+			'last_update' => false,
 		);
 	}
 }

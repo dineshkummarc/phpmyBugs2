@@ -30,8 +30,13 @@ spl_autoload_register('loadClass');
 ### Catch errors
 set_error_handler(array('Text', 'capture_error'));
 
+# define('NAME', 'Nireus');
+# define('VERSION', '1.1.3');
+# define('AUTHOR', 'bugtrackr');
+# define('URL', 'https://github.com/bugtrackr/Nireus');
+
 define('NAME', 'phpmyBugs');
-define('VERSION', '0.9');
+define('VERSION', '1.1.3');
 define('AUTHOR', 'Pierre Monchalin');
 define('URL', 'http://bumpy-booby.derivoile.fr');
 
@@ -104,7 +109,6 @@ ini_set('session.use_cookies', 1);
 ini_set('session.use_only_cookies', 1);
 	# Prevent php to use sessionID in URL if cookies are disabled.
 ini_set('session.use_trans_sid', false);
-session_name('BumpyBooby');
 session_start();
 
 
@@ -135,6 +139,7 @@ function onlyDefaultProject() {
 ### Check permissions
 function canAccess($page) {
 	global $config;
+	if($page == "all_issues"){ $page = "home"; } // "all_issues" has same permissions as "home"
 	if ($config['last_update'] === false) { return true; }
 	if (!isset($config['permissions'][$page])) { return true; }
 	if (!$config['loggedin']) { $group = 'none'; }
@@ -220,11 +225,17 @@ if (isset($_POST['login'])
 		foreach ($config['users'] as $u) {
 			if ($u['username'] == $_POST['username']) {
 				$wait = max($wait, $u['wait_until']);
-				if ($u['hash'] ==
+				// Users of API group cannot login
+				if($u['group'] == "bbapi"){
+					$settings->login_failed($u['id']);
+				}
+				// check if password is correct
+				elseif ($u['hash'] ==
 					Text::getHash($_POST['password'], $_POST['username'])
 				) {
 					$matching_user = $u;
 				}
+				// password is wrong
 				else {
 					$settings->login_failed($u['id']);
 				}
@@ -243,8 +254,12 @@ if (isset($_POST['login'])
 			$_SESSION['username'] = $matching_user['username'];
 			$_SESSION['ip'] = getAllIPs();
 			$_SESSION['expires_on'] = time()+TIMEOUT;
-				# 0 means "When browser closes"
-			session_set_cookie_params(0, Text::dir($_SERVER["SCRIPT_NAME"]));
+			if($_POST['stayloggedin'] == 'yes'){
+				$cookie_lifetime = 2420000; # 4 weeks
+			}else{
+				$cookie_lifetime = 0; # 0 means "When browser closes"
+			}
+			session_set_cookie_params($cookie_lifetime, Text::dir($_SERVER["SCRIPT_NAME"]));
 			session_regenerate_id(true);
 			logm('Login successful.');
 			$settings->login_successful($u['id']);
@@ -324,8 +339,8 @@ function get_file($filename) {
 }
 function check_dir($dirname) {
 	if (!is_dir(DIR_DATABASE.$dirname)
-		&& (!mkdir(DIR_DATABASE.$dirname, 0705)
-			|| !chmod(DIR_DATABASE.$dirname, 0705))
+		&& (!mkdir(DIR_DATABASE.$dirname, 0775)
+			|| !chmod(DIR_DATABASE.$dirname, 0775))
 	) {
 		logm('Enable to create directory “'. DIR_DATABASE.$filename.'”');
 		Text::stop(str_replace(
@@ -355,7 +370,6 @@ check_file(FILE_UPLOADS, Text::hash(array()));
 check_file(FILE_USERS, Text::hash(array()));
 check_file('.htaccess', "Allow from none\nDeny from all\n");
 
-
 if (!is_file(DIR_DATABASE.FILE_CONFIG)) {
 	$page->load('install');
 }
@@ -367,6 +381,10 @@ else {
 	}
 	if ($_GET['page'] == 'rss') {
 		require dirname(__FILE__).'/pages/rss.php';
+		exit;
+	}
+	if ($_GET['page'] == 'api') {
+		require dirname(__FILE__).'/pages/api.php';
 		exit;
 	}
 	elseif ($_GET['page'] == 'identicons') {
@@ -411,10 +429,35 @@ elseif (canAccess('home')) {
 	$menu = '<li class="m_home">'
 		.'<a href="'.Url::parse('home').'">'.Trad::T_PROJECTS.'</a>'
 	.'</li>';
+	$menu .= '<li class="m_allissues">'
+		.'<a href="'.Url::parse('all_issues').'">'.Trad::T_ALL_ISSUES.'</a>'
+	.'</li>';
 }
 if (canAccess('settings')) {
 	$menu .= '<li class="m_settings">'
 		.'<a href="'.Url::parse('settings').'">'.Trad::T_SETTINGS.'</a>'
+	.'</li>';
+}
+$link_menu = '';
+if (!empty($config['link_contact'])) {
+	$link_menu .= '<li class="m_link_contact">'
+		.'<a href="'.$config['link_contact'].'">'
+			.Trad::T_LINK_CONTACT
+		.'</a>'
+	.'</li>';
+}
+if (!empty($config['link_legalnotice'])) {
+	$link_menu .= '<li class="m_link_legalnotice">'
+		.'<a href="'.$config['link_legalnotice'].'">'
+			.Trad::T_LINK_LEGALNOTICE
+		.'</a>'
+	.'</li>';
+}
+if (!empty($config['link_privacypolicy'])) {
+	$link_menu .= '<li class="m_link_privacypolicy">'
+		.'<a href="'.$config['link_privacypolicy'].'">'
+			.Trad::T_LINK_PRIVACYPOLICY
+		.'</a>'
 	.'</li>';
 }
 
@@ -434,14 +477,14 @@ if (canAccess('settings')) {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<link rel="shortcut icon" href="<?php echo Url::parse('favicon.ico'); ?>" />
-		<link rel="apple-touch-icon" href="<?php echo Url::parse('apple-touch-icon.png'); ?>" />
+		<link rel="shortcut icon" href="<?php echo Url::parse('public/img/favicon.ico', array(), '', true); ?>" />
+		<link rel="apple-touch-icon" href="<?php echo Url::parse('public/img/apple-touch-icon.png', array(), '', true); ?>" />
 
-		<link rel="stylesheet" href="<?php echo Url::parse('public/css/app.min.css'); ?>" />
+		<link rel="stylesheet" href="<?php echo Url::parse('public/css/'.$config['theme'], array(), '', true); ?>" />
 
 		<!--[if lt IE 9]>
-			<script src="<?php echo Url::parse('public/js/html5.js'); ?>"></script>
-			<script src="<?php echo Url::parse('public/js/respond.js'); ?>"></script>
+			<script src="<?php echo Url::parse('public/js/html5.js', array(), '', true); ?>"></script>
+			<script src="<?php echo Url::parse('public/js/respond.js', array(), '', true); ?>"></script>
 		<![endif]-->
 
 		<title><?php echo $page->getTitle(); ?> – <?php echo $config['title']; ?></title>
@@ -474,7 +517,7 @@ if (canAccess('settings')) {
 				<span class="brand"><?php
 					echo '<a href="'.Url::parse('home').'">'.$config['title'].'</a>';
 					if (getProject() && !onlyDefaultProject()) {
-						echo '<span class="slash">/</span><a class="a-project" href="'.Url::parse(getProject().'/dashboard').'">'.getProject().'</a>';
+						echo '<span class="slash">/</span><a class="a-project" href="'.Url::parse(getProject().'/issues').'">'.getProject().'</a>';
 					}
 				?></span>
 			</div>
@@ -490,13 +533,18 @@ if (canAccess('settings')) {
 							<?php echo $menu; ?>
 						</ul>
 					</nav>
-					<?php 
+					<nav>
+						<ul>
+							<?php echo $link_menu; ?>
+						</ul>
+					</nav>
+					<?php
 						if (canAccess('search') && getProject()) {
 					?>
 					<form action="<?php echo Url::parse(getProject().'/search'); ?>" method="post" class="form-search">
 						<input type="hidden" name="action" value="search" />
 						<input type="text" name="q" value="<?php echo (isset($_GET['q'])) ? htmlspecialchars($_GET['q']) : ''; ?>" placeholder="<?php echo Trad::S_SEARCH; ?>" class="input-left" />
-						<button type="submit" class="a-icon-hover"><i class="icon-white icon-search"></i></button>
+						<button type="submit" class="a-icon-hover"><i class="icon-search"></i></button>
 					</form>
 					<?php
 						}
@@ -525,9 +573,10 @@ if (canAccess('settings')) {
 						<?php
 							}
 						?>
-						<input type="text" name="username" placeholder="<?php echo Trad::F_USERNAME2; ?>" />
-						<input type="password" name="password" placeholder="<?php echo Trad::F_PASSWORD2; ?>" class="input-left" />
-						<button type="submit" class="a-icon-hover"><i class="icon-white icon-circle-arrow-right"></i></button>
+						<input type="text" name="username" placeholder="<?php echo Trad::F_USERNAME2; ?>" aria-labelledby="<?php echo Trad::F_USERNAME2; ?>" />
+						<input type="password" name="password" placeholder="<?php echo Trad::F_PASSWORD2; ?>" class="input-left" aria-labelledby="<?php echo Trad::F_PASSWORD2; ?>" />
+						<button type="submit" class="a-icon-hover"><i class="icon-circle-arrow-right"></i></button>
+						<!-- <label for="stayloggedin"><input type="checkbox" name="stayloggedin" id="stayloggedin" value="yes" class="loggedin-checkbox"> <?php echo Trad::S_STAY_LOGGEDIN; ?></label> -->
 						<input type="hidden" name="token" value="<?php echo getToken(); ?>" />
 						<input type="hidden" name="login" value="1" />
 					</form>
@@ -538,8 +587,8 @@ if (canAccess('settings')) {
 					<form method="post" class="form-log-out">
 						<p><?php echo str_replace('%user%', '<a href="'.Url::parse('users/'.intval($_SESSION['id'])).'">'.htmlspecialchars($_SESSION['username']).'</a>', Trad::S_WELCOME); ?></p>
 						<input type="hidden" name="token" value="<?php echo getToken(); ?>" />
-						<input type="hidden" name="logout" value="1" />
-						<button type="submit" class="a-icon-hover"><i class="icon-white icon-off"></i></button>
+						<input type="hidden" name="logout" value="1" i/>
+						<button type="submit" class="a-icon-hover"><i class="icon-off"></i></button>
 					</form>
 					<?php
 						}
@@ -547,13 +596,13 @@ if (canAccess('settings')) {
 					<div class="div-copyright">
 						<?php
 							if (getProject()) {
-								echo '<a href="'.Url::parse(getProject().'/rss').'">'
+								echo '<a href="'.Url::parse(getProject().'/rss').'" target="_blank">'
 									.Trad::W_RSS
 									.'</a><br />';
 							}
 							echo str_replace(
 								'%name%',
-								'<a href="'.URL.'">'.NAME.' '.VERSION.'</a>',
+								'<a href="'.URL.'" target="_blank">'.NAME.'</a>',
 								Trad::S_COPYRIGHT
 							);
 						?>
@@ -567,8 +616,8 @@ if (canAccess('settings')) {
 
 		</div>
 
-		<script src="<?php echo Url::parse('public/js/highlighter.js'); ?>"></script>
-		<script src="<?php echo Url::parse('public/js/jquery-1.9.1.min.js'); ?>"></script>
+		<script src="<?php echo Url::parse('public/js/highlighter.js', array(), '', true); ?>"></script>
+		<script src="<?php echo Url::parse('public/js/jquery.min.js', array(), '', true); ?>"></script>
 		<script>
 			var ajax = "<?php echo Url::parse('public/ajax'); ?>",
 				token = "<?php echo getToken(); ?>",
@@ -581,7 +630,7 @@ if (canAccess('settings')) {
 				$(".m_<?php echo $page->getSafePage(); ?>").addClass("active");
 			});
 		</script>
-		<script src="<?php echo Url::parse('public/js/scripts.min.js'); ?>"></script>
+		<script src="<?php echo Url::parse('public/js/scripts.min.js', array(), '', true); ?>"></script>
 		<script>
 			<?php echo $page->getJavascript(); ?>
 		</script>

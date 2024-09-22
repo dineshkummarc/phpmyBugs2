@@ -59,13 +59,21 @@ class Issues {
 		).FILE_ISSUES, Text::hash($this->issues));
 	}
 
-	public function exists($id) {
-		return (
-			   isset($this->issues[$id])
-			&& !empty($this->issues[$id])
-			&& (canAccess('private_issues')
-				|| !in_array(PRIVATE_LABEL, $this->issues[$id]['labels']))
-		);
+	public function exists($id, $withApi = false) {
+		if(!$withApi){
+			return (
+				   isset($this->issues[$id])
+				&& !empty($this->issues[$id])
+				&& (canAccess('private_issues')
+					|| !in_array(PRIVATE_LABEL, $this->issues[$id]['labels']))
+			);
+		}
+		else{
+			return (
+				   isset($this->issues[$id])
+				&& !empty($this->issues[$id])
+			);
+		}
 	}
 
 	public function html_list($a) {
@@ -83,6 +91,12 @@ class Issues {
 			}
 			if (!empty($labels)) {
 				$labels = '<div class="labels">'.$labels.'</div>';
+			}
+			$milestone = '';
+			if (!empty($issue['milestone'])) {
+				$url = Url::parse($this->project.'/milestone/'.$issue['milestone']);
+				$milestone = '<a href="'.$url.'">'
+						.'<i class="icon-indent-right"></i>'.$issue['milestone'].'&nbsp;–&nbsp;</a>';
 			}
 			$nbcomments = 0;
 			foreach ($issue['edits'] as $e) {
@@ -110,6 +124,7 @@ class Issues {
 						.'</a>'
 						.'<span class="grey">'
 							.$by.'&nbsp;–&nbsp;'
+							.$milestone
 							.'<a href="'.$url.'#comments" class="a-nb-comment">'
 								.'<i class="icon-comment"></i>'.$nbcomments
 							.'</a>'
@@ -199,35 +214,46 @@ class Issues {
 		return $ret;
 	}
 
-	public function new_issue($post) {
+	public function new_issue($post, $withApi = false) {
 		global $config;
-		if (!canAccess('new_issue')
-			|| !isset($post['issue_summary'])
-			|| !isset($post['issue_text'])
-			|| !isset($post['uploads'])
-			|| !isset($post['token'])
-			|| empty($post['issue_summary'])
-			|| empty($post['issue_text'])
-		) { return Trad::A_ERROR_FORM; }
-		if (canAccess('update_issue')
-			&& (!isset($post['issue_status'])
-				|| !isset($post['issue_assignedto'])
-				|| !isset($post['issue_dependencies'])
-				|| !isset($post['issue_labels'])
-				|| !array_key_exists($post['issue_status'], $config['statuses'])
-			)
-		) { return Trad::A_ERROR_FORM; }
-		if (!tokenOk($post['token'])) {
-			return Trad::A_ERROR_TOKEN;
-		}
 
-		if ($config['loggedin']
-			&& isset($config['users'][$_SESSION['id']])
-		) {
-			$by = intval($_SESSION['id']);
-		}
-		else { $by = NULL; }
 
+		// if request is not done with API, check permission
+		if( !$withApi ){
+			if (!canAccess('new_issue')
+				|| !isset($post['issue_summary'])
+				|| !isset($post['issue_text'])
+				|| !isset($post['uploads'])
+				|| !isset($post['token'])
+				|| empty($post['issue_summary'])
+				|| empty($post['issue_text'])
+			) { return Trad::A_ERROR_FORM; }
+			if (canAccess('update_issue')
+				&& (!isset($post['issue_status'])
+					|| !isset($post['issue_assignedto'])
+					|| !isset($post['issue_dependencies'])
+					|| !isset($post['issue_milestone'])
+					|| !isset($post['issue_labels'])
+					|| !array_key_exists($post['issue_status'], $config['statuses'])
+				)
+			) { return Trad::A_ERROR_FORM; }
+			if (!tokenOk($post['token'])) {
+				return Trad::A_ERROR_TOKEN;
+			}
+			if ($config['loggedin']
+				&& isset($config['users'][$_SESSION['id']])
+			) {
+				$by = intval($_SESSION['id']);
+			}
+			else { $by = NULL; }
+		}
+		// request with API
+		// check API key is done in api.php
+		else{
+			$by = NULL;
+		}
+		$issueDate = time();
+		
 		$uploads = array();
 		if (canAccess('upload') && !empty($post['uploads'])) {
 			$uploader = Uploader::getInstance();
@@ -239,12 +265,16 @@ class Issues {
 			}
 		}
 
+
 		$status = DEFAULT_STATUS;
 		$assignedto = NULL;
 		$dependencies = array();
+		$milestone = '';
 		$labels = array();
-		if (canAccess('update_issue')) {
-			$status = $post['issue_status'];
+		if (canAccess('update_issue') || $withApi) {
+			if(!empty($post['issue_status'])){
+				$status = $post['issue_status'];
+			}
 			if (array_key_exists($post['issue_assignedto'], $config['users'])) {
 				$assignedto = $post['issue_assignedto'];
 			}
@@ -254,6 +284,9 @@ class Issues {
 				if ($this->exists($d)) {
 					$dependencies[] = $d;
 				}
+			}
+			if(!empty($post['issue_milestone'])){
+				$milestone = $post['issue_milestone'];
 			}
 			$la = explode(',', $post['issue_labels']);
 			foreach ($la as $l) {
@@ -265,13 +298,14 @@ class Issues {
 			}
 		}
 
+		
 		$id = Text::newKey($this->issues);
 
 		$this->issues[$id] = array(
 			'id' => $id,
 			'summary' => $post['issue_summary'],
 			'text' => $post['issue_text'],
-			'date' => time(),
+			'date' => $issueDate,
 			'edit' => time(),
 			'open' => true,
 			'openedby' => $by,
@@ -279,6 +313,7 @@ class Issues {
 			'status' => $status,
 			'labels' => $labels,
 			'dependencies' => $dependencies,
+			'milestone' => $milestone,
 			'uploads' => $uploads,
 			'mailto' => array(),
 			'edits' => array()
@@ -311,16 +346,19 @@ class Issues {
 		return true;
 	}
 
-	public function edit_issue($id, $edits) {
+	public function edit_issue($id, $edits, $withApi = false) {
 		global $config;
-		if (!canAccess('edit_issue')
-			|| !isset($edits['text'])
-			|| !isset($edits['summary'])
-			|| !isset($edits['token'])
-			|| !$this->exists($id)
-		) { return Trad::A_ERROR_FORM; }
-		if (!tokenOk($edits['token'])) {
-			return Trad::A_ERROR_TOKEN;
+		// if request is not done with API, check permission
+		if( !$withApi ){
+			if (!canAccess('edit_issue')
+				|| !isset($edits['text'])
+				|| !isset($edits['summary'])
+				|| !isset($edits['token'])
+				|| !$this->exists($id)
+			) { return Trad::A_ERROR_FORM; }
+			if (!tokenOk($edits['token'])) {
+				return Trad::A_ERROR_TOKEN;
+			}
 		}
 
 		$this->issues[$id]['summary'] = $edits['summary'];
@@ -330,37 +368,55 @@ class Issues {
 		return true;
 	}
 
-	public function delete_issue($id, $edits) {
+	public function delete_issue($id, $edits, $withApi = false) {
 		global $config;
-		if (!canAccess('edit_issue')
-			|| !isset($edits['token'])
-			|| !$this->exists($id)
-		) { return Trad::A_ERROR_FORM; }
-		if (!tokenOk($edits['token'])) {
-			return Trad::A_ERROR_TOKEN;
+		// if request is not done with API, check permission
+		if( !$withApi ){
+			if (!canAccess('edit_issue')
+				|| !isset($edits['token'])
+				|| !$this->exists($id)
+			) { return Trad::A_ERROR_FORM; }
+			if (!tokenOk($edits['token'])) {
+				return Trad::A_ERROR_TOKEN;
+			}
 		}
 
-		# We don't destroy it because we don't want to give its ID to a new comment
+		// We don't destroy it because we don't want to give its ID to a new comment
 		$this->issues[$id] = array();
 
 		$this->save();
 		return true;
 	}
 
-	public function update_issue($id, $edits) {
+	public function update_issue($id, $edits, $withApi = false) {
 		global $config;
-		if (!canAccess('update_issue')
-			|| !isset($edits['issue_status'])
-			|| !isset($edits['issue_assignedto'])
-			|| !isset($edits['issue_dependencies'])
-			|| !isset($edits['issue_labels'])
-			|| !isset($edits['issue_open'])
-			|| !isset($edits['token'])
-			|| !$this->exists($id)
-			|| !array_key_exists($edits['issue_status'], $config['statuses'])
-		) { return Trad::A_ERROR_FORM; }
-		if (!tokenOk($edits['token'])) {
-			return Trad::A_ERROR_TOKEN;
+		// if request is not done with API, check permission
+		if( !$withApi ){
+			if (!canAccess('update_issue')
+				|| !isset($edits['issue_status'])
+				|| !isset($edits['issue_assignedto'])
+				|| !isset($edits['issue_dependencies'])
+				|| !isset($edits['issue_milestone'])
+				|| !isset($edits['issue_labels'])
+				|| !isset($edits['issue_open'])
+				|| !isset($edits['token'])
+				|| !$this->exists($id)
+				|| !array_key_exists($edits['issue_status'], $config['statuses'])
+			) { return Trad::A_ERROR_FORM; }
+			if (!tokenOk($edits['token'])) {
+				return Trad::A_ERROR_TOKEN;
+			}
+			if ($config['loggedin']
+				&& isset($config['users'][$_SESSION['id']])
+			) {
+				$by = intval($_SESSION['id']);
+			}
+			else { $by = NULL; }
+		}
+		// request with API
+		// check API key is done in api.php
+		else{
+			$by = NULL;
 		}
 
 		$status = $edits['issue_status'];
@@ -383,6 +439,11 @@ class Issues {
 			}
 		}
 
+		$milestone = '';
+		if (!empty($edits['issue_milestone'])) {
+			$milestone = $edits['issue_milestone'];
+		}
+
 		$labels = array();
 		if (!empty($edits['issue_labels'])) {
 			$la = explode(',', $edits['issue_labels']);
@@ -398,13 +459,6 @@ class Issues {
 		$open = $this->issues[$id]['open'];
 		if ($edits['issue_open'] == 'open') { $open = true; }
 		elseif ($edits['issue_open'] == 'closed') { $open = false; }
-
-		if ($config['loggedin']
-			&& isset($config['users'][$_SESSION['id']])
-		) {
-			$by = intval($_SESSION['id']);
-		}
-		else { $by = NULL; }
 
 		$i = &$this->issues[$id];
 		if ($status != $i['status'] || $assignedto != $i['assignedto']) {
@@ -434,6 +488,7 @@ class Issues {
 		$i['status'] = $status;
 		$i['assignedto'] = $assignedto;
 		$i['dependencies'] = $dependencies;
+		$i['milestone'] = $milestone;
 		$i['labels'] = $labels;
 		$i['open'] = $open;
 		unset($i);

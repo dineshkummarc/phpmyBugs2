@@ -9,10 +9,12 @@ class Page {
 	protected $errors = array();
 
 	private $pages = array(
+		'api',
 		'home',
 		'install',
 		'dashboard',
 		'issues',
+		'all_issues',
 		'search',
 		'view_issue',
 		'new_issue',
@@ -20,7 +22,8 @@ class Page {
 		'settings',
 		'error/403',
 		'error/404',
-		'signup'
+		'signup',
+		'login'
 	);
 	private $need_project = array(
 		'dashboard',

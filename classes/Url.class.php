@@ -12,8 +12,20 @@ class Url {
 			'redirect' => 'index.php?page=home'
 		),
 		array(
+			'rule' => '^([a-zA-Z0-9-]+)/api$',
+			'redirect' => 'index.php?project=$1&page=api'
+		),
+		array(
+			'rule' => '^api$',
+			'redirect' => 'index.php?page=api'
+		),
+		array(
 			'rule' => '^home$',
 			'redirect' => 'index.php?page=home'
+		),
+		array(
+			'rule' => '^all_issues$',
+			'redirect' => 'index.php?page=all_issues'
 		),
 		array(
 			'rule' => '^install$',
@@ -32,6 +44,10 @@ class Url {
 			'redirect' => 'index.php?page=signup'
 		),
 		array(
+			'rule' => '^login$',
+			'redirect' => 'index.php?page=login'
+		),
+		array(
 			'rule' => '^([a-zA-Z0-9-]+)/dashboard$',
 			'redirect' => 'index.php?project=$1&page=dashboard'
 		),
@@ -42,6 +58,10 @@ class Url {
 		array(
 			'rule' => '^([a-zA-Z0-9-]+)/labels/([a-z0-9-]+)$',
 			'redirect' => 'index.php?project=$1&page=issues&label=$2'
+		),
+		array(
+			'rule' => '^([a-zA-Z0-9-]+)/milestone/([a-z0-9-_\.]+)$',
+			'redirect' => 'index.php?project=$1&page=issues&milestone=$2'
 		),
 		array(
 			'rule' => '^([a-zA-Z0-9-]+)/search$',
@@ -97,7 +117,7 @@ class Url {
 		return self::$rewriting;
 	}
 
-	public static function parse($page, $params = array(), $anchor = '') {
+	public static function parse($page, $params = array(), $anchor = '', $cdn = false) {
 		global $config;
 		$project = '';
 		$page = self::rewriting($project.$page);
@@ -113,7 +133,13 @@ class Url {
 				}
 			}
 		}
-		$ret = $config['url'].$parts[0];
+		// check if a CDN is defined
+		if ( !empty($config['cdn_url']) && $cdn == true && !canAccess('settings') ){
+			$ret = $config['cdn_url'].$parts[0];
+		}
+		else{
+			$ret = $config['url'].$parts[0];
+		}
 		if (!empty($params)) {
 			$ret .= '?'.http_build_query($params);
 		}
