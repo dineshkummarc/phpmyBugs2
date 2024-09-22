@@ -50,7 +50,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [ ] New Language supported (_ar_)
 
 ### v1.2
-- [ ] New Language supported (_ben_)
+- [ ] New Language supported (_bn_)
 
 ### v1.3    
 - [ ] New Language supported (_ja_)
@@ -81,7 +81,7 @@ Users:-
 
 ## Running
 
-### Installation
+### Installation Procedure
 Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 ~Note : you can delete the `./public/css/app/` folder, it is useless.~
 
@@ -95,12 +95,12 @@ Before any update, it's highly recommended to make a backup. You only need to sa
 
 ### Requirements
 - [x] ~phpmyBugs doesn't support IE 6, 7, 8, 9 either. It requires JavaScript to work properly.~
-- [x] It requires JavaScriptenabled browser to work properly.
+- [x] It requires JavaScript enabled browser to work properly.
 
 ### Testing
 - [x] Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
 - [x] Tested using WAMPServer v3.3.5 (Apache/2.4.59, MySql 8.3.0, PHP/7.4.33) on Microsoft Edge Version 129.0.2792.52 (Official build) (64-bit)
 
-## About -Booby Bumpy- phpmybugs
+## About ~Booby Bumpy~ phpmybugs
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
 phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.
