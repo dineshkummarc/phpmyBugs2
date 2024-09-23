@@ -58,6 +58,13 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Spanish Language as installer option
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
+### v1.1.3 -> by philipp-r
+- [x] Added manage [API](https://bugtrackr.github.io/api/) which has below features:
+- [x] [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
+- [x] [Travis CI API](https://bugtrackr.github.io/api/travis-ci/) to create a new issue when a build with Travis CI fails.
+- [x] [Badges](https://bugtrackr.github.io/api/badges/) that can be displayed in GitHub 'README.md' file.
+- [x] [Import RSS Feeds](https://bugtrackr.github.io/api/rss/) to create new issues from RSS feeds.
+
 ### v2.0
 - [x] Merged github Repo https://github.com/philipp-r/bugtracker Features
 - [x] Seperated Permissions into Groups and Users Menus
@@ -69,15 +76,17 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] Added new theme used in https://github.com/dineshkummarc/bugtracker-1
 - [x] Added new theme 'phpmybugs'
 - [x] Added new Dependencies into en and Fr Languages
-- [ ] phpmyBugs/: : the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the languages
 - [x] duplicate language files exists on the server like fr, french & en, English. removed redundent language files en and fr.
+- [ ] phpmyBugs/: the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs/: error 'Wrong token. Please send again the form.'
 - [ ] /phpmyBugs/: Extend the settings to have themes based UI.
 - [ ] seperate General settings from Global settings to have seperate section
 - [ ] make default theme as that of phpmybugs default theme
+- [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
+- [ ] New issue link is seen without login, remove it from the nonlogged in page
 
 ### v2.2
 - [ ] New Language supported (_cmn_)
