@@ -122,7 +122,7 @@ class Trad {
 	const S_RSS_ISSUE_UPDATED = '%adj% par %user%.';
 	const S_RSS_ISSUE_STATUS_UPDATED = 'Statut changé à « %status% » par %user%.';
 
-	const S_INTRO_INSTALL = 'On dirait que c\'est la première fois que vous utilisez Nireus ! Merci de le configurer :';
+	const S_INTRO_INSTALL = 'On dirait que c\'est la première fois que vous utilisez phpmyBugs ! Merci de le configurer :';
 	const S_FIRST_ISSUE_TITLE = 'Ça roule ma poule ?';
 	const S_FIRST_ISSUE = 'Je suis votre toute première demande ! Après vous être connecté, vous pourrez me supprimer.';
 
@@ -153,8 +153,8 @@ class Trad {
 	const A_ERROR_FATAL = 'Désolé, une erreur s\'est produite. Merci de contacter un administrateur si le problème persiste.';
 	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />Fichier « <strong>%file%</strong> » à la ligne <strong>%line%</strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong>Terminé :</strong> Nireus est maintenant configuré.';
-	const A_ERROR_INSTALL = '<strong>Erreur :</strong> Nireus est déjà configuré. Si vous souhaitez revenir à la configuration par défaut, supprimez le fichier de configuration.';
+	const A_SUCCESS_INSTALL = '<strong>Terminé :</strong> phpmyBugs est maintenant configuré.';
+	const A_ERROR_INSTALL = '<strong>Erreur :</strong> phpmyBugs est déjà configuré. Si vous souhaitez revenir à la configuration par défaut, supprimez le fichier de configuration.';
 	const A_MODIF_SAVED = 'Les modifications ont été sauvegardées.';
 
 	const A_ERROR_FORM = 'Une erreur s\'est produite. Merci de soumettre à nouveau le formulaire.';
@@ -320,7 +320,7 @@ Ceci est un message automatisé. Merci de ne pas y répondre.
 	const F_INVALID_CAPTCHA = 'Le CAPTCHA que vous avez entré a eu tort. Veuillez réessayer.';
 
 	const F_TIP_NAME = 'Ce nom sera affiché en haut de chaque page.';
-	const F_TIP_URL_REWRITING = 'Laissez ce champ vide pour désactiver l\'url rewriting. Sinon, il doit contenir le chemin du dossier de Nireus (en commençant et terminant par un "/") par rapport au nom de domaine.';
+	const F_TIP_URL_REWRITING = 'Laissez ce champ vide pour désactiver l\'url rewriting. Sinon, il doit contenir le chemin du dossier de phpmyBugs (en commençant et terminant par un "/") par rapport au nom de domaine.';
 	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
 	const F_TIP_INTRO = 'Cette introduction sera affichée sur la page d\'accueil et mise en forme avec la syntaxe Markdown. Remarque : s\'il n\'y a qu\'un seul projet nommé « %name% », la page d\'accueil est automatiquement redirigée vers le tableau de bord de ce projet, et ce texte ne sera donc jamais affiché.';
 	const F_TIP_EMAIL = 'Laissez ce champ vide si vous ne souhaitez pas activer les notifications par mail. Sinon, cette adresse sera utilisée comme expéditrice des mails envoyés.';

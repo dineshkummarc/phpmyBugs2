@@ -23,7 +23,7 @@
 [ Include source code to reproduce, if relevant. ]
 
 ## My Environment
- * Nireus version: [ version  or branch and commit ]
+ * phpmyBugs version: [ version  or branch and commit ]
  * Browser: [ Firefox / Safari / Chrome / ... ]
  * Webserver: [ Apache / Lighttpd / ... ]
  * [ add more information if possible and relevant ]

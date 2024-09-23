@@ -122,7 +122,7 @@ class Trad {
 	const S_RSS_ISSUE_UPDATED = '%adj% von %user%.';
 	const S_RSS_ISSUE_STATUS_UPDATED = 'Status aktualisiert zu “%status%” von %user%.';
 
-	const S_INTRO_INSTALL = 'Bitte konfiguriere Nireus:';
+	const S_INTRO_INSTALL = 'Bitte konfiguriere phpmyBugs:';
 	const S_FIRST_ISSUE_TITLE = 'Wie geht es dir?';
 	const S_FIRST_ISSUE = 'Ich bin dein erster Fall! Nachdem du dich angemeldet hast, kannst du mich bearbeiten oder löschen.';
 
@@ -153,8 +153,8 @@ class Trad {
 	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schiefgelaufen. Bitte kontaktiere den Administrator, wenn das Problem weiterhin besteht.';
 	const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />Datei “<strong>%file%</strong>” in Zeile <strong>%line%</strong>.';
 
-	const A_SUCCESS_INSTALL = '<strong>Fertig:</strong> Nireus ist eingerichtet.';
-	const A_ERROR_INSTALL = '<strong>Fehler:</strong> Nireus ist schon installiert. Lösche die Konfigurationsdatei um sie zurückzusetzen.';
+	const A_SUCCESS_INSTALL = '<strong>Fertig:</strong> phpmyBugs ist eingerichtet.';
+	const A_ERROR_INSTALL = '<strong>Fehler:</strong> phpmyBugs ist schon installiert. Lösche die Konfigurationsdatei um sie zurückzusetzen.';
 	const A_MODIF_SAVED = 'Änderungen wurden gespeichert.';
 
 	const A_ERROR_FORM = 'Ein Fehler ist aufgetreten. Bitte schicke das Formular erneut ab.';
@@ -316,7 +316,7 @@ This is an automated email, please do not reply.
 	const F_INVALID_CAPTCHA = 'The CAPTCHA you entered was wrong. Please try again.';
 
 	const F_TIP_NAME = 'It will be displayed on the header of each page.';
-	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to Nireus folder (started and ended with a "/"), relative to the domain name.';
+	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
 	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
 	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
 	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
