@@ -29,6 +29,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] renamed the label 'You are now logged' to 'You are now logged into the System.'
 - [x] index.php?project=default&page=new_issue: removed the space by moving label 'new issue' to any other placeholder.
 - [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
+- [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
 ![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
@@ -59,9 +60,8 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v2.0
 - [x] Merged github Repo https://github.com/philipp-r/bugtracker Features
 - [x] Seperated Permissions into Groups and Users Menus
-- [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: Error: Wrong username or password.
-- [x] /phpmyBugs/: created a new directory named themes under '\phpmyBugs\public\'
+- [x] /phpmyBugs/: created a new directory named 'themes' under '\phpmyBugs\public\'
 - [x] upgrade php version to php7.4.33 for upgrade considerations
 
 ### v2.1
