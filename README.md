@@ -23,6 +23,9 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v0.4
 - [x] New Colors for the Design
+- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFCB83' to a similar color used on the page like with '618DB1'
+- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFF1DF' to a similar color used on the page like with 'BAE2FF'
+- [x] /phpmyBugs/index.php?project=default&page=view_issue&id=1: UI issue due to a white Color spot seen on the boxes
 ![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
@@ -53,9 +56,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
 - [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: Error: Wrong username or password.
-- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFCB83' to a similar color used on the page like with '618DB1'
-- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFF1DF' to a similar color used on the page like with 'BAE2FF'
-- [x] /phpmyBugs/index.php?project=default&page=view_issue&id=1: UI issue due to a white Color spot seen on the boxes
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
 - [x] /phpmyBugs/: created a new directory named themes under '\phpmyBugs\public\'
 - [x] upgrade php version to php7.4.33 for upgrade considerations
