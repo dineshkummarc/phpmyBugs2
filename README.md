@@ -71,6 +71,8 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] Added new Dependencies into en and Fr Languages
 - [ ] phpmyBugs/: : the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
 - [ ] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the languages
+- [ ] duplicate language files exists on the server like fr, french & en, English. remove redundency.
+- [ ] portal name is used a hardcoded name in several places of the portal.
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs/: error 'Wrong token. Please send again the form.'
 - [ ] /phpmyBugs/: Extend the settings to have themes based UI.
