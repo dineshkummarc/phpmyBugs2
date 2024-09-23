@@ -131,5 +131,5 @@ Before any update, it's highly recommended to make a backup. You only need to sa
 - [x] Tested using WAMPServer v3.3.5 (Apache/2.4.59, MySql 8.3.0, PHP/7.4.33) on Microsoft Edge Version 129.0.2792.52 (Official build) (64-bit)
 
 ## About ~Booby Bumpy~ phpmybugs
-Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
+Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs2/issues)
 phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.
