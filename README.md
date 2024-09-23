@@ -48,10 +48,27 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v2.0
 - [x] Merged github Repo https://github.com/philipp-r/bugtracker Features
 - [x] Seperated Permissions into Groups and Users Menus
+- [x] renamed the label 'You are now logged' to 'You are now logged into the System.'
+- [x] index.php?project=default&page=new_issue: removed the space by moving label 'new issue' to any other placeholder.
+- [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
+- [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
+- [x] /phpmyBugs/index.php?project=default&page=dashboard: Error: Wrong username or password.
+- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFCB83' to a similar color used on the page like with '618DB1'
+- [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFF1DF' to a similar color used on the page like with 'BAE2FF'
+- [x] /phpmyBugs/index.php?project=default&page=view_issue&id=1: UI issue due to a white Color spot seen on the boxes
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
+- [x] /phpmyBugs/: created a new directory named themes under '\phpmyBugs\public\'
+- [x] upgrade php version to php7.4.33 for upgrade considerations
 
 ### v2.1
-- [x] Added new theme phpmybugs
+- [x] Added new theme used in https://github.com/dineshkummarc/bugtracker-1
+- [x] Added new theme 'phpmybugs'
 - [x] Added new Dependencies into en and Fr Languages
+- [ ] phpmyBugs/: : the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
+- [ ] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the names
+- [ ] deprecation alerts on upgrading the test env to php7.4.33
+- [ ] /phpmyBugs/: error 'Wrong token. Please send again the form.'
+- [ ] /phpmyBugs/: Extend the settings to have themes based UI.
 
 ### v2.2
 - [ ] New Language supported (_cmn_)

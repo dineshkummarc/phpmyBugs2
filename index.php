@@ -30,11 +30,6 @@ spl_autoload_register('loadClass');
 ### Catch errors
 set_error_handler(array('Text', 'capture_error'));
 
-# define('NAME', 'Nireus');
-# define('VERSION', '1.1.3');
-# define('AUTHOR', 'bugtrackr');
-# define('URL', 'https://github.com/bugtrackr/Nireus');
-
 define('NAME', 'phpmyBugs');
 define('VERSION', '1.1.3');
 define('AUTHOR', 'Pierre Monchalin');
