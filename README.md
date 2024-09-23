@@ -18,6 +18,7 @@ phpmyBugs is a simple, responsive and highly customizable PHP bug tracking syste
 - [x] E-mail notifications
 - [x] Various languages supported ( _fr_, _en_ for now)
 - [x] RSS feeds
+- [x] Language Switch and selection under settings
 
 To get more information on v0.3 or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
@@ -69,7 +70,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] Added new theme 'phpmybugs'
 - [x] Added new Dependencies into en and Fr Languages
 - [ ] phpmyBugs/: : the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
-- [ ] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the names
+- [ ] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the languages
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs/: error 'Wrong token. Please send again the form.'
 - [ ] /phpmyBugs/: Extend the settings to have themes based UI.
@@ -91,9 +92,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v2.7
 - [ ] New Themes selection on dashboard
-
-### v2.8
-- [ ] Language Switch and selection
 
 ### Screenshots (Based on v0.9)
 
