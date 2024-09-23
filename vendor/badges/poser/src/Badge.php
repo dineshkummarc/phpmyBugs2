@@ -4,7 +4,7 @@ namespace PUGX\Poser;
 
 class Badge
 {
-    CONST DEFAULT_FORMAT = 'svg';
+    const DEFAULT_FORMAT = 'svg';
     private static $colorScheme = array(
         "brightgreen" => "44cc11",
         "green"       => "97CA00",
@@ -104,7 +104,8 @@ class Badge
 
     public function __toString()
     {
-        return sprintf("%s-%s-%s.%s",
+        return sprintf(
+            "%s-%s-%s.%s",
             $this->subject,
             $this->status,
             $this->color,
