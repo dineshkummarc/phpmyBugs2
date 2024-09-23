@@ -26,37 +26,41 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFCB83' to a similar color used on the page like with '618DB1'
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: change color 'FFF1DF' to a similar color used on the page like with 'BAE2FF'
 - [x] /phpmyBugs/index.php?project=default&page=view_issue&id=1: UI issue due to a white Color spot seen on the boxes
+- [x] renamed the label 'You are now logged' to 'You are now logged into the System.'
+- [x] index.php?project=default&page=new_issue: removed the space by moving label 'new issue' to any other placeholder.
+- [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
 ![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
 - [x] New Language supported (_de_)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using German Language as installer option
 ![Dutch](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Dutch_DE_de.png)
 
 ### v0.6
 - [x] New Language supported (_hi_)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
 ![Hindi](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Hindi_IN_hi.png)
 
 ### v0.7
 - [x] New Language supported (_ru_)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Russian Language as installer option
 ![Russian](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Russian_RU_ru.png)
 
 ### v0.8
 - [x] New Language supported (_pt_)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Portuguese Language as installer option
 ![Portuguese](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Portuguese_PT_pt.png)
 
 ### v0.9
 - [x] New Language supported (_es_)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Spanish Language as installer option
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
 ### v2.0
 - [x] Merged github Repo https://github.com/philipp-r/bugtracker Features
 - [x] Seperated Permissions into Groups and Users Menus
-- [x] renamed the label 'You are now logged' to 'You are now logged into the System.'
-- [x] index.php?project=default&page=new_issue: removed the space by moving label 'new issue' to any other placeholder.
-- [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
 - [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: Error: Wrong username or password.
-- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
 - [x] /phpmyBugs/: created a new directory named themes under '\phpmyBugs\public\'
 - [x] upgrade php version to php7.4.33 for upgrade considerations
 
