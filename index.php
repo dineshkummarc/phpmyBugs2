@@ -31,9 +31,9 @@ spl_autoload_register('loadClass');
 set_error_handler(array('Text', 'capture_error'));
 
 define('NAME', 'phpmyBugs');
-define('VERSION', '1.1.3');
-define('AUTHOR', 'Pierre Monchalin');
-define('URL', 'http://bumpy-booby.derivoile.fr');
+define('VERSION', '2.1.0');
+define('AUTHOR', 'Dineshkummarc');
+define('URL', 'https://github.com/dineshkummarc/phpmyBugs2');
 
 ### Languages
 define('LANGUAGES', 'en,fr,dutch,hindi,russian,portuguese,spanish'); # Separated by a comma
