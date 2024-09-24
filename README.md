@@ -84,25 +84,27 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: Error: Wrong username or password.
 - [x] /phpmyBugs/: created a new directory named 'themes' under '\phpmyBugs\public\'
 - [x] upgrade php version to php7.4.33 for upgrade considerations
+- [x] renamed repo to 'phpmybugs2' for v2.0 related upgrades and updates
 
 ### v2.1
 - [x] Added new theme used in https://github.com/dineshkummarc/bugtracker-1
 - [x] Added new theme 'phpmybugs'
-- [x] Added new Dependencies into en and Fr Languages
+- [x] Added new Dependencies into en and fr Languages
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the languages
 - [x] duplicate language files exists on the server like fr, french & en, English. removed redundent language files en and fr.
 - [ ] link 'Powered by phpmyBugs' with github repo url
-- [ ] phpmyBugs/: the theme \phpmyBugs\public\theme\pmb-red, shows dark blue color instead of red as marked in the theme.
+- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
-- [ ] /phpmyBugs/: error 'Wrong token. Please send again the form.'
-- [ ] /phpmyBugs/: Extend the settings to have themes based UI.
+- [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
+- [ ] /phpmyBugs2/: Extend the settings to have themes based UI.
 - [ ] seperate General settings from Global settings to have seperate section
 - [ ] make default theme as that of phpmybugs default theme
 - [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
-- [ ] New issue link is seen without login, remove it from the nonlogged in page
+- [ ] New issue link is seen without login, remove it from the non-logged in page
 - [ ] github repo links are hardcoded into the texts, make them using tags
 - [ ] cdn links are hardcoded into the texts, make them using tags
+- [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 
 ### v2.2
 - [ ] New Language supported (_cmn_)
