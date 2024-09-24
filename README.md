@@ -140,8 +140,11 @@ Users:-
 ## Running
 
 ### Installation Procedure
-Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
+Download the [latest release](https://github.com/dineshkummarc/phpmyBugs2) and upload to your webserver.
+The folder `./database` has to be writable for apache: `chmod -R 777 database`.
+Afer Coping all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
 ~Note : you can delete the `./public/css/app/` folder, it is useless.~
+[See our wiki](https://bugtrackr.github.io/wiki/install/) for details!
 
 Installation:-
 ![Installation](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/installation.png)
