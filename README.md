@@ -59,7 +59,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
 ### v1.1.3 -> by philipp-r
-#### API Management
+#### API
 Added manage [API](https://bugtrackr.github.io/api/) which has below features:
 - [x] [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
 - [x] [Travis CI API](https://bugtrackr.github.io/api/travis-ci/) to create a new issue when a build with Travis CI fails.
