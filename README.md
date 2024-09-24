@@ -60,16 +60,17 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v1.1.3 -> by philipp-r
 #### API Management
-- [x] Added manage [API](https://bugtrackr.github.io/api/) which has below features:
-	- [x] [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
-	- [x] [Travis CI API](https://bugtrackr.github.io/api/travis-ci/) to create a new issue when a build with Travis CI fails.
-	- [x] [Badges](https://bugtrackr.github.io/api/badges/) that can be displayed in GitHub 'README.md' file.
-	- [x] [Import RSS Feeds](https://bugtrackr.github.io/api/rss/) to create new issues from RSS feeds.
+Added manage [API](https://bugtrackr.github.io/api/) which has below features:
+- [x] [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
+- [x] [Travis CI API](https://bugtrackr.github.io/api/travis-ci/) to create a new issue when a build with Travis CI fails.
+- [x] [Badges](https://bugtrackr.github.io/api/badges/) that can be displayed in GitHub 'README.md' file.
+- [x] [Import RSS Feeds](https://bugtrackr.github.io/api/rss/) to create new issues from RSS feeds.
+#### Captcha
+
 #### Configuration
 You can do all changes by opening `./index.php?page=settings` in your browser. [See our wiki](https://bugtrackr.github.io/wiki/config/) for details!
 To configure the [API](https://bugtrackr.github.io/api/) change the settings manually in `./database/config_api.php`.
 There is a sample configuration file `./sample_config/config_api.php`.
-#### Captcha
 You can also edit the [Captcha](https://bugtrackr.github.io/wiki/captcha/) which is displayed when a user who is not logged in wants to create a new issue.
 You can do this with `./database/config_captcha.php` file. There is a sample configuration file `./sample_config/config_captcha.php`.
 
