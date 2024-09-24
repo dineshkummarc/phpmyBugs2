@@ -23,7 +23,7 @@ class Trad {
 	const W_RENDERING = 'Rendering';
 	const W_ID = 'ID';
 	const W_DISPLAY_NAME = 'Display name';
-
+	
 	const W_SECONDE = 'second';
 	const W_MINUTE = 'minute';
 	const W_HOUR = 'hour';
@@ -43,16 +43,15 @@ class Trad {
 
 	const W_PREVIOUS = 'Previous';
 	const W_NEXT = 'Next';
-	const W_MORE = 'MORE';
 	const W_CURRENT = 'Page %nb1% of %nb2%';
 
-	const W_NOT_LOGGED = 'Not logged in';
+	const W_NOT_LOGGED = 'Not logged';
 
 	const W_SUSPENSION = '…';
 	const W_EXTRACT = '“%text%”';
 
 	const W_USER = 'User';
-	const W_DEVELOPPER = 'Developper';
+	const W_DEVELOPPER = 'Developer';
 	const W_SUPERUSER = 'Superuser';
 	const W_S_NEW = 'New';
 	const W_S_CONFIRMED = 'Confirmed';
@@ -66,11 +65,6 @@ class Trad {
 	const W_PROFILEPIC = 'profile picture';
 
 	const W_RSS = 'RSS feed';
-	const W_VERSION = 'Version';
-
-	const W_CAPTCHA_IMAGE = 'CAPTCHA Image';
-	const W_CAPTCHA_REFRESH = 'Refresh Image';
-	const W_CAPTCHA_INPUT = 'Type the text:';
 
 		# Verbes
 
@@ -88,7 +82,6 @@ class Trad {
 	const V_APPLY = 'Apply';
 	const V_EDIT = 'Edit';
 	const V_SIGNUP = 'Sign up';
-	const V_LOGIN = 'Log in';
 	const V_CONTINUE = 'Continue';
 	const V_REMOVE_ISSUE = 'Delete issue';
 	const V_CLOSE = 'close';
@@ -136,14 +129,8 @@ class Trad {
 
 	const S_SEARCH = '#12, @user, words…';
 	const S_COPYRIGHT = 'Powered by %name%.';
-	const S_UPGRADE = 'Get latest version from <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> to <a href="https://bugtrackr.github.io/wiki/upgrade/">upgrade</a>.';
 
 	const S_LAST_UPDATES = 'Last updates…';
-
-	const S_STAY_LOGGEDIN = 'Keep me logged in';
-
-	const S_DEFAULT_DEFPROJ_DESC = 'This is the default project where everyone has access to.';
-	const S_DEFAULT_2NDPROJ_DESC = 'This could be your 2nd project project where only registered users are allowed to post issues.';
 
 		# Alerts
 
@@ -185,7 +172,7 @@ class Trad {
 	const A_PLEASE_LOGIN_ISSUE = 'Please log in to submit an issue. No account yet? Create one: it\'s free and really fast !';
 	const A_SHOULD_LOGIN = 'If you have an account, please log in. If not, consider creating one: it\'s free and really fast !';
 
-	const A_IE = 'Your browser is obsolete: <a href="https://www.browser-update.org/en/update.html">upgrade or change it</a>.';
+	const A_IE = 'Your browser is obsolete: <a href="http://www.browserchoice.eu">upgrade or change it</a>.';
 
 		# Mails
 
@@ -194,50 +181,43 @@ class Trad {
 
 The issue #%id% — “%summary%” has just been commented by %by%. You can read the new comment here:
 	%url%.
+
 If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
+
 -----
 This is an automated email, please do not reply.
 	';
+
 	const M_NEW_ISSUE_O = '[%title% — %project%] New issue';
 	const M_NEW_ISSUE = 'Hi, %username%!
 
 The issue #%id% — “%summary%” has just been submited by %by%. You can read it here:
 	%url%.
+
 If you don\'t want to receive further notifications on this issue, an option is available (after logging) via the link above.
+
 -----
 This is an automated email, please do not reply.
 	';
 
 		# Titles
 
-    const T_INSTALLATION = 'Installation';
+	const T_INSTALLATION = 'Installation';
 	const T_SETTINGS = 'Settings';
 	const T_GLOBAL_SETTINGS = 'Global settings';
 	const T_APPEARANCE = 'Appearance';
 	const T_ISSUES = 'Issues';
 	const T_GROUPS = 'Groups';
 	const T_USERS = 'Users';
-	const T_PERMISSIONS = 'Permissions';
-	const T_ENABLE_CAPTCHA = 'Manage Captcha';
-	const T_CAPTCHA = 'Captcha';
 	const T_BROWSE_ISSUES = 'Browse issues';
-	const T_BROWSE_ALL_ISSUES = 'Browse all issues';
-	const T_ALL_ISSUES_DESCRIPTION = 'This are all open issues for all projects';
 	const T_NEW_ISSUE = 'New issue';
-	const T_ALL_ISSUES = 'All issues';
 	const T_PROJECTS = 'Projects';
 	const T_DASHBOARD = 'Dashboard';
 	const T_LAST_UPDATES = 'Last updates';
 	const T_LAST_ACTIVITY = 'Last activity';
 	const T_UPLOADS = 'Uploads';
 	const T_SEARCH = 'Search';
-	const T_LINK_CONTACT = 'Contact Us';
-	const T_LINK_LEGALNOTICE = 'Legal Notice';
-	const T_LINK_PRIVACYPOLICY = 'Privacy Policy';
-	const T_API_SETTINGS = 'API';
-	const T_API_ENABLE_SETTINGS = 'Manage API';
-	const T_API_ACCESS_SETTINGS = 'API access';
-	const T_INFO = 'Info';
+
 
 		# FORMS
 
@@ -247,14 +227,10 @@ This is an automated email, please do not reply.
 	const F_PASSWORD2 = 'Password';
 	const F_NAME = 'Name:';
 	const F_URL = 'Url:';
-	const F_URL_CDN = 'CDN Url:';
 	const F_URL_REWRITING = 'Url rewriting:';
 	const F_INTRO = 'Introduction:';
 	const F_DESCRIPTION = 'Description:';
 	const F_EMAIL = 'Email:';
-	const F_LINK_CONTACT = 'Link to external contact page (can be left empty):';
-	const F_LINK_LEGALNOTICE = 'Link to legal notice (can be left empty):';
-	const F_LINK_PRIVACYPOLICY = 'Link to privacy policy (can be left empty):';
 	const F_MAX_UPLOAD = 'Maximum size per upload:';
 	const F_ALLOCATED_SPACE = 'Allocated space per user:';
 	const F_GROUP = 'Group:';
@@ -270,8 +246,6 @@ This is an automated email, please do not reply.
 	const F_PREVIEW_PROJECT = 'Previews length (projects):';
 	const F_LAST_EDITS = 'Number of issues displayed on dashboards:';
 	const F_LAST_ACTIVITY = 'Number of issues displayed on user pages:';
-	const F_THEME = "Theme";
-	const F_TIP_THEME = "Place the .css file in";
 
 	const F_ADD_PROJECT = 'New project';
 	const F_ADD_COLOR = 'New color';
@@ -289,7 +263,6 @@ This is an automated email, please do not reply.
 	const F_FILTER_STATES = 'Filter states:';
 	const F_FILTER_LABELS = 'Filter labels:';
 	const F_FILTER_USERS = 'Filter users:';
-	const F_FILTER_MILESTONE = 'Filter milestone:';
 
 	const F_WRITE = 'Write:';
 	const F_SUMMARY = 'Summary';
@@ -298,7 +271,6 @@ This is an automated email, please do not reply.
 	const F_STATUS = 'Status:';
 	const F_RELATED = 'Related:';
 	const F_LABELS2 = 'Labels:';
-	const F_MILESTONE = 'Milestone:';
 
 	const F_GENERAL_SETTINGS = 'General settings:';
 	const F_PROJECTS = 'Projects:';
@@ -312,11 +284,8 @@ This is an automated email, please do not reply.
 	const F_PERMISSIONS = 'Manage permissions:';
 	const F_USERS = 'Manage users:';
 
-	const F_INVALID_CAPTCHA = 'The CAPTCHA you entered was wrong. Please try again.';
-
 	const F_TIP_NAME = 'It will be displayed on the header of each page.';
 	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
-	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
 	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
 	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
 	const F_TIP_PASSWORD = 'Leave it empty if you don\'t want to change the password.';
@@ -331,10 +300,6 @@ This is an automated email, please do not reply.
 	const F_TIP_ID_STATUS = '<b>Tip:</b> be careful when changing the IDs, because each issue keeps its old status ID (except if this ID does not exist anymore: in this case, the default status will be used).';
 	const F_TIP_ID_LABEL = '<b>Tip:</b> be careful when changing the IDs, because each label of one issue keeps its old ID (except if this ID does not exist anymore: in this case, the label is removed from the issue).';
 	const F_TIP_ID_GROUP = '<b>Tip:</b> be careful when changing the IDs, because each user keeps its old group ID (except if this ID does not exist anymore: in this case, the default group will be used).';
-	const F_TIP_CAPTCHA = 'Choose the actions where a captcha will be shown for not logged in users.';
-	const F_TIP_API_ACCESS = 'Configure API access in <em>/database/config_api.php</em> file. For more info see API.md file.';
-
-	const F_API_ENABLE = 'Enable the API';
 
 	const HELP_MARKDOWN = '
 		<h2>Markdown syntax:</h2>
@@ -343,17 +308,17 @@ This is an automated email, please do not reply.
 <pre><code class="blank no-highlight">Paragraphs are separated by one or more blank lines.
 That\'s why this text will be displayed in the same line that the previous phrase, no matter the line break.
 
-To start a new line without creating a new paragraph:
+To start a new line without creating a new paragraph:  
 insert 2 spaces before the line break, just like here.</code></pre>
 		<p>Emphasis:</p>
-<pre><code class="blank no-highlight">*Italic text*
-_Itatic text again_
+<pre><code class="blank no-highlight">*Italic text*  
+_Itatic text again_  
 
-**Bold text**
+**Bold text**  
 __Bold text again__  </code></pre>
 
 		<p>Links:</p>
-<pre><code class="blank no-highlight">This is [an example](http://example.com) of inline link.
+<pre><code class="blank no-highlight">This is [an example](http://example.com) of inline link.  
 This is another one : &lt;http://example.com&gt;.</code></pre>
 
 		<p>Images:</p>
@@ -394,7 +359,7 @@ This is another one : &lt;http://example.com&gt;.</code></pre>
 	private static $permissions = array(
 		'home' => array(
 			'title' => 'Home:',
-			'description' => 'Can access to the home page and view list of all open issues for his projects.'
+			'description' => 'Can access to the home page.'
 		),
 		'dashboard' => array(
 			'title' => 'Dashboards:',

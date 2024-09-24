@@ -47,6 +47,7 @@ if ($config['url_rewriting']) { $settings->url_rewriting(); }
 $settings->save();
 
 header('Content-Type: text/html; charset=utf-8');
-die('Successfully upgraded! Refresh the page to access Nireus.');
+# die('Successfully upgraded! Refresh the page to access Nireus.');
+die('Mise à jour effectuée avec succès ! Raffraichissez cette page pour accéder à phpmyBugs.');
 
 ?>

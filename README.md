@@ -1,50 +1,108 @@
-# Nireus
+# phpmyBugs v1.1.4
 
-[![Issues](https://img.shields.io/github/issues/bugtrackr/Nireus.svg)](https://github.com/bugtrackr/Nireus/issues)
-[![GPL License](https://img.shields.io/badge/license-GPL-blue.svg)](https://bugtrackr.github.io/license/)
-[![Bitcoin donations](https://img.shields.io/badge/tips---%3E_bitcoin-ff69b4.svg)](https://blockchain.info/address/1PuhHFRSqYyxbtLmvoF3D1LkoY2mVENCia)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/bugtrackr)
+basically a merge collaboration of two repos https://github.com/piero-la-lune/Bumpy-Booby + https://github.com/philipp-r/bugtracker into this repo.
+phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world (based on List of languages by number of native speakers).
+![phpmyBugs logo](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/phpmybugs-logo.png)
 
-Nireus is a simple, responsive and highly customizable PHP bug tracking system. [Try the demo](https://bumpybooby.herokuapp.com/)
+### Features:
+### v0.3 -> initial by Pierre Monchalin
+- [x] **No database required**
+- [x] Statuses and tags highly customizable
+- [x] File attachments
+- [x] Syntax highlighting for code blocks
+- [x] Permissions & groups highly customizable
+- [x] Multiple projects management
+- [x] Easy backup (one folder)
+- [x] Protection against too many failed login attempts
+- [x] URL rewriting
+- [x] E-mail notifications
+- [x] Various languages supported ( _fr_, _en_ for now)
+- [x] RSS feeds
 
-Version 1.1.3
+To get more information on v0.3 or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
-## Install
+### v0.4
+- [x] New Colors for the Design
+![NewColors](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/new-colors.png)
 
-Download the [latest release](https://github.com/bugtrackr/Nireus/releases/latest) and upload to your webserver.
-The folder `./database` has to be writable for apache: `chmod -R 777 database`.
-[See our wiki](https://bugtrackr.github.io/wiki/install/) for details!
+### v0.5
+- [x] New Language supported (_de_)
+![Dutch](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Dutch_DE_de.png)
 
-## Configuration
+### v0.6
+- [x] New Language supported (_hi_)
+![Hindi](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Hindi_IN_hi.png)
 
-You can do all changes by opening `./index.php?page=settings` in your browser. [See our wiki](https://bugtrackr.github.io/wiki/config/) for details!
-To configure the [API](https://bugtrackr.github.io/api/) change the settings manually in `./database/config_api.php`.
-There is a sample configuration file `./sample_config/config_api.php`.
-You can also edit the [Captcha](https://bugtrackr.github.io/wiki/captcha/) which is displayed when a user who is not logged in wants to create a new issue.
-You can do this with `./database/config_captcha.php` file. There is a sample configuration file `./sample_config/config_captcha.php`.
+### v0.7
+- [x] New Language supported (_ru_)
+![Russian](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Russian_RU_ru.png)
 
-## API
+### v0.8
+- [x] New Language supported (_pt_)
+![Portuguese](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Portuguese_PT_pt.png)
 
-The [API](https://bugtrackr.github.io/api/) has these features:
+### v0.9
+- [x] New Language supported (_es_)
+![Spanish](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/Spanish_ES_es.png)
 
- * [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
- * [Travis CI API](https://bugtrackr.github.io/api/travis-ci/) to create a new issue when a build with Travis CI fails.
- * [Badges](https://bugtrackr.github.io/api/badges/) that can be displayed in GitHub 'README.md' file.
- * [Import RSS Feeds](https://bugtrackr.github.io/api/rss/) to create new issues from RSS feeds.
+### v1.0
+- [ ] New Language supported (_cmn_)
 
-## GNU GPL License
+### v1.1    
+- [ ] New Language supported (_ar_)
 
-Copyright (C) 2017 for the software by
-[bugtrackr team](https://github.com/bugtrackr) &
-[contributors](https://github.com/bugtrackr/Nireus/graphs/contributors)
+### v1.2
+- [ ] New Language supported (_bn_)
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>.
+### v1.3    
+- [ ] New Language supported (_ja_)
+
+### v1.4
+- [ ] New Language supported (_lah_)
+
+### v1.5
+- [ ] New Themes selection on dashboard
+
+### v1.6
+- [ ] Language Switch and selection
+
+### Screenshots (Based on v0.9)
+
+Dashboard:-
+![Dashboard](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/dashboard.png)
+New Issues:-
+![New Issues](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/new-issue.png)
+Issue Details:-
+![Issue Details](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/issue-details.png)
+Issues:-
+![Issues](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/issues.png)
+Settings:-
+![Settings](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/settings.png)
+Users:-
+![Users](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/users.png)
+
+## Running
+
+### Installation Procedure
+Copy all files, run `./` or `./index.php`, configure phpmyBugs and enjoy !
+~Note : you can delete the `./public/css/app/` folder, it is useless.~
+
+Installation:-
+![Installation](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/installation.png)
+Successful Installation:-
+![Successful Installation](https://bitbucket.org/dineshkummarc1/phpmybugs/src/main/screenshots/installation-completed.png)
+
+### Backup
+Before any update, it's highly recommended to make a backup. You only need to save the `./database/` folder.
+
+### Requirements
+- [x] ~phpmyBugs doesn't support IE 6, 7, 8, 9 either. It requires JavaScript to work properly.~
+- [x] It requires JavaScript enabled browser to work properly.
+
+### Testing
+- [x] Tested using XAMPP control panel v3.2.4 (Apache/2.4.41, MySql 5.0.12-dev, PHP/7.1.33) on Chrome Version 86.0.4240.198
+- [x] Tested using WAMPServer v3.3.5 (Apache/2.4.59, MySql 8.3.0, PHP/7.4.33) on Microsoft Edge Version 129.0.2792.52 (Official build) (64-bit)
+
+## About ~Booby Bumpy~ phpmybugs
+Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs/issues)
+phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.

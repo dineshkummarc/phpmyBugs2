@@ -1,5 +1,28 @@
 <?php
 
+# phpmyBugs
+# Copyright (c) 2013-2015 Pierre Monchalin
+# <http://bumpy-booby.derivoile.fr>
+# 
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+# 
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ### Load classes
 function loadclass($classe) { require './classes/'.str_replace('\\', '/', $classe).'.class.php'; }
 spl_autoload_register('loadClass');
@@ -7,13 +30,18 @@ spl_autoload_register('loadClass');
 ### Catch errors
 set_error_handler(array('Text', 'capture_error'));
 
-define('NAME', 'Nireus');
+# define('NAME', 'Nireus');
+# define('VERSION', '1.1.3');
+# define('AUTHOR', 'bugtrackr');
+# define('URL', 'https://github.com/bugtrackr/Nireus');
+
+define('NAME', 'phpmyBugs');
 define('VERSION', '1.1.3');
-define('AUTHOR', 'bugtrackr');
-define('URL', 'https://github.com/bugtrackr/Nireus');
+define('AUTHOR', 'Pierre Monchalin');
+define('URL', 'http://bumpy-booby.derivoile.fr');
 
 ### Languages
-define('LANGUAGES', 'en,fr'); # Separated by a comma
+define('LANGUAGES', 'en,fr,dutch,hindi,russian,portuguese,spanish'); # Separated by a comma
 define('DEFAULT_LANGUAGE', 'en'); # Used only during installation
 
 ### Directories and files
@@ -28,6 +56,7 @@ define('FILE_CONFIG', 'config.php');
 define('FILE_USERS', 'users.php');
 define('FILE_UPLOADS', 'uploads.php');
 define('FILE_ISSUES', 'issues.php');
+define('DIR_THEMES', dirname(__FILE__).'/public/themes/');
 
 ### Standart settings
 define('DEFAULT_COLOR', '#333333');
@@ -80,6 +109,7 @@ ini_set('session.use_cookies', 1);
 ini_set('session.use_only_cookies', 1);
 	# Prevent php to use sessionID in URL if cookies are disabled.
 ini_set('session.use_trans_sid', false);
+session_name('phpmybugs');
 session_start();
 
 
