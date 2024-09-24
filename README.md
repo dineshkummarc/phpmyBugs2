@@ -66,6 +66,10 @@ Added manage [API](https://bugtrackr.github.io/api/) which has below features:
 - [x] [Badges](https://bugtrackr.github.io/api/badges/) that can be displayed in GitHub 'README.md' file.
 - [x] [Import RSS Feeds](https://bugtrackr.github.io/api/rss/) to create new issues from RSS feeds.
 #### Captcha
+Added manage [Captcha](https://bugtrackr.github.io/wiki/captcha/) which has below features:
+- [x] [Captcha](https://bugtrackr.github.io/wiki/captcha/) can be enabled on Sign up Page for new users
+- [x] [Captcha](https://bugtrackr.github.io/wiki/captcha/) can be enabled on Comments section
+- [x] [Captcha](https://bugtrackr.github.io/wiki/captcha/) can be enabled on New Issues
 
 #### Configuration
 You can do all changes by opening `./index.php?page=settings` in your browser. [See our wiki](https://bugtrackr.github.io/wiki/config/) for details!
