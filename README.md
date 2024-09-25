@@ -138,7 +138,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_lah_)
 
 ### v2.8
-- [ ] New Themes selection on dashboard
+- [x] New Themes selection on dashboard, fixed in v2.0 but selection moved to settings
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
