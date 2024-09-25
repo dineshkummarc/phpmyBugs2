@@ -34,27 +34,27 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
-- [x] New Language supported (_de_)
+- [x] New Language supported (_de_) i.e. German
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using German Language as installer option
 ![Dutch](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Dutch_DE_de.png)
 
 ### v0.6
-- [x] New Language supported (_hi_)
+- [x] New Language supported (_hi_) i.e. Hindi
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
 ![Hindi](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Hindi_IN_hi.png)
 
 ### v0.7
-- [x] New Language supported (_ru_)
+- [x] New Language supported (_ru_) i.e. Russian
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Russian Language as installer option
 ![Russian](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Russian_RU_ru.png)
 
 ### v0.8
-- [x] New Language supported (_pt_)
+- [x] New Language supported (_pt_) i.e. Portuguese
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Portuguese Language as installer option
 ![Portuguese](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Portuguese_PT_pt.png)
 
 ### v0.9
-- [x] New Language supported (_es_)
+- [x] New Language supported (_es_) i.e. Spanish
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Spanish Language as installer option
 ![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
@@ -103,37 +103,38 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] merge: Warning: require(./classes/Trad.class.php): failed to open stream: No such file or directory in \phpmyBugs2\index.php on line 27
 - [x] link 'Powered by phpmyBugs' with github repo url
 - [x] /phpmyBugs2/: Extend the settings to have themes based UI.
-- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
+
+### v2.2
 - [ ] portal name is used as hardcoded name in several places of the portal.
-- [ ] seperate General settings from Global settings to have seperate section
+- [ ] seperate General settings from Global settings to have seperate section.
+- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 - [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
 - [ ] make default theme as that of phpmybugs default theme
 - [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
 - [ ] New issue link is seen without login, remove it from the non-logged in page
 - [ ] github repo links are hardcoded into the texts, make them using tags
 - [ ] cdn links are hardcoded into the texts, make them using tags
-- [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 
-### v2.2
+### v2.3
 - [ ] New Language supported (_cmn_)
 
-### v2.3    
+### v2.4    
 - [ ] New Language supported (_ar_)
 
-### v2.4
+### v2.5
 - [ ] New Language supported (_bn_)
 
-### v2.5    
+### v2.6    
 - [ ] New Language supported (_ja_)
 
-### v2.6
+### v2.7
 - [ ] New Language supported (_lah_)
 
-### v2.7
+### v2.8
 - [ ] New Themes selection on dashboard
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
-
+- [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 
 ### Screenshots (Based on v0.9)
 
