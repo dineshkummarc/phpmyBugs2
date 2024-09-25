@@ -105,11 +105,11 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] /phpmyBugs2/: Extend the settings to have themes based UI.
 
 ### v2.2
-- [] Add new Dependencies into de Language
-- [] Add new Dependencies into hi Language
-- [] Add new Dependencies into es Language
-- [] Add new Dependencies into pt Language
-- [] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
+- [ ] Add new Dependencies into de Language
+- [ ] Add new Dependencies into hi Language
+- [ ] Add new Dependencies into es Language
+- [ ] Add new Dependencies into pt Language
+- [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 - [ ] make default theme as that of phpmybugs default theme
