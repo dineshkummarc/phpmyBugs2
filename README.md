@@ -92,13 +92,21 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] Added new Dependencies into en and fr Languages
 - [x] /phpmyBugs/index.php?project=default&page=dashboard: the language dropdown field shows language short names, thats why user is not able to understand the languages
 - [x] duplicate language files exists on the server like fr, french & en, English. removed redundent language files en and fr.
-- [ ] link 'Powered by phpmyBugs' with github repo url
+- [x] constant DIR_THEMES was not used by application, now its used for the themes tips
+- [x] removed '/public/theme/' directory, there is no use of it
+- [x] added new tags as the releases for bugtracker1
+- [x] added new tags as the releases for phpmybugs
+- [x] merged tags and branches from the repo https://github.com/dineshkummarc/bugtracker1
+- [x] merged tags and branches from the repo https://github.com/dineshkummarc/phpmyBugs
+- [x] index page was distored on changing the name of the css from app.css to phpmybugs.css, hence added new themes
+- [x] added favicon.ico to show on the title on the pages
+- [x] merge: Warning: require(./classes/Trad.class.php): failed to open stream: No such file or directory in \phpmyBugs2\index.php on line 27
+- [x] link 'Powered by phpmyBugs' with github repo url
+- [x] /phpmyBugs2/: Extend the settings to have themes based UI.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 - [ ] portal name is used as hardcoded name in several places of the portal.
-- [ ] deprecation alerts on upgrading the test env to php7.4.33
-- [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
-- [ ] /phpmyBugs2/: Extend the settings to have themes based UI.
 - [ ] seperate General settings from Global settings to have seperate section
+- [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
 - [ ] make default theme as that of phpmybugs default theme
 - [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
 - [ ] New issue link is seen without login, remove it from the non-logged in page
@@ -123,6 +131,9 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 
 ### v2.7
 - [ ] New Themes selection on dashboard
+- [ ] deprecation alerts on upgrading the test env to php7.4.33
+- [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
+
 
 ### Screenshots (Based on v0.9)
 
