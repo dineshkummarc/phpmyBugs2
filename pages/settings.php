@@ -506,7 +506,7 @@ $content = '
 			}
 
 $content .= '</select>
-			<p class="help">'.Trad::F_TIP_THEME.' ./public/css</p>
+			<p class="help">'.Trad::F_TIP_THEME.' '.DIR_THEMES.'</p>
 		</div>
 	</div>
 
