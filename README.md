@@ -105,15 +105,22 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] /phpmyBugs2/: Extend the settings to have themes based UI.
 
 ### v2.2
+- [] Add new Dependencies into de Language
+- [] Add new Dependencies into hi Language
+- [] Add new Dependencies into es Language
+- [] Add new Dependencies into pt Language
+- [] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
-- [ ] seperate General settings from Global settings to have seperate section.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
-- [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
 - [ ] make default theme as that of phpmybugs default theme
 - [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
 - [ ] New issue link is seen without login, remove it from the non-logged in page
 - [ ] github repo links are hardcoded into the texts, make them using tags
 - [ ] cdn links are hardcoded into the texts, make them using tags
+- [ ] github link on page /index.php?page=settings is redirected to nireus release
+- [ ] seperate General settings from Global settings to have seperate section.
+- [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
+- [ ] move language section from 'generalsettings>>language' to Global settings section
 
 ### v2.3
 - [ ] New Language supported (_cmn_)
