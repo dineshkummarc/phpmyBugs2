@@ -103,6 +103,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] merge: Warning: require(./classes/Trad.class.php): failed to open stream: No such file or directory in \phpmyBugs2\index.php on line 27
 - [x] link 'Powered by phpmyBugs' with github repo url
 - [x] /phpmyBugs2/: Extend the settings to have themes based UI.
+- [x] New Themes selection on dashboard, fixed in v2.0 but selection moved to settings (user can change themes from settings)
 
 ### v2.2
 - [ ] Add new Dependencies into de Language
@@ -138,7 +139,6 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_lah_)
 
 ### v2.8
-- [x] New Themes selection on dashboard, fixed in v2.0 but selection moved to settings
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
