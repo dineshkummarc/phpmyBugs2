@@ -742,5 +742,16 @@
                 }
         ],
         "dev": true,
-        "dev-package-names": []
+        "dev-package-names": [
+                "badges/poser",
+                "dapphp/securimage",
+                "ezyang/htmlpurifier",
+                "psr/container",
+                "symfony/console",
+                "symfony/deprecation-contracts",
+                "symfony/polyfill-mbstring",
+                "symfony/polyfill-php73",
+                "symfony/polyfill-php80",
+                "symfony/service-contracts"
+        ]
 }

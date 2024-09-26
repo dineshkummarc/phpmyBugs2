@@ -1,0 +1,8 @@
+
+{
+    "require": {
+        "badges/poser": "^1.2",
+        "dapphp/securimage": "^3.6",
+        "ezyang/htmlpurifier": "^4.8"
+    }
+}

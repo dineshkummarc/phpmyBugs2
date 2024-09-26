@@ -1,7 +1,11 @@
+
 {
-    "require": {
-        "badges/poser": "^1.2",
+	"require": {
+		"php": "7.4.33"
+	},
+	"require-dev": {
+		"badges/poser": "^1.2",
         "dapphp/securimage": "^3.6",
         "ezyang/htmlpurifier": "^4.8"
-    }
+	}
 }

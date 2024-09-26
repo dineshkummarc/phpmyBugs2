@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "487ae3c380bb8db7a512f628a686cdfd",
-    "packages": [
+    "content-hash": "1760004a0236f441e6cbe76106696a4b",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "badges/poser",
             "version": "v1.4.1",
@@ -717,13 +718,14 @@
             "time": "2023-04-21T15:04:16+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "7.4.33"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
