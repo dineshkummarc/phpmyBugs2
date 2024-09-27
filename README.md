@@ -5,6 +5,9 @@ phpmyBugs is a simple, responsive and highly customizable PHP bug tracking syste
 ![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/phpmybugs-logo.png)
 
 ### Features:
+### v0.2 and below
+- [x] Please see https://github.com/piero-la-lune/Bumpy-Booby for older releases
+
 ### v0.3 -> initial by Pierre Monchalin
 - [x] **No database required**
 - [x] Statuses and tags highly customizable
