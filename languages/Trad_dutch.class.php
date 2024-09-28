@@ -2,457 +2,496 @@
 
 class Trad {
 
-		# Words
-
-	const W_ISSUE = 'Issue';
-	const W_OPEN = 'Öffnen';
-	const W_OPENED = 'Geöffnet';
-	const W_CLOSED = 'Geschlossen';
-	const W_REOPENED = 'Wiedereröffnet';
-	const W_COMMENTED = 'Kommentiert';
-	const W_NOBODY = 'niemand';
-	const W_SOMEONE = 'jemand';
-	const W_ENABLED = 'Aktiviert';
-	const W_DISABLED = 'Deaktiviert';
-	const W_NOTFOUND = 'Nicht gefunden';
-	const W_FORBIDDEN = 'Verboten';
-	const W_MENU = 'Menü';
-
-	const W_EXAMPLE = 'Beispiel';
-	const W_HEX = 'Hex';
-	const W_RENDERING = 'Rendern';
-	const W_ID = 'ID';
-	const W_DISPLAY_NAME = 'Anzeigename';
-	
-	const W_SECONDE = 'second';
-	const W_MINUTE = 'Minute';
-	const W_HOUR = 'Stunde';
-	const W_DAY = 'Tag';
-	const W_WEEK = 'Woche';
-	const W_MONTH = 'Monat';
-	const W_YEAR = 'Jahr';
-	const W_DECADE = 'decad';
-	const W_SECONDE_P = 'Sekunden';
-	const W_MINUTE_P = 'Minuten';
-	const W_HOUR_P = 'Stunden';
-	const W_DAY_P = 'Tage';
-	const W_WEEK_P = 'Wochen';
-	const W_MONTH_P = 'Monate';
-	const W_YEAR_P = 'Jahre';
-	const W_DECADE_P = 'Dekaden';
-
-	const W_PREVIOUS = 'Zurück';
-	const W_NEXT = 'Weiter';
-	const W_CURRENT = 'Seite %nb1% von %nb2%';
-
-	const W_NOT_LOGGED = 'Nicht protokolliert';
-
-	const W_SUSPENSION = '…';
-	const W_EXTRACT = '“%text%”';
-
-	const W_USER = 'Benutzer';
-	const W_DEVELOPPER = 'Entwickler';
-	const W_SUPERUSER = 'Superuser';
-	const W_S_NEW = 'Neu';
-	const W_S_CONFIRMED = 'Bestätigt';
-	const W_S_ASSIGNED = '%user% zugewiesen';
-	const W_S_RESOLVED = 'Gelöst';
-	const W_S_REJECTED = 'Abgelehnt';
-	const W_L_URGENT = 'Dringend';
-	const W_L_IMPROVEMENT = 'Verbesserung';
-	const W_L_PRIVATE = 'Privat';
-
-	const W_PROFILEPIC = 'Profilbild';
-
-	const W_RSS = 'RSS-Feed';
-
-		# Verben
-
-	const V_UPDATE = 'Update';
-	const V_UPDATE_DETAILS = 'Details aktualisieren';
-	const V_UPDATE_CONTENT = 'Inhalt aktualisieren';
-	const V_UPDATE_AND = 'Update & %adjective%';
-	const V_CANCEL = 'Abbrechen';
-	const V_PREVIEW = 'Vorschau';
-	const V_COMMENT = 'Kommentar';
-	const V_SUBMIT = 'Submit';
-	const V_SELECT_FILE = 'Datei auswählen ...';
-	const V_UPLOADING = 'Hochladen ...';
-	const V_SAVE_CONFIG = 'Einstellungen speichern';
-	const V_APPLY = 'Übernehmen';
-	const V_EDIT = 'Bearbeiten';
-	const V_SIGNUP = 'Anmelden';
-	const V_CONTINUE = 'Weiter';
-	const V_REMOVE_ISSUE = 'Problem löschen';
-	const V_CLOSE = 'close';
-	const V_REOPEN = 'wieder öffnen';
-	const V_EXPORT = 'Rohdaten exportieren';
-
-		# Sentencies
-
-	const S_NOLABEL = '-';
-	const S_NODEPENDENCY = '-';
-	const S_COMMENT_LEAVE = 'Hinterlasse einen Kommentar:';
-	const S_AGO = '%duration% %pediod% vor';
-	const S_ISSUE_ABOUT = 'Zu diesem Problem:';
-	const S_UPLOAD_ADD = 'Datei anhängen:';
-	const S_WELCOME = 'Willkommen, %user%';
-	const S_NEVER = 'Nie';
-	const S_ME = 'Von Updates zu Problemen, zu denen ich beigetragen habe';
-	const S_ALWAYS = 'Von jedem Update';
-	const S_START_NOTIF = 'Über neue Updates informiert werden';
-	const S_STOP_NOTIF = 'Updates werden nicht mehr benachrichtigt';
-	const S_NOTFOUND = 'Die Seite, nach der Sie suchen, existiert nicht mehr ...';
-	const S_FORBIDDEN = 'Sie dürfen nicht auf diese Seite zugreifen. Bitte melden Sie sich an / ab, um fortzufahren. ';
+# Woorden
+
+const W_ISSUE = 'Probleem';
+const W_OPEN = 'Open';
+const W_OPENED = 'Geopend';
+const W_CLOSED = 'Gesloten';
+const W_REOPENED = 'Heropend';
+const W_COMMENTED = 'Gecommenteerd';
+const W_NOBODY = 'niemand';
+const W_SOMEONE = 'iemand';
+const W_ENABLED = 'Ingeschakeld';
+const W_DISABLED = 'Uitgeschakeld';
+const W_NOTFOUND = 'Niet gevonden';
+const W_FORBIDDEN = 'Verboden';
+const W_MENU = 'Menu';
+
+const W_EXAMPLE = 'Voorbeeld';
+const W_HEX = 'Hex';
+const W_RENDERING = 'Rendering';
+const W_ID = 'ID';
+const W_DISPLAY_NAME = 'Weergavenaam';
+
+const W_SECONDE = 'seconde';
+const W_MINUTE = 'minuut';
+const W_HOUR = 'uur';
+const W_DAY = 'dag';
+const W_WEEK = 'week';
+const W_MONTH = 'maand';
+const W_YEAR = 'jaar';
+const W_DECADE = 'decad';
+const W_SECONDE_P = 'seconden';
+const W_MINUTE_P = 'minuten';
+const W_HOUR_P = 'uren';
+const W_DAY_P = 'dagen';
+const W_WEEK_P = 'weken';
+const W_MONTH_P = 'maanden';
+const W_YEAR_P = 'jaren';
+const W_DECADE_P = 'decads';
+
+const W_PREVIOUS = 'Vorige';
+const W_NEXT = 'Volgende';
+const W_MORE = 'MEER';
+const W_CURRENT = 'Pagina %nb1% van %nb2%';
+
+const W_NOT_LOGGED = 'Niet ingelogd';
+
+const W_SUSPENSION = '…';
+const W_EXTRACT = '“%text%”';
+
+const W_USER = 'Gebruiker';
+const W_DEVELOPPER = 'Ontwikkelaar';
+const W_SUPERUSER = 'Supergebruiker';
+const W_S_NEW = 'Nieuw';
+const W_S_CONFIRMED = 'Bevestigd';
+const W_S_ASSIGNED = 'Toegewezen aan %user%';
+const W_S_RESOLVED = 'Opgelost';
+const W_S_REJECTED = 'Afgewezen';
+const W_L_URGENT = 'Urgent';
+const W_L_IMPROVEMENT = 'Verbetering';
+const W_L_PRIVATE = 'Privé';
+
+const W_PROFILEPIC = 'profielfoto';
+
+const W_RSS = 'RSS-feed';
+const W_VERSION = 'Versie';
+
+const W_CAPTCHA_IMAGE = 'CAPTCHA-afbeelding';
+const W_CAPTCHA_REFRESH = 'Afbeelding vernieuwen';
+const W_CAPTCHA_INPUT = 'Typ de tekst:';
+
+# Verbes
+
+const V_UPDATE = 'Bijwerken';
+const V_UPDATE_DETAILS = 'Details bijwerken';
+const V_UPDATE_CONTENT = 'Inhoud bijwerken';
+const V_UPDATE_AND = '& %adjective% bijwerken';
+const V_CANCEL = 'Annuleren';
+const V_PREVIEW = 'Voorbeeld';
+const V_COMMENT = 'Opmerking';
+const V_SUBMIT = 'Verzenden';
+const V_SELECT_FILE = 'Selecteer een bestand…';
+const V_UPLOADING = 'Uploaden…';
+const V_SAVE_CONFIG = 'Instellingen opslaan';
+const V_APPLY = 'Toepassen';
+const V_EDIT = 'Bewerken';
+const V_SIGNUP = 'Aanmelden';
+const V_LOGIN = 'Inloggen';
+const V_CONTINUE = 'Doorgaan';
+const V_REMOVE_ISSUE = 'Probleem verwijderen';
+const V_CLOSE = 'Sluiten';
+const V_REOPEN = 'opnieuw openen';
+const V_EXPORT = 'ruwe data exporteren';
+
+# Zinnen
+
+const S_NOLABEL = '–';
+const S_NODEPENDENCY = '–';
+const S_COMMENT_LEAVE = 'Geef een reactie:';
+const S_AGO = '%duration% %pediod% geleden';
+const S_ISSUE_ABOUT = 'Over dit probleem:';
+const S_UPLOAD_ADD = 'Bestand bijvoegen:';
+const S_WELCOME = 'Welkom, %user%';
+const S_NEVER = 'Nooit';
+const S_ME = 'Van updates over problemen waaraan ik heb bijgedragen';
+const S_ALWAYS = 'Van elke update';
+const S_START_NOTIF = 'Word op de hoogte gebracht van nieuwe updates';
+const S_STOP_NOTIF = 'Word niet langer op de hoogte gebracht van updates';
+const S_NOTFOUND = 'De pagina die u zoekt bestaat niet meer...';
+const S_FORBIDDEN = 'U mag deze pagina niet openen. Meld u aan/af om verder te gaan.';
+
+const S_VIEW_PARTICIPATION = 'Bekijk zijn deelname.';
+const S_VIEW_STATUS = 'Bekijk problemen “%status%”.';
 
-	const S_VIEW_PARTICIPATION = 'Seine Teilnahme anzeigen.';
-	const S_VIEW_STATUS = 'Probleme anzeigen “%status%”.';
+const S_ISSUE_CREATED = 'door %user% %time%';
+const S_ISSUE_UPDATED = '%adj% door %user% %time%.';
+const S_ISSUE_STATUS_UPDATED = 'Status bijgewerkt naar %status% door %user% %time%.';
 
-	const S_ISSUE_CREATED = 'von %user% %time%';
-	const S_ISSUE_UPDATED = '%adj% von %user% %time%.';
-	const S_ISSUE_STATUS_UPDATED = 'Status von %user% %time% auf %status% aktualisiert.';
-
-	const S_RSS_ISSUE_UPDATED = '%adj% von %user%.';
-	const S_RSS_ISSUE_STATUS_UPDATED = 'Status von %user% auf "%status%" aktualisiert.';
-
-	const S_INTRO_INSTALL = 'Es sieht so aus, als ob Sie phpmyBugs zum ersten Mal ausführen! Bitte konfigurieren Sie es: ';
-	const S_FIRST_ISSUE_TITLE = 'Wie geht es dir, Kürbis?';
-	const S_FIRST_ISSUE = 'Ich bin Ihre erste Ausgabe! Nach der Anmeldung können Sie mich löschen. ';
-
-	const S_NO_USER = 'Kein Benutzer stimmt mit Ihrer Anfrage überein.';
-	const S_NO_ISSUE = 'Kein Problem entspricht Ihrer Anfrage.';
-	const S_MATCHING_ISSUES = '%nb% Übereinstimmungsprobleme';
-	const S_NO_ACTIVITY = 'Keine aktuelle Aktivität.';
-	const S_NO_UPLOAD = 'Kein Upload.';
-	const S_SIZE_REMAINING = '%remain% auf %total% erlaubt.';
-	const S_NO_PROJECT = 'Kein Projekt.';
-
-	const S_SEARCH = '#12, @user, words…';
-	const S_COPYRIGHT = 'Powered by %name%.';
-
-	const S_LAST_UPDATES = 'Letzte Aktualisierungen…';
-
-		# Alerts
-
-	const A_ERROR_DIRECTORY = '<strong> Fehler: </strong> Verzeichnis “%name%” kann nicht erstellt werden.';
-	const A_ERROR_FILE = '<strong> Fehler: </strong> Datei “%name%” kann nicht gelesen werden.';
-	const A_ERROR_FILE_WRITE = '<strong> Fehler: </strong> Datei “%name%” kann nicht geschrieben werden.';
-	const A_ERROR_FATAL = 'Entschuldigung, etwas ist schief gelaufen. Bitte wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht. ';
-	const A_ERROR = '<strong>%title%: </strong> <br /> <br />%message% <br /> <br /> Datei “<strong>%file%</strong>” in Zeile <strong>%line% </strong>.';
-
-	const A_SUCCESS_INSTALL = '<strong> Fertig: </strong> phpmyBugs ist jetzt vollständig konfiguriert.';
-	const A_ERROR_INSTALL = '<strong> Fehler: </strong> phpmyBugs ist bereits konfiguriert. Bitte entfernen Sie die Konfigurationsdatei, wenn Sie die Konfiguration zurücksetzen möchten. ';
-	const A_MODIF_SAVED = 'Änderungen wurden gespeichert.';
-
-	const A_ERROR_FORM = 'Ein Fehler ist aufgetreten. Bitte senden Sie das Formular erneut. ';
-	const A_ERROR_TOKEN = 'Falsches Token. Bitte senden Sie das Formular erneut. ';
-	const A_ERROR_EMPTY = 'Sie müssen einen Benutzernamen und ein Passwort angeben.';
-	const A_ERROR_SAME_USERNAME = 'Dieser Benutzername ist nicht verfügbar.';
-	const A_SUCCESS_SIGNUP = '<strong> Fertig: </strong> Sie können sich jetzt anmelden.';
-
-	const A_CONFIRM_DELETE_COMMENT = 'Möchten Sie diesen Kommentar wirklich löschen?';
-	const A_SUCCESS_DELETE_COMMENT = 'Der Kommentar wurde gelöscht.';
-	const A_CONFIRM_DELETE_ISSUE = 'Möchten Sie dieses Problem wirklich löschen?';
-	const A_SUCCESS_DELETE_ISSUE = 'Das Problem wurde gelöscht.';
-	const A_CONFIRM_DELETE_UPLOAD = 'Möchten Sie diese Datei wirklich löschen?';
-	const A_CONFIRM_DELETE_PROJECT = 'Möchten Sie dieses Projekt wirklich löschen? Alle entsprechenden Probleme gehen verloren. ';
-
-	const A_LOGGED = 'Sie sind jetzt im System angemeldet.';
-	const A_LOGGED_OUT = 'Sie sind jetzt vom System abgemeldet.';
-	const A_ERROR_CONNEXION = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Fehler: </strong> Falscher Benutzername oder falsches Passwort. Bitte warten Sie %duration% %period%, bevor Sie es erneut versuchen. ';
-	const A_ERROR_LOGIN_WAIT = 'Bitte warten Sie %duration% %period%, bevor Sie es erneut versuchen. Dies ist ein Schutz vor böswilligen Angriffen. ';
-
-	const A_ERROR_UPLOAD = 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.';
-	const A_ERROR_UPLOAD_SIZE = 'Datei überschreitet die maximal zulässige Größe (%nb% max).';
-	const A_ERROR_UPLOAD_FULL = 'Sie haben nicht genügend Speicherplatz zum Hochladen dieser Datei: %nb% verbleibend.';
-
-	const A_PLEASE_LOGIN_ISSUES = 'Bitte melden Sie sich an, um die Probleme zu sehen.';
-	const A_PLEASE_LOGIN_COMMENT = 'Bitte melden Sie sich an, um einen Kommentar zu schreiben. Noch keinen Account? Erstellen Sie eine: Es ist kostenlos und sehr schnell! ';
-	const A_PLEASE_LOGIN_ISSUE = 'Bitte melden Sie sich an, um ein Problem einzureichen. Noch keinen Account? Erstellen Sie eine: Es ist kostenlos und sehr schnell! ';
-	const A_SHOULD_LOGIN = 'Wenn Sie ein Konto haben, melden Sie sich bitte an. Wenn nicht, erstellen Sie eines: Es ist kostenlos und sehr schnell!';
-
-	const A_IE = 'Ihr Browser ist veraltet: <a href="http://www.browserchoice.eu"> aktualisieren oder ändern </a>.';
-
-		# Mails
-
-	const M_NEW_COMMENT_O = '[%title% - %project% - Problem #%id%] Neuer Kommentar';
-	const M_NEW_COMMENT = 'Hallo, %username% !
-
-	Das Problem #%id% - "%summary%" wurde gerade von %by% kommentiert. Den neuen Kommentar können Sie hier lesen:
-	%url%.
-
-	Wenn Sie keine weiteren Benachrichtigungen zu diesem Problem erhalten möchten, ist eine Option (nach der Protokollierung) über den obigen Link verfügbar.
-
-	-----
-	Dies ist eine automatisierte E-Mail, bitte antworten Sie nicht.
-	';
-
-	const M_NEW_ISSUE_O = '[%title% - %project%] Neue Ausgabe';
-	const M_NEW_ISSUE = 'Hallo, %username% !
-
-	Das Problem #%id% - "%summary%" wurde gerade von %by% übermittelt. Sie können es hier lesen:
-	%url%.
-
-	Wenn Sie keine weiteren Benachrichtigungen zu diesem Problem erhalten möchten, ist eine Option (nach der Protokollierung) über den obigen Link verfügbar.
-
-	-----
-	Dies ist eine automatisierte E-Mail, bitte antworten Sie nicht.
-		';
-
-		# Titles
-
-	const T_INSTALLATION = 'Installation';
-	const T_SETTINGS = 'Einstellungen';
-	const T_GLOBAL_SETTINGS = 'Globale Einstellungen';
-	const T_APPEARANCE = 'Aussehen';
-	const T_ISSUES = 'Probleme';
-	const T_GROUPS = 'Gruppen';
-	const T_USERS = 'Benutzer';
-	const T_BROWSE_ISSUES = 'Probleme durchsuchen';
-	const T_NEW_ISSUE = 'Neue Ausgabe';
-	const T_PROJECTS = 'Projekte';
-	const T_DASHBOARD = 'Dashboard';
-	const T_LAST_UPDATES = 'Letzte Aktualisierungen';
-	const T_LAST_ACTIVITY = 'Letzte Aktivität';
-	const T_UPLOADS = 'Uploads';
-	const T_SEARCH = 'Suche';
-
-		# FORMS
-
-	const F_USERNAME = 'Benutzername:';
-	const F_PASSWORD = 'Passwort:';
-	const F_USERNAME2 = 'Benutzername';
-	const F_PASSWORD2 = 'Passwort';
-	const F_NAME = 'Name:';
-	const F_URL = 'Url:';
-	const F_URL_REWRITING = 'URL neu schreiben:';
-	const F_INTRO = 'Einführung:';
-	const F_DESCRIPTION = 'Beschreibung:';
-	const F_EMAIL = 'Email:';
-	const F_MAX_UPLOAD = 'Maximale Größe pro Upload:';
-	const F_ALLOCATED_SPACE = 'Zugewiesener Speicherplatz pro Benutzer:';
-	const F_GROUP = 'Gruppe:';
-	const F_NOTIFICATIONS = 'Benachrichtigt werden:';
-	const F_PROJECT_X = 'Projekt « %name% »:';
-	const F_LANGUAGE = 'Sprache:';
-	const F_LOGS = 'Logs:';
-
-	const F_ISSUES_PAGE = 'Probleme pro Seite:';
-	const F_ISSUES_PAGE_SEARCH = 'Probleme pro Seite (Suche):';
-	const F_PREVIEW_ISSUE = 'Vorschau der Länge (Probleme):';
-	const F_PREVIEW_SEARCH = 'Vorschau Länge (Suche):';
-	const F_PREVIEW_PROJECT = 'Vorschau der Länge (Projekte):';
-	const F_LAST_EDITS = 'Anzahl der auf Dashboards angezeigten Probleme:';
-	const F_LAST_ACTIVITY = 'Anzahl der auf Benutzerseiten angezeigten Probleme:';
-
-	const F_ADD_PROJECT = 'Neues Projekt';
-	const F_ADD_COLOR = 'Neue Farbe';
-	const F_ADD_STATUS = 'Neuer Status';
-	const F_ADD_LABEL = 'Neues Label';
-	const F_ADD_GROUP = 'Neue Gruppe';
-	const F_ADD_USER = 'Neuer Benutzer';
-
-	const F_SORT_BY = 'Sortieren nach:';
-	const F_SORT_ID = 'ID';
-	const F_SORT_MOD = 'letzte Aktualisierung';
-	const F_SORT_DESC = 'absteigend';
-	const F_SORT_ASC = 'aufsteigend';
-	const F_FILTER_STATUSES = 'Filterstatus:';
-	const F_FILTER_STATES = 'Filterzustände:';
-	const F_FILTER_LABELS = 'Filterbeschriftungen:';
-	const F_FILTER_USERS = 'Benutzer filtern:';
-
-	const F_WRITE = 'Write:';
-	const F_SUMMARY = 'Zusammenfassung';
-	const F_CONTENT = 'Inhalt';
-
-	const F_STATUS = 'Status:';
-	const F_RELATED = 'Verwandte:';
-	const F_LABELS2 = 'Labels:';
-
-	const F_GENERAL_SETTINGS = 'Allgemeine Einstellungen:';
-	const F_PROJECTS = 'Projekte:';
-	const F_DATABASE = 'Datenbank:';
-	const F_UPLOADS = 'Uploads:';
-	const F_COLORS = 'Farben verwalten:';
-	const F_DISPLAY = 'Anzeige verwalten:';
-	const F_STATUSES = 'Status verwalten:';
-	const F_LABELS = 'Labels verwalten:';
-	const F_GROUPS = 'Gruppen verwalten:';
-	const F_PERMISSIONS = 'Berechtigungen verwalten:';
-	const F_USERS = 'Benutzer verwalten:';
-
-	const F_TIP_NAME = 'Es wird in der Kopfzeile jeder Seite angezeigt.';
-	const F_TIP_URL_REWRITING = 'Lassen Sie dieses Feld leer, um das Umschreiben von URLs zu deaktivieren. Andernfalls sollte es den Pfad zum Ordner phpmyBugs (gestartet und beendet mit einem "/") relativ zum Domänennamen enthalten. ';
-	const F_TIP_INTRO = 'Es wird auf der Homepage angezeigt. Es wird mit der Markdown-Syntax analysiert. Hinweis: Wenn nur ein Projekt mit dem Namen “%name%” vorhanden ist, wird die Startseite automatisch zum Projekt-Dashboard umgeleitet, und dieser Text wird nicht angezeigt. ';
-	const F_TIP_EMAIL = 'Lassen Sie dieses Feld leer, um E-Mail-Benachrichtigungen zu deaktivieren. Andernfalls wird diese Adresse beim Senden einer E-Mail-Benachrichtigung als Absender verwendet. ';
-	const F_TIP_PASSWORD = 'Lass es leer, wenn du das Passwort nicht ändern willst.';
-	const F_TIP_USER_EMAIL = 'Nur erforderlich, wenn Sie Benachrichtigungen erhalten möchten.';
-	const F_TIP_NOTIFICATIONS = 'Dies ist eine Standardeinstellung: Sie können sie für jedes Problem ändern.';
-	const F_TIP_NOTIFICATIONS_DISABLED = 'Hinweis: Benachrichtigungen werden derzeit vom Administrator deaktiviert.';
-	const F_TIP_DESCRIPTION = 'Es wird im Projekt-Dashboard angezeigt. Es wird mit der Markdown-Syntax analysiert. ';
-
-	const F_TIP_MAX_UPLOAD = 'Jede hochgeladene Datei darf diese Größe nicht überschreiten.';
-	const F_TIP_ALLOCATED_SPACE = 'Ein Benutzer kann keine anderen Dateien hochladen, sobald er dieses Limit erreicht hat. <br /> <em> Achtung: </ em> wenn keine angemeldeten Benutzer Dateien hochladen dürfen (dies ist nicht die Standardeinstellung), Diese Grenze gilt nicht für sie. ';
-
-	const F_TIP_ID_STATUS = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Problem seine alte Status-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird der Standardstatus verwendet). ';
-	const F_TIP_ID_LABEL = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jedes Etikett eines Problems seine alte ID behält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird das Etikett aus dem entfernt Problem).';
-	const F_TIP_ID_GROUP = '<b> Tipp: </b> Seien Sie vorsichtig, wenn Sie die IDs ändern, da jeder Benutzer seine alte Gruppen-ID beibehält (außer wenn diese ID nicht mehr vorhanden ist: In diesem Fall wird die Standardgruppe verwendet). ';
-
-	const HELP_MARKDOWN = '
-	<h2> Markdown-Syntax: </h2>
-
-	<p> Absätze: </p>
-	<pre> <code class="blank No-Highlight"> Absätze werden durch eine oder mehrere Leerzeilen getrennt.
-	Aus diesem Grund wird dieser Text unabhängig vom Zeilenumbruch in derselben Zeile wie der vorherige Satz angezeigt.
-
-	So beginnen Sie eine neue Zeile, ohne einen neuen Absatz zu erstellen:
-	Fügen Sie wie hier 2 Leerzeichen vor dem Zeilenumbruch ein. </code> </pre>
-	<p> Schwerpunkt: </p>
-	<pre><code class="blank no-highlight">*Italic text*  
-_Itatic text again_  
-
-**Bold text**
-__Bold text again__  </code></pre>
-
-	<p> Links: </p>
-	<pre> <code class="blank no-Highlight"> Dies ist [ein Beispiel] (http://example.com) eines Inline-Links.
-	Dies ist eine andere: &lt; http://example.com&gt;. </Code> </pre>
-
-	<p> Bilder: </p>
-	<pre> <code class="blank, no-Highlight">! [Ich bin ein Bild.] (http://example.com/image.png) </code> </pre>
-
-	<p> Überschriften: </p>
-	<pre> <code class="blank, no-Highlight"> # Titel der obersten Ebene
-	## Titel der zweiten Ebene
-	### Titel der dritten Ebene
-	#### Titel der vierten Ebene </code> </pre>
-
-	<p> Listen: </p>
-	<pre> <code class="blank, no-Highlight"> - ein Element
-	* noch einer
-
-	1. erster Punkt
-	2. zweites Element </code> </pre>
-
-	<p> Blockzitate: </p>
-	<pre> <code class="blank No-Highlight" >> Ich bin ein Blockzitat mit zwei Absätzen.
-	>
-	> Ich bin der zweite Absatz. </Code> </pre>
-
-	<p> Codeblöcke: </p>
-	<pre> <code class="blank no-Highlight"> Dies ist ein Inline-Codeblock. </code> </pre>
-	<pre> <code class="blank, no-Highlight"> &lt;?php echo "Ich bin ein Codeblock, weil ich eingerückt bin
-		mit 4 Leerzeichen "; ?&gt; </code> </pre>
-	<pre> <code class="blank No-Highlight"> ```
-	&lt;?php echo "Ich bin ein Codeblock."; ?&gt;
-	```
-
-	```php
-	&lt;?php echo "Unterstützte Sprachen sind: Bash, CS, Ruby, Diff, Javascript, CSS, XML, http, Java, PHP, Python, SQL, INI, Perl, JSON, CPP, Markdown, No-Highlight"; ?&gt;
-	```</code> </pre>
-	';
-
-	private static $permissions = array(
-		'home' => array(
-	'title' => 'Home:',
-	'description' => 'Kann auf die Homepage zugreifen.'
-	),
-	'dashboard' => Array(
-	'title' => 'Dashboards:',
-	'description' => 'Kann auf die Projekt-Dashboards zugreifen.'
-	),
-	'issues' => Array(
-	'title' => 'Probleme anzeigen:',
-	'description' => 'Kann öffentliche Themen anzeigen.'
-	),
-	'private_issues' => array(
-	'title' => 'Private Ausgaben anzeigen:',
-	'description' => 'Kann als privat gekennzeichnete Probleme anzeigen.'
-	),
-	'search' => array(
-	'title' => 'Search:',
-	'description' => 'Kann Probleme oder Benutzer suchen.'
-	),
-	'new_issue' => array(
-	'title' => 'Neue Ausgabe:',
-	'description' => 'Kann eine neue Ausgabe einreichen.'
-	),
-	'edit_issue' => array(
-	'title' => 'Probleme bearbeiten:',
-	'description' => 'Kann den Text aller Probleme bearbeiten und löschen.'
-	),
-	'update_issue' => array(
-	'title' => 'Update-Probleme:',
-	'description' => 'Kann Probleme aktualisieren: Status ändern, Beschriftungen hinzufügen, schließen und wieder öffnen, ...'
-	),
-	'post_comment' => array(
-	'title' => 'Kommentar schreiben:',
-	'description' => 'Kann einen Kommentar posten.'
-	),
-	'edit_comment' => array(
-	'title' => 'Kommentare bearbeiten:',
-	'description' => 'Kann alle Kommentare bearbeiten (Benutzer können trotzdem ihre eigenen Kommentare bearbeiten).'
-	),
-	'view_user' => array(
-	'title' => 'Benutzerprofile:',
-	'description' => 'Kann alle Benutzerprofile anzeigen.'
-	),
-	'upload' => array(
-	'title' => 'Poste eine Datei:',
-	'description' => 'Kann Dateien an einen Kommentar oder ein neues Problem anhängen.'
-	),
-	'view_upload' => array(
-	'title' => 'Uploads anzeigen:',
-	'description' => 'Kann auf alle hochgeladenen Dateien zugreifen.'
-	),
-	'settings' => array(
-	'title' => 'Einstellungen ändern:',
-	'description' => 'Kann auf diese Seite zugreifen und alle globalen Einstellungen ändern.'
-	),
-	'signup' => array(
-	'title' => 'Anmelden:',
-	'description' => 'Kann sich anmelden.'
-	),
-	'view_errors' => array(
-	'title' => 'Schwerwiegende Fehler anzeigen:',
-	'description' => 'Kann die Beschreibung schwerwiegender Fehler anzeigen.'
-	)
-	);
-
-	public static function permissions($id, $type = 'description') {
-		return self::$permissions[$id][$type];
-	}
-
-	private static $settings = array(
-		'validate_url' => 'Die URL ist ungültig.',
-	'validate_email' => 'Die E-Mail ist ungültig.',
-	'private_label_removed' => 'Sie können das Private Label nicht entfernen oder seine ID ändern, aber Sie können es umbenennen.',
-	'default_status_removed' => 'Sie können den Standardstatus nicht entfernen oder seine ID ändern, aber Sie können ihn umbenennen.',
-	'default_group_removed' => 'Sie können die Standardgruppe nicht entfernen oder ihre ID ändern, aber Sie können sie umbenennen.',
-	'default_group_superuser_removed' => 'Sie können die Superuser-Gruppe nicht entfernen oder ihre ID ändern, aber Sie können sie umbenennen.',
-	'validate_same_username' => 'Warnung: Zwei Benutzer haben denselben Benutzernamen.',
-	'validate_same_project_name' => 'Zwei Projekte können nicht denselben Namen haben. Einer wurde automatisch umbenannt. ',
-	'language_modified' => 'Aktualisiere diese Seite, um sie in der neuen Sprache anzuzeigen.'
-	);
-
-	public static function settings($id) {
-		return self::$settings[$id];
-	}
-
-	private static $errors = array(
-		E_ERROR => 'Schwerwiegender Fehler',
-	E_WARNING => 'Warnung',
-	E_PARSE => 'Analysefehler',
-	E_NOTICE => 'Hinweis',
-	E_STRICT => 'Beratung',
-	E_DEPRECATED => 'Veraltet',
-	'default' => 'Fehler'
-	);
-	public static function errors($no) {
-		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
-	}
+const S_RSS_ISSUE_UPDATED = '%adj% door %user%.';
+const S_RSS_ISSUE_STATUS_UPDATED = 'Status bijgewerkt naar “%status%” door %user%.';
+
+const S_INTRO_INSTALL = 'Het lijkt erop dat dit de eerste keer is dat je phpmyBugs uitvoert! Configureer het als volgt:';
+const S_FIRST_ISSUE_TITLE = 'Hoe gaat het met je, schatje?';
+const S_FIRST_ISSUE = 'Ik ben je eerste probleem! Na het inloggen kun je me verwijderen.';
+
+const S_NO_USER = 'Geen gebruiker komt overeen met je verzoek.';
+const S_NO_ISSUE = 'Geen probleem komt overeen met je verzoek.';
+const S_MATCHING_ISSUES = '%nb% overeenkomende problemen';
+const S_NO_ACTIVITY = 'Geen recente activiteit.';
+const S_NO_UPLOAD = 'Geen upload.';
+const S_SIZE_REMAINING = '%remain% resterend op de toegestane %total%.';
+const S_NO_PROJECT = 'Geen project.';
+
+const S_SEARCH = '#12, @user, woorden…';
+const S_COPYRIGHT = 'Powered by %name%.';
+const S_UPGRADE = 'Haal de nieuwste versie van <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> op om <a href="https://bugtrackr.github.io/wiki/upgrade/">te upgraden</a>.';
+
+const S_LAST_UPDATES = 'Laatste updates…';
+
+const S_STAY_LOGGEDIN = 'Houd mij aangemeld';
+
+const S_DEFAULT_DEFPROJ_DESC = 'Dit is het standaardproject waar iedereen toegang toe heeft.';
+const S_DEFAULT_2NDPROJ_DESC = 'Dit zou je 2e projectproject kunnen zijn waar alleen geregistreerde gebruikers problemen mogen posten.';
+
+# Waarschuwingen
+
+const A_ERROR_DIRECTORY = '<strong>Fout:</strong> kan directory “%name%” niet aanmaken.';
+const A_ERROR_FILE = '<strong>Fout:</strong> kan bestand “%name%” niet lezen.';
+const A_ERROR_FILE_WRITE = '<strong>Fout:</strong> kan bestand “%name%” niet schrijven.';
+const A_ERROR_FATAL = 'Sorry, er is iets misgegaan. Neem contact op met een beheerder als dit probleem zich blijft voordoen.';
+const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />Bestand “<strong>%file%</strong>” op regel <strong>%line%</strong>.';
+
+const A_SUCCESS_INSTALL = '<strong>Klaar:</strong> phpmyBugs is nu volledig geconfigureerd.';
+const A_ERROR_INSTALL = '<strong>Fout:</strong> phpmyBugs is al geconfigureerd. Verwijder het configuratiebestand als u de configuratie wilt resetten.';
+const A_MODIF_SAVED = 'Wijzigingen zijn opgeslagen.';
+
+const A_ERROR_FORM = 'Er is een fout opgetreden. Stuur het formulier opnieuw.';
+const A_ERROR_TOKEN = 'Verkeerd token. Stuur het formulier opnieuw.';
+const A_ERROR_EMPTY = 'U moet een gebruikersnaam en wachtwoord opgeven.';
+const A_ERROR_SAME_USERNAME = 'Deze gebruikersnaam is niet beschikbaar.';
+const A_SUCCESS_SIGNUP = '<strong>Klaar:</strong> U kunt nu inloggen.';
+
+const A_CONFIRM_DELETE_COMMENT = 'Weet u zeker dat u deze opmerking wilt verwijderen?';
+const A_SUCCESS_DELETE_COMMENT = 'De opmerking is verwijderd.';
+const A_CONFIRM_DELETE_ISSUE = 'Weet u zeker dat u dit probleem wilt verwijderen?';
+const A_SUCCESS_DELETE_ISSUE = 'Het probleem is verwijderd.';
+const A_CONFIRM_DELETE_UPLOAD = 'Weet u zeker dat u dit bestand wilt verwijderen?';
+const A_CONFIRM_DELETE_PROJECT = 'Weet u zeker dat u dit project wilt verwijderen? Alle bijbehorende problemen gaan verloren.';
+
+const A_LOGGED = 'U bent nu ingelogd op het systeem.';
+const A_LOGGED_OUT = 'U bent nu uitgelogd van het systeem.';
+const A_ERROR_CONNEXION = '<strong>Fout:</strong> Onjuiste gebruikersnaam of wachtwoord.';
+const A_ERROR_CONNEXION_WAIT = '<strong>Fout:</strong> Onjuiste gebruikersnaam of wachtwoord. Wacht %duration% %period% voordat u het opnieuw probeert.';
+const A_ERROR_LOGIN_WAIT = 'Wacht %duration% %period% voordat u het opnieuw probeert. Dit is een bescherming tegen kwaadaardige aanvallen.';
+
+const A_ERROR_UPLOAD = 'Er is een fout opgetreden. Probeer het opnieuw.';
+const A_ERROR_UPLOAD_SIZE = 'Bestand overschrijdt de maximaal toegestane grootte (%nb% max).';
+const A_ERROR_UPLOAD_FULL = 'U hebt niet genoeg schijfruimte om dit bestand te uploaden: %nb% resterend.';
+
+const A_PLEASE_LOGIN_ISSUES = 'Meld u aan om de problemen te bekijken.';
+const A_PLEASE_LOGIN_COMMENT = 'Meld u aan om een ​​opmerking te plaatsen. Nog geen account? Maak er een aan: het is gratis en heel snel!';
+const A_PLEASE_LOGIN_ISSUE = 'Meld u aan om een ​​probleem te melden. Nog geen account? Maak er een aan: het is gratis en heel snel!';
+const A_SHOULD_LOGIN = 'Als u een account hebt, log dan in. Als u dat niet hebt, overweeg dan om er een aan te maken: het is gratis en heel snel!';
+
+const A_IE = 'Uw browser is verouderd: <a href="https://www.browser-update.org/en/update.html">upgrade of wijzig deze</a>.';
+
+# Mails
+
+const M_NEW_COMMENT_O = '[%title% — %project% — Issue #%id%] Nieuwe opmerking';
+const M_NEW_COMMENT = 'Hallo, %username%!
+
+Het probleem #%id% — “%summary%” is zojuist becommentarieerd door %by%. U kunt de nieuwe opmerking hier lezen:
+%url%.
+
+Als u geen verdere meldingen over dit probleem wilt ontvangen, is er een optie beschikbaar (na het inloggen) via de bovenstaande link.
+
+-----
+Dit is een geautomatiseerde e-mail, reageer alstublieft niet.
+';
+
+const M_NEW_ISSUE_O = '[%title% — %project%] Nieuw probleem';
+const M_NEW_ISSUE = 'Hallo, %username%!
+
+Het probleem #%id% — “%summary%” is zojuist ingediend door %by%. U kunt het hier lezen:
+%url%.
+
+Als u geen verdere meldingen over dit probleem wilt ontvangen, is er een optie beschikbaar (na het inloggen) via de bovenstaande link.
+
+-----
+Dit is een geautomatiseerde e-mail, reageer niet.
+';
+
+# Titels
+
+const T_INSTALLATION = 'Installatie';
+const T_SETTINGS = 'Instellingen';
+const T_GLOBAL_SETTINGS = 'Globale instellingen';
+const T_APPEARANCE = 'Uiterlijk';
+const T_ISSUES = 'Problemen';
+const T_GROUPS = 'Groepen';
+const T_USERS = 'Gebruikers';
+const T_PERMISSIONS = 'Machtigingen';
+const T_ENABLE_CAPTCHA = 'Captcha beheren';
+const T_CAPTCHA = 'Captcha';
+const T_BROWSE_ISSUES = 'Problemen bekijken';
+const T_BROWSE_ALL_ISSUES = 'Alle problemen bekijken';
+const T_ALL_ISSUES_DESCRIPTION = 'Dit zijn alle openstaande problemen voor alle projecten';
+const T_NEW_ISSUE = 'Nieuw probleem';
+const T_ALL_ISSUES = 'Alle problemen';
+const T_PROJECTS = 'Projecten';
+const T_DASHBOARD = 'Dashboard';
+const T_LAST_UPDATES = 'Laatste updates';
+const T_LAST_ACTIVITY = 'Laatste activiteit';
+const T_UPLOADS = 'Uploads';
+const T_SEARCH = 'Zoeken';
+const T_LINK_CONTACT = 'Contact opnemen';
+const T_LINK_LEGALNOTICE = 'Juridische kennisgeving';
+const T_LINK_PRIVACYPOLICY = 'Privacybeleid';
+const T_API_SETTINGS = 'API';
+const T_API_ENABLE_SETTINGS = 'API beheren';
+const T_API_ACCESS_SETTINGS = 'API-toegang';
+const T_INFO = 'Info';
+
+# FORMULIEREN
+
+const F_USERNAME = 'Gebruikersnaam:';
+const F_PASSWORD = 'Wachtwoord:';
+const F_USERNAME2 = 'Gebruikersnaam';
+const F_PASSWORD2 = 'Wachtwoord';
+const F_NAME = 'Naam:';
+const F_URL = 'Url:';
+const F_URL_CDN = 'CDN-URL:';
+const F_URL_REWRITING = 'Url herschrijven:';
+const F_INTRO = 'Inleiding:';
+const F_DESCRIPTION = 'Beschrijving:';
+const F_EMAIL = 'E-mail:';
+const F_LINK_CONTACT = 'Link naar externe contactpagina (kan leeg gelaten worden):';
+const F_LINK_LEGALNOTICE = 'Link naar juridische kennisgeving (kan leeg gelaten worden):';
+const F_LINK_PRIVACYPOLICY = 'Link naar privacybeleid (kan leeg gelaten worden):';
+const F_MAX_UPLOAD = 'Maximale grootte per upload:';
+const F_ALLOCATED_SPACE = 'Toegewezen ruimte per gebruiker:';
+const F_GROUP = 'Groep:';
+const F_NOTIFICATIONS = 'Word op de hoogte gebracht:';
+const F_PROJECT_X = 'Project “%name%”:';
+const F_LANGUAGE = 'Taal:';
+const F_LOGS = 'Logboeken:';
+
+const F_ISSUES_PAGE = 'Problemen per pagina:';
+const F_ISSUES_PAGE_SEARCH = 'Problemen per pagina (zoeken):';
+const F_PREVIEW_ISSUE = 'Lengte previews (problemen):';
+const F_PREVIEW_SEARCH = 'Lengte previews (zoeken):';
+const F_PREVIEW_PROJECT = 'Lengte previews (projecten):';
+const F_LAST_EDITS = 'Aantal problemen weergegeven op dashboards:';
+const F_LAST_ACTIVITY = 'Aantal problemen weergegeven op gebruikerspagina\'s:';
+const F_THEME = "Thema";
+const F_TIP_THEME = "Plaats het .css-bestand in";
+
+const F_ADD_PROJECT = 'Nieuw project';
+const F_ADD_COLOR = 'Nieuwe kleur';
+const F_ADD_STATUS = 'Nieuwe status';
+const F_ADD_LABEL = 'Nieuw label';
+const F_ADD_GROUP = 'Nieuwe groep';
+const F_ADD_USER = 'Nieuwe gebruiker';
+
+const F_SORT_BY = 'Sorteren op:';
+const F_SORT_ID = 'ID';
+const F_SORT_MOD = 'laatste update';
+const F_SORT_DESC = 'aflopend';
+const F_SORT_ASC = 'oplopend';
+const F_FILTER_STATUSES = 'Filterstatussen:';
+const F_FILTER_STATES = 'Filterstatussen:';
+const F_FILTER_LABELS = 'Filterlabels:';
+const F_FILTER_USERS = 'Filtergebruikers:';
+const F_FILTER_MILESTONE = 'Filtermijlpaal:';
+
+const F_WRITE = 'Schrijven:';
+const F_SUMMARY = 'Samenvatting';
+const F_CONTENT = 'Inhoud';
+
+const F_STATUS = 'Status:';
+const F_RELATED = 'Gerelateerd:';
+const F_LABELS2 = 'Labels:';
+const F_MILESTONE = 'Mijlpaal:';
+
+const F_GENERAL_SETTINGS = 'Algemene instellingen:';
+const F_PROJECTS = 'Projecten:';
+const F_DATABASE = 'Database:';
+const F_UPLOADS = 'Uploads:';
+const F_COLORS = 'Kleuren beheren:';
+const F_DISPLAY = 'Weergave beheren:';
+const F_STATUSES = 'Statussen beheren:';
+const F_LABELS = 'Labels beheren:';
+const F_GROUPS = 'Groepen beheren:';
+const F_PERMISSIONS = 'Machtigingen beheren:';
+const F_USERS = 'Gebruikers beheren:';
+
+const F_INVALID_CAPTCHA = 'De CAPTCHA die u hebt ingevoerd, was onjuist. Probeer het opnieuw.';
+
+const F_TIP_NAME = 'Deze wordt weergegeven in de header van elke pagina.';
+const F_TIP_URL_REWRITING = 'Laat dit veld leeg om het herschrijven van URL\'s uit te schakelen. Anders moet het het pad naar de map phpmyBugs bevatten (begonnen en eindigend met een "\/"), relatief ten opzichte van de domeinnaam.';
+const F_TIP_URL_CDN = 'Laat dit veld leeg om CDN uit te schakelen. Anders moet het de URL van uw CDN bevatten (bijvoorbeeld <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, voel u vrij om deze te gebruiken). Zorg ervoor dat alle bestanden uit de map <em>/public</em> op uw CDN worden gehost.';
+const F_TIP_INTRO = 'Dit wordt weergegeven op de startpagina. Het wordt geparseerd met de Markdown-syntaxis. Let op: als er maar één project is met de naam "%name%", wordt de startpagina automatisch doorgestuurd naar het projectdashboard en wordt deze tekst niet weergegeven.';
+const F_TIP_EMAIL = 'Laat dit veld leeg om e-mailmeldingen uit te schakelen. Anders wordt dit adres gebruikt als afzender bij het verzenden van een e-mailmelding.';
+const F_TIP_PASSWORD = 'Laat dit leeg als u het wachtwoord niet wilt wijzigen.';
+const F_TIP_USER_EMAIL = 'Alleen vereist als u meldingen wilt ontvangen.';
+const F_TIP_NOTIFICATIONS = 'Dit is een standaardinstelling: u kunt dit voor elk probleem wijzigen.';
+const F_TIP_NOTIFICATIONS_DISABLED = 'Let op: meldingen zijn momenteel uitgeschakeld door de beheerder.';
+const F_TIP_DESCRIPTION = 'Het wordt weergegeven op het projectdashboard. Het wordt geparseerd met de markdown-syntaxis.';
+
+const F_TIP_MAX_UPLOAD = 'Elk geüpload bestand mag deze grootte niet overschrijden.';
+const F_TIP_ALLOCATED_SPACE = 'Een gebruiker kan geen andere bestanden uploaden zodra hij deze limiet heeft bereikt.<br /><em>Let op:</em> als niet-ingelogde gebruikers bestanden mogen uploaden (dit is niet de standaardinstelling), is deze limiet niet op hen van toepassing.';
+
+const F_TIP_ID_STATUS = '<b>Tip:</b> wees voorzichtig bij het wijzigen van de ID\'s, omdat elk probleem zijn oude status-ID behoudt (behalve als deze ID niet meer bestaat: in dat geval wordt de standaardstatus gebruikt).';
+const F_TIP_ID_LABEL = '<b>Tip:</b> wees voorzichtig bij het wijzigen van de ID\'s, omdat elk label van een issue zijn oude ID behoudt (behalve als deze ID niet meer bestaat: in dat geval wordt het label van het issue verwijderd).';
+const F_TIP_ID_GROUP = '<b>Tip:</b> wees voorzichtig bij het wijzigen van de ID\'s, omdat elke gebruiker zijn oude groeps-ID behoudt (behalve als deze ID niet meer bestaat: in dat geval wordt de standaardgroep gebruikt).';
+const F_TIP_CAPTCHA = 'Kies de acties waarbij een captcha wordt weergegeven voor niet-ingelogde gebruikers.';
+const F_TIP_API_ACCESS = 'Configureer API-toegang in het bestand <em>/database/config_api.php</em>. Zie het bestand API.md voor meer informatie.';
+
+const F_API_ENABLE = 'API inschakelen';
+
+const HELP_MARKDOWN = '
+<h2>Markereneigen syntaxis:</h2>
+
+<p>Alinea\'s:</p>
+<pre><code class="blank no-highlight">Alinea\'s worden gescheiden door een of meer lege regels.
+Daarom wordt deze tekst op dezelfde regel weergegeven als de vorige zin, ongeacht de regelafbreking.
+
+Om een ​​nieuwe regel te beginnen zonder een nieuwe alinea te maken:
+voeg 2 spaties in voor de regelafbreking, net als hier.</code></pre>
+<p>Nadruk:</p>
+<pre><code class="blank no-highlight">*Cursieve tekst*
+_Opnieuw cursieve tekst_
+
+**Vetgedrukte tekst**
+__Opnieuw vetgedrukte tekst__ </code></pre>
+
+<p>Links:</p>
+<pre><code class="blank no-highlight">Dit is [een voorbeeld](http://example.com) van een inline link. Dit is er nog een: &lt;http://example.com&gt;.</code></pre>
+
+<p>Afbeeldingen:</p>
+<pre><code class="blank no-highlight">![Ik ben een afbeelding.](http://example.com/image.png)</code></pre>
+
+<p>Kopteksten:</p>
+<pre><code class="blank no-highlight"># Titel op het hoogste niveau
+## Titel op het tweede niveau
+### Titel op het derde niveau
+#### Titel op het vierde niveau</code></pre>
+
+<p>Lijsten:</p>
+<pre><code class="blank no-highlight">- één item
+* nog een
+
+1. eerste item
+2. tweede item</code></pre>
+
+<p>Blokcitaten:</p>
+<pre><code class="blank no-highlight">> Ik ben een blokcitaat met twee alinea\'s. >
+> Ik ben de tweede alinea.</code></pre>
+
+<p>Codeblokken:</p>
+<pre><code class="blank no-highlight">Dit is een `inline codeblok`.</code></pre>
+<pre><code class="blank no-highlight"> &lt;?php echo "Ik ben een codeblok, omdat ik ben
+ingesprongen met 4 spaties"; ?&gt;</code></pre>
+<pre><code class="blank no-highlight">```
+&lt;?php echo "Ik ben een codeblok."; ?&gt;
+```
+
+```php
+&lt;?php echo "Ondersteunde talen zijn: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
+```</code></pre>
+';
+
+private static $permissions = array(
+'home' => array(
+'title' => 'Home:',
+'description' => 'Kan toegang krijgen tot de startpagina en een lijst bekijken van alle openstaande problemen voor zijn projecten.'
+),
+'dashboard' => array(
+'title' => 'Dashboards:',
+'description' => 'Kan toegang krijgen tot de projectdashboards.'
+),
+'issues' => array(
+'title' => 'Problemen bekijken:',
+'description' => 'Kan openbare problemen bekijken.'
+),
+'private_issues' => array(
+'title' => 'Privéproblemen bekijken:',
+'description' => 'Kan problemen bekijken die als privé zijn gemarkeerd.'
+),
+'search' => array(
+'title' => 'Zoeken:',
+'description' => 'Kan problemen of gebruikers zoeken.'
+),
+'new_issue' => array(
+'title' => 'Nieuw issue:',
+'description' => 'Kan een nieuw issue indienen.'
+),
+'edit_issue' => array(
+'title' => 'Problemen bewerken:',
+'description' => 'Kan de tekst van alle issues bewerken en verwijderen.'
+),
+'update_issue' => array(
+'title' => 'Problemen bijwerken:',
+'description' => 'Kan issues bijwerken: status wijzigen, labels toevoegen, sluiten en opnieuw openen, ...'
+),
+'post_comment' => array(
+'title' => 'Een opmerking plaatsen:',
+'description' => 'Kan een opmerking plaatsen.'
+),
+'edit_comment' => array(
+'title' => 'Opmerkingen bewerken:',
+'description' => 'Kan alle opmerkingen bewerken (gebruikers kunnen hoe dan ook hun eigen opmerkingen bewerken).'
+),
+'view_user' => array(
+'title' => 'Gebruikersprofielen:',
+'description' => 'Kan bekijken alle gebruikersprofielen.'
+),
+'upload' => array(
+'title' => 'Bestand plaatsen:',
+'description' => 'Kan bestanden toevoegen aan een opmerking of een nieuw probleem.'
+),
+'view_upload' => array(
+'title' => 'Uploads bekijken:',
+'description' => 'Kan toegang krijgen tot alle geüploade bestanden.'
+),
+'settings' => array(
+'title' => 'Instellingen wijzigen:',
+'description' => 'Kan toegang krijgen tot deze pagina en alle algemene instellingen wijzigen.'
+),
+'signup' => array(
+'title' => 'Aanmelden:',
+'description' => 'Kan aanmelden.'
+),
+'view_errors' => array(
+'title' => 'Fatale fouten bekijken:',
+'description' => 'Kan de beschrijving van fatale fouten bekijken.'
+)
+);
+
+public static function permissions($id, $type = 'beschrijving') {
+return self::$permissies[$id][$type];
+}
+
+private static $settings = array(
+'validate_url' => 'De url is niet geldig.',
+'validate_email' => 'Het e-mailadres is niet geldig.',
+'private_label_removed' => 'Je kunt het private label niet verwijderen of de ID ervan wijzigen, maar je kunt het wel hernoemen.',
+'default_status_removed' => 'Je kunt de standaardstatus niet verwijderen of de ID ervan wijzigen, maar je kunt het wel hernoemen.',
+'default_group_removed' => 'Je kunt de standaardgroep niet verwijderen of de ID ervan wijzigen, maar je kunt het wel hernoemen.',
+'default_group_superuser_removed' => 'Je kunt de superusergroep niet verwijderen of de ID ervan wijzigen, maar je kunt het wel hernoemen.',
+'validate_same_username' => 'Waarschuwing: twee gebruikers hebben dezelfde gebruikersnaam.',
+'validate_same_project_name' => 'Twee projecten kunnen niet dezelfde naam hebben. Eén is automatisch hernoemd.',
+'language_modified' => 'Vernieuw deze pagina om deze in de nieuwe taal te bekijken.'
+);
+
+public static function settings($id) {
+return self::$settings[$id];
+}
+
+private static $errors = array(
+E_ERROR => 'Fatale fout',
+E_WARNING => 'Waarschuwing',
+E_PARSE => 'Parseerfout',
+E_NOTICE => 'Kennisgeving',
+E_STRICT => 'Advies',
+E_DEPRECATED => 'Verouderd','standaard' => 'Fout'
+);
+
+public static function errors($no) {
+return (isset(self::$fouten[$no])) ? self::$fouten[$no] : self::$fouten['standaard'];
+}
 }
 
 ?>
