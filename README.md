@@ -113,6 +113,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] Add new Dependencies into hi Language from the build v1.1.3 -> by philipp-r
 - [ ] Add new Dependencies into es Language from the build v1.1.3 -> by philipp-r
 - [ ] Add new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
+- [ ] Add new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
