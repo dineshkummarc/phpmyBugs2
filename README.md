@@ -114,18 +114,6 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] Add new Dependencies into es Language from the build v1.1.3 -> by philipp-r
 - [ ] Add new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
 - [ ] Add new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
-- [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
-- [ ] portal name is used as hardcoded name in several places of the portal.
-- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
-- [ ] make default theme as that of phpmybugs default theme
-- [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
-- [ ] New issue link is seen without login, remove it from the non-logged in page
-- [ ] github repo links are hardcoded into the texts, make them using tags
-- [ ] cdn links are hardcoded into the texts, make them using tags
-- [ ] github link on page /index.php?page=settings is redirected to nireus release
-- [ ] seperate General settings from Global settings to have seperate section.
-- [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
-- [ ] move language section from 'generalsettings>>language' to Global settings section
 
 ### v2.3
 - [ ] New Language supported (_cmn_)
@@ -143,6 +131,18 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_lah_)
 
 ### v2.8
+- [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
+- [ ] portal name is used as hardcoded name in several places of the portal.
+- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
+- [ ] make default theme as that of phpmybugs default theme
+- [ ] new button on view issue page is disabled, should navigate to new issue page for creating a new issue
+- [ ] New issue link is seen without login, remove it from the non-logged in page
+- [ ] github repo links are hardcoded into the texts, make them using tags
+- [ ] cdn links are hardcoded into the texts, make them using tags
+- [ ] github link on page /index.php?page=settings is redirected to nireus release
+- [ ] seperate General settings from Global settings to have seperate section.
+- [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
+- [ ] move language section from 'generalsettings>>language' to Global settings section
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
