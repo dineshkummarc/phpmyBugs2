@@ -110,80 +110,80 @@ class Trad {
   const S_START_NOTIF = '收到新更新通知';
   const S_STOP_NOTIF = '不再收到更新通知';
   const S_NOTFOUND = '您正在尋找的頁面不再存在...';
-  const S_FORBIDDEN = '您無權存取此頁面。請登入/登出以繼續。
+  const S_FORBIDDEN = '您無權存取此頁面。請登入/登出以繼續';
 
-  const S_VIEW_PARTICIPATION = '查看他的參與情況。
-  const S_VIEW_STATUS = '查看問題“%status%”。
+  const S_VIEW_PARTICIPATION = '查看他的參與情況';
+  const S_VIEW_STATUS = '查看問題“%status%”';
 
   const S_ISSUE_CREATED = '由 %user% %time%';
-  const S_ISSUE_UPDATED = '%adj% by %user% %time%。
-  const S_ISSUE_STATUS_UPDATED = '狀態已由 %user% %time% 更新為 %status%。
+  const S_ISSUE_UPDATED = '%adj% by %user% %time%';
+  const S_ISSUE_STATUS_UPDATED = '狀態已由 %user% %time% 更新為 %status%';
 
   const S_RSS_ISSUE_UPDATED = '%adj% by %user%.';
-  const S_RSS_ISSUE_STATUS_UPDATED = '狀態已由 %user% 更新為「%status%」。
+  const S_RSS_ISSUE_STATUS_UPDATED = '狀態已由 %user% 更新為「%status%」';
 
   const S_INTRO_INSTALL = '看起來這是您第一次運行 phpmyBugs！請配置它：';
-  const S_FIRST_ISSUE_TITLE = '你好嗎，南瓜？
-  const S_FIRST_ISSUE = '我是你的第一期！登入後，您將可以刪除我。
+  const S_FIRST_ISSUE_TITLE = '你好嗎，南瓜？';
+  const S_FIRST_ISSUE = '我是你的第一期！登入後，您將可以刪除我';
 
-  const S_NO_USER = '沒有使用者符合您的請求。
-  const S_NO_ISSUE = '沒有問題符合您的要求。
+  const S_NO_USER = '沒有使用者符合您的請';
+  const S_NO_ISSUE = '沒有問題符合您的要求';
   const S_MATCHING_ISSUES = '%nb% 匹配問題';
-  const S_NO_ACTIVITY = '最近沒有活動。
-  const S_NO_UPLOAD = '不上傳。
-  const S_SIZE_REMAINING = '在允許的 %total% 範圍內剩餘 %remain%。
-  const S_NO_PROJECT = '沒有項目。
+  const S_NO_ACTIVITY = '最近沒有活動';
+  const S_NO_UPLOAD = '不上傳';
+  const S_SIZE_REMAINING = '在允許的 %total% 範圍內剩餘 %remain%';
+  const S_NO_PROJECT = '沒有項目';
 
   const S_SEARCH = '#12，@用戶，單字...';
-  const S_COPYRIGHT = '由 %name% 提供支援。
+  const S_COPYRIGHT = '由 %name% 提供支援';
   const S_UPGRADE = '從 <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> 取得最新版本到 <a href="https://bugtrackr.github.io /wiki/upgrade/">升級</a>。';
 
   const S_LAST_UPDATES = '最近更新...';
 
   const S_STAY_LOGGEDIN = '保持登入狀態';
 
-  const S_DEFAULT_DEFPROJ_DESC = '這是每個人都可以存取的預設項目。 ';
-  const S_DEFAULT_2NDPROJ_DESC = '這可能是您的第二個項目，其中只允許註冊用戶發布問題。
+  const S_DEFAULT_DEFPROJ_DESC = '這是每個人都可以存取的預設項目。';
+  const S_DEFAULT_2NDPROJ_DESC = '這可能是您的第二個項目，其中只允許註冊用戶發布問題。';
 
   # 警報
 
-  const A_ERROR_DIRECTORY = '<strong>錯誤：</strong>無法建立目錄「%name%」。
-  const A_ERROR_FILE = '<strong>錯誤：</strong>無法讀取檔案「%name%」。
-  const A_ERROR_FILE_WRITE = '<strong>錯誤：</strong>無法寫入檔案「%name%」。
-  const A_ERROR_FATAL = '抱歉，出了點問題。如果此問題仍然存在，請聯絡管理員。
-  const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />檔案「<strong>%file%</strong>」線上 <強>%line%</strong>。
+  const A_ERROR_DIRECTORY = '<strong>錯誤：</strong>無法建立目錄「%name%」。';
+  const A_ERROR_FILE = '<strong>錯誤：</strong>無法讀取檔案「%name%」。';
+  const A_ERROR_FILE_WRITE = '<strong>錯誤：</strong>無法寫入檔案「%name%」。';
+  const A_ERROR_FATAL = '抱歉，出了點問題。如果此問題仍然存在，請聯絡管理員。';
+  const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />檔案「<strong>%file%</strong>」線上 <強>%line%</strong>。';
 
-  const A_SUCCESS_INSTALL = '<strong>完成：</strong> phpmyBugs 現已完全配置。
-  const A_ERROR_INSTALL = '<strong>錯誤：</strong> phpmyBugs 已設定。如果您想重置配置，請刪除設定檔。
-  const A_MODIF_SAVED = '修改已儲存。
+  const A_SUCCESS_INSTALL = '<strong>完成：</strong> phpmyBugs 現已完全配置。';
+  const A_ERROR_INSTALL = '<strong>錯誤：</strong> phpmyBugs 已設定。如果您想重置配置，請刪除設定檔。';
+  const A_MODIF_SAVED = '修改已儲存。';
 
-  const A_ERROR_FORM = '發生錯誤。請再次發送表格。
-  const A_ERROR_TOKEN = '錯誤的標記。請再次發送表格。
-  const A_ERROR_EMPTY = '您必須指定使用者名稱和密碼。
-  const A_ERROR_SAME_USERNAME = '該使用者名稱不可用。
-  const A_SUCCESS_SIGNUP = '<strong>完成：</strong>您現在可以登入了。
+  const A_ERROR_FORM = '發生錯誤。請再次發送表格。';
+  const A_ERROR_TOKEN = '錯誤的標記。請再次發送表格。';
+  const A_ERROR_EMPTY = '您必須指定使用者名稱和密碼。';
+  const A_ERROR_SAME_USERNAME = '該使用者名稱不可用。';
+  const A_SUCCESS_SIGNUP = '<strong>完成：</strong>您現在可以登入了。';
 
-  const A_CONFIRM_DELETE_COMMENT = '您確定要刪除此評論嗎？
-  const A_SUCCESS_DELETE_COMMENT = '評論已刪除。
-  const A_CONFIRM_DELETE_ISSUE = '您確定要刪除此問題嗎？
-  const A_SUCCESS_DELETE_ISSUE = '該問題已刪除。
-  const A_CONFIRM_DELETE_UPLOAD = '您確定要刪除此檔案嗎？
-  const A_CONFIRM_DELETE_PROJECT = '您確定要刪除此項目嗎？所有相應的問題都將丟失。
+  const A_CONFIRM_DELETE_COMMENT = '您確定要刪除此評論嗎？';
+  const A_SUCCESS_DELETE_COMMENT = '評論已刪除。';
+  const A_CONFIRM_DELETE_ISSUE = '您確定要刪除此問題嗎？';
+  const A_SUCCESS_DELETE_ISSUE = '該問題已刪除。';
+  const A_CONFIRM_DELETE_UPLOAD = '您確定要刪除此檔案嗎？';
+  const A_CONFIRM_DELETE_PROJECT = '您確定要刪除此項目嗎？所有相應的問題都將丟失。';
 
-  const A_LOGGED = '您現在已登入系統。
-  const A_LOGGED_OUT = '您現在已從系統中登出。
-  const A_ERROR_CONNEXION = '<strong>錯誤：</strong>使用者名稱或密碼錯誤。
-  const A_ERROR_CONNEXION_WAIT = '<strong>錯誤：</strong>使用者名稱或密碼錯誤。請等待 %duration% %period%，然後再試一次。
-  const A_ERROR_LOGIN_WAIT = '請等待 %duration% %period% 後再重試。這是針對惡意攻擊的保護。
+  const A_LOGGED = '您現在已登入系統。';
+  const A_LOGGED_OUT = '您現在已從系統中登出。';
+  const A_ERROR_CONNEXION = '<strong>錯誤：</strong>使用者名稱或密碼錯誤。';
+  const A_ERROR_CONNEXION_WAIT = '<strong>錯誤：</strong>使用者名稱或密碼錯誤。請等待 %duration% %period%，然後再試一次。';
+  const A_ERROR_LOGIN_WAIT = '請等待 %duration% %period% 後再重試。這是針對惡意攻擊的保護。';
 
-  const A_ERROR_UPLOAD = '發生錯誤。請再試一次。
-  const A_ERROR_UPLOAD_SIZE = '檔案超出允許的最大大小（%nb% max）。
-  const A_ERROR_UPLOAD_FULL = '您沒有足夠的磁碟空間來上傳此檔案：剩餘 %nb%。
+  const A_ERROR_UPLOAD = '發生錯誤。請再試一次。';
+  const A_ERROR_UPLOAD_SIZE = '檔案超出允許的最大大小（%nb% max）。';
+  const A_ERROR_UPLOAD_FULL = '您沒有足夠的磁碟空間來上傳此檔案：剩餘 %nb%。';
 
-  const A_PLEASE_LOGIN_ISSUES = '請登入檢視問題。
-  const A_PLEASE_LOGIN_COMMENT = '請登入後發表評論。還沒有帳戶？創建一個：它是免費的，而且速度非常快！
-  const A_PLEASE_LOGIN_ISSUE = '請登入以提交問題。還沒有帳戶？創建一個：它是免費的，而且速度非常快！
-  const A_SHOULD_LOGIN = '如果您有帳戶，請登入。
+  const A_PLEASE_LOGIN_ISSUES = '請登入檢視問題。';
+  const A_PLEASE_LOGIN_COMMENT = '請登入後發表評論。還沒有帳戶？創建一個：它是免費的，而且速度非常快！';
+  const A_PLEASE_LOGIN_ISSUE = '請登入以提交問題。還沒有帳戶？創建一個：它是免費的，而且速度非常快！';
+  const A_SHOULD_LOGIN = '如果您有帳戶，請登入。';
 
   const A_IE = '您的瀏覽器已過時：<a href="https://www.browser-update.org/en/update.html">升級或更改</a>。 ';
 
@@ -198,8 +198,7 @@ class Trad {
 如果您不想收到有關此問題的進一步通知，可以透過上面的連結使用選項（登入後）。
 
 -----
-這是一封自動發送的電子郵件，請勿回覆。
-  ';
+這是一封自動發送的電子郵件，請勿回覆。 ';
 
   const M_NEW_ISSUE_O = '[%title% — %project%] 新問題';
   const M_NEW_ISSUE = '嗨，%用戶名%！
@@ -210,12 +209,11 @@ class Trad {
 如果您不想收到有關此問題的進一步通知，可以透過上面的連結使用選項（登入後）。
 
 -----
-這是一封自動發送的電子郵件，請勿回覆。
-  ';
+這是一封自動發送的電子郵件，請勿回覆。 ';
 
   # 標題
 
- const T_INSTALLATION = '安裝';
+  const T_INSTALLATION = '安裝';
   const T_SETTINGS = '設定';
   const T_GLOBAL_SETTINGS = '全域設定';
   const T_APPEARANCE = '外觀';
@@ -317,27 +315,27 @@ class Trad {
   const F_PERMISSIONS = '管理權限：';
   const F_USERS = '管理使用者：';
 
-  const F_INVALID_CAPTCHA = '您輸入的驗證碼錯誤。請再試一次。
+  const F_INVALID_CAPTCHA = '您輸入的驗證碼錯誤。請再試一次。';
 
-  const F_TIP_NAME = '它將顯示在每頁的頁首。
-  const F_TIP_URL_REWRITING = '將此欄位留空以停用 URL 重寫。否則，它應該包含相對於網域的 phpmyBugs 資料夾的路徑（以“/”開頭和結尾）。
-  const F_TIP_URL_CDN = '將此欄位留空以停用 CDN。否則，它必須包含您的 CDN 的 URL（例如<em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>，請隨意使用這個）。確保託管 CDN 上 <em>/public</em> 資料夾中的所有檔案。
-  const F_TIP_INTRO = '它將顯示在主頁上。它將使用 Markdown 語法進行解析。注意：如果只有一個名為「%name%」的項目，主頁會自動重新導向到項目儀表板，並且不會顯示此文字。
-  const F_TIP_EMAIL = '將此欄位留空以停用電子郵件通知。否則，發送電子郵件通知時將使用該地址作為寄件者。
-  const F_TIP_PASSWORD = '如果您不想更改密碼，請將其留空。
-  const F_TIP_USER_EMAIL = '只有在您想要接收通知時才需要。
-  const F_TIP_NOTIFICATIONS = '這是預設值：您可以針對每個問題更改它。
-  const F_TIP_NOTIFICATIONS_DISABLED = '注意：通知目前已被管理員停用。
-  const F_TIP_DESCRIPTION = '它將顯示在專案儀表板上。它將使用 markdown 語法進行解析。
+  const F_TIP_NAME = '它將顯示在每頁的頁首。';
+  const F_TIP_URL_REWRITING = '將此欄位留空以停用 URL 重寫。否則，它應該包含相對於網域的 phpmyBugs 資料夾的路徑（以“/”開頭和結尾）。';
+  const F_TIP_URL_CDN = '將此欄位留空以停用 CDN。否則，它必須包含您的 CDN 的 URL（例如<em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>，請隨意使用這個）。確保託管 CDN 上 <em>/public</em> 資料夾中的所有檔案。';
+  const F_TIP_INTRO = '它將顯示在主頁上。它將使用 Markdown 語法進行解析。注意：如果只有一個名為「%name%」的項目，主頁會自動重新導向到項目儀表板，並且不會顯示此文字。';
+  const F_TIP_EMAIL = '將此欄位留空以停用電子郵件通知。否則，發送電子郵件通知時將使用該地址作為寄件者。';
+  const F_TIP_PASSWORD = '如果您不想更改密碼，請將其留空。';
+  const F_TIP_USER_EMAIL = '只有在您想要接收通知時才需要。';
+  const F_TIP_NOTIFICATIONS = '這是預設值：您可以針對每個問題更改它。';
+  const F_TIP_NOTIFICATIONS_DISABLED = '注意：通知目前已被管理員停用。';
+  const F_TIP_DESCRIPTION = '它將顯示在專案儀表板上。它將使用 markdown 語法進行解析。';
 
-  const F_TIP_MAX_UPLOAD = '每個上傳的檔案不能超過此大小。
-  const F_TIP_ALLOCATED_SPACE = '使用者一旦達到此限制，就無法上傳其他檔案。 。
+  const F_TIP_MAX_UPLOAD = '每個上傳的檔案不能超過此大小。';
+  const F_TIP_ALLOCATED_SPACE = '使用者一旦達到此限制，就無法上傳其他檔案。 。';
 
   const F_TIP_ID_STATUS = '<b>提示：</b>更改 ID 時要小心，因為每個問題都會保留其舊的狀態 ID（除非該 ID 不再存在：在這種情況下，將使用預設狀態）。 ';
-  const F_TIP_ID_LABEL = '<b>提示：</b>更改 ID 時要小心，因為一個問題的每個標籤都會保留其舊 ID（除非該 ID 不再存在：在這種情況下，該標籤將從問題）。
+  const F_TIP_ID_LABEL = '<b>提示：</b>更改 ID 時要小心，因為一個問題的每個標籤都會保留其舊 ID（除非該 ID 不再存在：在這種情況下，該標籤將從問題）。';
   const F_TIP_ID_GROUP = '<b>提示：</b>更改 ID 時要小心，因為每個使用者都會保留其舊的群組 ID（除非該 ID 不再存在：在這種情況下，將使用預設群組）。 ';
-  const F_TIP_CAPTCHA = '選擇未登入使用者顯示驗證碼的動作。
-  const F_TIP_API_ACCESS = '在<em>/database/config_api.php</em>檔案中設定A​​PI存取。有關詳細信息，請參閱 API.md 檔案。
+  const F_TIP_CAPTCHA = '選擇未登入使用者顯示驗證碼的動作。';
+  const F_TIP_API_ACCESS = '在<em>/database/config_api.php</em>檔案中設定A​​PI存取。有關詳細信息，請參閱 API.md 檔案。';
 
   const F_API_ENABLE = '啟用 API';
 
@@ -398,32 +396,32 @@ __再次粗體文字__ </code></pre>
 
   private static $permissions = array(
   'home' => array(
-  '標題' => '首頁：',
-  'description' => '可以存取主頁並查看其項目的所有未解決問題的清單。
+  'title' => '首頁：',
+  'description' => '可以存取主頁並查看其項目的所有未解決問題的清單。'
   ),
-  '儀表板' => array(
-  '標題' => '儀表板：',
-  'description' => '可以存取專案儀表板。
+  'dashboard' => array(
+  'title' => '儀表板：',
+  'description' => '可以存取專案儀表板。'
   ),
-  '問題' => array(
+  'issues' => array(
   'title' => '查看問題：',
-  'description' => '可以查看公共問題。
+  'description' => '可以查看公共問題。'
   ),
   'private_issues' => array(
   'title' => '查看私人問題：',
-  'description' => '可以查看標記為私人的問題。
+  'description' => '可以查看標記為私人的問題。'
   ),
-  '搜尋' => array(
-  '標題' => '搜尋：',
-  'description' => '可以搜尋問題或使用者。
+  'search' => array(
+  'title' => '搜尋：',
+  'description' => '可以搜尋問題或使用者。'
   ),
   'new_issue' => array(
   'title' => '新問題：',
-  'description' => '可以提交新問題。
+  'description' => '可以提交新問題。'
   ),
   'edit_issue' => array(
   'title' => '編輯問題：',
-  'description' => '可以編輯所有問題的文字並刪除它們。
+  'description' => '可以編輯所有問題的文字並刪除它們。'
   ),
   'update_issue' => array(
   'title' => '更新問題：',
@@ -431,52 +429,52 @@ __再次粗體文字__ </code></pre>
   ),
   'post_comment' => array(
   'title' => '發表評論：',
-  '描述' => '可以發表評論。
+  'description' => '可以發表評論。'
   ),
-  '編輯評論' => array(
+  'edit_comment' => array(
   'title' => '編輯評論：',
-  'description' => '可以編輯所有評論（用戶無論如何都可以編輯自己的評論）。
+  'description' => '可以編輯所有評論（用戶無論如何都可以編輯自己的評論）。'
   ),
   'view_user' => array(
-  '標題' => '使用者個人資料：',
-  'description' => '可以查看所有使用者個人資料。
+  'title' => '使用者個人資料：',
+  'description' => '可以查看所有使用者個人資料。'
   ),
-  '上傳' => array(
+  'upload' => array(
   'title' => '發布文件：',
-  'description' => '可以將文件附加到評論或新問題。
+  'description' => '可以將文件附加到評論或新問題。'
   ),
   'view_upload' => array(
   'title' => '查看上傳內容：',
-  'description' => '可以存取所有上傳的檔案。
+  'description' => '可以存取所有上傳的檔案。'
   ),
-  '設定' => array(
-  '標題' => '更改設定：',
-  'description' => '可以存取此頁面並修改所有全域設定。
+  'settings' => array(
+  'title' => '更改設定：',
+  'description' => '可以存取此頁面並修改所有全域設定。'
   ),
-  '註冊' => array(
-  '標題' => '註冊：',
-  '描述' => '可以註冊。
+  'signup' => array(
+  'title' => '註冊：',
+  'description' => '可以註冊。'
   ),
   'view_errors' => array(
   'title' => '查看致命錯誤：',
-  'description' => '可以查看致命錯誤的描述。
+  'description' => '可以查看致命錯誤的描述。'
   ）
   ）;
 
   public static function permissions($id, $type = '描述') {
-  返回自我::$權限[$id][$type];
+  return self::$permissions[$id][$type];
   }
 
   private static $settings = array(
-  'validate_url' => '該網址無效。
-  'validate_email' => '電子郵件無效。
-  'private_label_removed' => '您無法刪除私有標籤或變更其 ID，但可以重新命名。
-  'default_status_removed' => '您無法刪除預設狀態或變更其 ID，但可以重新命名。
-  'default_group_removed' => '您無法刪除預設群組或更改其 ID，但可以重命名它。
-  'default_group_superuser_removed' => '您無法刪除超級使用者群組或變更其 ID，但可以重新命名。
-  'validate_same_username' => '警告：兩個使用者有相同的使用者名稱。
-  'validate_same_project_name' => '兩個項目不能有相同的名稱。其中一個已自動重命名。
-  'language_modified' => '刷新此頁面即可以新語言檢視。
+  'validate_url' => '該網址無效。',
+  'validate_email' => '電子郵件無效。',
+  'private_label_removed' => '您無法刪除私有標籤或變更其 ID，但可以重新命名。',
+  'default_status_removed' => '您無法刪除預設狀態或變更其 ID，但可以重新命名。',
+  'default_group_removed' => '您無法刪除預設群組或更改其 ID，但可以重命名它。',
+  'default_group_superuser_removed' => '您無法刪除超級使用者群組或變更其 ID，但可以重新命名。',
+  'validate_same_username' => '警告：兩個使用者有相同的使用者名稱。',
+  'validate_same_project_name' => '兩個項目不能有相同的名稱。其中一個已自動重命名。',
+  'language_modified' => '刷新此頁面即可以新語言檢視。'
   ）；
 
   public static function settings($id) {
