@@ -133,7 +133,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 
 ### v2.7
 - [ ] New Language supported (_lah_) i.e. Lahnda, Note: postponed the update due Language translation not found on google
-- [ ] New Language supported (_id_) i.e. Indonesian
+- [x] New Language supported (_id_) i.e. Indonesian (English)
+- [x] New Language supported (_id_) i.e. Indonesian (Bahasa)
 
 ### v2.8
 - [ ] New Language supported (_id_) i.e. Marathi
