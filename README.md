@@ -111,9 +111,9 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 ### v2.2
 - [x] Add new Dependencies into de Language from the build v1.1.3 -> by philipp-r
 - [x] Add new Dependencies into hi Language from the build v1.1.3 -> by philipp-r
+- [x] Add new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
+- [x] Add new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
 - [ ] Add new Dependencies into es Language from the build v1.1.3 -> by philipp-r
-- [ ] Add new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
-- [ ] Add new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
 
 ### v2.3
 - [ ] New Language supported (_cmn_)
