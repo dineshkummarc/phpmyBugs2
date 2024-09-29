@@ -60,7 +60,7 @@ class Trad {
   const W_S_RESOLVED = '已解決';
   const W_S_REJECTED = '已拒絕';
   const W_L_URGENT = '緊急';
-  const W_L_IMPROVMENT = '改進';
+  const W_L_IMPROVEMENT = '改進';
   const W_L_PRIVATE = '私有';
 
   const W_PROFILEPIC = '個人資料圖片';
