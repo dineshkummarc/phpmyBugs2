@@ -115,7 +115,7 @@ class Trad {
   const S_VIEW_PARTICIPATION = 'তার অংশগ্রহণ দেখুন।';
   const S_VIEW_STATUS = 'সমস্যা দেখুন “%status%”।';
 
-  const S_ISSUE_CREATED = '% user% %time%' দ্বারা;
+  const S_ISSUE_CREATED = '% user% %time% দ্বারা';
   const S_ISSUE_UPDATED = '%adj% by %user% %time%।';
   const S_ISSUE_STATUS_UPDATED = 'স্থিতি %status%-এ %user% %time% দ্বারা আপডেট করা হয়েছে।';
 
