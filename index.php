@@ -36,7 +36,7 @@ define('AUTHOR', 'Dineshkummarc');
 define('URL', 'https://github.com/dineshkummarc/phpmyBugs2');
 
 ### Languages
-define('LANGUAGES', 'english,french,dutch,hindi,russian,pt-portuguese,br-portuguese,spanish,mandarin,chineese,pidgin,bengali,japanese,indonesian,bahasa,marathi'); # Separated by a comma, without spaces
+define('LANGUAGES', 'english,french,dutch,hindi,russian,pt-portuguese,br-portuguese,spanish,mandarin,chineese,pidgin,bengali,japanese,indonesian,bahasa,marathi,telugu'); # Separated by a comma, without spaces
 define('DEFAULT_LANGUAGE', 'english'); # Used only during installation
 
 ### Directories and files
