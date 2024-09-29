@@ -2,7 +2,7 @@
 
 class Trad {
 
-  ＃ 字
+  # 字
 
   const W_ISSUE = '問題';
   const W_OPEN = '開啟';
@@ -339,7 +339,7 @@ class Trad {
 
   const F_API_ENABLE = '啟用 API';
 
-  常數 HELP_MARKDOWN = '
+  const HELP_MARKDOWN = '
   <h2>馬克德自己的語法：</h2>
 
   <p>段落：</p>
@@ -458,8 +458,8 @@ __再次粗體文字__ </code></pre>
   'view_errors' => array(
   'title' => '查看致命錯誤：',
   'description' => '可以查看致命錯誤的描述。'
-  ）
-  ）;
+  )
+  );
 
   public static function permissions($id, $type = '描述') {
   return self::$permissions[$id][$type];
@@ -475,7 +475,7 @@ __再次粗體文字__ </code></pre>
   'validate_same_username' => '警告：兩個使用者有相同的使用者名稱。',
   'validate_same_project_name' => '兩個項目不能有相同的名稱。其中一個已自動重命名。',
   'language_modified' => '刷新此頁面即可以新語言檢視。'
-  ）；
+  );
 
   public static function settings($id) {
   return self::$settings[$id];
@@ -488,11 +488,11 @@ __再次粗體文字__ </code></pre>
   E_NOTICE => '通知',
   E_STRICT => '建議',
   E_DEPRECATED => '已棄用','預設' => '錯誤'
-  ）；
+  );
   
   public static function errors($no) {
-  return (isset(self::$errors[$no])) ？ self::$errors[$no] : self::$errors['default'];
-  }
+		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
+	}
 }
 
 ?>
