@@ -104,7 +104,7 @@ class Trad {
   const S_ISSUE_ABOUT = 'Sobre este problema:';
   const S_UPLOAD_ADD = 'Anexar um ficheiro:';
   const S_WELCOME = 'Bem-vindo, %utilizador%';
-  const S_NUNCA = 'Nunca';
+  const S_NEVER = 'Nunca';
   const S_ME = 'De atualizações sobre questões para as quais contribuí';
   const S_ALWAYS = 'De cada actualização';
   const S_START_NOTIF = 'Ser notificado sobre novas atualizações';
@@ -254,7 +254,7 @@ Este é um e-mail automático, por favor não responda.
   const F_URL_CDN = 'URL do CDN:';
   const F_URL_REWRITING = 'Reescrita de URL:';
   const F_INTRO = 'Introdução:';
-  const F_DESCRIÇÃO = 'Descrição:';
+  const F_DESCRIPTION = 'Descrição:';
   const F_EMAIL = 'E-mail:';
   const F_LINK_CONTACT = 'Link para a página de contacto externo (pode ser deixado em branco):';
   const F_LINK_LEGALNOTICE = 'Link para aviso legal (pode ser deixado em branco):';
@@ -400,19 +400,19 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   'title' => 'Página inicial:',
   'description' => 'Pode aceder à página inicial e visualizar a lista de todos os problemas em aberto para os seus projetos.'
   ),
-  'painel' => array(
+  'dashboard' => array(
   'title' => 'Painéis:',
   'description' => 'Pode aceder aos painéis dos projetos.'
   ),
-  'problemas' => array(
+  'issues' => array(
   'title' => 'Ver problemas:',
   'description' => 'Pode visualizar problemas públicos.'
   ),
-  'questões_privadas' => array(
+  'private_issues' => array(
   'title' => 'Ver problemas privados:',
   'description' => 'Pode visualizar os problemas marcados como privados.'
   ),
-  'pesquisar' => array(
+  'search' => array(
   'title' => 'Pesquisar:',
   'description' => 'Pode pesquisar problemas ou utilizadores.'
   ),
@@ -430,7 +430,7 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   ),
   'post_comment' => array(
   'title' => 'Publicar um comentário:',
-  'descrição' => 'Pode publicar um comentário.'
+  'description' => 'Pode publicar um comentário.'
   ),
   'edit_comment' => array(
   'title' => 'Editar comentários:',
@@ -440,7 +440,7 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   'title' => 'Perfis de utilizador:',
   'description' => 'Pode visualizar todos os perfis de utilizador.'
   ),
-  'carregar' => array(
+  'upload' => array(
   'title' => 'Publicar um ficheiro:',
   'description' => 'Pode anexar ficheiros a um comentário ou a um novo problema.'
   ),
@@ -448,13 +448,13 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   'title' => 'Ver uploads:',
   'description' => 'Pode aceder a todos os ficheiros enviados.'
   ),
-  'configurações' => array(
+  'settings' => array(
   'title' => 'Alterar definições:',
   'description' => 'Pode aceder a esta página e modificar todas as definições globais.'
   ),
-  'registo' => array(
+  'signup' => array(
   'title' => 'Inscreva-se:',
-  'descrição' => 'Pode inscrever-se.'
+  'description' => 'Pode inscrever-se.'
   ),
   'view_errors' => array(
   'title' => 'Ver erros fatais:',
@@ -463,7 +463,7 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   );
 
   public static function permissions($id, $type = 'description') {
-  return self::$permissões[$id][$tipo];
+  return self::$permissions[$id][$type];
   }
 
   private static $settings = array(
@@ -479,7 +479,7 @@ Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
   );
 
   public static function settings($id) {
-  return self::$configurações[$id];
+  return self::$settings[$id];
   }
 
   private static $errors = array(
