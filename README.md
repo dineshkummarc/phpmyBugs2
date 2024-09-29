@@ -120,18 +120,23 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_cmn_) i.e. Mandarin Chineese
 
 ### v2.4    
-- [ ] New Language supported (_ar_)
+- [ ] New Language supported (_ar_), i.e. Arabic, Note: postponed the update due to left to right Language
+- [ ] New Language supported (_ur_) i.e. Urdu, Note: postponed the update due to left to right Language
+- [ ] New Language supported (_pcm_) i.e. Pidgin also known as 'Nigerian Pidgin', 
 
 ### v2.5
-- [ ] New Language supported (_bn_)
+- [ ] New Language supported (_bn_) i.e Bengali
 
 ### v2.6    
-- [ ] New Language supported (_ja_)
+- [ ] New Language supported (_ja_) i.e Japanese
 
 ### v2.7
-- [ ] New Language supported (_lah_)
+- [ ] New Language supported (_lah_) i.e. Lahnda
 
 ### v2.8
+- [ ] New Language supported (_id_) i.e. Indonesian
+
+### v2.9
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
@@ -147,6 +152,10 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
+
+### v2.10
+- [ ] New Language supported (_ar_), i.e. Arabic,
+- [ ] New Language supported (_ur_) i.e. Urdu,
 
 ### Screenshots (Based on v0.9)
 
