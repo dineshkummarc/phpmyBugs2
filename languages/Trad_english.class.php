@@ -489,8 +489,7 @@ This is another one : &lt;http://example.com&gt;.</code></pre>
 		E_PARSE => 'Parse error',
 		E_NOTICE => 'Notice',
 		E_STRICT => 'Advice',
-		E_DEPRECATED => 'Deprecated',
-		'default' => 'Error'
+		E_DEPRECATED => 'Deprecated','default' => 'Error'
 	);
 	public static function errors($no) {
 		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
