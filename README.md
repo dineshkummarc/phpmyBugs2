@@ -1,4 +1,4 @@
-# phpmyBugs v2.7
+# phpmyBugs ~v2.7~ v2.8
 
 basically a merge collaboration of two repos https://github.com/dineshkummarc/phpmyBugs & https://github.com/dineshkummarc/bugtracker1 into this repo.
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 13 Languages out of top 20 Languages around the world (based on List of languages by number of native speakers).
@@ -137,7 +137,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_id_) i.e. Indonesian (Bahasa)
 
 ### v2.8
-- [ ] New Language supported (_id_) i.e. Marathi
+- [x] New Language supported (_id_) i.e. Marathi
 
 ### v2.9
 - [ ] New Language supported (_id_) i.e. Telugu
@@ -167,6 +167,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
+- [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
 
 ### v2.14
 - [ ] New Language supported (_ar_), i.e. Arabic,
