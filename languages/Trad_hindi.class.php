@@ -6,7 +6,7 @@ class Trad {
 
 const W_ISSUE = 'मुद्दा';
 const W_OPEN = 'खुला';
-const W_OPENED = 'खुला';
+const W_OPENED = 'खोला गया';
 const W_CLOSED = 'बंद';
 const W_REOPENED = 'फिर से खोला';
 const W_COMMENTED = 'टिप्पणी की गई';
@@ -21,7 +21,7 @@ const W_EXAMPLE = 'उदाहरण';
 const W_HEX = 'हेक्स';
 const W_RENDERING = 'रेंडरिंग';
 const W_ID = 'आईडी';
-const W_DISPLAY_NAME = 'प्रदर्शन नाम';
+const W_DISPLAY_NAME = 'प्रदर्शित होने वाला नाम';
 const W_SECONDE = 'सेकंड';
 const W_MINUTE = 'मिनट';
 const W_HOUR = 'घंटा';
@@ -103,13 +103,10 @@ const S_VIEW_STATUS = 'मुद्दे “%status%” देखें।';
 const S_ISSUE_CREATED = 'by %user% %time%';
 const S_ISSUE_UPDATED = '%adj% by %user% %time%.';
 const S_ISSUE_STATUS_UPDATED = 'स्थिति %user% %time% द्वारा %status% में अपडेट की गई।';
-
 const S_RSS_ISSUE_UPDATED = 'स्थिति %user% द्वारा “%status%” में अपडेट की गई।';
-
-const S_INTRO_INSTALL = 'ऐसा लगता है कि यह पहली बार है जब आपने phpmyBugs चलाया है! कृपया इसे कॉन्फ़िगर करें:';
+const S_INTRO_INSTALL = 'ऐसा लगता है कि यह पहली बार है जब आपने पीएचपीमाईबग्स चलाया है! कृपया इसे कॉन्फ़िगर करें:';
 const S_FIRST_ISSUE_TITLE = 'आप कैसे हैं, कद्दू?';
 const S_FIRST_ISSUE = 'मैं आपकी पहली समस्या हूँ! लॉग इन करने के बाद, आप मुझे हटा सकेंगे।';
-
 const S_NO_USER = 'कोई भी उपयोगकर्ता आपके अनुरोध से मेल नहीं खाता।';
 const S_NO_ISSUE = 'कोई भी समस्या आपके अनुरोध से मेल नहीं खाती।';
 const S_MATCHING_ISSUES = '%nb% मिलान संबंधी समस्याएँ';
@@ -120,11 +117,8 @@ const S_NO_PROJECT = 'कोई प्रोजेक्ट नहीं.';
 const S_SEARCH = '#12, @user, शब्द…';
 const S_COPYRIGHT = '%name% द्वारा संचालित.';
 const S_UPGRADE = '<a href="https://github.com/bugtrackr/Nireus/releases/latest">गिटहब</a> से <a href="https://bugtrackr.github.io/wiki/upgrade/">अपग्रेड</a> तक नवीनतम संस्करण प्राप्त करें.';
-
 const S_LAST_UPDATES = 'अंतिम अपडेट…';
-
 const S_STAY_LOGGEDIN = 'मुझे लॉग इन रखें';
-
 const S_DEFAULT_DEFPROJ_DESC = 'यह डिफ़ॉल्ट प्रोजेक्ट है जहाँ सभी की पहुँच है।';
 const S_DEFAULT_2NDPROJ_DESC = 'यह आपकी दूसरी प्रोजेक्ट हो सकती है जहाँ केवल पंजीकृत उपयोगकर्ताओं को ही समस्याएँ पोस्ट करने की अनुमति है।';
 
@@ -362,53 +356,29 @@ __बोल्ड टेक्स्ट फिर से__ </code></pre>
 ';
 
 private static $permissions = array(
-
 'home' => array(
-
 'title' => 'होम:',
-
 'description' => 'होम पेज तक पहुँच सकता है और अपनी परियोजनाओं के लिए सभी खुले मुद्दों की सूची देख सकता है।'
-
 ),
-
 'dashboard' => array(
-
 'title' => 'डैशबोर्ड:',
-
 'description' => 'परियोजनाओं के डैशबोर्ड तक पहुँच सकता है।'
-
 ),
-
 'issues' => array(
-
 'title' => 'मुद्दे देखें:',
-
 'description' => 'सार्वजनिक मुद्दे देख सकता है।'
-
 ),
-
 'private_issues' => array(
-
 'title' => 'निजी मुद्दे देखें:',
-
 'description' => 'निजी के रूप में टैग किए गए मुद्दे देख सकता है।'
-
 ),
-
 'search' => array(
-
 'title' => 'खोज:',
-
 'description' => 'मुद्दों या उपयोगकर्ताओं को खोज सकता है।'
-
 ),
-
 'new_issue' => array(
-
 'title' => 'नया मुद्दा:',
-
 'description' => 'नया मुद्दा सबमिट कर सकता है।'
-
 ),
 'edit_issue' => array(
 'title' => 'समस्याओं को संपादित करें:',
@@ -459,20 +429,13 @@ return self::$permissions[$id][$type];
 private static $settings = array(
 
 'validate_url' => 'यूआरएल मान्य नहीं है.',
-
 'validate_email' => 'ईमेल मान्य नहीं है.',
-
 'private_label_removed' => 'आप निजी लेबल को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं.',
-
 'default_status_removed' => 'आप डिफ़ॉल्ट स्थिति को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं.',
-
 'default_group_removed' => 'आप डिफ़ॉल्ट समूह को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं.',
-
 'default_group_superuser_removed' => 'आप सुपरयूज़र समूह को हटा नहीं सकते या उसकी आईडी नहीं बदल सकते, लेकिन आप उसका नाम बदल सकते हैं.',
-
 'validate_same_username' => 'चेतावनी: दो उपयोगकर्ताओं का उपयोगकर्ता नाम एक ही है.',
 'validate_same_project_name' => 'दो प्रोजेक्ट का नाम एक जैसा नहीं हो सकता। एक का नाम अपने आप बदल दिया गया है।',
-
 'language_modified' => 'इस पेज को नई भाषा में देखने के लिए रिफ्रेश करें।'
 
 );
@@ -483,17 +446,11 @@ return self::$settings[$id];
 }
 
 private static $errors = array(
-
 E_ERROR => 'गंभीर त्रुटि',
-
 E_WARNING => 'चेतावनी',
-
 E_PARSE => 'पार्स त्रुटि',
-
 E_NOTICE => 'सूचना',
-
 E_STRICT => 'सलाह',
-
 E_DEPRECATED => 'बहिष्कृत','डिफ़ॉल्ट' => 'त्रुटि'
 );
 
