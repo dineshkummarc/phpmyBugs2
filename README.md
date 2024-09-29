@@ -1,7 +1,7 @@
 # phpmyBugs ~v1.1.4~ ~v2.2~ ~v2.3~ v2.4
 
 basically a merge collaboration of two repos https://github.com/dineshkummarc/phpmyBugs & https://github.com/dineshkummarc/bugtracker1 into this repo.
-phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 6 Languages out of 10 Languages around the world (based on List of languages by number of native speakers).
+phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top ~6~ 10 Languages out of top 20 Languages around the world (based on List of languages by number of native speakers).
 ![phpmyBugs logo](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/phpmybugs-logo.png)
 
 ### Features:
