@@ -170,7 +170,7 @@ const M_NEW_COMMENT = 'नमस्कार, %वापरकर्ताना
 
 ,
 हा एक स्वयंचलित ईमेल आहे, कृपया उत्तर देऊ नका.
-,
+';
 
 const M_NEW_ISSUE_O = '[%title% — %project%] नवीन समस्या';
 const M_NEW_ISSUE = 'हॅलो, %वापरकर्तानाव%!
@@ -182,7 +182,7 @@ const M_NEW_ISSUE = 'हॅलो, %वापरकर्तानाव%!
 
 ,
 हा एक स्वयंचलित ईमेल आहे, कृपया उत्तर देऊ नका.
-,
+';
 
 #विषय
 
@@ -356,71 +356,71 @@ __पुन्हा ठळक मजकूर__ </code></pre>
 ';
 
 private static $permissions = array(
-'home' => ॲरे(
+'home' => array(
 'title' => 'घर:',
 'description' => 'मुख्यपृष्ठावर प्रवेश करू शकतो आणि तुमच्या प्रकल्पांसाठी सर्व खुल्या समस्यांची सूची पाहू शकतो.'
-,
-'dashboard' => ॲरे(
+),
+'dashboard' => array(
 'title' => 'डॅशबोर्ड:',
 'description' => 'प्रकल्प डॅशबोर्डवर प्रवेश करू शकतो.'
-,
-'issues' => ॲरे(
+),
+'issues' => array(
 'title' => 'समस्या पहा:',
 'description' => 'सार्वजनिक समस्या पाहू शकतो.'
-,
-'private_issues' => ॲरे(
+),
+'private_issues' => array(
 'title' => 'वैयक्तिक समस्या पहा:',
 'description' => 'खाजगी म्हणून टॅग केलेल्या समस्या पाहू शकता.'
-,
-'search' => ॲरे(
+),
+'search' => array(
 'title' => 'शोध:',
 'description' => 'समस्या किंवा वापरकर्ते शोधू शकतात.'
-,
-'new_issue' => ॲरे(
+),
+'new_issue' => array(
 'title' => 'नवीन अंक:',
 'description' => 'नवीन अंक सादर करू शकता.'
-,
-'edit_issue' => ॲरे(
+),
+'edit_issue' => array(
 'title' => 'समस्या संपादित करा:',
 'description' => 'सर्व समस्यांचा मजकूर संपादित करून तो हटवू शकतो.'
-,
-'update_issue' => ॲरे(
+),
+'update_issue' => array(
 'title' => 'अद्ययावत समस्या:',
 'description' => 'समस्या अपडेट करू शकतात: स्थिती बदला, लेबले जोडा, बंद करा आणि पुन्हा उघडा, ...'
-,
-'post_comment' => ॲरे(
+),
+'post_comment' => array(
 'title' => 'टिप्पणी पोस्ट करा:',
 'description' => 'टिप्पण्या पोस्ट करू शकता.'
-,
-'edit_comment' => ॲरे(
+),
+'edit_comment' => array(
 'title' => 'टिप्पण्या संपादित करा:',
 'description' => 'सर्व टिप्पण्या संपादित केल्या जाऊ शकतात (वापरकर्ते त्यांच्या स्वतःच्या टिप्पण्या संपादित करू शकतात).'
-,
-'view_user' => ॲरे(
+),
+'view_user' => array(
 'title' => 'वापरकर्ता प्रोफाइल:',
 'description' => 'सर्व वापरकर्ते प्रोफाइल पाहू शकतात.'
-,
-'upload' => ॲरे(
+),
+'upload' => array(
 'title' => 'फाइल पोस्ट करा:',
 'description' => 'टिप्पणी किंवा नवीन मुद्द्याला फाइल्स संलग्न करू शकता.'
-,
-'view_upload' => ॲरे(
+),
+'view_upload' => array(
 'title' => 'अपलोड पहा:',
 'description' => 'सर्व अपलोड केलेल्या फाइल्समध्ये प्रवेश करू शकतो.'
-,
-'settings' => ॲरे(
+),
+'settings' => array(
 'title' => 'सेटिंग्ज बदला:',
 'description' => 'या पानावर प्रवेश करू शकतो आणि सर्व जागतिक सेटिंग्ज बदलू शकतो.'
-,
-'signup' => ॲरे(
+),
+'signup' => array(
 'title' => 'साइन अप करा:',
 'description' => 'साइन अप करू शकता.'
-,
-'view_errors' => ॲरे(
+),
+'view_errors' => array(
 'title' => 'घातक चुका पहा:',
 'description' => 'घातक त्रुटींचे वर्णन पाहू शकतो.'
-,
-,
+)
+);
 
 public static function permissions($id, $type = 'वर्णन') {
 return self::$permissions[$id][$type];
