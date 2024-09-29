@@ -167,6 +167,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
+- [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
 
 ### v2.14
 - [ ] New Language supported (_ar_), i.e. Arabic,
