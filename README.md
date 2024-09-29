@@ -109,11 +109,12 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Themes selection on dashboard, fixed in v2.0 but selection moved to settings (user can change themes from settings)
 
 ### v2.2
-- [x] Add new Dependencies into de Language from the build v1.1.3 -> by philipp-r
-- [x] Add new Dependencies into hi Language from the build v1.1.3 -> by philipp-r
-- [x] Add new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
-- [x] Add new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
-- [ ] Add new Dependencies into es Language from the build v1.1.3 -> by philipp-r
+- [x] Added new Dependencies into de Language from the build v1.1.3 -> by philipp-r
+- [x] Added new Dependencies into hi Language from the build v1.1.3 -> by philipp-r
+- [x] Added new Dependencies into pt Language from the build v1.1.3 -> by philipp-r
+- [x] Added new Dependencies into ru Language from the build v1.1.3 -> by philipp-r
+- [x] Added new Dependencies into es Language from the build v1.1.3 -> by philipp-r
+- [x] Added pt language along with br_pt and pt_pt for region specific speakers. 
 
 ### v2.3
 - [ ] New Language supported (_cmn_)
