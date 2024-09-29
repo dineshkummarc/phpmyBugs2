@@ -2,457 +2,498 @@
 
 class Trad {
 
-		# Words
+  # Palavras
 
-	const W_ISSUE = 'Problema';
-	const W_OPEN = 'Abrir';
-	const W_OPENED = 'Aberto';
-	const W_CLOSED = 'Fechado';
-	const W_REOPENED = 'Reaberto';
-	const W_COMMENTED = 'Comentado';
-	const W_NOBODY = 'ninguém';
-	const W_SOMEONE = 'alguém';
-	const W_ENABLED = 'Ativado';
-	const W_DISABLED = 'Desativado';
-	const W_NOTFOUND = 'Não encontrado';
-	const W_FORBIDDEN = 'Proibido';
-	const W_MENU = 'Menu';
+  const W_ISSUE = 'Problema';
+  const W_OPEN = 'Aberto';
+  const W_OPENED = 'Aberto';
+  const W_CLOSED = 'Fechado';
+  const W_REOPENED = 'Reaberto';
+  const W_COMMENTED = 'Comentado';
+  const W_NOBODY = 'ninguém';
+  const W_SOMEONE = 'alguém';
+  const W_ENABLED = 'Ativado';
+  const W_DISABLED = 'Desativado';
+  const W_NOTFOUND = 'Não encontrado';
+  const W_FORBIDDEN = 'Proibido';
+  const W_MENU = 'Menu';
 
-	const W_EXAMPLE = 'Exemplo';
-	const W_HEX = 'Hex';
-	const W_RENDERING = 'Renderização';
-	const W_ID = 'ID';
-	const W_DISPLAY_NAME = 'Nome de exibição';
+  const W_EXAMPLE = 'Exemplo';
+  const W_HEX = 'Hex';
+  const W_RENDERING = 'Rendering';
+  const W_ID = 'ID';
+  const W_DISPLAY_NAME = 'Nome de visualização';
 
-	const W_SECONDE = 'segundo';
-	const W_MINUTE = 'minuto';
-	const W_HOUR = 'hora';
-	const W_DAY = 'dia';
-	const W_WEEK = 'semana';
-	const W_MONTH = 'mês';
-	const W_YEAR = 'ano';
-	const W_DECADE = 'decad';
-	const W_SECONDE_P = 'segundos';
-	const W_MINUTE_P = 'minutos';
-	const W_HOUR_P = 'horas';
-	const W_DAY_P = 'dias';
-	const W_WEEK_P = 'semanas';
-	const W_MONTH_P = 'meses';
-	const W_YEAR_P = 'anos';
-	const W_DECADE_P = 'decads';
+  const W_SECONDE = 'segundo';
+  const W_MINUTE = 'minuto';
+  const W_HOUR = 'hora';
+  const W_DAY = 'dia';
+  const W_WEEK = 'semana';
+  const W_MONTH = 'mês';
+  const W_YEAR = 'ano';
+  const W_DECADE = 'década';
+  const W_SECONDE_P = 'segundos';
+  const W_MINUTE_P = 'minutos';
+  const W_HOUR_P = 'horas';
+  const W_DAY_P = 'dias';
+  const W_WEEK_P = 'semanas';
+  const W_MONTH_P = 'meses';
+  const W_YEAR_P = 'anos';
+  const W_DECADE_P = 'décadas';
 
-	const W_PREVIOUS = 'Anterior';
-	const W_NEXT = 'Próximo';
-	const W_CURRENT = 'Página %nb1% de %nb2%';
+  const W_PREVIOUS = 'Anterior';
+  const W_NEXT = 'Seguinte';
+  const W_MORE = 'MAIS';
+  const W_CURRENT = 'Página %nb1% de %nb2%';
 
-	const W_NOT_LOGGED = 'Não registrado';
+  const W_NOT_LOGGED = 'Sem login';
 
-	const W_SUSPENSION = '…';
-	const W_EXTRACT = '“%text%”';
+  const W_SUSPENSION = '…';
+  const W_EXTRACT = '“%texto%”';
 
-	const W_USER = 'Usuário';
-	const W_DEVELOPPER = 'Desenvolvedor';
-	const W_SUPERUSER = 'Superusuário';
-	const W_S_NEW = 'Novo';
-	const W_S_CONFIRMED = 'Confirmado';
-	const W_S_ASSIGNED = 'Atribuído a %user%';
-	const W_S_RESOLVED = 'Resolvido';
-	const W_S_REJECTED = 'Rejeitado';
-	const W_L_URGENT = 'Urgente';
-	const W_L_IMPROVEMENT = 'Melhoria';
-	const W_L_PRIVATE = 'Privado';
+  const W_USER = 'Utilizador';
+  const W_DEVELOPPER = 'Developer';
+  const W_SUPERUSER = 'Superutilizador';
+  const W_S_NEW = 'Novo';
+  const W_S_CONFIRMED = 'Confirmado';
+  const W_S_ASSIGNED = 'Atribuído a %utilizador%';
+  const W_S_RESOLVED = 'Resolvido';
+  const W_S_REJECTED = 'Rejeitado';
+  const W_L_URGENT = 'Urgente';
+  const W_L_IMPROVEMENT = 'Melhoria';
+  const W_L_PRIVATE = 'Privado';
 
-	const W_PROFILEPIC = 'imagem do perfil';
+  const W_PROFILEPIC = 'foto de perfil';
 
-	const W_RSS = 'RSS feed';
+  const W_RSS = 'Feed RSS';
+  const W_VERSION = 'Versão';
 
-		# Verbes
+  const W_CAPTCHA_IMAGE = 'Imagem CAPTCHA';
+  const W_CAPTCHA_REFRESH = 'Actualizar imagem';
+  const W_CAPTCHA_INPUT = 'Introduza o texto:';
 
-	const V_UPDATE = 'Atualizar';
-	const V_UPDATE_DETAILS = 'Atualizar detalhes';
-	const V_UPDATE_CONTENT = 'Atualizar conteúdo';
-	const V_UPDATE_AND = 'Atualizar & %adjective%';
-	const V_CANCEL = 'Cancelar';
-	const V_PREVIEW = 'Preview';
-	const V_COMMENT = 'Comentário';
-	const V_SUBMIT = 'Enviar';
-	const V_SELECT_FILE = 'Selecione um arquivo…';
-	const V_UPLOADING = 'Enviando…';
-	const V_SAVE_CONFIG = 'Salvar configurações';
-	const V_APPLY = 'Aplicar';
-	const V_EDIT = 'Editar';
-	const V_SIGNUP = 'Inscreva-se';
-	const V_CONTINUE = 'Continuar';
-	const V_REMOVE_ISSUE = 'Excluir problema';
-	const V_CLOSE = 'fechar';
-	const V_REOPEN = 'reabrir';
-	const V_EXPORT = 'Exportar dados brutos';
+  # Verbos
 
-		# Sentencies
+  const V_UPDATE = 'Actualizar';
+  const V_UPDATE_DETAILS = 'Actualizar detalhes';
+  const V_UPDATE_CONTENT = 'Actualizar conteúdo';
+  const V_UPDATE_AND = 'Actualização & %adjectivo%';
+  const V_CANCEL = 'Cancelar';
+  const V_PREVIEW = 'Pré-visualização';
+  const V_COMMENT = 'Comentário';
+  const V_SUBMIT = 'Enviar';
+  const V_SELECT_FILE = 'Selecione um ficheiro…';
+  const V_UPLOADING = 'A enviar…';
+  const V_SAVE_CONFIG = 'Guardar configurações';
+  const V_APPLY = 'Aplicar';
+  const V_EDIT = 'Editar';
+  const V_SIGNUP = 'Registar-se';
+  const V_LOGIN = 'Login';
+  const V_CONTINUE = 'Continuar';
+  const V_REMOVE_ISSUE = 'Apagar problema';
+  const V_CLOSE = 'fechar';
+  const V_REOPEN = 'reabrir';
+  const V_EXPORT = 'Exportar dados em bruto';
 
-	const S_NOLABEL = '-';
-	const S_NODEPENDENCY = '-';
-	const S_COMMENT_LEAVE = 'Deixe um comentário:';
-	const S_AGO = '%duration% %pediod% ago';
-	const S_ISSUE_ABOUT = 'Sobre este assunto:';
-	const S_UPLOAD_ADD = 'Anexar um arquivo:';
-	const S_WELCOME = 'Bem-vindo, %user%';
-	const S_NEVER = 'Nunca';
-	const S_ME = 'De atualizações sobre questões em que contribuí';
-	const S_ALWAYS = 'De cada atualização';
-	const S_START_NOTIF = 'Ser notificado de novas atualizações';
-	const S_STOP_NOTIF = 'Não ser mais notificado de atualizações';
-	const S_NOTFOUND = 'A página que você está procurando não existe mais ...';
-	const S_FORBIDDEN = 'Você não tem permissão para acessar esta página. Faça login / logout para continuar.';
+  # Frases
 
-	const S_VIEW_PARTICIPATION = 'Ver sua participação.';
-	const S_VIEW_STATUS = 'Ver problemas “%status%”.';
+  const S_NOLABEL = '-';
+  const S_NODEPENDENCY = '-';
+  const S_COMMENT_LEAVE = 'Deixar um comentário:';
+  const S_AGO = '%duration% %pediod% atrás';
+  const S_ISSUE_ABOUT = 'Sobre este problema:';
+  const S_UPLOAD_ADD = 'Anexar um ficheiro:';
+  const S_WELCOME = 'Bem-vindo, %utilizador%';
+  const S_NUNCA = 'Nunca';
+  const S_ME = 'De atualizações sobre questões para as quais contribuí';
+  const S_ALWAYS = 'De cada actualização';
+  const S_START_NOTIF = 'Ser notificado sobre novas atualizações';
+  const S_STOP_NOTIF = 'Não será mais notificado sobre atualizações';
+  const S_NOTFOUND = 'A página que procura já não existe...';
+  const S_FORBIDDEN = 'Não tem permissão para aceder a esta página. Por favor faça login/logout para continuar.';
 
-	const S_ISSUE_CREATED = 'por %user% %time%';
-	const S_ISSUE_UPDATED = '%adj% por %user% %time%.';
-	const S_ISSUE_STATUS_UPDATED = 'Status atualizado para %status% por %user% %time%.';
+  const S_VIEW_PARTICIPATION = 'Ver a sua participação.';
+  const S_VIEW_STATUS = 'Ver problemas “%status%”.';
 
-	const S_RSS_ISSUE_UPDATED = '%adj% por %user%.';
-	const S_RSS_ISSUE_STATUS_UPDATED = 'Status atualizado para “%status%” por %user%.';
+  const S_ISSUE_CREATED = 'por %utilizador% %tempo%';
+  const S_ISSUE_UPDATED = '%adj% by %user% %time%.';
+  const S_ISSUE_STATUS_UPDATED = 'Estado atualizado para %status% por %user% %time%.';
 
-	const S_INTRO_INSTALL = 'Parece que é a primeira vez que você executa o phpmyBugs! Por favor, configure-o: ';
-	const S_FIRST_ISSUE_TITLE = 'Como vai, docinho?';
-	const S_FIRST_ISSUE = 'Eu sou seu primeiro problema! Após o login, você poderá me deletar. ';
+  const S_RSS_ISSUE_UPDATED = '%adj% por %utilizador%.';
+  const S_RSS_ISSUE_STATUS_UPDATED = 'Estado atualizado para “%status%” por %utilizador%.';
 
-	const S_NO_USER = 'Nenhum usuário corresponde ao seu pedido.';
-	const S_NO_ISSUE = 'Nenhum problema corresponde ao seu pedido.';
-	const S_MATCHING_ISSUES = '%nb% problemas de correspondência';
-	const S_NO_ACTIVITY = 'Nenhuma atividade recente.';
-	const S_NO_UPLOAD = 'Sem upload.';
-	const S_SIZE_REMAINING = '%remain% restantes no %total% permitido.';
-	const S_NO_PROJECT = 'Nenhum projeto.';
+  const S_INTRO_INSTALL = 'Parece que é a primeira vez que executas o phpmyBugs! Por favor configure-o:';
+  const S_FIRST_ISSUE_TITLE = 'Como estás, abóbora?';
+  const S_FIRST_ISSUE = 'Sou o teu primeiro problema! Após o login, poderá eliminar-me.';
 
-	const S_SEARCH = '# 12, @ usuário, palavras…';
-	const S_COPYRIGHT = 'Desenvolvido por %name%.';
+  const S_NO_USER = 'Nenhum utilizador corresponde ao seu pedido.';
+  const S_NO_ISSUE = 'Nenhum problema corresponde ao seu pedido.';
+  const S_MATCHING_ISSUES = '%nb% problemas de correspondência';
+  const S_NO_ACTIVITY = 'Nenhuma atividade recente.';
+  const S_NO_UPLOAD = 'Sem upload.';
+  const S_SIZE_REMAINING = '%remain% restante no %total% permitido.';
+  const S_NO_PROJECT = 'Nenhum projeto.';
 
-	const S_LAST_UPDATES = 'Últimas atualizações…';
+  const S_SEARCH = '#12, @utilizador, palavras…';
+  const S_COPYRIGHT = 'Desenvolvido por %nome%.';
+  const S_UPGRADE = 'Obter a versão mais recente do <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> para <a href="https://bugtrackr.github .io /wiki/upgrade/">atualizar</a>.';
 
-		# Alerts
+  const S_LAST_UPDATES = 'Últimas atualizações…';
 
-	const A_ERROR_DIRECTORY = '<strong> Erro: </strong> não foi possível criar o diretório “%name%”.';
-	const A_ERROR_FILE = '<strong> Erro: </strong> não foi possível ler o arquivo “%name%”.';
-	const A_ERROR_FILE_WRITE = '<strong> Erro: </strong> não foi possível gravar o arquivo “%name%”.';
-	const A_ERROR_FATAL = 'Desculpe, algo deu errado. Entre em contato com um administrador se o problema persistir. ';
-	const A_ERROR = '<strong>%title%: </strong> <br /> <br />%message% <br /> <br /> Arquivo “<strong>%file% </strong>” on-line < forte>%line% </strong>. ';
+  const S_STAY_LOGGEDIN = 'Mantém-me ligado';
 
-	const A_SUCCESS_INSTALL = '<strong> Concluído: </strong> phpmyBugs agora está completamente configurado.';
-	const A_ERROR_INSTALL = '<strong> Erro: </strong> phpmyBugs já está configurado. Remova o arquivo de configuração se desejar redefinir a configuração. ';
-	const A_MODIF_SAVED = 'Modificações foram salvas.';
+  const S_DEFAULT_DEFPROJ_DESC = 'Este é o projeto padrão ao qual todos têm acesso.';
+  const S_DEFAULT_2NDPROJ_DESC = 'Este pode ser o seu segundo projeto onde apenas os utilizadores registados podem publicar problemas.';
 
-	const A_ERROR_FORM = 'Ocorreu um erro. Envie novamente o formulário. ';
-	const A_ERROR_TOKEN = 'Token errado. Envie novamente o formulário. ';
-	const A_ERROR_EMPTY = 'Você deve especificar um nome de usuário e uma senha.';
-	const A_ERROR_SAME_USERNAME = 'Este nome de usuário não está disponível.';
-	const A_SUCCESS_SIGNUP = '<strong> Concluído: </strong> Agora você pode fazer o login.';
+  # Alertas
 
-	const A_CONFIRM_DELETE_COMMENT = 'Tem certeza que deseja deletar este comentário?';
-	const A_SUCCESS_DELETE_COMMENT = 'O comentário foi apagado.';
-	const A_CONFIRM_DELETE_ISSUE = 'Tem certeza que deseja excluir este problema?';
-	const A_SUCCESS_DELETE_ISSUE = 'O problema foi excluído.';
-	const A_CONFIRM_DELETE_UPLOAD = 'Tem certeza que deseja deletar este arquivo?';
-	const A_CONFIRM_DELETE_PROJECT = 'Tem certeza que deseja deletar este projeto? Todas as edições correspondentes serão perdidas.';
+  const A_ERROR_DIRECTORY = '<strong>Erro:</strong> não foi possível criar o diretório “%nome%”.';
+  const A_ERROR_FILE = '<strong>Erro:</strong> não foi possível ler o ficheiro “%nome%”.';
+  const A_ERROR_FILE_WRITE = '<strong>Erro:</strong> não foi possível escrever o ficheiro “%nome%”.';
+  const A_ERROR_FATAL = 'Desculpe, algo correu mal. Contacte um administrador se o problema persistir.';
+  const A_ERROR = '<strong>%title%:</strong><br /><br />%message%<br /><br />Ficheiro “<strong>%file%</strong>” na linha < forte>%linha%</strong>.';
 
-	const A_LOGGED = 'Agora você está logado no sistema.';
-	const A_LOGGED_OUT = 'Você agora está desconectado do sistema.';
-	const A_ERROR_CONNEXION = '<strong> Erro: </strong> Nome de usuário ou senha incorretos.';
-	const A_ERROR_CONNEXION_WAIT = '<strong> Erro: </strong> Nome de usuário ou senha incorretos. Aguarde %duration% %period% antes de tentar novamente. ';
-	const A_ERROR_LOGIN_WAIT = 'Por favor, aguarde% duration%% period% antes de tentar novamente. Esta é uma proteção contra ataques maliciosos. ';
+  const A_SUCCESS_INSTALL = '<strong>Concluído:</strong> O phpmyBugs está agora completamente configurado.';
+  const A_ERROR_INSTALL = '<strong>Erro:</strong> o phpmyBugs já está configurado. Por favor remova o ficheiro de configuração se pretender repor a configuração.';
+  const A_MODIF_SAVED = 'As modificações foram guardadas.';
 
-	const A_ERROR_UPLOAD = 'Ocorreu um erro. Por favor, tente novamente.';
-	const A_ERROR_UPLOAD_SIZE = 'Arquivo excede o tamanho máximo permitido (%nb% max).';
-	const A_ERROR_UPLOAD_FULL = 'Você não tem espaço em disco suficiente para enviar este arquivo: %nb% restante.';
+  const A_ERROR_FORM = 'Ocorreu um erro. Por favor envie novamente o formulário.';
+  const A_ERROR_TOKEN = 'Token errado. Por favor envie novamente o formulário.';
+  const A_ERROR_EMPTY = 'Deve especificar um nome de utilizador e uma palavra-passe.';
+  const A_ERROR_SAME_USERNAME = 'Este nome de utilizador não está disponível.';
+  const A_SUCCESS_SIGNUP = '<strong>Concluído:</strong> Agora pode iniciar sessão.';
 
-	const A_PLEASE_LOGIN_ISSUES = 'Faça o login para ver os problemas.';
-	const A_PLEASE_LOGIN_COMMENT = 'Por favor, faça o login para postar um comentário. Ainda não tem conta? Crie um: é grátis e muito rápido! ';
-	const A_PLEASE_LOGIN_ISSUE = 'Por favor, faça o login para enviar um problema. Ainda não tem conta? Crie um: é grátis e muito rápido! ';
-	const A_SHOULD_LOGIN = 'Se você tem uma conta, faça o login. Se não, considere criar uma: é grátis e muito rápido!';
+  const A_CONFIRM_DELETE_COMMENT = 'Tem a certeza que pretende eliminar este comentário?';
+  const A_SUCCESS_DELETE_COMMENT = 'O comentário foi eliminado.';
+  const A_CONFIRM_DELETE_ISSUE = 'Tem a certeza que pretende eliminar este problema?';
+  const A_SUCCESS_DELETE_ISSUE = 'O problema foi eliminado.';
+  const A_CONFIRM_DELETE_UPLOAD = 'Tem a certeza que pretende eliminar este ficheiro?';
+  const A_CONFIRM_DELETE_PROJECT = 'Tem a certeza que pretende eliminar este projeto? Todos os problemas correspondentes serão perdidos.';
 
-	const A_IE = 'Seu navegador está obsoleto: <a href="http://www.browserchoice.eu"> atualize ou altere-o </a>.';
+  const A_LOGGED = 'Está agora ligado ao sistema.';
+  const A_LOGGED_OUT = 'Agora está desligado do sistema.';
+  const A_ERROR_CONNEXION = '<strong>Erro:</strong> Nome de utilizador ou palavra-passe incorretos.';
+  const A_ERROR_CONNEXION_WAIT = '<strong>Erro:</strong> Nome de utilizador ou palavra-passe incorretos. Aguarde %duration% %period% antes de tentar novamente.';
+  const A_ERROR_LOGIN_WAIT = 'Aguarde %duration% %period% antes de tentar novamente. Esta é uma proteção contra ataques maliciosos.';
 
-		# Mails
+  const A_ERROR_UPLOAD = 'Ocorreu um erro. Por favor, tente novamente.';
+  const A_ERROR_UPLOAD_SIZE = 'O ficheiro excede o tamanho máximo permitido (%nb% max).';
+  const A_ERROR_UPLOAD_FULL = 'Não tem espaço em disco suficiente para enviar este ficheiro: %nb% restante.';
 
-	const M_NEW_COMMENT_O = '[%title% - %project% - Problema #%id%] Novo comentário';
-	const M_NEW_COMMENT = 'Olá, %username%!
+  const A_PLEASE_LOGIN_ISSUES = 'Faça login para ver os problemas.';
+  const A_PLEASE_LOGIN_COMMENT = 'Por favor, inicie sessão para publicar um comentário. Ainda não tem conta? Crie um: é gratuito e muito rápido!';
+  const A_PLEASE_LOGIN_ISSUE = 'Por favor, inicie sessão para enviar um problema. Ainda não tem conta? Crie um: é gratuito e muito rápido!';
+  const A_SHOULD_LOGIN = 'Se tem uma conta, inicie sessão';
+  const A_IE = 'O seu browser está obsoleto: <a href="https://www.browser-update.org/en/update.html">actualizar ou alterar</a>.';
 
-	O problema #%id% - “%summary%” acabou de ser comentado por %por%. Você pode ler o novo comentário aqui:
-	%url%.
+  # E-mails
 
-	Se você não quiser receber mais notificações sobre este assunto, uma opção está disponível (após o login) através do link acima.
+  const M_NEW_COMMENT_O = '[%title% — %project% — Issue #%id%] Novo comentário';
+  const M_NEW_COMMENT = 'Olá, %nome_utilizador%!
 
-	-----
-	Este é um e-mail automático, não responda.
-	';
+O problema #%id% — “%summary%” acaba de ser comentado por %by%. Pode ler o novo comentário aqui:
+  %url%.
 
-	const M_NEW_ISSUE_O = '[%title% - %project%] Novo problema';
-	const M_NEW_ISSUE = 'Olá, %username%!
+Se não quiser receber mais notificações sobre este assunto, está disponível uma opção (após o login) através do link acima.
 
-	O problema #%id% - “%summary%” acaba de ser enviado por %por%. Você pode lê-lo aqui:
-	%url%.
+-----
+Este é um e-mail automático, por favor não responda.
+  ';
 
-	Se você não quiser receber mais notificações sobre este assunto, uma opção está disponível (após o login) através do link acima.
+  const M_NEW_ISSUE_O = '[%title% — %project%] Novo problema';
+  const M_NEW_ISSUE = 'Olá, %nome_utilizador%!
 
-	-----
-	Este é um e-mail automático, não responda.
-	';
+O problema #%id% — “%summary%” acaba de ser enviado por %by%. Pode ler aqui:
+  %url%.
 
-		# Titles
+Se não quiser receber mais notificações sobre este assunto, está disponível uma opção (após o login) através do link acima.
 
-	const T_INSTALLATION = 'Instalação';
-	const T_SETTINGS = 'Configurações';
-	const T_GLOBAL_SETTINGS = 'Configurações globais';
-	const T_APPEARANCE = 'Aparência';
-	const T_ISSUES = 'Problemas';
-	const T_GROUPS = 'Grupos';
-	const T_USERS = 'Usuários';
-	const T_BROWSE_ISSUES = 'Procurar problemas';
-	const T_NEW_ISSUE = 'Novo problema';
-	const T_PROJECTS = 'Projetos';
-	const T_DASHBOARD = 'Painel';
-	const T_LAST_UPDATES = 'Últimas atualizações';
-	const T_LAST_ACTIVITY = 'Última atividade';
-	const T_UPLOADS = 'Uploads';
-	const T_SEARCH = 'Pesquisar';
+-----
+Este é um e-mail automático, por favor não responda.
+  ';
 
-		# FORMS
+  # Títulos
 
-	const F_USERNAME = 'Nome de usuário:';
-	const F_PASSWORD = 'Senha:';
-	const F_USERNAME2 = 'Nome de usuário';
-	const F_PASSWORD2 = 'Senha';
-	const F_NAME = 'Nome:';
-	const F_URL = 'Url:';
-	const F_URL_REWRITING = 'Reescrevendo Url:';
-	const F_INTRO = 'Introdução:';
-	const F_DESCRIPTION = 'Descrição:';
-	const F_EMAIL = 'Email:';
-	const F_MAX_UPLOAD = 'Tamanho máximo por upload:';
-	const F_ALLOCATED_SPACE = 'Espaço alocado por usuário:';
-	const F_GROUP = 'Grupo:';
-	const F_NOTIFICATIONS = 'Seja notificado:';
-	const F_PROJECT_X = 'Projeto “%name%”:';
-	const F_LANGUAGE = 'Idioma:';
-	const F_LOGS = 'Logs:';
+ const T_INSTALLATION = 'Instalação';
+  const T_SETTINGS = 'Definições';
+  const T_GLOBAL_SETTINGS = 'Definições globais';
+  const T_APPEARANCE = 'Aparência';
+  const T_ISSUES = 'Problemas';
+  const T_GROUPS = 'Grupos';
+  const T_USERS = 'Utilizadores';
+  const T_PERMISSIONS = 'Permissões';
+  const T_ENABLE_CAPTCHA = 'Gerir Captcha';
+  const T_CAPTCHA = 'Captcha';
+  const T_BROWSE_ISSUES = 'Problemas de navegação';
+  const T_BROWSE_ALL_ISSUES = 'Navegar por todos os problemas';
+  const T_ALL_ISSUES_DESCRIPTION = 'Todos estes são problemas abertos para todos os projetos';
+  const T_NEW_ISSUE = 'Novo problema';
+  const T_ALL_ISSUES = 'Todos os problemas';
+  const T_PROJECTS = 'Projectos';
+  const T_DASHBOARD = 'Painel';
+  const T_LAST_UPDATES = 'Últimas atualizações';
+  const T_LAST_ACTIVITY = 'Última atividade';
+  const T_UPLOADS = 'Carregamentos';
+  const T_SEARCH = 'Pesquisar';
+  const T_LINK_CONTACT = 'Contacte-nos';
+  const T_LINK_LEGALNOTICE = 'Aviso Legal';
+  const T_LINK_PRIVACYPOLICY = 'Política de Privacidade';
+  const T_API_SETTINGS = 'API';
+  const T_API_ENABLE_SETTINGS = 'Gerir API';
+  const T_API_ACCESS_SETTINGS = 'Acesso API';
+  const T_INFO = 'Informação';
 
-	const F_ISSUES_PAGE = 'Problemas por página:';
-	const F_ISSUES_PAGE_SEARCH = 'Problemas por página (pesquisa):';
-	const F_PREVIEW_ISSUE = 'Duração das visualizações (questões):';
-	const F_PREVIEW_SEARCH = 'Comprimento das visualizações (pesquisa):';
-	const F_PREVIEW_PROJECT = 'Duração das visualizações (projetos):';
-	const F_LAST_EDITS = 'Número de problemas exibidos nos painéis:';
-	const F_LAST_ACTIVITY = 'Número de problemas exibidos nas páginas do usuário:';
+  # FORMULÁRIOS
 
-	const F_ADD_PROJECT = 'Novo projeto';
-	const F_ADD_COLOR = 'Nova cor';
-	const F_ADD_STATUS = 'Novo status';
-	const F_ADD_LABEL = 'Novo rótulo';
-	const F_ADD_GROUP = 'Novo grupo';
-	const F_ADD_USER = 'Novo usuário';
+  const F_USERNAME = 'Nome de utilizador:';
+  const F_PASSWORD = 'Password:';
+  const F_USERNAME2 = 'Nome de utilizador';
+  const F_PASSWORD2 = 'Password';
+  const F_NAME = 'Nome:';
+  const F_URL = 'Url:';
+  const F_URL_CDN = 'URL do CDN:';
+  const F_URL_REWRITING = 'Reescrita de URL:';
+  const F_INTRO = 'Introdução:';
+  const F_DESCRIÇÃO = 'Descrição:';
+  const F_EMAIL = 'E-mail:';
+  const F_LINK_CONTACT = 'Link para a página de contacto externo (pode ser deixado em branco):';
+  const F_LINK_LEGALNOTICE = 'Link para aviso legal (pode ser deixado em branco):';
+  const F_LINK_PRIVACYPOLICY = 'Link para a política de privacidade (pode ser deixado em branco):';
+  const F_MAX_UPLOAD = 'Tamanho máximo por upload:';
+  const F_ALLOCATED_SPACE = 'Espaço alocado por utilizador:';
+  const F_GROUP = 'Grupo:';
+  const F_NOTIFICATIONS = 'Ser notificado:';
+  const F_PROJECT_X = 'Projecto “%nome%”:';
+  const F_LANGUAGE = 'Idioma:';
+  const F_LOGS = 'Registos:';
 
-	const F_SORT_BY = 'Classificar por:';
-	const F_SORT_ID = 'ID';
-	const F_SORT_MOD = 'última atualização';
-	const F_SORT_DESC = 'descendente';
-	const F_SORT_ASC = 'ascendente';
-	const F_FILTER_STATUSES = 'Filtrar status:';
-	const F_FILTER_STATES = 'Filtrar estados:';
-	const F_FILTER_LABELS = 'Filtrar rótulos:';
-	const F_FILTER_USERS = 'Filtrar usuários:';
+  const F_ISSUES_PAGE = 'Problemas por página:';
+  const F_ISSUES_PAGE_SEARCH = 'Problemas por página (pesquisa):';
+  const F_PREVIEW_ISSUE = 'Duração das vistas (problemas):';
+  const F_PREVIEW_SEARCH = 'Comprimento das vistas (pesquisa):';
+  const F_PREVIEW_PROJECT = 'Duração das vistas (projectos):';
+  const F_LAST_EDITS = 'Número de problemas apresentados nos painéis:';
+  const F_LAST_ACTIVITY = 'Número de problemas apresentados nas páginas dos utilizadores:';
+  const F_THEME = "Tema";
+  const F_TIP_THEME = "Colocar o ficheiro . css em";
 
-	const F_WRITE = 'Escrever:';
-	const F_SUMMARY = 'Resumo';
-	const F_CONTENT = 'Conteúdo';
+  const F_ADD_PROJECT = 'Novo projeto';
+  const F_ADD_COLOR = 'Nova cor';
+  const F_ADD_STATUS = 'Novo estado';
+  const F_ADD_LABEL = 'Novo rótulo';
+  const F_ADD_GROUP = 'Novo grupo';
+  const F_ADD_USER = 'Novo utilizador';
 
-	const F_STATUS = 'Status:';
-	const F_RELATED = 'Relacionado:';
-	const F_LABELS2 = 'Etiquetas:';
+  const F_SORT_BY = 'Classificar por:';
+  const F_SORT_ID = 'ID';
+  const F_SORT_MOD = 'última atualização';
+  const F_SORT_DESC = 'descendente';
+  const F_SORT_ASC = 'crescente';
+  const F_FILTER_STATUSES = 'Estado do filtro:';
+  const F_FILTER_STATES = 'Estados do filtro:';
+  const F_FILTER_LABELS = 'Rótulos de filtro:';
+  const F_FILTER_USERS = 'Filtrar utilizadores:';
+  const F_FILTER_MILESTONE = 'Filtrar marco:';
 
-	const F_GENERAL_SETTINGS = 'Configurações gerais:';
-	const F_PROJECTS = 'Projetos:';
-	const F_DATABASE = 'Banco de dados:';
-	const F_UPLOADS = 'Uploads:';
-	const F_COLORS = 'Gerenciar cores:';
-	const F_DISPLAY = 'Gerenciar display:';
-	const F_STATUSES = 'Gerenciar status:';
-	const F_LABELS = 'Gerenciar rótulos:';
-	const F_GROUPS = 'Gerenciar grupos:';
-	const F_PERMISSIONS = 'Gerenciar permissões:';
-	const F_USERS = 'Gerenciar usuários:';
+  const F_WRITE = 'Escrever:';
+  const F_SUMMARY = 'Resumo';
+  const F_CONTENT = 'Conteúdo';
 
-	const F_TIP_NAME = 'Será mostrado no cabeçalho de cada página.';
-	const F_TIP_URL_REWRITING = 'Deixe este campo vazio para desabilitar a reescrita de url. Caso contrário, deve conter o caminho para a pasta phpmyBugs (iniciada e terminada com "/"), relativa ao nome do domínio. ';
-	const F_TIP_INTRO = 'Será mostrado na página inicial. Ele será analisado com a sintaxe Markdown. Nota: se houver apenas um projeto com o nome “%name%”, a página inicial é automaticamente redirecionada para o painel do projeto, e este texto não será exibido. ';
-	const F_TIP_EMAIL = 'Deixe este campo vazio para desabilitar as notificações por email. Caso contrário, este endereço será usado como remetente ao enviar uma notificação por email. ';
-	const F_TIP_PASSWORD = 'Deixe em branco se não quiser alterar a senha.';
-	const F_TIP_USER_EMAIL = 'Requerido somente se você deseja receber notificações.';
-	const F_TIP_NOTIFICATIONS = 'Esta é uma configuração padrão: você poderá alterá-la para cada problema.';
-	const F_TIP_NOTIFICATIONS_DISABLED = 'Nota: as notificações estão atualmente desabilitadas pelo administrador.';
-	const F_TIP_DESCRIPTION = 'Será mostrado no painel do projeto. Será analisado com a sintaxe de redução.';
+  const F_STATUS = 'Estado:';
+  const F_RELATED = 'Relacionado:';
+  const F_LABELS2 = 'Etiquetas:';
+  const F_MILESTONE = 'Marco:';
 
-	const F_TIP_MAX_UPLOAD = 'Cada arquivo enviado não pode exceder este tamanho.';
-	const F_TIP_ALLOCATED_SPACE = 'Um usuário não pode fazer upload de outros arquivos depois de atingir este limite. <br /> <em> Atenção: </em> se nenhum usuário logado tiver permissão para fazer upload de arquivos (esta não é a configuração padrão), este limite não se aplica a eles. ';
+  const F_GENERAL_SETTINGS = 'Definições gerais:';
+  const F_PROJECTS = 'Projectos:';
+  const F_DATABASE = 'Base de dados:';
+  const F_UPLOADS = 'Carregamentos:';
+  const F_COLORS = 'Gerir cores:';
+  const F_DISPLAY = 'Gerir visualização:';
+  const F_STATUSES = 'Gerir estado:';
+  const F_LABELS = 'Gerir rótulos:';
+  const F_GROUPS = 'Gerir grupos:';
+  const F_PERMISSIONS = 'Gerir permissões:';
+  const F_USERS = 'Gerir utilizadores:';
 
-	const F_TIP_ID_STATUS = '<b> Dica: </b> tenha cuidado ao alterar os IDs, pois cada problema mantém seu ID de status antigo (exceto se este ID não existir mais: neste caso, o status padrão será usado). ';
-	const F_TIP_ID_LABEL = '<b> Dica: </b> tenha cuidado ao alterar os IDs, pois cada rótulo de um problema mantém seu ID antigo (exceto se este ID não existir mais: neste caso, o rótulo é removido do questão).';
-	const F_TIP_ID_GROUP = '<b> Dica: </b> tenha cuidado ao mudar os IDs, pois cada usuário mantém seu ID de grupo antigo (exceto se este ID não existir mais: neste caso, o grupo padrão será usado). ';
+  const F_INVALID_CAPTCHA = 'O CAPTCHA que introduziu estava errado. Por favor, tente novamente.';
 
-	const HELP_MARKDOWN = '
-<h2> Sintaxe de Markdown: </h2>
+  const F_TIP_NAME = 'Será apresentado no cabeçalho de cada página.';
+  const F_TIP_URL_REWRITING = 'Deixe este campo vazio para desativar a reescrita de URL. Caso contrário, deverá conter o caminho para a pasta phpmyBugs (iniciada e terminada com "/"), relativamente ao nome do domínio. ';
+  const F_TIP_URL_CDN = 'Deixe este campo vazio para desativar o CDN. Caso contrário, deverá conter o URL do seu CDN (por exemplo <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, sinta-se à vontade para utilizar este). Certifique-se de que aloja todos os ficheiros da pasta <em>/public</em> no seu CDN.';
+  const F_TIP_INTRO = 'Será apresentado na página inicial. Será analisado com a sintaxe Markdown. Nota: se existir apenas um projeto denominado “%name%”, a página inicial será automaticamente redirecionada para o dashboard do projeto, e este texto não será apresentado.';
+  const F_TIP_EMAIL = 'Deixe este campo vazio para desativar as notificações por e-mail. Caso contrário, este endereço será utilizado como remetente ao enviar uma notificação por e-mail.';
+  const F_TIP_PASSWORD = 'Deixar em branco se não pretender alterar a password.';
+  const F_TIP_USER_EMAIL = 'Obrigatório apenas se pretende receber notificações.';
+  const F_TIP_NOTIFICATIONS = 'Esta é uma configuração padrão: poderá alterá-la para cada problema.';
+  const F_TIP_NOTIFICATIONS_DISABLED = 'Nota: as notificações estão atualmente desativadas pelo administrador.';
+  const F_TIP_DESCRIPTION = 'Será apresentado no painel do projeto. Será analisado com a sintaxe de markdown.';
 
-<p> Parágrafos: </p>
-<pre> <code class="blank no-highlight"> Os parágrafos são separados por uma ou mais linhas em branco.
-É por isso que este texto será exibido na mesma linha que a frase anterior, independentemente da quebra de linha.
+  const F_TIP_MAX_UPLOAD = 'Cada ficheiro enviado não pode exceder este tamanho.';
+  const F_TIP_ALLOCATED_SPACE = 'Um utilizador não pode fazer o upload de outros ficheiros depois de atingir este limite. <br /><em>Atenção:</em> se nenhum utilizador com sessão iniciada tiver permissão para fazer o upload de ficheiros (esta não é a definição padrão ), este limite não se lhes aplica.';
+
+  const F_TIP_ID_STATUS = '<b>Sugestão:</b> tenha cuidado ao alterar os IDs, pois cada pendência mantém o seu ID de estado antigo (exceto se este ID já não existir: neste caso, será utilizado o estado predefinido).';
+  const F_TIP_ID_LABEL = '<b>Tip:</b> be careful when changing the IDs, because each label of one issue keeps its old ID (except if this ID does not exist anymore: in this case, the label is removed from the problema).';
+  const F_TIP_ID_GROUP = '<b>Sugestão:</b> tenha cuidado ao alterar os IDs, pois cada utilizador mantém o seu antigo ID de grupo (exceto se este ID já não existir: neste caso, será utilizado o grupo predefinido).';
+  const F_TIP_CAPTCHA = 'Escolha as ações onde será mostrado um captcha para utilizadores não com sessão iniciada.';
+  const F_TIP_API_ACCESS = 'Configurar o acesso à API no ficheiro <em>/database/config_api.php</em>. Para mais informações consulte o ficheiro API.md.';
+
+  const F_API_ENABLE = 'Ativar API';
+
+  const HELP_MARKDOWN = '
+  <h2>Marcarsintaxe própria:</h2>
+
+  <p>Parágrafos:</p>
+<pre><code class="blank no-highlight">Os parágrafos são separados por uma ou mais linhas em branco.
+É por isso que este texto será apresentado na mesma linha da frase anterior, independentemente da quebra de linha.
 
 Para iniciar uma nova linha sem criar um novo parágrafo:
-insira 2 espaços antes da quebra de linha, como aqui. </code> </pre>
-<p> Ênfase: </p>
-<pre> <code class="blank no-highlight"> * Texto em itálico *
+insira 2 espaços antes da quebra de linha, como aqui.</code></pre>
+  <p>Ênfase:</p>
+<pre><code class="blank no-highlight">*Texto em itálico*
 _Texto itático novamente_
 
-**Texto em negrito**
-__Boldtexto novamente__ </code> </pre>
+**Texto a negrito**
+__Texto novamente em negrito__ </code></pre>
 
-<p> Links: </p>
-<pre> <code class="blank no-highlight"> Este é [um exemplo] (http://example.com) de link embutido.
-Este é outro: & lt; http: //example.com&gt ;. </code> </pre>
+  <p>Links:</p>
+<pre><code class="blank no-highlight">Este é [um exemplo](http://exemplo.com) de link incorporado.
+Este é outro: &lt;http://exemplo.com&gt;.</code></pre>
 
-<p> Imagens: </p>
-<pre> <code class="blank no-highlight">! [Eu sou uma imagem.] (http://example.com/image.png) </code> </pre>
+  <p>Imagens:</p>
+<pre><code class="blank no-highlight">![Eu sou uma imagem.](http://exemplo.com/imagem.png)</code></pre>
 
-<p> Cabeçalhos: </p>
-<pre> <code class="blank no-highlight"> # Título de nível superior
+  <p>Cabeçalhos:</p>
+<pre><code class="blank no-highlight"># Título de nível superior
 ## Título de segundo nível
 ### Título de terceiro nível
-#### Título de quarto nível </code> </pre>
+#### Título de quarto nível</code></pre>
 
-<p> Listas: </p>
-<pre> <code class="blank no-highlight"> - um item
-* outro
+  <p>Listas:</p>
+<pre><code class="blank no-highlight">- um item
+*outro
 
 1. primeiro item
-2. segundo item </code> </pre>
+2. segundo item</code></pre>
 
-<p> Blockquotes: </p>
-<pre> <code class="blank sem destaque" >> Eu sou um blockquote com dois parágrafos.
+  <p>Aspas em bloco:</p>
+<pre><code class="blank no-highlight">> Sou uma citação em bloco com dois parágrafos.
 >
-> Eu sou o segundo parágrafo. </code> </pre>
+> Eu sou o segundo parágrafo.</code></pre>
 
-<p> Blocos de código: </p>
-<pre> <code class="blank no-highlight"> Este é um `bloco de código embutido`. </code> </pre>
-<pre> <code class="blank no-highlight"> &lt;?php echo "Sou um bloco de código, porque estou indentado
-    com 4 espaços ";?&gt; </code> </pre>
-<pre> <code class = "blank no-highlight"> `` `
-&lt;?php echo "Sou um bloco de código."; ?&gt;
-`` `
+  <p>Blocos de código:</p>
+<pre><code class="blank no-highlight">Este é um `bloco de código incorporado`.</code></pre>
+<pre><code class="blank no-highlight"> &lt;?php echo "Sou um bloco de código, porque estou recuado
+ com 4 espaços"; ?&gt;</code></pre>
+<pre><code class="blank no-highlight">```
+&lt;?php echo "Eu sou um bloco de código."; ?&gt;
+```
 
-`` `php
-&lt;?php echo "As linguagens suportadas são: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, no-highlight"; ?&gt;
-`` `</code> </pre>
-';
+```php
+&lt;?php echo "As linguagens suportadas são: bash, cs, ruby, diff, javascript, css, xml, http, java, php, python, sql, ini, perl, json, cpp, markdown, sem destaque"; ?&gt;
+```</code></pre>
+  ';
 
-	private static $permissions = array(
-		'home' => array (
-		'title' => 'Home:',
-		'description' => 'Pode acessar a página inicial.'
-		),
-		'dashboard' => array (
-		'title' => 'Painéis:',
-		'description' => 'Pode acessar os painéis dos projetos.'
-		),
-		'issues' => array (
-		'title' => 'Ver problemas:',
-		'description' => 'Pode visualizar questões públicas.'
-		),
-		'private_issues' => array (
-		'title' => 'Ver questões privadas:',
-		'description' => 'Pode ver os problemas marcados como privados.'
-		),
-		'search' => array (
-		'title' => 'Pesquisar:',
-		'description' => 'Pode pesquisar problemas ou usuários.'
-		),
-		'new_issue' => array (
-		'title' => 'Novo problema:',
-		'description' => 'Pode enviar um novo problema.'
-		),
-		'edit_issue' => array (
-		'title' => 'Editar problemas:',
-		'description' => 'Pode editar o texto de todos os problemas e excluí-los.'
-		),
-		'update_issue' => array (
-		'title' => 'Atualizar problemas:',
-		'description' => 'Pode atualizar problemas: alterar status, adicionar rótulos, fechar e reabrir, ...'
-		),
-		'post_comment' => array (
-		'title' => 'Postar um comentário:',
-		'descrição' => 'Pode postar um comentário.'
-		),
-		'edit_comment' => array (
-		'title' => 'Editar comentários:',
-		'description' => 'Pode editar todos os comentários (os usuários podem editar seus próprios comentários de qualquer maneira).'
-		),
-		'view_user' => array (
-		'title' => 'Perfis de usuário:',
-		'description' => 'Pode ver todos os perfis de usuário.'
-		),
-		'upload' => array (
-		'title' => 'Postar um arquivo:',
-		'description' => 'Pode anexar arquivos a um comentário ou um novo problema.'
-		),
-		'view_upload' => array (
-		'title' => 'Exibir uploads:',
-		'description' => 'Pode acessar todos os arquivos enviados.'
-		),
-		'settings' => array (
-		'title' => 'Alterar configurações:',
-		'description' => 'Pode acessar esta página e modificar todas as configurações globais.'
-		),
-		'signup' => array (
-		'title' => 'Inscreva-se:',
-		'description' => 'Pode se inscrever.'
-		),
-		'view_errors' => array (
-		'title' => 'Ver erros fatais:',
-		'description' => 'Pode ver a descrição de erros fatais.'
-		)
-	);
 
-	public static function permissions($id, $type = 'description') {
-		return self::$permissions[$id][$type];
-	}
+  private static $permissions = array(
+  'home' => array(
+  'title' => 'Página inicial:',
+  'description' => 'Pode aceder à página inicial e visualizar a lista de todos os problemas em aberto para os seus projetos.'
+  ),
+  'painel' => array(
+  'title' => 'Painéis:',
+  'description' => 'Pode aceder aos painéis dos projetos.'
+  ),
+  'problemas' => array(
+  'title' => 'Ver problemas:',
+  'description' => 'Pode visualizar problemas públicos.'
+  ),
+  'questões_privadas' => array(
+  'title' => 'Ver problemas privados:',
+  'description' => 'Pode visualizar os problemas marcados como privados.'
+  ),
+  'pesquisar' => array(
+  'title' => 'Pesquisar:',
+  'description' => 'Pode pesquisar problemas ou utilizadores.'
+  ),
+  'new_issue' => array(
+  'title' => 'Novo problema:',
+  'description' => 'Pode enviar um novo problema.'
+  ),
+  'edit_issue' => array(
+  'title' => 'Editar problemas:',
+  'description' => 'Pode editar o texto de todos os fascículos e apagá-los.'
+  ),
+  'update_issue' => array(
+  'title' => 'Problemas de actualização:',
+  'description' => 'Pode atualizar problemas: alterar o estado, adicionar etiquetas, fechar e reabrir, ...'
+  ),
+  'post_comment' => array(
+  'title' => 'Publicar um comentário:',
+  'descrição' => 'Pode publicar um comentário.'
+  ),
+  'edit_comment' => array(
+  'title' => 'Editar comentários:',
+  'description' => 'Pode editar todos os comentários (os utilizadores podem editar os seus próprios comentários de qualquer forma).'
+  ),
+  'view_user' => array(
+  'title' => 'Perfis de utilizador:',
+  'description' => 'Pode visualizar todos os perfis de utilizador.'
+  ),
+  'carregar' => array(
+  'title' => 'Publicar um ficheiro:',
+  'description' => 'Pode anexar ficheiros a um comentário ou a um novo problema.'
+  ),
+  'view_upload' => array(
+  'title' => 'Ver uploads:',
+  'description' => 'Pode aceder a todos os ficheiros enviados.'
+  ),
+  'configurações' => array(
+  'title' => 'Alterar definições:',
+  'description' => 'Pode aceder a esta página e modificar todas as definições globais.'
+  ),
+  'registo' => array(
+  'title' => 'Inscreva-se:',
+  'descrição' => 'Pode inscrever-se.'
+  ),
+  'view_errors' => array(
+  'title' => 'Ver erros fatais:',
+  'description' => 'Pode visualizar a descrição de erros fatais.'
+  )
+  );
 
-	private static $settings = array(
-		'validate_url' => 'O url não é válido.',
-		'validate_email' => 'O email não é válido.',
-		'private_label_removed' => 'Você não pode remover o rótulo privado ou alterar seu ID, mas pode renomeá-lo.',
-		'default_status_removed' => 'Você não pode remover o status padrão ou alterar seu ID, mas pode renomeá-lo.',
-		'default_group_removed' => 'Você não pode remover o grupo padrão ou alterar seu ID, mas você pode renomeá-lo.',
-		'default_group_superuser_removed' => 'Você não pode remover o grupo de superusuário ou alterar seu ID, mas você pode renomeá-lo.',
-		'validate_same_username' => 'Aviso: dois usuários têm o mesmo nome de usuário.',
-		'validate_same_project_name' => 'Dois projetos não podem ter o mesmo nome. Um foi renomeado automaticamente. ',
-		'language_modified' => 'Atualize esta página para visualizá-la no novo idioma.'
-	);
+  public static function permissions($id, $type = 'description') {
+  return self::$permissões[$id][$tipo];
+  }
 
-	public static function settings($id) {
-		return self::$settings[$id];
-	}
+  private static $settings = array(
+  'validate_url' => 'O URL não é válido.',
+  'validate_email' => 'O e-mail não é válido.',
+  'private_label_removed' => 'Não pode remover a etiqueta privada nem alterar o seu ID, mas pode renomeá-la.',
+  'default_status_removed' => 'Não pode remover o estado padrão ou alterar o seu ID, mas pode renomeá-lo.',
+  'default_group_removed' => 'Não pode remover o grupo padrão nem alterar o seu ID, mas pode renomeá-lo.',
+  'default_group_superuser_removed' => 'Não pode remover o grupo de superutilizadores nem alterar o seu ID, mas pode renomeá-lo.',
+  'validate_same_username' => 'Aviso: dois utilizadores têm o mesmo nome de utilizador.',
+  'validate_same_project_name' => 'Dois projetos não podem ter o mesmo nome. Um foi renomeado automaticamente.',
+  'language_modified' => 'Actualize esta página para a visualizar no novo idioma.'
+  );
 
-	private static $errors = array(
-		E_ERROR => 'Erro fatal',
-		E_WARNING => 'Aviso',
-		E_PARSE => 'Erro de análise',
-		E_NOTICE => 'Aviso',
-		E_STRICT => 'Conselho',
-		E_DEPRECATED => 'Obsoleto',
-		'default' => 'Erro'
-	);
-	public static function errors($no) {
-		return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
-	}
+  public static function settings($id) {
+  return self::$configurações[$id];
+  }
+
+  private static $errors = array(
+  E_ERROR => 'Erro fatal',
+  E_WARNING => 'Aviso',
+  E_PARSE => 'Erro de análise',
+  E_NOTICE => 'Aviso',
+  E_STRICT => 'Conselho',
+  E_DEPRECATED => 'Obsoleto','padrão' => 'Erro'
+  );
+  
+  public static function errors($no) {
+  return (isset(self::$errors[$no])) ? self::$errors[$no] : self::$errors['default'];
+  }
 }
 
 ?>
