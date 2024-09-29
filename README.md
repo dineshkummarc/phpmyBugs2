@@ -132,27 +132,25 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_ja_) i.e Japanese
 
 ### v2.7
-- [ ] New Language supported (_lah_) i.e. Lahnda
-
-### v2.8
+- [ ] New Language supported (_lah_) i.e. Lahnda, Note: postponed the update due Language translation not found on google
 - [ ] New Language supported (_id_) i.e. Indonesian
 
-### v2.9
+### v2.8
 - [ ] New Language supported (_id_) i.e. Marathi
 
-### v2.10
+### v2.9
 - [ ] New Language supported (_id_) i.e. Telugu
 
-### v2.11
+### v2.10
 - [ ] New Language supported (_id_) i.e. Turkish
 
-### v2.12
+### v2.11
 - [ ] New Language supported (_id_) i.e. Tamil
 
-### v2.13
+### v2.12
 - [ ] New Language supported (_id_) i.e. Vietnamese
 
-### v2.14
+### v2.13
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
@@ -169,9 +167,10 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 
-### v2.15
+### v2.14
 - [ ] New Language supported (_ar_), i.e. Arabic,
 - [ ] New Language supported (_ur_) i.e. Urdu,
+- [ ] New Language supported (_lah_) i.e. Lahnda,
 
 ### Screenshots (Based on v0.9)
 
