@@ -153,7 +153,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 ### v2.14
 - [x] make default theme as that of phpmybugs default theme
 - [ ] ~new button on view issue page is disabled, should navigate to new issue page for creating a new issue~
-- [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
+- [x] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 - [ ] New issue link is seen without login, remove it from the non-logged in page
