@@ -136,7 +136,7 @@ class Trad {
 
  const S_SEARCH = '#12，@用户，单字...';
  const S_COPYRIGHT = '由 %name% 提供支援';
- const S_UPGRADE = '从<a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> 取得最新版本到<a href="https://bugtrackr.github.io /wiki/upgrade/">升级</a>。 ';
+ const S_UPGRADE = '从<a href="'.RELEASE.'">GitHub</a> 取得最新版本到<a href="https://bugtrackr.github.io /wiki/upgrade/">升级</a>。 ';
 
  const S_LAST_UPDATES = '最近更新...';
 
@@ -185,7 +185,7 @@ class Trad {
  const A_PLEASE_LOGIN_ISSUE = '请登入以提交问题。还没有帐户？创建一个：它是免费的，而且速度非常快！ ';
  const A_SHOULD_LOGIN = '如果您有帐户，请登入。 ';
 
- const A_IE = '您的浏览器已过时：<a href="https://www.browser-update.org/en/update.html">升级或更改</a>。 ';
+ const A_IE = '您的浏览器已过时：<a href="'.BROWSER.'">升级或更改</a>。 ';
 
  # 邮件
 
@@ -319,7 +319,7 @@ class Trad {
 
  const F_TIP_NAME = '它将显示在每页的页首。 ';
  const F_TIP_URL_REWRITING = '将此栏位留空以停用 URL 重写。否则，它应该包含相对于网域的 phpmyBugs 资料夹的路径（以“/”开头和结尾）。 ';
- const F_TIP_URL_CDN = '将此栏位留空以停用 CDN。否则，它必须包含您的 CDN 的 URL（例如<em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>，请随意使用这个）。确保托管 CDN 上 <em>/public</em> 资料夹中的所有档案。 ';
+ const F_TIP_URL_CDN = '将此栏位留空以停用 CDN。否则，它必须包含您的 CDN 的 URL（例如<em>'.CDN_RAW_GIT.'</em>，请随意使用这个）。确保托管 CDN 上 <em>/public</em> 资料夹中的所有档案。 ';
  const F_TIP_INTRO = '它将显示在主页上。它将使用 Markdown 语法进行解析。注意：如果只有一个名为「%name%」的项目，主页会自动重新导向到项目仪表板，并且不会显示此文字。 ';
  const F_TIP_EMAIL = '将此栏位留空以停用电子邮件通知。否则，发送电子邮件通知时将使用该地址作为寄件者。 ';
  const F_TIP_PASSWORD = '如果您不想更改密码，请将其留空。 ';
