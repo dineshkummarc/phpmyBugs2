@@ -137,7 +137,7 @@ const S_NO_PROJECT = 'Không có dự án.';
 
 const S_SEARCH = '#12, @user, words…';
 const S_COPYRIGHT = 'Được cung cấp bởi %name%.';
-const S_UPGRADE = 'Lấy phiên bản mới nhất từ ​​<a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> để <a href="https://bugtrackr.github.io/wiki/upgrade/">nâng cấp</a>.';
+const S_UPGRADE = 'Lấy phiên bản mới nhất từ ​​<a href="'.RELEASE.'">GitHub</a> để <a href="'.UPGRADE.'">nâng cấp</a>.';
 
 const S_LAST_UPDATES = 'Cập nhật gần đây nhất…';
 
@@ -186,7 +186,7 @@ const A_PLEASE_LOGIN_COMMENT = 'Vui lòng đăng nhập để đăng bình luậ
 const A_PLEASE_LOGIN_ISSUE = 'Vui lòng đăng nhập để gửi sự cố. Chưa có tài khoản? Tạo một tài khoản: miễn phí và thực sự nhanh chóng!';
 const A_SHOULD_LOGIN = 'Nếu bạn có tài khoản, vui lòng đăng nhập. Nếu chưa có, hãy cân nhắc tạo một tài khoản: miễn phí và thực sự nhanh chóng!';
 
-const A_IE = 'Trình duyệt của bạn đã lỗi thời: <a href="https://www.browser-update.org/en/update.html">nâng cấp hoặc thay đổi</a>.';
+const A_IE = 'Trình duyệt của bạn đã lỗi thời: <a href="'.BROWSER.'">nâng cấp hoặc thay đổi</a>.';
 
 # Thư
 
@@ -322,7 +322,7 @@ const F_INVALID_CAPTCHA = 'CAPTCHA bạn nhập không đúng. Vui lòng thử l
 
 const F_TIP_NAME = 'CAPTCHA sẽ hiển thị trên tiêu đề của mỗi trang.';
 const F_TIP_URL_REWRITING = 'Để trống trường này để vô hiệu hóa việc ghi lại url. Nếu không, trường này phải chứa đường dẫn đến thư mục phpmyBugs (bắt đầu và kết thúc bằng "/"), liên quan đến tên miền.';
-const F_TIP_URL_CDN = 'Để trống trường này để vô hiệu hóa CDN. Nếu không, trường này phải chứa URL của CDN của bạn (ví dụ: <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, bạn có thể sử dụng trường này). Đảm bảo lưu trữ tất cả các tệp từ thư mục <em>/public</em> trên CDN của bạn.';
+const F_TIP_URL_CDN = 'Để trống trường này để vô hiệu hóa CDN. Nếu không, trường này phải chứa URL của CDN của bạn (ví dụ: <em>'.CDN_RAW_GIT.'</em>, bạn có thể sử dụng trường này). Đảm bảo lưu trữ tất cả các tệp từ thư mục <em>/public</em> trên CDN của bạn.';
 
 const F_TIP_INTRO = 'Nó sẽ được hiển thị trên trang chủ. Nó sẽ được phân tích cú pháp với cú pháp Markdown. Lưu ý: nếu chỉ có một dự án có tên là "%name%", trang chủ sẽ tự động được chuyển hướng đến bảng điều khiển dự án và văn bản này sẽ không được hiển thị.';
 const F_TIP_EMAIL = 'Để trống trường này để tắt thông báo qua email. Nếu không, địa chỉ này sẽ được sử dụng làm người gửi khi gửi thông báo qua email.';
