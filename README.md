@@ -173,7 +173,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 ### v2.14
 - [ ] New Language supported (_ar_), i.e. Arabic,
 - [ ] New Language supported (_ur_) i.e. Urdu,
-- [ ] New Language supported (_lah_) i.e. Lahnda,
+- [ ] New Language supported (_lah_) i.e. Lahnda, a form of punjabi language
 
 ### Screenshots (Based on v0.9)
 
