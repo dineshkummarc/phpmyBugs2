@@ -467,7 +467,7 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
   return self::$permissions[$id][$type];
   }
 
-  ਪ੍ਰਾਈਵੇਟ ਸਥਿਰ $ਸੈਟਿੰਗ = ਐਰੇ(
+  private static $settings = array(
   'validate_url' => 'url ਵੈਧ ਨਹੀਂ ਹੈ।',
   'validate_email' => 'ਈਮੇਲ ਵੈਧ ਨਹੀਂ ਹੈ।',
   'private_label_removed' => 'ਤੁਸੀਂ ਪ੍ਰਾਈਵੇਟ ਲੇਬਲ ਨੂੰ ਹਟਾ ਨਹੀਂ ਸਕਦੇ ਜਾਂ ਇਸਦੀ ID ਨੂੰ ਬਦਲ ਨਹੀਂ ਸਕਦੇ, ਪਰ ਤੁਸੀਂ ਇਸਦਾ ਨਾਮ ਬਦਲ ਸਕਦੇ ਹੋ।',
