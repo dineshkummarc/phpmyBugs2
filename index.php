@@ -34,6 +34,8 @@ define('NAME', 'phpmyBugs');
 define('VERSION', '2.13');
 define('AUTHOR', 'Dineshkummarc');
 define('URL', 'https://github.com/dineshkummarc/phpmyBugs2');
+define('RELEASE', 'https://github.com/dineshkummarc/phpmyBugs2/releases/tag/v2.13');
+define('UPGRADE', 'https://bugtrackr.github.io/wiki/upgrade/');
 
 ### Languages
 define('LANGUAGES', 'english,french,dutch,hindi,russian,pt-portuguese,br-portuguese,spanish,mandarin,chineese,pidgin,bengali,japanese,indonesian,bahasa,marathi,telugu,turkish,tamil,viet-english,vietnamese,gurmukhi'); # Separated by a comma, without spaces
