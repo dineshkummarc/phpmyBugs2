@@ -50,7 +50,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v0.8
 - [x] New Language supported (_pt_) i.e. Portuguese
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Portuguese Language as installer option
-![Portuguese](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Portuguese_PT_pt.png)
 
 ### v0.9
 - [x] New Language supported (_es_) i.e. Spanish
