@@ -154,9 +154,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] make default theme as that of phpmybugs default theme
 - [ ] ~new button on view issue page is disabled, should navigate to new issue page for creating a new issue~
 - [x] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
-- [ ] portal name is used as hardcoded name in several places of the portal.
-- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
-- [ ] New issue link is seen without login, remove it from the non-logged in page
+- [x] portal name is used as hardcoded name in several places of the portal.
+- [ ] ~New issue link is seen without login, remove it from the non-logged in page~
 - [ ] github repo links are hardcoded into the texts, make them using tags
 - [ ] cdn links are hardcoded into the texts, make them using tags
 - [ ] github link on page /index.php?page=settings is redirected to nireus release
@@ -167,6 +166,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] /phpmyBugs2/: error 'Wrong token. Please send again the form.'
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 - [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
+- [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 
 ### v2.15
 - [ ] New Language supported (_ar_), i.e. Arabic, a **right to left language** in nature
