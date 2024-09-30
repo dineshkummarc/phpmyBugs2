@@ -179,7 +179,6 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_shah_) i.e. Shahmukhi, a form of punjabi language but **right to left** in nature
 
 ### Screenshots (Based on v0.9)
-
 Dashboard:-
 ![Dashboard](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/dashboard.png)
 New Issues:-
