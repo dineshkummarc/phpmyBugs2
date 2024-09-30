@@ -46,7 +46,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v0.7
 - [x] New Language supported (_ru_) i.e. Russian
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Russian Language as installer option
-![Russian](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Russian_RU_ru.png)
 
 ### v0.8
 - [x] New Language supported (_pt_) i.e. Portuguese
