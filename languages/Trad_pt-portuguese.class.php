@@ -136,7 +136,7 @@ class Trad {
 
   const S_SEARCH = '#12, @utilizador, palavras…';
   const S_COPYRIGHT = 'Desenvolvido por %nome%.';
-  const S_UPGRADE = 'Obter a versão mais recente do <a href="'.RELEASE.'">GitHub</a> para <a href="https://bugtrackr.github .io /wiki/upgrade/">atualizar</a>.';
+  const S_UPGRADE = 'Obter a versão mais recente do <a href="'.RELEASE.'">GitHub</a> para <a href="'.UPGRADE.'">atualizar</a>.';
 
   const S_LAST_UPDATES = 'Últimas atualizações…';
 
