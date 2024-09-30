@@ -115,7 +115,7 @@ const S_SIZE_REMAINING = '%remain% tersisa pada %total% yang diizinkan.';
 const S_NO_PROJECT = 'Tidak ada proyek.';
 const S_SEARCH = '#12, @user, words…';
 const S_COPYRIGHT = 'Didukung oleh %name%.';
-const S_UPGRADE = 'Dapatkan versi terbaru dari <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> ke <a href="https://bugtrackr.github.io/wiki/upgrade/">upgrade</a>.';
+const S_UPGRADE = 'Dapatkan versi terbaru dari <a href="'.RELEASE.'">GitHub</a> ke <a href="'.UPGRADE.'">upgrade</a>.';
 const S_LAST_UPDATES = 'Pembaruan terakhir…';
 const S_STAY_LOGGEDIN = 'Biarkan saya tetap masuk';
 const S_DEFAULT_DEFPROJ_DESC = 'Ini adalah proyek default yang dapat diakses oleh semua orang.';
@@ -162,7 +162,7 @@ const A_PLEASE_LOGIN_COMMENT = 'Silakan masuk untuk mengirim komentar. Belum pun
 const A_PLEASE_LOGIN_ISSUE = 'Silakan masuk untuk mengirim masalah. Belum punya akun? Buat satu: gratis dan sangat cepat!'; 
 const A_SHOULD_LOGIN = 'Jika Anda memiliki akun, silakan masuk. Jika tidak, pertimbangkan untuk membuatnya: gratis dan sangat cepat!';
 
-const A_IE = 'Peramban Anda sudah usang: <a href="https://www.browser-update.org/en/update.html">tingkatkan atau ubah</a>.';
+const A_IE = 'Peramban Anda sudah usang: <a href="'.BROWSER.'">tingkatkan atau ubah</a>.';
 
 # Email
 
@@ -288,7 +288,7 @@ const F_USERS = 'Kelola pengguna:';
 const F_INVALID_CAPTCHA = 'CAPTCHA yang Anda masukkan salah. Silakan coba lagi.';
 const F_TIP_NAME = 'CAPTCHA akan ditampilkan di header setiap halaman.';
 const F_TIP_URL_REWRITING = 'Biarkan kolom ini kosong untuk menonaktifkan penulisan ulang url. Jika tidak, kolom ini harus berisi jalur ke folder phpmyBugs (dimulai dan diakhiri dengan "/"), relatif terhadap nama domain.';
-const F_TIP_URL_CDN = 'Biarkan kolom ini kosong untuk menonaktifkan CDN. Jika tidak, kolom ini harus berisi URL CDN Anda (misalnya <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, silakan gunakan yang ini). Pastikan untuk menyimpan semua file dari folder <em>/public</em> di CDN Anda.';
+const F_TIP_URL_CDN = 'Biarkan kolom ini kosong untuk menonaktifkan CDN. Jika tidak, kolom ini harus berisi URL CDN Anda (misalnya <em>'.CDN_RAW_GIT.'</em>, silakan gunakan yang ini). Pastikan untuk menyimpan semua file dari folder <em>/public</em> di CDN Anda.';
 const F_TIP_INTRO = 'File tersebut akan ditampilkan di beranda. File tersebut akan diurai dengan sintaks Markdown. Catatan: jika hanya ada satu proyek bernama “%name%”, beranda akan secara otomatis dialihkan ke dasbor proyek, dan teks ini tidak akan ditampilkan.';
 const F_TIP_EMAIL = 'Biarkan kolom ini kosong untuk menonaktifkan notifikasi email. Jika tidak, alamat ini akan digunakan sebagai pengirim saat mengirim notifikasi email.';
 const F_TIP_PASSWORD = 'Biarkan kosong jika Anda tidak ingin mengubah kata sandi.';
