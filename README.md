@@ -149,8 +149,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_ta_) i.e. Tamil
 
 ### v2.12
-- [x] New Language supported (_vnen_) i.e. Vietnamese English
-- [ ] New Language supported (_vnvi_) i.e. Vietnamese Native
+- [x] New Language supported (_vnen_) i.e. Vietnamese (English)
+- [ ] New Language supported (_vnvi_) i.e. Vietnamese (Native)
 
 ### v2.13
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
