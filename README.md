@@ -1,4 +1,4 @@
-# phpmyBugs v2.12
+# phpmyBugs ~v2.12~ v2.13
 
 basically a merge collaboration of two repos https://github.com/dineshkummarc/phpmyBugs & https://github.com/dineshkummarc/bugtracker1 into this repo.
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 18 Languages out of top 20 Languages around the world (based on List of languages by number of native speakers).
@@ -148,7 +148,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 
 ### v2.13
 - [ ] ~New Language supported (_lah_) i.e. Lahnda, a form of punjabi language~
-- [ ] New Language supported (_guru_) i.e. Gurmukhi, a form of punjabi language
+- [x] New Language supported (_guru_) i.e. Gurmukhi, a form of punjabi language
 
 ### v2.14
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
