@@ -42,7 +42,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v0.6
 - [x] New Language supported (_hi_) i.e. Hindi
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Hindi Language as installer option
-![Hindi](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Hindi_IN_hi.png)
 
 ### v0.7
 - [x] New Language supported (_ru_) i.e. Russian
