@@ -1,4 +1,4 @@
-# phpmyBugs ~v2.10~ v2.11
+# phpmyBugs ~v2.10~ ~v2.11~ v2.12
 
 basically a merge collaboration of two repos https://github.com/dineshkummarc/phpmyBugs & https://github.com/dineshkummarc/bugtracker1 into this repo.
 phpmyBugs is a simple, responsive and highly customizable PHP bug tracking system. Currently supports top 13 Languages out of top 20 Languages around the world (based on List of languages by number of native speakers).
@@ -133,8 +133,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 
 ### v2.7
 - [ ] New Language supported (_lah_) i.e. Lahnda, Note: postponed the update due Language translation not found on google
-- [x] New Language supported (_id_) i.e. Indonesian (English)
-- [x] New Language supported (_id_) i.e. Indonesian (Bahasa)
+- [x] New Language supported (_iden_) i.e. Indonesian (English)
+- [x] New Language supported (_idid_) i.e. Indonesian (Bahasa)
 
 ### v2.8
 - [x] New Language supported (_mr_) i.e. Marathi
@@ -149,8 +149,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_ta_) i.e. Tamil
 
 ### v2.12
-- [ ] New Language supported (_en_) i.e. Vietnamese
-- [ ] New Language supported (_vi_) i.e. Vietnamese
+- [x] New Language supported (_vnen_) i.e. Vietnamese (English)
+- [ ] New Language supported (_vnvi_) i.e. Vietnamese (Native)
 
 ### v2.13
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
