@@ -185,7 +185,7 @@ class Trad {
 	const A_PLEASE_LOGIN_ISSUE = 'Please log in to submit an issue. No account yet? Create one: it\'s free and really fast !';
 	const A_SHOULD_LOGIN = 'If you have an account, please log in. If not, consider creating one: it\'s free and really fast !';
 
-	const A_IE = 'Your browser is obsolete: <a href="https://www.browser-update.org/en/update.html">upgrade or change it</a>.';
+	const A_IE = 'Your browser is obsolete: <a href="'.BROWSER.'">upgrade or change it</a>.';
 
 		# Mails
 
@@ -321,7 +321,7 @@ This is an automated email, please do not reply.
 
 	const F_TIP_NAME = 'It will be displayed on the header of each page.';
 	const F_TIP_URL_REWRITING = 'Leave this field empty to disable url rewriting. Otherwise, it should contain the path to phpmyBugs folder (started and ended with a "/"), relative to the domain name.';
-	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
+	const F_TIP_URL_CDN = 'Leave this field empty to disable CDN. Otherwise, it has to contain the URL of your CDN (for example <em>'.CDN_RAW_GIT.'</em>, feel free to use this one). Make sure to host all files from <em>/public</em> folder on your CDN.';
 	const F_TIP_INTRO = 'It will be displayed on the home page. It will be parsed with the Markdown syntax. Note: if there is only one project named “%name%”, the home page is automatically redirected to the project dashboard, and this text will not be displayed.';
 	const F_TIP_EMAIL = 'Leave this field empty to disable email notifications. Otherwise, this address will be used as sender when sending an email notification.';
 	const F_TIP_PASSWORD = 'Leave it empty if you don\'t want to change the password.';
