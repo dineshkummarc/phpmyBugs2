@@ -34,7 +34,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] index.php?project=default&page=new_issue: removed the space by moving label 'new issue' to any other placeholder.
 - [x] renamed portal name from 'Bumpy-Booby' to 'phpmyBugs'
 - [x] /phpmyBugs/: removed \phpmyBugs\public\css\app\*
-![NewColors](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/new-colors.png)
 
 ### v0.5
 - [x] New Language supported (_de_) i.e. German
