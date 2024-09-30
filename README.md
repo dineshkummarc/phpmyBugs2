@@ -172,7 +172,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
 
-### v2.15
+### v2.17
 - [ ] New Language supported (_ar_), i.e. Arabic, a **right to left language** in nature
 - [ ] New Language supported (_ur_) i.e. Urdu, a **right to left language** in nature
 - [ ] ~New Language supported (_lah_) i.e. Lahnda, a form of punjabi language~
