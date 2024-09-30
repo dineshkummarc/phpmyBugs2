@@ -136,7 +136,7 @@ const S_NO_PROJECT = 'Geen project.';
 
 const S_SEARCH = '#12, @user, woorden…';
 const S_COPYRIGHT = 'Powered by %name%.';
-const S_UPGRADE = 'Haal de nieuwste versie van <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> op om <a href="https://bugtrackr.github.io/wiki/upgrade/">te upgraden</a>.';
+const S_UPGRADE = 'Haal de nieuwste versie van <a href="'.RELEASE.'">GitHub</a> op om <a href="'.UPGRADE.'">te upgraden</a>.';
 
 const S_LAST_UPDATES = 'Laatste updates…';
 
@@ -185,7 +185,7 @@ const A_PLEASE_LOGIN_COMMENT = 'Meld u aan om een ​​opmerking te plaatsen. N
 const A_PLEASE_LOGIN_ISSUE = 'Meld u aan om een ​​probleem te melden. Nog geen account? Maak er een aan: het is gratis en heel snel!';
 const A_SHOULD_LOGIN = 'Als u een account hebt, log dan in. Als u dat niet hebt, overweeg dan om er een aan te maken: het is gratis en heel snel!';
 
-const A_IE = 'Uw browser is verouderd: <a href="https://www.browser-update.org/en/update.html">upgrade of wijzig deze</a>.';
+const A_IE = 'Uw browser is verouderd: <a href="'.BROWSER.'">upgrade of wijzig deze</a>.';
 
 # Mails
 
@@ -321,7 +321,7 @@ const F_INVALID_CAPTCHA = 'De CAPTCHA die u hebt ingevoerd, was onjuist. Probeer
 
 const F_TIP_NAME = 'Deze wordt weergegeven in de header van elke pagina.';
 const F_TIP_URL_REWRITING = 'Laat dit veld leeg om het herschrijven van URL\'s uit te schakelen. Anders moet het het pad naar de map phpmyBugs bevatten (begonnen en eindigend met een "\/"), relatief ten opzichte van de domeinnaam.';
-const F_TIP_URL_CDN = 'Laat dit veld leeg om CDN uit te schakelen. Anders moet het de URL van uw CDN bevatten (bijvoorbeeld <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, voel u vrij om deze te gebruiken). Zorg ervoor dat alle bestanden uit de map <em>/public</em> op uw CDN worden gehost.';
+const F_TIP_URL_CDN = 'Laat dit veld leeg om CDN uit te schakelen. Anders moet het de URL van uw CDN bevatten (bijvoorbeeld <em>'.CDN_RAW_GIT.'</em>, voel u vrij om deze te gebruiken). Zorg ervoor dat alle bestanden uit de map <em>/public</em> op uw CDN worden gehost.';
 const F_TIP_INTRO = 'Dit wordt weergegeven op de startpagina. Het wordt geparseerd met de Markdown-syntaxis. Let op: als er maar één project is met de naam "%name%", wordt de startpagina automatisch doorgestuurd naar het projectdashboard en wordt deze tekst niet weergegeven.';
 const F_TIP_EMAIL = 'Laat dit veld leeg om e-mailmeldingen uit te schakelen. Anders wordt dit adres gebruikt als afzender bij het verzenden van een e-mailmelding.';
 const F_TIP_PASSWORD = 'Laat dit leeg als u het wachtwoord niet wilt wijzigen.';
