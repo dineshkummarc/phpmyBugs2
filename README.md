@@ -133,8 +133,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 
 ### v2.7
 - [ ] New Language supported (_lah_) i.e. Lahnda, Note: postponed the update due Language translation not found on google
-- [x] New Language supported (_id_) i.e. Indonesian (English)
-- [x] New Language supported (_id_) i.e. Indonesian (Bahasa)
+- [x] New Language supported (_iden_) i.e. Indonesian (English)
+- [x] New Language supported (_idid_) i.e. Indonesian (Bahasa)
 
 ### v2.8
 - [x] New Language supported (_mr_) i.e. Marathi
@@ -149,8 +149,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_ta_) i.e. Tamil
 
 ### v2.12
-- [x] New Language supported (_en_) i.e. Vietnamese English
-- [ ] New Language supported (_vi_) i.e. Vietnamese Native
+- [x] New Language supported (_vnen_) i.e. Vietnamese English
+- [ ] New Language supported (_vnvi_) i.e. Vietnamese Native
 
 ### v2.13
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
