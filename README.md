@@ -54,7 +54,6 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 ### v0.9
 - [x] New Language supported (_es_) i.e. Spanish
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Spanish Language as installer option
-![Spanish](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Spanish_ES_es.png)
 
 ### v1.1.3 -> by philipp-r
 #### API
