@@ -33,8 +33,8 @@ $API_ACCESS = array(
 $RSS = array(
 
 	array(
-		"name" => "github-phpmyBugs2",
-		"title_prefix" => "New commit in Bumpy-Booby",
+		"name" => "https://github.com/dineshkummarc",
+		"title_prefix" => "New commit in phpmyBugs2",
 		"url" => "https://github.com/dineshkummarc/phpmyBugs2/commits/master.atom",
 		"project" => "default",
 	),
