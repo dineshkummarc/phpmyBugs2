@@ -479,9 +479,9 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
   'language_modified' => 'ਇਸ ਪੰਨੇ ਨੂੰ ਨਵੀਂ ਭਾਸ਼ਾ ਵਿੱਚ ਦੇਖਣ ਲਈ ਤਾਜ਼ਾ ਕਰੋ।'
   );
 
-  ਜਨਤਕ ਸਥਿਰ ਫੰਕਸ਼ਨ ਸੈਟਿੰਗ ($id) {
-  ਵਾਪਸੀ ਸਵੈ::$ ਸੈਟਿੰਗਾਂ[$id];
-  }
+  public static function settings($id) {
+		return self::$settings[$id];
+	}
 
   ਪ੍ਰਾਈਵੇਟ ਸਥਿਰ $ਗਲਤੀਆਂ = ਐਰੇ(
   E_ERROR => 'ਘਾਤਕ ਗਲਤੀ',
