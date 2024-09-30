@@ -31,7 +31,7 @@ spl_autoload_register('loadClass');
 set_error_handler(array('Text', 'capture_error'));
 
 define('NAME', 'phpmyBugs');
-define('VERSION', '2.1.0');
+define('VERSION', '2.13');
 define('AUTHOR', 'Dineshkummarc');
 define('URL', 'https://github.com/dineshkummarc/phpmyBugs2');
 
