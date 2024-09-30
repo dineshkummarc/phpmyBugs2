@@ -598,7 +598,7 @@ if (!empty($config['link_privacypolicy'])) {
 							}
 							echo str_replace(
 								'%name%',
-								'<a href="'.URL.'" target="_blank">'.NAME.' v'.VERSION.'</a>',
+								'<a href="'.URL.'" target="_blank">'.NAME.'</a> v'.VERSION.'',
 								Trad::S_COPYRIGHT
 							);
 						?>
