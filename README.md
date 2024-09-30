@@ -217,3 +217,8 @@ Before any update, it's highly recommended to make a backup. You only need to sa
 ## About ~Booby Bumpy~ phpmybugs
 Booby Bumpy was created by Pierre Monchalin and is ~actually~ maintained by DINESHKUMMARC under name phpmyBugs. Please report bugs/issues here at [Issue Tracker](https://github.com/dineshkummarc/phpmyBugs2/issues)
 phpmyBugs is distributed under the MIT License. See `./COPYING` for more information.
+
+**pull request for right to left languages is welcomed, which may fix the below listed languages in the portal**
+- [ ] Language supported (_ar_), i.e. Arabic, a **right to left language** in nature
+- [ ] Language supported (_ur_) i.e. Urdu, a **right to left language** in nature
+- [ ] Language supported (_shah_) i.e. Shahmukhi, a form of punjabi language but **right to left** in nature
