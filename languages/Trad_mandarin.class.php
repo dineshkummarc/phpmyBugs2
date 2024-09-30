@@ -136,7 +136,7 @@ class Trad {
 
   const S_SEARCH = '#12，@用戶，單字...';
   const S_COPYRIGHT = '由 %name% 提供支援';
-  const S_UPGRADE = '從 <a href="'.RELEASE.'">GitHub</a> 取得最新版本到 <a href="https://bugtrackr.github.io /wiki/upgrade/">升級</a>。';
+  const S_UPGRADE = '從 <a href="'.RELEASE.'">GitHub</a> 取得最新版本到 <a href="'.UPGRADE.'">升級</a>。';
 
   const S_LAST_UPDATES = '最近更新...';
 
