@@ -136,7 +136,7 @@ const S_NO_PROJECT = 'No hay proyecto.';
 
 const S_SEARCH = '#12, @user, palabras…';
 const S_COPYRIGHT = 'Desarrollado por %name%.';
-const S_UPGRADE = 'Obtener la última versión de <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> para <a href="https://bugtrackr.github.io/wiki/upgrade/">actualizar</a>.';
+const S_UPGRADE = 'Obtener la última versión de <a href="'.RELEASE.'">GitHub</a> para <a href="'.UPGRADE.'">actualizar</a>.';
 
 const S_LAST_UPDATES = 'Últimas actualizaciones…';
 
@@ -185,7 +185,7 @@ const A_PLEASE_LOGIN_COMMENT = 'Inicia sesión para publicar un comentario. ¿A�
 const A_PLEASE_LOGIN_ISSUE = 'Inicia sesión para enviar un problema. ¿Aún no tienes una cuenta? Crea una: ¡es gratis y muy rápido!';
 const A_SHOULD_LOGIN = 'Si tiene una cuenta, inicie sesión. Si no, considere crear una: ¡es gratis y muy rápido!';
 
-const A_IE = 'Su navegador está obsoleto: <a href="https://www.browser-update.org/en/update.html">actualícelo o cámbielo</a>.';
+const A_IE = 'Su navegador está obsoleto: <a href="'.BROWSER.'">actualícelo o cámbielo</a>.';
 
 # Correos
 
@@ -321,7 +321,7 @@ const F_INVALID_CAPTCHA = 'El CAPTCHA que ingresó fue incorrecto. Inténtelo nu
 
 const F_TIP_NAME = 'Se mostrará en el encabezado de cada página.';
 const F_TIP_URL_REWRITING = 'Deje este campo vacío para deshabilitar la reescritura de URL. De lo contrario, debe contener la ruta a la carpeta phpmyBugs (que comienza y termina con un "/"), relativa al nombre de dominio.';
-const F_TIP_URL_CDN = 'Deje este campo vacío para deshabilitar el CDN. De lo contrario, debe contener la URL de su CDN (por ejemplo, <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, puede usar este). Asegúrese de alojar todos los archivos de la carpeta <em>/public</em> en su CDN.';
+const F_TIP_URL_CDN = 'Deje este campo vacío para deshabilitar el CDN. De lo contrario, debe contener la URL de su CDN (por ejemplo, <em>'.CDN_RAW_GIT.'</em>, puede usar este). Asegúrese de alojar todos los archivos de la carpeta <em>/public</em> en su CDN.';
 const F_TIP_INTRO = 'Se mostrará en la página de inicio. Se analizará con la sintaxis Markdown. Nota: si solo hay un proyecto llamado “%name%”, la página de inicio se redirecciona automáticamente al panel del proyecto y este texto no se mostrará.';
 const F_TIP_EMAIL = 'Deje este campo vacío para deshabilitar las notificaciones por correo electrónico. De lo contrario, esta dirección se usará como remitente al enviar una notificación por correo electrónico.';
 const F_TIP_PASSWORD = 'Déjelo vacío si no desea cambiar la contraseña.';
