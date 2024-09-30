@@ -153,6 +153,10 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_vnvi_) i.e. Vietnamese (Native)
 
 ### v2.13
+- [ ] ~New Language supported (_lah_) i.e. Lahnda, a form of punjabi language~
+- [ ] New Language supported (_guru_) i.e. Gurmukhi, a form of punjabi language
+
+### v2.14
 - [ ] constant const S_COPYRIGHT = 'Powered by %name%.'; should have version number.
 - [ ] portal name is used as hardcoded name in several places of the portal.
 - [ ] /phpmyBugs2/: the theme '\phpmyBugs2\public\theme\pmb-red', shows dark blue color instead of red as marked in the theme.
@@ -170,11 +174,10 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] crowdin.yml file uses 2 letter language codes, check the Dependencies with any other tool
 - [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
 
-### v2.14
+### v2.15
 - [ ] New Language supported (_ar_), i.e. Arabic, a **right to left language** in nature
 - [ ] New Language supported (_ur_) i.e. Urdu, a **right to left language** in nature
 - [ ] ~New Language supported (_lah_) i.e. Lahnda, a form of punjabi language~
-- [ ] New Language supported (_guru_) i.e. Gurmukhi, a form of punjabi language
 - [ ] New Language supported (_shah_) i.e. Shahmukhi, a form of punjabi language but **right to left** in nature
 
 ### Screenshots (Based on v0.9)
