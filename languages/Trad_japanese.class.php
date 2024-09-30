@@ -136,7 +136,7 @@ const S_NO_PROJECT = 'プロジェクトはありません。';
 
 const S_SEARCH = '#12、@user、単語…';
 const S_COPYRIGHT = '%name% によって提供されています。';
-const S_UPGRADE = '<a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> から最新バージョンを取得して、<a href="https://bugtrackr.github.io/wiki/upgrade/">アップグレード</a>します。';
+const S_UPGRADE = '<a href="'.RELEASE.'">GitHub</a> から最新バージョンを取得して、<a href="'.UPGRADE.'">アップグレード</a>します。';
 
 const S_LAST_UPDATES = '最新の更新...';
 
@@ -185,7 +185,7 @@ const A_PLEASE_LOGIN_COMMENT = 'コメントを投稿するにはログインし
 const A_PLEASE_LOGIN_ISSUE = '問題を送信するにはログインしてください。まだアカウントをお持ちでない場合は、アカウントを作成してください。無料で非常に高速です!';
 const A_SHOULD_LOGIN = 'アカウントをお持ちの場合は、ログインしてください。お持ちでない場合は、作成を検討してください。無料で非常に高速です!';
 
-const A_IE = 'お使いのブラウザは古いです: <a href="https://www.browser-update.org/en/update.html">アップグレードまたは変更してください</a>。';
+const A_IE = 'お使いのブラウザは古いです: <a href="'.BROWSER.'">アップグレードまたは変更してください</a>。';
 
 # メール
 
@@ -323,7 +323,7 @@ const F_INVALID_CAPTCHA = '入力した CAPTCHA が間違っています。も�
 
 const F_TIP_NAME = '各ページのヘッダーに表示されます。';
 const F_TIP_URL_REWRITING = 'URL の書き換えを無効にするには、このフィールドを空のままにしてください。それ以外の場合は、ドメイン名を基準とした phpmyBugs フォルダへのパス (先頭と末尾に "/" が付く) を含める必要があります。';
-const F_TIP_URL_CDN = 'CDN を無効にするには、このフィールドを空のままにしてください。それ以外の場合は、CDN の URL を含める必要があります (例: <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>。この URL を自由に使用してください)。<em>/public</em> フォルダーのすべてのファイルを CDN でホストするようにしてください。';
+const F_TIP_URL_CDN = 'CDN を無効にするには、このフィールドを空のままにしてください。それ以外の場合は、CDN の URL を含める必要があります (例: <em>'.CDN_RAW_GIT.'</em>。この URL を自由に使用してください)。<em>/public</em> フォルダーのすべてのファイルを CDN でホストするようにしてください。';
 const F_TIP_INTRO = 'ホームページに表示されます。Markdown 構文で解析されます。注: 「%name%」という名前のプロジェクトが 1 つしかない場合、ホームページは自動的にプロジェクト ダッシュボードにリダイレクトされ、このテキストは表示されません。';
 const F_TIP_EMAIL = 'メール通知を無効にするには、このフィールドを空のままにしてください。それ以外の場合は、メール通知を送信するときにこのアドレスが送信者として使用されます。';
 const F_TIP_PASSWORD = 'パスワードを変更しない場合は、空のままにしてください。';
