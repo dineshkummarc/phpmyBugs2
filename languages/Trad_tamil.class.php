@@ -136,7 +136,7 @@ class Trad {
 
  const S_SEARCH = '#12, @user, வார்த்தைகள்...';
  const S_COPYRIGHT = '%name% ஆல் இயக்கப்படுகிறது.';
- const S_UPGRADE = '<a href="'.RELEASE.'">GitHub</a> இலிருந்து <a href="https://bugtrackr.github.io க்கு சமீபத்திய பதிப்பைப் பெறவும் / wiki/upgrade/">மேம்படுத்து</a>.';
+ const S_UPGRADE = '<a href="'.RELEASE.'">GitHub</a> இலிருந்து <a href="'.UPGRADE.'">மேம்படுத்து</a>.';
 
  const S_LAST_UPDATES = 'கடைசி புதுப்பிப்புகள்...';
 
