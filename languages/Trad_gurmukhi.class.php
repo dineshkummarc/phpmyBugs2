@@ -483,7 +483,7 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
 		return self::$settings[$id];
 	}
 
-  ਪ੍ਰਾਈਵੇਟ ਸਥਿਰ $ਗਲਤੀਆਂ = ਐਰੇ(
+  private static $errors = array(
   E_ERROR => 'ਘਾਤਕ ਗਲਤੀ',
   E_WARNING => 'ਚੇਤਾਵਨੀ',
   E_PARSE => 'ਪਾਰਸ ਗਲਤੀ',
@@ -491,6 +491,7 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
   E_STRICT => 'ਸਲਾਹ',
   E_DEPRECATED => 'ਨਾਪਸੰਦ','ਡਿਫੌਲਟ' => 'ਗਲਤੀ'
   );
+  
   ਜਨਤਕ ਸਥਿਰ ਫੰਕਸ਼ਨ ਤਰੁਟੀਆਂ ($ ਨਹੀਂ) {
   ਵਾਪਸੀ (isset(self::$errors[$no]))? self::$errors[$no] : self::$errors['default'];
   }
