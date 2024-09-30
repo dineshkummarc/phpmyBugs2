@@ -37,8 +37,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 
 ### v0.5
 - [x] New Language supported (_de_) i.e. German
-- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using German Language as installer option
-![Dutch](https://github.com/dineshkummarc/phpmyBugs2/blob/main/screenshots/Dutch_DE_de.png)
+- [x] /phpmyBugs/index.php?page=install: Blank page is seen on using German Language as installer option)
 
 ### v0.6
 - [x] New Language supported (_hi_) i.e. Hindi
