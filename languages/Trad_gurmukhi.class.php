@@ -492,8 +492,8 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
   E_DEPRECATED => 'ਨਾਪਸੰਦ','ਡਿਫੌਲਟ' => 'ਗਲਤੀ'
   );
   
-  ਜਨਤਕ ਸਥਿਰ ਫੰਕਸ਼ਨ ਤਰੁਟੀਆਂ ($ ਨਹੀਂ) {
-  ਵਾਪਸੀ (isset(self::$errors[$no]))? self::$errors[$no] : self::$errors['default'];
+  public static function errors($no) {
+		return (isset(self::$errors[$no]))? self::$errors[$no] : self::$errors['default'];
   }
 }
 
