@@ -121,8 +121,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [x] New Language supported (_cn_) i.e. Yue Chinese (or simplified chinese)
 
 ### v2.4    
-- [ ] New Language supported (_ar_), i.e. Arabic, Note: postponed the update due to left to right Language
-- [ ] New Language supported (_ur_) i.e. Urdu, Note: postponed the update due to left to right Language
+- [ ] New Language supported (_ar_), i.e. Arabic, Note: postponed the update due to right to left Language
+- [ ] New Language supported (_ur_) i.e. Urdu, Note: postponed the update due to right to left Language
 - [x] New Language supported (_pcm_) i.e. Pidgin also known as 'Nigerian Pidgin',
 
 ### v2.5
