@@ -136,7 +136,7 @@ const S_NO_PROJECT = 'Proje yok.';
 
 const S_SEARCH = '#12, @user, words…';
 const S_COPYRIGHT = '%name% tarafından desteklenmektedir.';
-const S_UPGRADE = '<a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> dan <a href="https://bugtrackr.github.io/wiki/upgrade/">yükseltmeye</a> en son sürümü al.';
+const S_UPGRADE = '<a href="'.RELEASE.'">GitHub</a> dan <a href="'.UPGRADE.'">yükseltmeye</a> en son sürümü al.';
 
 const S_LAST_UPDATES = 'Son güncellemeler…';
 
@@ -185,7 +185,7 @@ const A_PLEASE_LOGIN_COMMENT = 'Yorum göndermek için lütfen oturum açın. He
 const A_PLEASE_LOGIN_ISSUE = 'Sorun göndermek için lütfen oturum açın. Henüz hesabınız yok mu? Bir tane oluşturun: ücretsiz ve gerçekten hızlı!';
 const A_SHOULD_LOGIN = 'Hesabınız varsa lütfen giriş yapın. Yoksa, bir tane oluşturmayı düşünün: ücretsiz ve gerçekten hızlı!';
 
-const A_IE = 'Tarayıcınız eski: <a href="https://www.browser-update.org/en/update.html">güncelleyin veya değiştirin</a>.';
+const A_IE = 'Tarayıcınız eski: <a href="'.BROWSER.'">güncelleyin veya değiştirin</a>.';
 
 # Mailler
 
@@ -321,7 +321,7 @@ const F_INVALID_CAPTCHA = 'Girdiğiniz CAPTCHA yanlış. Lütfen tekrar deneyin.
 
 const F_TIP_NAME = 'Her sayfanın başlığında gösterilecektir.';
 const F_TIP_URL_REWRITING = 'URL yeniden yazmayı devre dışı bırakmak için bu alanı boş bırakın. Aksi takdirde, etki alanı adına göre phpmyBugs klasörüne giden yolu (bir "/" ile başlayıp biten) içermelidir.';
-const F_TIP_URL_CDN = 'CDN\'yi devre dışı bırakmak için bu alanı boş bırakın. Aksi takdirde, CDN\'nizin URL\'sini içermesi gerekir (örneğin <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, bunu kullanmaktan çekinmeyin). CDN\'nizde <em>/public</em> klasöründeki tüm dosyaları barındırdığınızdan emin olun.';
+const F_TIP_URL_CDN = 'CDN\'yi devre dışı bırakmak için bu alanı boş bırakın. Aksi takdirde, CDN\'nizin URL\'sini içermesi gerekir (örneğin <em>'.CDN_RAW_GIT.'</em>, bunu kullanmaktan çekinmeyin). CDN\'nizde <em>/public</em> klasöründeki tüm dosyaları barındırdığınızdan emin olun.';
 const F_TIP_INTRO = 'Ana sayfada gösterilecektir. Markdown sözdizimiyle ayrıştırılacaktır. Not: “%name%” adında yalnızca bir proje varsa, ana sayfa otomatik olarak proje panosuna yönlendirilir ve bu metin gösterilmez.';
 const F_TIP_EMAIL = 'E-posta bildirimlerini devre dışı bırakmak için bu alanı boş bırakın. Aksi takdirde, bu adres bir e-posta bildirimi gönderirken gönderici olarak kullanılacaktır.';
 const F_TIP_PASSWORD = 'Şifreyi değiştirmek istemiyorsanız boş bırakın.';
