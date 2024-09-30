@@ -136,7 +136,7 @@ class Trad {
 
   const S_SEARCH = '#12, @utilizador, palavras…';
   const S_COPYRIGHT = 'Desenvolvido por %nome%.';
-  const S_UPGRADE = 'Obter a versão mais recente do <a href="https://github.com/bugtrackr/Nireus/releases/latest">GitHub</a> para <a href="https://bugtrackr.github .io /wiki/upgrade/">atualizar</a>.';
+  const S_UPGRADE = 'Obter a versão mais recente do <a href="'.RELEASE.'">GitHub</a> para <a href="https://bugtrackr.github .io /wiki/upgrade/">atualizar</a>.';
 
   const S_LAST_UPDATES = 'Últimas atualizações…';
 
@@ -184,7 +184,7 @@ class Trad {
   const A_PLEASE_LOGIN_COMMENT = 'Por favor, inicie sessão para publicar um comentário. Ainda não tem conta? Crie um: é gratuito e muito rápido!';
   const A_PLEASE_LOGIN_ISSUE = 'Por favor, inicie sessão para enviar um problema. Ainda não tem conta? Crie um: é gratuito e muito rápido!';
   const A_SHOULD_LOGIN = 'Se tem uma conta, inicie sessão';
-  const A_IE = 'O seu browser está obsoleto: <a href="https://www.browser-update.org/en/update.html">actualizar ou alterar</a>.';
+  const A_IE = 'O seu browser está obsoleto: <a href="'.BROWSER.'">actualizar ou alterar</a>.';
 
   # E-mails
 
@@ -320,7 +320,7 @@ Este é um e-mail automático, por favor não responda.
 
   const F_TIP_NAME = 'Será apresentado no cabeçalho de cada página.';
   const F_TIP_URL_REWRITING = 'Deixe este campo vazio para desativar a reescrita de URL. Caso contrário, deverá conter o caminho para a pasta phpmyBugs (iniciada e terminada com "/"), relativamente ao nome do domínio. ';
-  const F_TIP_URL_CDN = 'Deixe este campo vazio para desativar o CDN. Caso contrário, deverá conter o URL do seu CDN (por exemplo <em>https://cdn.rawgit.com/bugtrackr/Nireus/master/</em>, sinta-se à vontade para utilizar este). Certifique-se de que aloja todos os ficheiros da pasta <em>/public</em> no seu CDN.';
+  const F_TIP_URL_CDN = 'Deixe este campo vazio para desativar o CDN. Caso contrário, deverá conter o URL do seu CDN (por exemplo <em>'.CDN_RAW_GIT.'</em>, sinta-se à vontade para utilizar este). Certifique-se de que aloja todos os ficheiros da pasta <em>/public</em> no seu CDN.';
   const F_TIP_INTRO = 'Será apresentado na página inicial. Será analisado com a sintaxe Markdown. Nota: se existir apenas um projeto denominado “%name%”, a página inicial será automaticamente redirecionada para o dashboard do projeto, e este texto não será apresentado.';
   const F_TIP_EMAIL = 'Deixe este campo vazio para desativar as notificações por e-mail. Caso contrário, este endereço será utilizado como remetente ao enviar uma notificação por e-mail.';
   const F_TIP_PASSWORD = 'Deixar em branco se não pretender alterar a password.';
