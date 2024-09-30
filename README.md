@@ -149,7 +149,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_ta_) i.e. Tamil
 
 ### v2.12
-- [x] New Language supported (_en_) i.e. Vietnamese
+- [ ] New Language supported (_en_) i.e. Vietnamese
 - [ ] New Language supported (_vi_) i.e. Vietnamese
 
 ### v2.13
