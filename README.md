@@ -174,8 +174,8 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] New Language supported (_ar_), i.e. Arabic, a **right to left language** in nature
 - [ ] New Language supported (_ur_) i.e. Urdu, a **right to left language** in nature
 - [ ] ~New Language supported (_lah_) i.e. Lahnda, a form of punjabi language~
-- [ ] New Language supported (_lah_) i.e. Gurmukhi, a form of punjabi language
-- [ ] New Language supported (_lah_) i.e. Shahmukhi, a form of punjabi language but **right to left** in nature
+- [ ] New Language supported (_guru_) i.e. Gurmukhi, a form of punjabi language
+- [ ] New Language supported (_shah_) i.e. Shahmukhi, a form of punjabi language but **right to left** in nature
 
 ### Screenshots (Based on v0.9)
 
