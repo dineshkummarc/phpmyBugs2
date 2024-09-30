@@ -463,8 +463,8 @@ __ਬੋਲਡ ਟੈਕਸਟ ਦੁਬਾਰਾ__ </code></pre>
   )
   );
 
-  ਜਨਤਕ ਸਥਿਰ ਫੰਕਸ਼ਨ ਅਨੁਮਤੀਆਂ ($id, $type = 'ਵਰਣਨ') {
-  ਵਾਪਸੀ ਸਵੈ::$ ਅਨੁਮਤੀਆਂ[$id][$type];
+  public static function permissions($id, $type = 'ਵਰਣਨ') {
+  return self::$permissions[$id][$type];
   }
 
   ਪ੍ਰਾਈਵੇਟ ਸਥਿਰ $ਸੈਟਿੰਗ = ਐਰੇ(
