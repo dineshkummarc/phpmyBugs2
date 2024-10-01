@@ -158,7 +158,6 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] ~New issue link is seen without login, remove it from the non-logged in page~
 - [x] github repo links are hardcoded into the texts, make them using tags
 - [x] cdn links are hardcoded into the texts, make them using tags
-- [x] github link on page /index.php?page=settings is redirected to nireus release
 
 ### v2.15
 - [ ] themes like pmb-red.min.css, phpmybugs.min.css, app.min.css and default.min.css uses the same color combination
@@ -166,6 +165,7 @@ You can do this with `./database/config_captcha.php` file. There is a sample con
 - [ ] seperate General settings from Global settings to have seperate section.
 - [ ] move theme section from 'generalsettings>>appearance' to settings section to have seperate section
 - [ ] move language section from 'generalsettings>>language' to Global settings section
+- [ ] github link on page /index.php?page=settings is redirected to nireus release
 
 ### v2.16
 - [ ] deprecation alerts on upgrading the test env to php7.4.33
