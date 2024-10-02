@@ -8,7 +8,7 @@ phpmyBugs is a simple, responsive and highly customizable PHP bug tracking syste
 ### v0.2 and below
 - [x] Please see https://github.com/piero-la-lune/Bumpy-Booby for older releases
 
-### v0.3 -> initial by Pierre Monchalin
+### v0.3 -> initial Development by Pierre Monchalin
 - [x] **No database required**
 - [x] Statuses and tags highly customizable
 - [x] File attachments
@@ -22,7 +22,6 @@ phpmyBugs is a simple, responsive and highly customizable PHP bug tracking syste
 - [x] Various languages supported ( _fr_, _en_ for now)
 - [x] RSS feeds
 - [x] Language Switch and selection under settings
-
 To get more information on v0.3 or to see it in action: <http://bumpy-booby.derivoile.fr>.
 
 ### v0.4
@@ -55,7 +54,7 @@ To get more information on v0.3 or to see it in action: <http://bumpy-booby.deri
 - [x] New Language supported (_es_) i.e. Spanish
 - [x] /phpmyBugs/index.php?page=install: Blank page is seen on using Spanish Language as installer option
 
-### v1.1.3 -> by philipp-r
+### v1.1.3 -> Developed by philipp-r
 #### API
 Added manage [API](https://bugtrackr.github.io/api/) which has below features:
 - [x] [Default API](https://bugtrackr.github.io/api/bumpybooby/) to create new issues, edit them, and more.
